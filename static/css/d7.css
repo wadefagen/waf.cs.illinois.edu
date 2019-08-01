@@ -1,0 +1,122 @@
+body {
+}
+
+.d7-bg {
+  background-color: hsl(274, 54%, 25%);
+  color: white;
+}
+
+.d7-bg hr {
+  border-color: white;
+  border-style: dashed;
+  margin: 2px 0px;
+}
+
+.d7-bg a {
+  color: hsl(274, 54%, 90%);
+  font-weight: bold;
+}
+
+.d7-bg a:hover {
+  color: hsl(274, 54%, 80%);
+  font-weight: bold;
+}
+
+.nav-link {
+  /* padding: 5px 15px !important; */
+  padding: 0px 15px 4px 15px !important;
+}
+
+.d7-header a { color: #eee; }
+.d7-header a:hover { color: #eee; }
+
+
+.d7-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: white;
+  float: left;
+  /* color: hsl(274, 54%, 25%); */
+  /* border: solid 1px hsl(274, 54%, 25%); */
+  border-top-width: 0px;
+  padding: 1px 4px;
+  margin-top: 3px;
+  margin-right: 5px;
+  border-bottom-left-radius: 8px;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+.d7-viz-jumbotron {
+  background-color: white;
+  color: hsl(274, 54%, 25%);
+  margin-bottom: 20px;
+}
+
+hr {
+  border-color: hsl(274, 54%, 25%);
+  border-style: dashed;
+  margin: 16px 0px;
+}
+
+.d7-purple {
+  background-color: hsl(274, 54%, 25%);
+  color: white;
+}
+
+
+.jumbotron h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: hsl(274, 54%, 25%);
+  margin-top: 20px;
+}
+
+h2, h3 {
+  background-color: hsl(274, 54%, 25%);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  font-style: italic;
+  padding: 1px 8px 1px 4px;
+  font-size: 1.5rem;
+}
+
+
+
+.jumbotron.d7-viz-header {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.d7-viz-jumbotron h3 {
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Arimo', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+
+.d7-viz-jumbotron h5 {
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Arimo', sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  background-color: white;
+  color: hsl(274, 54%, 25%);
+}
+
+
+.d7-title-2 {
+  font-family: 'Playfair Display', serif;
+  background-color: hsl(274, 54%, 25%);
+  color: white;
+  display: inline-block;
+  padding: 4px 20px;
+  font-style: italic;
+}

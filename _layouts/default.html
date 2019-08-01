@@ -1,0 +1,39 @@
+---
+layout: bare
+---
+<div class="container-fluid header-content">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+
+        {% if page.collection %}
+        <li class="breadcrumb-item"><a href="/{{ page.collection }}/">{{ page.collection | capitalize }}</a></li>
+        {% endif %}
+
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container content">
+  {{ content }}
+</div>
+
+<div class="container-fluid footer header-content">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+
+        {% if page.collection %}
+        <li class="breadcrumb-item"><a href="/{{ page.collection }}/">{{ page.collection | capitalize }}</a></li>
+        {% endif %}
+
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+      </ol>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+## role: prof
+# sortOrder MUST be defined for everyone with 'role: prof'
+
+waf:
+    sortOrder: 0
+    netid: waf
+    name: Wade Fagen-Ulmschneider
+    role: prof
+    office: 2215 Siebel (2nd floor, south-west corner of Siebel)
+    dyb: TBA
+
+zilles:
+    sortOrder: 1
+    netid: kflan
+    name: Karle Flanagan
+    role: prof
+    office: 103B Illini Hall
+    dyb: TBA
+
+# Grad TAs
+#mariamv2: { netid: mariamv2, name: Mariam Vardishvili,    role: grad, }
+
+
+# Undergrad Lead CAs
+#parisfe2: { netid: parisfe2, name: Jordi Paris Ferrer,  role: ugrad, }

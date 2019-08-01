@@ -1,0 +1,299 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-content {
+  background-color: hsl(173, 30%, 95%);
+  border-bottom: solid 1px hsl(173, 30%, 50%);
+}
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: solid 1px hsl(173, 30%, 50%);
+  margin-top: 40px;
+}
+
+.header-content a {
+  color: hsl(173, 30%, 40%);
+}
+
+.header-content h1 {
+  font-size: 1.75rem;
+  margin: 0px;
+}
+
+.header-content h1 a {
+  color: black;
+}
+
+.header-content h1 a:hover {
+  text-decoration: none;
+}
+
+.header-content h2 {
+  font-size: 1rem;
+  margin: 0px;
+}
+
+.header-content h3 {
+  font-size: 1.5rem;
+}
+
+.header-content h4 {
+  font-size: 1.2rem;
+}
+
+.breadcrumb {
+  margin-bottom: 0px;
+  background-color: transparent;
+  padding: 4px 0px;
+}
+
+
+.content {
+  margin-top: 15px;
+}
+
+body {
+}
+
+.axis {
+  font-size: 16px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+}
+
+.axis-small {
+  font-size: 10px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+}
+
+.axis-gridline line {
+  stroke: hsl(173, 30%, 90%);
+}
+
+
+#chart {
+  shape-rendering: crispEdges;
+}
+
+.vis-header-text {
+  margin-left: 5px;
+}
+
+
+hr {
+  border-color: hsl(173, 30%, 20%);
+  border-style: dashed;
+  margin: 16px 0px;
+}
+
+.content h1 {
+  font-family: 'Playfair Display', serif;
+  background-color: white;
+  color: hsl(173, 30%, 20%);
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  background-color: hsl(173, 30%, 20%);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  font-style: italic;
+  padding: 1px 8px 1px 4px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: hsl(173, 30%, 20%);
+}
+
+h4 {
+  /* font-family: 'Playfair Display', serif; */
+  font-size: 1.1rem;
+  color: hsl(173, 30%, 20%);
+}
+
+.jumbotron.viz-header {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.viz-jumbotron h3 {
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Arimo', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+
+.viz-jumbotron h5 {
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Arimo', sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+
+.d7-title-2 {
+  font-family: 'Playfair Display', serif;
+  background-color: hsl(173, 30%, 20%);
+  color: white;
+  display: inline-block;
+  padding: 4px 20px;
+  font-style: italic;
+}
+
+blockquote {
+  margin-left: 15px;
+  border-left: solid 2px #ccc;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+
+.waf-table-data {
+  margin: auto;
+  width: auto;
+  display: table;
+}
+
+.waf-table-data .detail {
+  margin-top: -5px;
+  font-size: 0.6rem;
+}
+
+.caption {
+  font-size: 0.6rem;
+  text-align: center;
+  font-style: italic;
+}
+
+
+/* == https://rawgit.com/Caged/d3-tip/master/examples/example-styles.css ==  */
+.d3-tip {
+  line-height: 1;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border-radius: 2px;
+  pointer-events: none;
+  border: solid 1px black;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/*
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
+}
+
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  text-align: center;
+}
+
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  left: 100%;
+}
+*/
+
+
+
+.card-full {
+  margin-bottom: 15px;
+}
+
+.card-full > div > div:first-child {
+  text-align: center;
+  padding: 2px;
+}
+
+
+@media (min-width: 768px) {
+  .card-full > div > div:first-child {
+    border-right: solid 1px #ccc;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-full .title {
+    border-top: solid 1px #ccc;
+    padding-left: 4px; padding-right: 4px;
+  }
+
+  .card-full .authors {
+    padding-left: 4px; padding-right: 4px;
+  }
+}
+
+.card-full .title, .vcard .title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: hsl(173, 30%, 50%);
+}
+
+.vcard a {
+  text-decoration: none;
+}
+
+
+.card-full img {
+  max-height: 150px;
+}
+
+a.card {
+  padding: 5px 5px;
+  text-align: center;
+  font-weight: bold;
+  background-color: hsla(173, 30%, 95%, 1);
+}
+
+.vcard {
+  margin-bottom: 15px;
+}
+
+.vcard > div {
+  padding: 4px;
+  padding-top: 0px;
+}
+
+.vcard .title {
+  border-top: solid 1px #ccc;
+}
+
+ul.pub-list { margin-top: -12px; }
+ul.pub-list > li { line-height: 1.1; margin-bottom: 3px; }
+.pub-etc { font-size: 0.8rem; }
