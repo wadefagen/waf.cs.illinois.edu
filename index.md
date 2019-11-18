@@ -3,12 +3,9 @@ layout: home
 ---
 
 
-### New Course: Data Science Discovery (STAT/CS/IS 107)
+### Spring 2020: Data Science Discovery
 
-I have been passionate about bringing an understanding of computing and data to the world!  For the past year, I have been developing
-a new Introduction to Data Science with [Karle Flanagan](https://karleflanagan.github.io/website/) from the Department of Statistics.
-
-This is, without a doubt, the best course I have ever built and so excited to be **offering it for the first time** in Fall 2019 as STAT/CS/IS 107!
+I am passionate about bringing an understanding of computing and data to the world!  This is, without a doubt, the best course I have ever built.  If you're at The University of Illinois, join me in Spring 2020 in STAT/CS/IS 107:
 
 <a href="http://courses.las.illinois.edu/fall2019/stat107/" class="card">
     Find out more about Data Science Discovery (STAT 107) &gt;&gt;
@@ -47,6 +44,10 @@ This is, without a doubt, the best course I have ever built and so excited to be
 </div>
 {% endfor %}
 
+<a href="{{ absolute_url }}/visualizations/" class="card">
+    All Data Visualizations &gt;&gt;
+</a>
+
 <hr>
 
 ### Teaching
@@ -59,14 +60,19 @@ This is, without a doubt, the best course I have ever built and so excited to be
     <a href="http://courses.las.illinois.edu/spring2019/stat107/">Spring 2019</a>]
   </li>
   <li>
-    CS 225: Data Structures [<a href="https://courses.engr.illinois.edu/cs225/sp2019/"><b>Spring 2019</b></a>,
+    Three-course Specialization (Online MOOCs with Coursera) <a href="https://www.coursera.org/specializations/cs-fundamentals">Accelerated Computer Science Fundamentals</a>:
+    <ul>
+      <li>Course #1: <a href="https://www.coursera.org/learn/cs-fundamentals-1">Object-Oriented Data Structures in C++</a>; <i>a month-long course (4.8/5.0 from 250+ reviews)</i></li>
+      <li>Course #2: <a href="https://www.coursera.org/learn/cs-fundamentals-2">Ordered Data Structures</a>; <i>a month-long course (4.8/5.0 from 100+ reviews)</i></li>
+      <li>Course #3: <a href="https://www.coursera.org/learn/cs-fundamentals-3">Unordered Data Structures</a>; <i>a month-long course (4.9/5.0 from 70+ reviews)</i></li>
+    </ul>
+  </li>
+  <li>
+    CS 225: Data Structures [<a href="https://courses.engr.illinois.edu/cs225/sp2019/">Spring 2019</a>,
     <a href="https://courses.engr.illinois.edu/cs225/fa2018/">Fall 2018</a>,
     <a href="https://courses.engr.illinois.edu/cs225/sp2018/">Spring 2018</a>,
     <a href="https://courses.engr.illinois.edu/cs225/fa2017/">Fall 2017</a>,
     <a href="https://courses.engr.illinois.edu/cs225/sp2017/">Spring 2017</a>]
-  </li>
-  <li>
-    CS 400: Accelerated CS Fundamentals [Online via Coursera]
   </li>
   <li>
     CS 305: Data Driven Discovery
@@ -98,7 +104,7 @@ Toward that end, classes I teach contain major components that are a sharable ex
 
 #### Independent Study / Senior Thesis
 
-I believe the best education experience is a one-on-one experience. When I advise an independent study or senior thesis, I am making a commitment to you to work with you as we explore something new and interesting. Similarly, I expect you to be fully committed to the project.
+I believe the best education experience is a small group experience. When I advise an independent study or senior thesis, I am making a commitment to you to work with you as we explore something new and interesting. Similarly, I expect you to be fully committed to the project.
 
 If you have completed CS 205 (non-CS major) or CS 225 (CS major) and are interested in working on an independent study, let's chat about it!
 
@@ -106,6 +112,12 @@ If you have completed CS 205 (non-CS major) or CS 225 (CS major) and are interes
 <h4>Accolades</h4>
 <p>
   <ul class="pub-list">
+    <li>
+      Scott H. Fisher Computer Science Teaching Award; 2019
+      <div class="pub-etc">
+        The top-most teaching honor given by the Department of Computer Science at The University of Illinois, in recognition of Scott H. Fisher
+      </div>
+    </li>  
     <li>
       Chi Omega’s Outstanding Faculty Award; 2018
       <div class="pub-etc">
@@ -132,7 +144,7 @@ If you have completed CS 205 (non-CS major) or CS 225 (CS major) and are interes
       </div>
     </li>
     <li>
-      Teachers Ranked as Excellent by Their Students; 2018, 2017, 2016, 2013, 2012, 2011, 2010, 2008
+      Teachers Ranked as Excellent by Their Students; 2019, 2018, 2017, 2016, 2013, 2012, 2011, 2010, 2008
       <div class="pub-etc">
         Center for Innovation in Teaching &amp; Learning at The University of Illinois
       </div>
@@ -141,7 +153,43 @@ If you have completed CS 205 (non-CS major) or CS 225 (CS major) and are interes
 </p>
 
 <hr>
-<h3>Media / Research / Published Work</h3>
+<h3>Recent Impact, Media, and Research</h3>
+
+<h4>Invited Talks</h4>
+<p>I love sharing my passion of Computer Science and inspiring others to do amazing things.  A few recent talks I have been honored to be invited to give:</p>
+<ul class="pub-list">
+  <li>
+    Professional development with <a href="http://apo-aa.org/">Alpha Phi Omega (APO)</a>, October 2019
+    <div class="pub-etc">
+      &bullet; Live Visualization Creation: <a href="http://d7.cs.illinois.edu/projects/apo-group-size/">Perception of Words Describing Sizes of Groups</a>
+    </div>
+  </li>
+  <li>
+    Data Science SPRINT with <a href="http://get.illinois.edu/">Illinois International's Global Education & Training</a>, August 2019
+    <div class="pub-etc">
+      &bullet; The best of Data Science and Visualization all within 2.5 hours, co-taught with Karle Flanagan
+    </div>
+  </li>
+  <li>
+    Monthly membership meeting with <a href="http://illinoisbusinesscouncil.com/home/">Illinois Business Council (BC)</a>, April 2019
+    <div class="pub-etc">
+      &bullet; Title: <i>Data Science and The University of Illinois</i>
+    </div>
+  </li>
+  <li>
+    <a href="https://calendars.illinois.edu/detail/1439/33330023">Statistics Seminar</a> with the Department of Statistics, March 2019
+    <div class="pub-etc">
+      &bullet; Title: <i>Data Visualization, Storytelling, and Data Science at The University of Illinois</i>
+    </div>
+  </li>
+  <li>
+    Monthly Data Science Meetup with the <a href="https://www.meetup.com/CU-DSUG/">Champaign-Urbana Data Science User Group</a>, February 2019
+    <div class="pub-etc">
+      &bullet; Title: <i>Data Visualization and Storytelling</i> [<a href="https://docs.google.com/presentation/d/1YXyv4UuJeyyQy8frGtt_DnLOtpuxcjBeSb_32xQEGQA/edit?usp=sharing">Slides</a>]
+    </div>
+  </li>
+</ul>
+
 
 <h4>Media Coverage</h4>
 <p>A collection of some recent media coverage of some of the things I've worked on:</p>
