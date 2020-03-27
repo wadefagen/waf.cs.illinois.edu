@@ -2,6 +2,17 @@
 layout: home
 ---
 
+### 91-DIVOC: Flip the script on COVID-19
+
+I recently made a visualization showing the COVID-19 website, allowing you to customize the scale, data, and more to nerd out on this data with me.  Updated daily, using Johns Hopkins dataset:
+
+<a href="https://91-divoc.com/pages/covid-visualization/" class="card">
+    91-DIVOC: An interactive visualization of the exponential spread of COVID-19 &gt;&gt;
+</a>
+
+
+<hr>
+
 
 ### Spring 2020: Data Science Discovery
 
