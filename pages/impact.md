@@ -69,9 +69,9 @@ permalink: /impact/
 
 - Skagit Valley Herald (Charles Hall), April 1, 2020; [*"Hospital CEO: Leaders making tough decisions"*](https://www.goskagit.com/anacortes/hospital-ceo-leaders-making-tough-decisions/article_61f29786-73a1-11ea-8626-9356be1e7b71.html) cites Fagen-Ulmschneider's 91-DIVOC project as a COVID-19 resource.
 
-- Vox (Joss Fong, et al), April 28, 2020; [Video: *"How coronavirus charts can mislead us"*] cites Fagen-Ulmschneider's 91-DIVOC project as a COVID-19 resource.
+- Vox (Joss Fong, et al), April 28, 2020; [Video: *"How coronavirus charts can mislead us"*](https://www.vox.com/videos/2020/4/28/21238769/coronavirus-covid19-chart-data-misleading) cites Fagen-Ulmschneider's 91-DIVOC project as a COVID-19 resource.
 
-- The Verge (Russell Brandom), April 28, 2020; [*"More than 1 million people in the US have tested positive for COVID-19"*] uses Fagen-Ulmschneider's 91-DIVOC project as an image reference.
+- The Verge (Russell Brandom), April 28, 2020; [*"More than 1 million people in the US have tested positive for COVID-19"*](https://www.theverge.com/2020/4/28/21238180/coronavirus-cases-usa-1-million-covid-19-positive-tests) uses Fagen-Ulmschneider's 91-DIVOC project as an image reference.
 
 - University of Maryland, Baltimore County, 2020; [*"COVID-19 Visualization Tools"*](https://lib.guides.umbc.edu/c.php?g=1039418&p=7537860) cites Fagen-Ulmschneider's 91-DIVOC project as a COVID-19 resource.
 

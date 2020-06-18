@@ -73,16 +73,11 @@ In Fall 2020, I am scheduled to teach CS 240: Introduction to Computer Systems. 
 
 <img alt="Wade Fagen-Ulmschneider" src="/static/images/fagen-ulmschneider.jpg" style="max-height: 200px; float: right; border: solid 1px black; margin-left: 20px; margin-bottom: 20px;">
 
-### Short Biography
+### Short Bio
 
 Wade Fagen-Ulmschneider is a Teaching Associate Professor of Computer Science at the University of Illinois at Urbana-Champaign (UIUC). With a passion for data, he often teaches thousands of students each year in his courses on Data Structures, Data Visualization, and Data Science. He was selected as one of the National Academy of Engineering’s Frontiers of Engineering Education scholars, awarded the Collins Award for Innovation Teaching, and has been consistently ranked as an excellent instructor by his students for the past ten years. His work on data visualizations has been used by governors of multiple states, featured by websites including Popular Mechanics and The Verge, and has been viewed by millions of readers.
 
-
-
-
-
 <hr style="clear: both">
-
 
 
 ### Teaching
@@ -99,7 +94,7 @@ Wade Fagen-Ulmschneider is a Teaching Associate Professor of Computer Science at
     <a href="http://courses.las.illinois.edu/spring2019/stat107/">Spring 2019</a>]
   </li>
   <li>
-    Three-course <a href="https://www.coursera.org/specializations/cs-fundamentals">Accelerated Computer Science Fundamentals</a> (Online MOOCs with Coursera):
+    Three-course <a href="https://www.coursera.org/specializations/cs-fundamentals">Accelerated Computer Science Fundamentals Specialization</a> (Online MOOCs with Coursera):
     <ul>
       <li>Course #1: <a href="https://www.coursera.org/learn/cs-fundamentals-1">Object-Oriented Data Structures in C++</a>; <i>a month-long course (4.8/5.0 from 250+ reviews)</i></li>
       <li>Course #2: <a href="https://www.coursera.org/learn/cs-fundamentals-2">Ordered Data Structures</a>; <i>a month-long course (4.8/5.0 from 100+ reviews)</i></li>
@@ -219,7 +214,7 @@ If you have completed CS 225 and are interested in working on an independent stu
     Speaker, Annual Faculty Retreat at The University of Illinois, March 2020
     <div class="pub-etc">
       &bullet; Segment #1: <i>The Emotion of Discovery</i> with Karle Flanagan<br>
-      &bullet; Segment #1: <i>The Emotion of Competition &amp; Winning</i> with Karle Flanagan
+      &bullet; Segment #2: <i>The Emotion of Competition &amp; Winning</i> with Karle Flanagan
     </div>
   </li>
 
@@ -285,7 +280,7 @@ If you have completed CS 225 and are interested in working on an independent stu
     <a href="https://queue.illinois.edu/">Illinois Open Source Queue</a>: Used to hold office hours, advising meetings for over 8,000 students /semester at The University of Illinois, The University of British Columba (UBC), and in trail at other universities.
   </li>
   <li>
-    <a href="https://queue.illinois.edu/">Illinois' LinkedIn Banner Image Generator</a>: Used to create Illinois-specific professional banners for LinkedIn profiles.
+    <a href="https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/">Illinois' LinkedIn Banner Image Generator</a>: Used to create Illinois-specific professional banners for LinkedIn profiles.
   </li>
   <li>
     <a href="https://github.com/illinois/github-repo-creator/">GitHub Educational Repository Creator</a>: Used to create student repositories for coursework on the University of Illinois' GitHub server.  Used by over 5,000 students /year across over a dozen courses.
