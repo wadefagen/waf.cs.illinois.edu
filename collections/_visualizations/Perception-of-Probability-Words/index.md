@@ -258,7 +258,7 @@ permalink: /:collection/:title/
   <div class="col-6 text-center">
     <img class="img-fluid" style="max-height: 400px;" src="img/Barclay-fig3-5.png">
     <div class="caption">
-      Figure 3-5 in <a href="https://files.eric.ed.gov/fulltext/ED153329.pdf">"Handbook for Decisions Analysis"</a> (Barclay et. al., 1964, PDF p.79)
+      Figure 3-5 in <a href="https://files.eric.ed.gov/fulltext/ED153329.pdf">"Handbook for Decisions Analysis"</a> (Barclay et. al., 1977, PDF p.79)
     </div>
   </div>
   <div class="col-6 text-center">
@@ -343,6 +343,9 @@ permalink: /:collection/:title/
   </li>
 </ul>
 
+<hr>
+
+<i>A previous version of this page listed an incorrect publication date for "Handbook for Decisions Analysis" and has been corrected.  Thanks to Dr. Charles Twardy for the correction.</i>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>

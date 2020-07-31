@@ -251,8 +251,8 @@ If you have completed CS 225 and are interested in working on an independent stu
 </ul>
 
 
-<h4>Media Coverage</h4>
-<p>A collection of some recent media coverage of some of the things I've worked on:</p>
+<h4>Impact</h4>
+<p>A collection of some recent impact of my work:</p>
 <ul class="pub-list">
   <li>
     CBS This Morning (Manuel Bojorquez), June 2020; <a href="https://twitter.com/uofigrainger/status/1272970719987740672">Manuel Bojorquez’s segment on the coronavirus</a> includes a video interview with Fagen-Ulmschneider regarding COVID-19 data.
