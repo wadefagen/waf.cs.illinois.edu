@@ -38,7 +38,7 @@ relative_permalinks: false
 
 profile: true
 
-exclude: [.idea/, .sass-cache/]
+exclude: [.idea/, .sass-cache/, sync/]
 
 defaults:
   -

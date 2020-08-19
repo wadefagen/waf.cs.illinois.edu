@@ -13,8 +13,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
+    - name: Deploy the site via rsync
+      uses: burnett01/rsync-deployments@4.1
+      with:
+        switches: -avzr
+        path: /_site:/srv/jekyll/_site
+        remote_path: /home/waf/public_html
+        remote_user: ${{ secrets.DEPLOY_USER }}
+        remote_host: ${{ secrets.DEPLOY_HOST }}
+        remote_key: ${{ secrets.DEPLOY_KEY }}
