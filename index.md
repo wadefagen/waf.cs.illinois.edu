@@ -8,11 +8,11 @@ layout: home
 
 ### Overview
 
-I teach in the Department of Computer Science at The University of Illinois.  I am a teacher first, who also loves to understand and share data through interactive data visualizations and providing data through accessible data sets.  In this work, my passions are at the intersections of interactive computing, data science, and design.  My website is broken down into three major areas:
+I teach in the Department of Computer Science at The University of Illinois.  I am a teacher first, who also loves to understand and share data through interactive data visualizations and providing data through accessible data sets.  My passions are at the intersections of interactive computing, data science, and design -- I teach, work, and dream at this intersection.  My website is divided into three major areas:
 
-- [**Teaching**](/teaching/) includes all of my classes that I teach, both on-campus at The University of Illinois and online via the Coursea platform.  I believe in free, open-access to educational materials and you will find a collection of my course notes and videos of lectures.
+- [**Teaching**](/teaching/) includes all of my classes that I teach, both on-campus at The University of Illinois and online via the Coursea platform.  I believe in free, open-access to educational materials and you will find a collection of my course notes and videos of lectures on each course website.
 
-- [**Projects**](/projects/) includes all of my data visualizations, open-source software, datasets, and academic collaborations.  I am proud to have collaborated with hundreds of students individually in creating this work, though independent studies, senior projects, and their senior thesis, to help build the next generation of experts.
+- [**Projects**](/projects/) includes all of my data visualizations, open-source software, datasets, and academic collaborations.  I am proud to have collaborated with hundreds students individually in creating this work, though independent studies, senior projects, and their senior thesis, to help build the next generation of experts.
 
 - My [**about page**](/about/) includes a short bio, my CV, picture, and other bits I find cringe to write about, but it's expected on a website such as this.
 
