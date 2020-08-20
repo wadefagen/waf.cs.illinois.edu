@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Jekyll Build and Deploy
 
 on:
   push:
@@ -26,4 +26,4 @@ jobs:
 
     - name: Deploy via rsync
       run: |
-        rsync ${{ github.workspace }}/_site ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
+        rsync -rtvzi ${{ github.workspace }}/_site ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
