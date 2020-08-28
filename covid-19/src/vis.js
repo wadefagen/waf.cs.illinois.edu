@@ -220,10 +220,10 @@ var getStoredValue = function(key) {
 // find default state value
 var stored;
 
-var defaultState = "New York";
+var defaultState = "Illinois";
 if ((stored = getStoredValue("state"))) { defaultState = stored; }
 
-var defaultCountry = "United States";
+var defaultCountry = "Illinois";
 if ((stored = getStoredValue("country"))) { defaultCountry = stored; }
 
 
