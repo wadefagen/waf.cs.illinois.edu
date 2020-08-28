@@ -249,7 +249,7 @@ var charts = {
     id: "chart-countries",
     normalizePopulation: false,
     show: "25",
-    dataSelection: 'cases',
+    dataSelection: 'tests',
     showDelta: true,
     avgData: 7,
     dataSelection_y0: { 'active': 0.01, 'cases': 0.01, 'deaths': 0.01, 'recovered': 0.01, 'new-cases': 0.01, 'tests': 0.01, 'testPositivity': 0.01, 'mortalityRate': 0.01},
