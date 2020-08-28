@@ -55,9 +55,11 @@ Each day, I am updating the data for this visualization between midnight and 8:0
 
 This visualization currently shows the total number of cases among **all members of each campus** -- students, faculty, and staff.  Some dashboards split this data into various segments (ex: students and faculty/staff individually) and, in those cases, the data from all groups are added together.  Indiana University only reports the number of tests processed by their hospital system, which certainly includes far more than just the campus, and is not included in this visualization.
 
-Due to the technology used by the dashboards that prevent easy, reliable, automated downloading of raw data files, all data was recorded by hand.  I double check each data point, as well as verify the previous week of entries each time the data is updated (both for correctness and to update any cases that may have been added), but please notify me if you spot any errors.  As noted earlier, the data is updated once daily and collected between 12:00am-8:00am (central time).
+The collection of data for this visualization started on Wednesday, Aug. 26.  Some schools (ex: Ohio State) only appear in the raw data and will appear in the visualization when at least two data points become available.
 
-If you have any ideas for this data visualization or know of other sources of data, feel free to reach out to me at waf@illinois.edu! :)
+Due to the technology and &quot;data privacy&quot; settings used by many of the dashboards, there is no easy/reliable/robust automation of downloading of raw data files. Therefore, all data was recorded by hand.  I double check each data point, as well as verify the previous week of entries each time the data is updated (both for correctness and to update any cases that may have been added), but please notify me if you spot any errors.  As noted earlier, the data is updated once daily and collected between 12:00am-8:00am (central time).
+
+If you have any ideas for this data visualization or know of other sources of data, feel free to reach out to me at <b>waf@illinois.edu</b>! :)
 
 
 <h4>Other COVID-19 Work at Illinois</h4>
@@ -67,7 +69,7 @@ Other colleagues and faculty at the University of Illinois are also exploring CO
 - Prof. Martin Burke [talks about COVID-19 saliva-based testing](https://chemistry.illinois.edu/news/2020-08-11/martin-burke-talks-about-covid-19-saliva-based-testing-national-media)
 - Prof. Nigel Goldenfeld and Prof. Sergei Maslov [developed the COVID-19 software model being used to predict cases at Illinois](https://news.illinois.edu/view/6367/1987403071)
 - Prof. Daniel Simons writes about ["Illinois Covid Data re-plotted and tallied"](http://dansimons.com/Illinois_covid_info.html?fbclid=IwAR0yZC1LKHgjbZ4NnZKE45d8AOi0nz6twalfG7F2mWdhajLAYvbNymhC8fA)
-
+- My visualizations of COVID-19 data as part of my [91-DIVOC Project](https://91-divoc.com/)
 
 
 

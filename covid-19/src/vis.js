@@ -252,7 +252,7 @@ var charts = {
     dataSelection: 'cases',
     showDelta: true,
     avgData: 7,
-    dataSelection_y0: { 'active': 0, 'cases': 0, 'deaths': 0, 'recovered': 0, 'new-cases': 0, 'tests': 0, 'testPositivity': 0, 'mortalityRate': 0},
+    dataSelection_y0: { 'active': 0.01, 'cases': 0.01, 'deaths': 0.01, 'recovered': 0.01, 'new-cases': 0.01, 'tests': 0.01, 'testPositivity': 0.01, 'mortalityRate': 0.01},
     yAxisScale: 'fixed',
     xMax: null, yMax: null, data: null,
     trendline: "default",
@@ -732,6 +732,7 @@ var do_process_data = function(data, chart, isSubdata = false) {
   }
   */
 
+
   for (var country in agg) {
     var popSize = -1;
 
@@ -764,8 +765,10 @@ var do_process_data = function(data, chart, isSubdata = false) {
       var rawCaseValue = fetch(country, chart.dataSelection, dates, i, true);
 
       if (chart.showDelta) {
-        if (i == 0) {
+        if (i == 0 && chart.avgData) {
           cases = 0;
+        } else if (i == 0) {
+          cases = cases;
         } else {
           //date_prev = dates[i - 1];
           //cases = fetchCasesDelta(country, date, date_prev);
@@ -843,7 +846,7 @@ var do_process_data = function(data, chart, isSubdata = false) {
       }
     }
 
-    if (maxDay > 0) {
+    if (maxDay >= 0 && maxCases > 0) {
       var cData = {
         pop: popSize,
         country: country,
@@ -876,8 +879,6 @@ var do_process_data = function(data, chart, isSubdata = false) {
   } else {
     caseData = _.filter(caseData, function (d) { return d.country != "United States"; } )
   }
-
-  console.log(caseData);
 
   return caseData;
 };
@@ -2220,7 +2221,7 @@ var tip_html = function(chart) {
   
       var trailingDays = Math.min(d.dayCounter + 1, chart.avgData);
       s += `<div class="tip-details">`;
-      s += "<b>" + numberStr + " average</b> " + dataLabel + s2 + " /day over the <b>past " + trailingDays + " days</b>";
+      s += "<b>" + numberStr + " average</b> " + dataLabel + s2 + " /day over the <b>past " + trailingDays + " data points</b>";
       s += `</div>`;
     }
     
@@ -3178,7 +3179,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
        .attr("text-anchor", "end")
        .style("font-size", "12px")
        .style("fill", "#888")
-       .text(`(${dType.avgData}-day Average)`);
+       .text(`(${dType.avgData}-data point Average)`);
     }
   };
 
