@@ -5,7 +5,7 @@ title: COVID-19 Among Big Ten Conference Schools
 description: Daily Update of COVID-19 Data from Big Ten Schools
 date: 2019-08-28
 
-social-img: img/1200-630.png
+social-img: https://waf.cs.illinois.edu/covid-19/social.png
 author:
 - Wade Fagen-Ulmschneider
 
