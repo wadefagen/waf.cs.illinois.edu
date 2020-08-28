@@ -25,7 +25,17 @@ Finally, I maintain a <a href="https://forms.gle/oLXWdijmr9i2Yxau9">monthly e-ma
 
 <hr>
 
-### Latest Projectss
+### Newest Visualization: COVID-19 Among Big Ten Conference Schools
+
+Interactive, data-forward visualization of publicly-reported COVID-19 data from Big Ten schools.  Customizable views of confirmed cases, tests administered,  test positivity, and more.  Updated daily.
+
+<a href="/covid-19/" class="card">
+  View the &quot;COVID-19 Among Big Ten Conference Schools&quot; visualization &gt;&gt;
+</a>
+
+<hr>
+
+### Latest Projects
  
 {% assign sorted = site.visualizations | sort: 'date' | reverse | slice: 0, 2 %}
 
