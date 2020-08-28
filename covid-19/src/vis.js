@@ -2028,7 +2028,7 @@ var generateDataLabel_v3 = function(chart, dType, title = false) {
     } 
     else if (dType.showDelta) { dataLabel = "New "; }
 
-    if (dType.baseDataType == 'cases') { dataLabel += "Positive COVID-19 Cases"; }
+    if (dType.baseDataType == 'cases') { dataLabel += "Positive COVID-19 Test Results"; }
     else if (dType.baseDataType == 'active') { dataLabel += "Active COVID-19 Cases"; }
     else if (dType.baseDataType == 'deaths') { dataLabel += "Deaths from COVID-19"; }
     else if (dType.baseDataType == 'recovered') { dataLabel += "Recoveries from COVID-19"; }
@@ -2050,7 +2050,7 @@ var generateDataLabel_v3 = function(chart, dType, title = false) {
     } 
     else if (dType.showDelta) { dataLabel = "new "; }
 
-    if (dType.baseDataType == 'cases') { dataLabel += "positive cases"; }
+    if (dType.baseDataType == 'cases') { dataLabel += "positive test results"; }
     else if (dType.baseDataType == 'active') { dataLabel += "active cases"; }
     else if (dType.baseDataType == 'deaths') { dataLabel += "deaths from COVID-19"; }
     else if (dType.baseDataType == 'recovered') { dataLabel += "recoveries"; }
@@ -3150,7 +3150,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
   let _draw_yAxisLabel = function(g, dType) {
     var yAxisLabel = "";
     if (dType.showDelta) { yAxisLabel += "New Daily "; }
-    if (dType.baseDataType == 'cases') { yAxisLabel += "Positive Cases"; }
+    if (dType.baseDataType == 'cases') { yAxisLabel += "Positive Test Results"; }
     else if (dType.baseDataType == 'active') { yAxisLabel += "Active Cases"; }
     else if (dType.baseDataType == 'deaths') { yAxisLabel += "COVID-19 Deaths"; }
     else if (dType.baseDataType == 'recovered') { yAxisLabel += "Recoveries" }
