@@ -16,7 +16,7 @@ permalink: /covid-19/
 
 <h1>COVID-19 Among Big Ten Conference Schools</h1>
 <div class="lead" style="margin-top: -20px;">
-Interactive, data-forward visualization of publicly-reported COVID-19 data from Big Ten schools.  Customizable views of confirmed cases, tests administered,  test positivity, and more.  Updated daily.  <i>(Last Updated: 6:55am on Sun, Aug. 31)</i>
+Interactive, data-forward visualization of publicly-reported COVID-19 data from Big Ten schools.  Customizable views of confirmed cases, tests administered,  test positivity, and more.  Updated daily.  <i>(Last Updated: 8:22am on Sept. 1)</i>
 </div>
 
 <hr>
@@ -42,7 +42,7 @@ This visualization was built on the <a href="https://91-divoc.com/">91-DIVOC pla
 - Penn State, [https://virusinfo.psu.edu/covid-19-dashboard](https://virusinfo.psu.edu/covid-19-dashboard)
 - Rutgers, [https://coronavirus.rutgers.edu/health-and-safety/testing-program-dashboard/](https://coronavirus.rutgers.edu/health-and-safety/testing-program-dashboard/)
 - Nebraska, [https://covid19.unl.edu/unl-covid-19-dashboard](https://covid19.unl.edu/unl-covid-19-dashboard)
-- Minnesota, *(No publicly available COVID-19 testing data found)*
+- Minnesota, [https://safe-campus.umn.edu/return-campus/covid-19-dashboard](https://safe-campus.umn.edu/return-campus/covid-19-dashboard)
 - Iowa, [https://medcom.uiowa.edu/theloop/covid-19-by-the-numbers](https://medcom.uiowa.edu/theloop/covid-19-by-the-numbers)
 - Northwestern, [https://www.northwestern.edu/coronavirus-covid-19-updates/developments/confirmed-cases.html](https://www.northwestern.edu/coronavirus-covid-19-updates/developments/confirmed-cases.html)
 - Purdue, [https://protect.purdue.edu/dashboard/](https://protect.purdue.edu/dashboard/)
