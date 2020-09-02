@@ -2524,7 +2524,8 @@ var getAttribution = function(chart) {
   let srcString;
   srcString = _data_sources[realDataSource].name;
 
-  return `Data: ${srcString}; Updated: ${_dateUpdated}`;
+  return `Updated: ${_dateUpdated}`;
+  //return `Data: ${srcString}; Updated: ${_dateUpdated}`;
 }
 
 var changeDataSourceSelection = function(newDataSource) {
