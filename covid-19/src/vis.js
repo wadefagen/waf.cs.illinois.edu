@@ -3200,7 +3200,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     .attr("text-anchor", "end")
     .style("font-size", "8px")
     .style("fill", "#aaa")
-    .text(`Interactive Visualization: https://91-DIVOC.com/ by @profwade_`);
+    .text(`Interactive Visualization: https://waf.cs.illinois.edu/covid-19/`);
 
 
     chart.data.sort(function (d1, d2) {
