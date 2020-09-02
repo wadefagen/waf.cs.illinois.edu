@@ -16,7 +16,7 @@ permalink: /covid-19/
 
 <h1>COVID-19 Among Big Ten Conference Schools</h1>
 <div class="lead" style="margin-top: -20px;">
-Interactive, data-forward visualization of publicly-reported COVID-19 data from Big Ten schools.  Customizable views of confirmed cases, tests administered,  test positivity, and more.  Updated daily.  <i>(Last Updated: 7:33am on Sept. 2)</i>
+Interactive, data-forward visualization of publicly-reported COVID-19 data from Big Ten schools.  Customizable views of confirmed cases, tests administered,  test positivity, and more.  Updated daily.  <i>(Last Updated: 10:56am on Sept. 2)</i>
 </div>
 
 <hr>
