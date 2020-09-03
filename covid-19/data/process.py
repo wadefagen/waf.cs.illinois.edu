@@ -37,8 +37,8 @@ from datetime import datetime
 now = datetime.now()
 
 utf_date = now.strftime("%Y-%m-%d")
-human_date = now.strftime("%d/%m/%Y")
-updated_date = now.strftime("%d/%m %H:%M")
+human_date = now.strftime("%m/%d/%Y")
+updated_date = now.strftime("%m/%d %H:%M")
 
 f = open("../src/updated.js", "w")
 
