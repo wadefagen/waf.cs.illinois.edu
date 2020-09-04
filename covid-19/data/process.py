@@ -31,6 +31,11 @@ print(df)
 df.to_csv('data.csv', index=False)
 
 
+df = df[ df['Country_Region'] == "Illinois" ]
+df.to_csv('data-il.csv', index=False)
+
+
+
 print("Updating js...")
 
 from datetime import datetime
