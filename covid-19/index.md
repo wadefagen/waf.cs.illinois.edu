@@ -43,7 +43,7 @@ This visualization was built on the <a href="https://91-divoc.com/">91-DIVOC pla
 - Rutgers, [https://coronavirus.rutgers.edu/health-and-safety/testing-program-dashboard/](https://coronavirus.rutgers.edu/health-and-safety/testing-program-dashboard/)
 - Nebraska, [https://covid19.unl.edu/unl-covid-19-dashboard](https://covid19.unl.edu/unl-covid-19-dashboard)
 - Minnesota, [https://safe-campus.umn.edu/return-campus/covid-19-dashboard](https://safe-campus.umn.edu/return-campus/covid-19-dashboard)
-- Iowa, [https://medcom.uiowa.edu/theloop/covid-19-by-the-numbers](https://medcom.uiowa.edu/theloop/covid-19-by-the-numbers)
+- Iowa, [https://coronavirus.uiowa.edu/covid-19-numbers](https://coronavirus.uiowa.edu/covid-19-numbers)
 - Northwestern, [https://www.northwestern.edu/coronavirus-covid-19-updates/developments/confirmed-cases.html](https://www.northwestern.edu/coronavirus-covid-19-updates/developments/confirmed-cases.html)
 - Purdue, [https://protect.purdue.edu/dashboard/](https://protect.purdue.edu/dashboard/)
 - UW-Madison, [https://smartrestart.wisc.edu/dashboard/](https://smartrestart.wisc.edu/dashboard/)
@@ -53,7 +53,7 @@ Each day, I am updating the data for this visualization between midnight and 8:0
 
 <h4>Data Collection</h4>
 
-This visualization currently shows the total number of cases among **all members of each campus** -- students, faculty, and staff.  Some dashboards split this data into various segments (ex: students and faculty/staff individually) and, in those cases, the data from all groups are added together.  Indiana University and Iowa only reports the number of tests processed by their hospital system, which certainly includes far more than just the campus, and is not included in this visualization.
+This visualization currently shows the total number of cases among **all members of each campus** -- students, faculty, and staff.  Some dashboards split this data into various segments (ex: students and faculty/staff individually) and, in those cases, the data from all groups are added together.  Indiana University only reports the number of tests processed by their hospital system, which certainly includes far more than just the campus, and is not included in this visualization.
 
 The collection of data for this visualization started on Wednesday, Aug. 26.  Some schools (ex: Ohio State) only appear in the raw data and will appear in the visualization when at least two data points become available.
 
