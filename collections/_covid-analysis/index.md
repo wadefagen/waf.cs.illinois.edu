@@ -28,7 +28,7 @@ For several weeks, we have been tracking the COVID-19 data from every Big Ten Co
 {% include_relative _charts/tests-UIUC-pctUS.html %}
 </div>
 
-This page presents data-forward collegiate analysis of Big-10 data in a way that allows you to nerd out with the underlying data while providing context to the on-going pandemic that is impacting college campuses everywhere.
+This page presents data-forward collegiate analysis of Big Ten data in a way that allows you to nerd out with the underlying data while providing context to the on-going pandemic that is impacting college campuses everywhere.
 
 <br>
 
