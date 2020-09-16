@@ -3198,6 +3198,8 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     else if (dType.baseDataType == 'hospitalized') { yAxisLabel += "Hospitalizations of COVID-19" }
     else if (dType.baseDataType == 'testPositivity') { yAxisLabel += "Test Positivity Rate" }
     else if (dType.baseDataType == 'mortalityRate') { yAxisLabel += "Case Fatality Rate" }
+    else if (dType.baseDataType == 'testPctUIUCofUS') { yAxisLabel = "% of US Tests at UIUC" }
+
     if (chart.normalizePopulation && !dType.isRatio) {
       yAxisLabel += "/1m people";
     }
@@ -3210,6 +3212,8 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
      .attr("text-anchor", "end")
      .text(yAxisLabel);
   
+
+     /*
     if (dType.avgData) {
       g.append("text")
        .attr("transform", "rotate(-90)")
@@ -3221,6 +3225,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
        .style("fill", "#888")
        .text(`(${dType.avgData}-data point Average)`);
     }
+    */
   };
 
   var yaxis_g = svg.append("g");
