@@ -2,18 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}Wade Fagen-Ulmschneider</title>
+    <title>Data-Forward Collegiate COVID-19 Analysis</title>
 
     <meta property="og:title" content="{{ page.title }}">
     <meta name="twitter:title" content="{{ page.title }}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     {% for author in page.author %}
-    <meta name="author" content="Wade Fagen-Ulmschneider">
+    <meta name="author" content="{{author}}">
     {% endfor %}
+
+    {% if page.social-img %}
+    <meta property="og:image" content="{{ page.social-img }}">
+    <meta name="twitter:image" content="{{ page.social-img }}">    
+    {% endif %}
 
     <meta name="description" content="{{ page.description | escape }}">
     <meta property="og:description" content="{{ page.description | escape }}">
@@ -21,9 +26,6 @@
 
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <link rel=”canonical” href="{{ page.url | absolute_url }}">
-
-    <meta property="og:image" content="{{ page.social-img }}">
-    <meta name="twitter:image" content="{{ page.social-img }}">
     
     <link rel="icon" type="image/png" href="/static/waf.png">
 
