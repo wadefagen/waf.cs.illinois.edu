@@ -56,6 +56,15 @@
   margin-top: 15px;
 }
 
+div.content-covid-analysis {
+  font-size: 18px;
+}
+
+div.content-covid-analysis a {
+  color: hsl(174, 94%, 26%);
+  text-decoration: underline;
+}
+
 .axis {
   font-size: 16px;
   font-family: 'Arimo', sans-serif;

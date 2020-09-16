@@ -50,6 +50,8 @@ defaults:
 collections:
   news:
     output: true
+  covid-analysis:
+    output: true
   visualizations:
     output: true
     # permalink: /:collection/:name/
