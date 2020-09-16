@@ -33,6 +33,10 @@ Interactive, data-forward visualization of publicly-reported COVID-19 data from 
   View the &quot;COVID-19 Among Big Ten Conference Schools&quot; visualization &gt;&gt;
 </a>
 
+<a href="/covid-analysis/" class="card">
+  Data-Forward Collegiate COVID-19 Analysis &gt;&gt;
+</a>
+
 <hr>
 
 ### Latest Projects

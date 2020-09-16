@@ -29,7 +29,17 @@ Interactive, data-forward visualization of publicly-reported COVID-19 data from 
 
 <hr>
 
-<h3>Overview</h3>
+<h3>Analysis</h3>
+
+Several faculty and I are collaborating on analysis of this data and related collegiate COVID-19 data, you can view the analysis COVID-19 trends at in our <a href="/covid-analysis/">Data-Forward Collegiate COVID-19 Analysis</a> website.
+
+<a href="/covid-analysis/" class="card">
+  Data-Forward Collegiate COVID-19 Analysis &gt;&gt;
+</a>
+
+<hr>
+
+<h3>Visualization Overview</h3>
 
 This visualization was built on the <a href="https://91-divoc.com/">91-DIVOC platform</a> that I developed to create data-forward interactive visualizations to help myself and others understand the spread of <a href="https://91-divoc.com/pages/covid-visualization/#countries">COVID-19 across the world</a>, <a href="https://91-divoc.com/pages/covid-visualization/#states">across the United States</a>, and <a href="https://91-divoc.com/pages/coronavirus-contribution-by-state/">each state's contribution to the spread of COVID-19</a>. Instead of using data from Johns Hopkins (as I do on 91-DIVOC), this visualization sources data from the publicly available dashboards from Big Ten conference universities:
 
