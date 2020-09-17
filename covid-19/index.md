@@ -47,7 +47,7 @@ This visualization was built on the <a href="https://91-divoc.com/">91-DIVOC pla
 - Indiana University, [https://iuhealth.org/thrive/iu-health-covid-19-data](https://iuhealth.org/thrive/iu-health-covid-19-data)
 - Maryland, [https://umd.edu/covid-19-dashboard](https://umd.edu/covid-19-dashboard)
 - Michigan, [https://campusblueprint.umich.edu/dashboard/](https://campusblueprint.umich.edu/dashboard/)
-- Michigan State, *(No publicly available COVID-19 testing data found)*
+- Michigan State, [https://msu.edu/together-we-will/testing-reporting/](https://msu.edu/together-we-will/testing-reporting/)
 - Ohio State, [https://safeandhealthy.osu.edu/dashboard](https://safeandhealthy.osu.edu/dashboard)
 - Penn State, [https://virusinfo.psu.edu/covid-19-dashboard](https://virusinfo.psu.edu/covid-19-dashboard)
 - Rutgers, [https://coronavirus.rutgers.edu/health-and-safety/testing-program-dashboard/](https://coronavirus.rutgers.edu/health-and-safety/testing-program-dashboard/)
