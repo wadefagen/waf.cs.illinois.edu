@@ -867,7 +867,7 @@ if (!_data_src) { _data_src = "college-data"; }
 
 var _data_sources = {
   "college-data": {
-    url: "data/merged.csv",
+    url: "2020-09-18/data/merged.csv",
     f: function (row) {
       for (var key in row) {
         if (key != "Date") {
