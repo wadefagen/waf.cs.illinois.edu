@@ -5,9 +5,9 @@ author:
 - Wade Fagen-Ulmschneider
 
 date: 2020-09-18
-render: False
+render: True
 
-title: Data-Forward Collegiate COVID-19 Analysis
+title: Illinois' "Lockdown" Shows Strong Reversal in COVID-19 Spread
 
 description: This page presents data-forward collegiate analysis of Big-10 data in a way that allows you to nerd out with the underlying data while providing context to the on-going pandemic that is impacting college campuses everywhere.
 
@@ -16,10 +16,11 @@ social-img: https://waf.cs.illinois.edu/covid-analysis/social.png
 
 <link rel="stylesheet" href="../css.css">
 
+## {{page.title}}
 
-## Illinois' "Lockdown" Shows Strong Reversal in COVID-19 Spread
-<p>
+<p style="margin-top: -5px; font-size: 12px;">
   <i>
+    {{page.date | date: "%A %B %-d, %Y" }} |
     <a href="https://sociology.illinois.edu/directory/profile/vitosky">Caitlin Clarke</a> and <a href="https://waf.cs.illinois.edu/">Wade Fagen-Ulmschenider</a>
   </i>
 </p>
