@@ -58,7 +58,7 @@ This visualization was built on the <a href="https://91-divoc.com/">91-DIVOC pla
 - Purdue, [https://protect.purdue.edu/dashboard/](https://protect.purdue.edu/dashboard/)
 - UW-Madison, [https://smartrestart.wisc.edu/dashboard/](https://smartrestart.wisc.edu/dashboard/)
 
-Each day, I am updating the data for this visualization between midnight and 8:00am (central time zone) to publish a new version of this page each morning by 9:00am with the latest data.  The latest raw data is also always [provided on my github](https://github.com/wadefagen/waf.cs.illinois.edu/blob/master/covid-19/data/data.csv).
+Each day, I am updating the data for this visualization between 6:00pm and 8:00am (central time zone) to publish a new version of this page each day with the latest data.  The latest raw data is also always [provided on my github](https://github.com/wadefagen/waf.cs.illinois.edu/blob/master/covid-19/data/data.csv).
 
 
 <h4>Data Collection</h4>
