@@ -249,93 +249,18 @@ var charts = {
     id: "chart-countries",
     normalizePopulation: false,
     show: "25",
-    dataSelection: 'tests',
     showDelta: true,
     avgData: 7,
     dataSelection_y0: { 'active': 0.01, 'cases': 0.01, 'deaths': 0.01, 'recovered': 0.01, 'new-cases': 0.01, 'tests': 0.01, 'testPositivity': 0.01, 'mortalityRate': 0.01},
     yAxisScale: 'fixed',
     xMax: null, yMax: null, data: null,
     trendline: "default",
-    dataRawSelection: "cases-daily-7",
+    dataSelection: 'tests-daily-7',
+    dataRawSelection: "tests-daily-7",
     xaxis: "right",
 
-    subdata_reducer: reducer_byUSstate,
-    defaultSubHighlight: defaultState,
-  },
-  'states': {
-    self: 'states',
-    dataSourceNeeded: 'states',
-    reducer: reducer_byUSstate,
-    highlight: defaultState,
-    defaultHighlight: defaultState,
-    xCap: 40,
-    id: "chart-states",
-    normalizePopulation: false,
-    show: "us-states",
-    dataSelection: 'cases',
-    showDelta: true,
-    avgData: 7,
-    y0: 20,
-    scale: "linear",
-
-    dataSelection_y0: { 'active': 20, 'cases': 20, 'deaths': 5, 'recovered': 20, 'hospitalized': 1, 'tests': 1, 'testPositivity': 10, 'mortalityRate': 5},
-    yAxisScale: 'fixed',
-
-    xMax: null, yMax: null, data: null,
-    trendline: "default",
-    dataRawSelection: "cases-daily-7",
-    xaxis: "right",
   },
 
-  'countries-normalized': {
-    self: 'countries-normalized',
-    dataSourceNeeded: 'countries',
-
-    reducer: reducer_byCountry,
-    scale: "linear",
-    highlight: defaultCountry,
-    defaultHighlight: defaultCountry,
-    y0: 1,
-    xCap: 25,
-    id: "chart-countries-normalized",
-    normalizePopulation: "country",
-    show: "25",
-    dataSelection: 'cases',
-    showDelta: true,
-    avgData: 7,
-    dataSelection_y0: { 'active': 1, 'cases': 1, 'deaths': 1, 'recovered': 1, 'new-cases': 1, 'tests': 1, 'testPositivity': 10, 'mortalityRate': 10 },
-    yAxisScale: 'fixed',
-    xMax: null, yMax: null, data: null,
-    trendline: "default",
-    dataRawSelection: "cases-daily-7",
-    xaxis: "right",
-
-    subdata_reducer: reducer_byUSstate,
-    defaultSubHighlight: defaultState,
-    subDataNormalizePopulation: "country",
-  },
-  'states-normalized': {
-    self: 'states-normalized',
-    dataSourceNeeded: 'states',
-    reducer: reducer_byUSstate,
-    scale: "linear",
-    highlight: defaultState,
-    defaultHighlight: defaultState,
-    y0: 1,
-    xCap: 40,
-    id: "chart-states-normalized",
-    normalizePopulation: "state",
-    show: "us-states",
-    dataSelection: 'cases',
-    showDelta: true,
-    avgData: 7,
-    dataSelection_y0: { 'active': 1, 'cases': 1, 'deaths': 1, 'recovered': 1, 'hospitalized': 1, 'tests': 1, 'testPositivity': 10, 'mortalityRate': 10 },
-    yAxisScale: 'fixed',
-    xMax: null, yMax: null, data: null,
-    trendline: "default",
-    dataRawSelection: "cases-daily-7",
-    xaxis: "right",
-  },
 };
 
 var transformToTrailingAverage2_ratio = function (data, period) {
@@ -892,7 +817,7 @@ if (!_data_src) { _data_src = "college-data"; }
 
 var _data_sources = {
   "college-data": {
-    url: "data/data.csv",
+    url: "data/data-daily.csv",
     f: function (row) {
       row["Confirmed"] = +row["Confirmed"];
       row["Tests"] = +row["Tests"];
@@ -2028,7 +1953,7 @@ var generateDataLabel_v3 = function(chart, dType, title = false) {
     } 
     else if (dType.showDelta) { dataLabel = "New "; }
 
-    if (dType.baseDataType == 'cases') { dataLabel += "Positive COVID-19 Test Results"; }
+    if (dType.baseDataType == 'cases') { dataLabel += "Cases of COVID-19"; }
     else if (dType.baseDataType == 'active') { dataLabel += "Active COVID-19 Cases"; }
     else if (dType.baseDataType == 'deaths') { dataLabel += "Deaths from COVID-19"; }
     else if (dType.baseDataType == 'recovered') { dataLabel += "Recoveries from COVID-19"; }
@@ -2050,7 +1975,7 @@ var generateDataLabel_v3 = function(chart, dType, title = false) {
     } 
     else if (dType.showDelta) { dataLabel = "new "; }
 
-    if (dType.baseDataType == 'cases') { dataLabel += "positive test results"; }
+    if (dType.baseDataType == 'cases') { dataLabel += "COVID-19 cases"; }
     else if (dType.baseDataType == 'active') { dataLabel += "active cases"; }
     else if (dType.baseDataType == 'deaths') { dataLabel += "deaths from COVID-19"; }
     else if (dType.baseDataType == 'recovered') { dataLabel += "recoveries"; }
@@ -2221,7 +2146,7 @@ var tip_html = function(chart) {
   
       var trailingDays = Math.min(d.dayCounter + 1, chart.avgData);
       s += `<div class="tip-details">`;
-      s += "<b>" + numberStr + " average</b> " + dataLabel + s2 + " /day over the <b>past " + trailingDays + " data points</b>";
+      s += "<b>" + numberStr + " average</b> " + dataLabel + s2 + " /day over the <b>past " + trailingDays + " days</b>";
       s += `</div>`;
     }
     
@@ -3151,7 +3076,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
   let _draw_yAxisLabel = function(g, dType) {
     var yAxisLabel = "";
     if (dType.showDelta) { yAxisLabel += "New Daily "; }
-    if (dType.baseDataType == 'cases') { yAxisLabel += "Positive Test Results"; }
+    if (dType.baseDataType == 'cases') { yAxisLabel += "COVID-19 Cases"; }
     else if (dType.baseDataType == 'active') { yAxisLabel += "Active Cases"; }
     else if (dType.baseDataType == 'deaths') { yAxisLabel += "COVID-19 Deaths"; }
     else if (dType.baseDataType == 'recovered') { yAxisLabel += "Recoveries" }
@@ -3180,7 +3105,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
        .attr("text-anchor", "end")
        .style("font-size", "12px")
        .style("fill", "#888")
-       .text(`(${dType.avgData}-data point Average)`);
+       .text(`(${dType.avgData}-day Average)`);
     }
   };
 
