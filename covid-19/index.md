@@ -44,7 +44,7 @@ Several faculty and I are collaborating on analysis of this data and related col
 This visualization was built on the <a href="https://91-divoc.com/">91-DIVOC platform</a> that I developed to create data-forward interactive visualizations to help myself and others understand the spread of <a href="https://91-divoc.com/pages/covid-visualization/#countries">COVID-19 across the world</a>, <a href="https://91-divoc.com/pages/covid-visualization/#states">across the United States</a>, and <a href="https://91-divoc.com/pages/coronavirus-contribution-by-state/">each state's contribution to the spread of COVID-19</a>. Instead of using data from Johns Hopkins (as I do on 91-DIVOC), this visualization sources data from the publicly available dashboards from Big Ten conference universities:
 
 - University of Illinois, [https://go.illinois.edu/COVIDTestingData](https://go.illinois.edu/COVIDTestingData)
-- Indiana University, [https://iuhealth.org/thrive/iu-health-covid-19-data](https://iuhealth.org/thrive/iu-health-covid-19-data)
+- Indiana University, [https://fall2020.iu.edu/dashboards/](https://fall2020.iu.edu/dashboards/)
 - Maryland, [https://umd.edu/covid-19-dashboard](https://umd.edu/covid-19-dashboard)
 - Michigan, [https://campusblueprint.umich.edu/dashboard/](https://campusblueprint.umich.edu/dashboard/)
 - Michigan State, [https://msu.edu/together-we-will/testing-reporting/](https://msu.edu/together-we-will/testing-reporting/)

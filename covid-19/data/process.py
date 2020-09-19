@@ -43,13 +43,13 @@ now = datetime.now()
 
 utf_date = now.strftime("%Y-%m-%d")
 human_date = now.strftime("%m/%d/%Y")
-updated_date = now.strftime("%m/%d %H:%M")
+updated_date = now.strftime("%m/%d %I:%M%p")
 
 f = open("../src/updated.js", "w")
 
 f.write(f'_dateUpdated = "{human_date}";\n')
 f.write(f'_reqStr = "{utf_date}";\n')
 f.write('\n')
-f.write(f'$("#jhu-updated").html("(Updated: {updated_date})");\n')
+f.write(f'$("#jhu-updated").html("(Updated: {updated_date.lower()} CT)");\n')
 
 f.close()
