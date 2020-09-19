@@ -76,6 +76,7 @@ If you have any ideas for this data visualization or know of other sources of da
 
 Other colleagues and faculty at the University of Illinois are also exploring COVID-19 data at University.  Here is a short list of links to some of their work:
 
+- Prof. Caitlin Clark and Prof. Wade [analyzes current trends in the COVID-19 data](https://waf.cs.illinois.edu/covid-analysis/)
 - Prof. Martin Burke [talks about COVID-19 saliva-based testing](https://chemistry.illinois.edu/news/2020-08-11/martin-burke-talks-about-covid-19-saliva-based-testing-national-media)
 - Prof. Nigel Goldenfeld and Prof. Sergei Maslov [developed the COVID-19 software model being used to predict cases at Illinois](https://news.illinois.edu/view/6367/1987403071)
 - Prof. Daniel Simons writes about ["Illinois Covid Data re-plotted and tallied"](http://dansimons.com/Illinois_covid_info.html?fbclid=IwAR0yZC1LKHgjbZ4NnZKE45d8AOi0nz6twalfG7F2mWdhajLAYvbNymhC8fA)
