@@ -1,4 +1,6 @@
-var viz1 = (function() {
+var _91divoc = {};
+
+(function() {
 
 var _rawData = null;
 var _popData = null;
@@ -173,6 +175,14 @@ var reducer_sum_with_key = function(result, value, key) {
   //obj[date].deaths += value["Deaths"];
   obj[date].cases += value["Confirmed"];
   obj[date].tests += value["Tests"];
+
+  for (let key in value) {
+    if (key != "Date" && key != "Country_Region") {
+      if (!obj[date][key]) { obj[date][key] = 0; }
+      obj[date][key] += value[key];
+    }
+  }
+
   //obj[date].hospitalized += value["People_Hospitalized"];
 
   return result;
@@ -219,148 +229,74 @@ var getStoredValue = function(key) {
 };
 
 
+// find default state value
+var stored;
+
+var defaultState = "Illinois";
+var defaultCountry = "Illinois";
+
 
 
 
 // chart metadata
 var charts = {
-  'cases-daily7-UIUC': {
-    self: 'cases-daily7-UIUC',
-    id: "chart-cases-daily7-UIUC",
+  'cases-UIUC': {
+    self: 'cases-UIUC',
+    id: "chart-cases-UIUC",
 
     dataSourceNeeded: 'countries',
     reducer: reducer_byCountry,
     scale: "linear",
-    highlight: "Illinois",
-    defaultHighlight: "Illinois",
+    highlight: defaultCountry,
+    defaultHighlight: defaultCountry,
     y0: 100,
     xCap: 25,
     normalizePopulation: false,
     show: "25",
-    showDelta: true,
-    avgData: 7,
+    showDelta: false,
+    //avgData: 7,
     dataSelection_y0: { 'testPctUIUCofUS': 0.00001, 'active': 0.01, 'cases': 0.01, 'deaths': 0.01, 'recovered': 0.01, 'new-cases': 0.01, 'tests': 0.01, 'testPositivity': 0.01, 'mortalityRate': 0.01},
     yAxisScale: 'fixed',
     xMax: null, yMax: null, data: null,
-    force_yMax: 150,
     trendline: "default",
     xaxis: "right-6wk",
+
     dataSelection: 'cases',
     dataRawSelection: "cases-daily-7",
+    extraData: ["cases-daily"],
+    extraDataScale: ["graph"],    
+    labelOverride: "7-day Avg.",
     startOfSemester: "2020-08-24",
-    force_highlightColor: "#E84A27",
 
   },
-
-  'cases-daily7-OhioState': {
-    self: 'cases-daily7-OhioState',
-    id: "chart-cases-daily7-OhioState",
+  'testPositivity-UIUC': {
+    self: 'testPositivity-UIUC',
+    id: "chart-testPositivity-UIUC",
 
     dataSourceNeeded: 'countries',
     reducer: reducer_byCountry,
     scale: "linear",
-    highlight: "Ohio State",
-    defaultHighlight: "Ohio State",
+    highlight: defaultCountry,
+    defaultHighlight: defaultCountry,
     y0: 100,
     xCap: 25,
     normalizePopulation: false,
     show: "25",
-    showDelta: true,
-    avgData: 7,
+    showDelta: false,
+    //avgData: 7,
     dataSelection_y0: { 'testPctUIUCofUS': 0.00001, 'active': 0.01, 'cases': 0.01, 'deaths': 0.01, 'recovered': 0.01, 'new-cases': 0.01, 'tests': 0.01, 'testPositivity': 0.01, 'mortalityRate': 0.01},
     yAxisScale: 'fixed',
     xMax: null, yMax: null, data: null,
-    force_yMax: 150,
     trendline: "default",
     xaxis: "right-6wk",
-    dataSelection: 'cases',
-    dataRawSelection: "cases-daily-7",
-    startOfSemester: "2020-08-20",
-    force_highlightColor: "#CE0F3D",
 
-  },
-
-  'cases-daily7-Madison': {
-    self: 'cases-daily7-Madison',
-    id: "chart-cases-daily7-Madison",
-
-    dataSourceNeeded: 'countries',
-    reducer: reducer_byCountry,
-    scale: "linear",
-    highlight: "UW-Madison",
-    defaultHighlight: "UW-Madison",
-    y0: 100,
-    xCap: 25,
-    normalizePopulation: false,
-    show: "25",
-    showDelta: true,
-    avgData: 7,
-    dataSelection_y0: { 'testPctUIUCofUS': 0.00001, 'active': 0.01, 'cases': 0.01, 'deaths': 0.01, 'recovered': 0.01, 'new-cases': 0.01, 'tests': 0.01, 'testPositivity': 0.01, 'mortalityRate': 0.01},
-    yAxisScale: 'fixed',
-    xMax: null, yMax: null, data: null,
-    force_yMax: 150,
-    trendline: "default",
-    xaxis: "right-6wk",
-    dataSelection: 'cases',
-    dataRawSelection: "cases-daily-7",
-    startOfSemester: "2020-09-02",
-    force_highlightColor: "#C4012F",
-
-  },
-
-  'cases-daily7-Indiana': {
-    self: 'cases-daily7-Indiana',
-    id: "chart-cases-daily7-Indiana",
-
-    dataSourceNeeded: 'countries',
-    reducer: reducer_byCountry,
-    scale: "linear",
-    highlight: "Indiana",
-    defaultHighlight: "Indiana",
-    y0: 100,
-    xCap: 25,
-    normalizePopulation: false,
-    show: "25",
-    showDelta: true,
-    avgData: 7,
-    dataSelection_y0: { 'testPctUIUCofUS': 0.00001, 'active': 0.01, 'cases': 0.01, 'deaths': 0.01, 'recovered': 0.01, 'new-cases': 0.01, 'tests': 0.01, 'testPositivity': 0.01, 'mortalityRate': 0.01},
-    yAxisScale: 'fixed',
-    xMax: null, yMax: null, data: null,
-    force_yMax: 150,
-    trendline: "default",
-    xaxis: "right-6wk",
-    dataSelection: 'cases',
-    dataRawSelection: "cases-daily-7",
+    dataSelection: 'testPositivity',
+    dataRawSelection: "testPositivity-daily-7",
+    extraData: ["testPositivity-daily"],
+    extraDataScale: ["graph"],    
+    labelOverride: "7-day Avg.",
     startOfSemester: "2020-08-24",
-    force_highlightColor: "#990000",
-  },
-
-  'cases-daily7-PennState': {
-    self: 'cases-daily7-PennState',
-    id: "chart-cases-daily7-PennState",
-
-    dataSourceNeeded: 'countries',
-    reducer: reducer_byCountry,
-    scale: "linear",
-    highlight: "Penn State",
-    defaultHighlight: "Penn State",
-    y0: 100,
-    xCap: 25,
-    normalizePopulation: false,
-    show: "25",
-    showDelta: true,
-    avgData: 7,
-    dataSelection_y0: { 'testPctUIUCofUS': 0.00001, 'active': 0.01, 'cases': 0.01, 'deaths': 0.01, 'recovered': 0.01, 'new-cases': 0.01, 'tests': 0.01, 'testPositivity': 0.01, 'mortalityRate': 0.01},
-    yAxisScale: 'fixed',
-    xMax: null, yMax: null, data: null,
-    force_yMax: 150,
-    trendline: "default",
-    xaxis: "right-6wk",
-    dataSelection: 'cases',
-    dataRawSelection: "cases-daily-7",
-    startOfSemester: "2020-08-24",
-    force_highlightColor: "#002D62",
-  },
+  },  
 };
 
 var transformToTrailingAverage2_ratio = function (data, period) {
@@ -582,8 +518,8 @@ var _prep_data = function(chart, fullData, extraDataStr = undefined) {
     }
   }
 
-  var $highlight = $("#highlight-" + chart.id);
   /*
+  var $highlight = $("#highlight-" + chart.id);
   if ($highlight.html().length < 100) { 
     $highlight.html(getHTMLCountryOptionsToSelect(allCountries, chart.highlight));
   }
@@ -618,7 +554,6 @@ var process_data2 = function(chart, isSubdata = false, noPrepData = false) {
 };
 
 var process_data = function(data, chart, isSubdata = false, noPrepData = false) {
-  console.log(chart);
   let origDataSelection = chart.dataRawSelection;
   let processedData = _process_data_verify(chart, origDataSelection, isSubdata);
 
@@ -678,8 +613,7 @@ var do_process_data = function(data, chart, isSubdata = false) {
   var caseData = [];
   var maxDayCounter = 0;
 
-  let popData = {};
-  /*
+  let popData;
   if (isSubdata) {
     popData = _popData["state"];
   } else if (chart.normalizePopulation) {
@@ -689,12 +623,27 @@ var do_process_data = function(data, chart, isSubdata = false) {
   } else if (chart.self == "states") {
     popData = _popData["state"];
   }
-  */
 
   let isRatio = chart.isRatio;
 
   let ratioData;
   switch (chart.dataSelection) {
+    case 'confirmedPctUIUCofB10':
+      ratioData = { n: 'cases', d: 'B10_Confirmed', raw: 'cases' };
+      break;
+
+    case 'testPctUIUCofB10':
+      ratioData = { n: 'tests', d: 'B10_Tests', raw: 'tests' };
+      break;
+
+    case 'testPctUIUCofIL':
+      ratioData = { n: 'tests', d: 'Illinois_Tests', raw: 'tests' };
+      break;
+
+    case 'testPctUIUCofUS':
+      ratioData = { n: 'tests', d: 'US_Tests', raw: 'tests' };
+      break;
+
     case 'testPositivity':
       ratioData = { n: 'cases', d: 'tests', raw: 'tests' };
       break;
@@ -764,9 +713,9 @@ var do_process_data = function(data, chart, isSubdata = false) {
 
 
   for (var country in agg) {
-    var popSize = -1;
+    var popSize = undefined;
 
-    popSize = popData[country];
+    //popSize = popData[country];
     /*
     if (!popSize && location.hostname === "localhost") {
       console.log("Missing " + chart.normalizePopulation + ": " + country);
@@ -922,10 +871,17 @@ if (!_data_src) { _data_src = "college-data"; }
 
 var _data_sources = {
   "college-data": {
-    url: "/covid-analysis/2020-09-21/data/data.csv",
+    url: "/covid-19/data/detailed.csv",
     f: function (row) {
-      row["Confirmed"] = +row["Confirmed"];
-      row["Tests"] = +row["Tests"];
+      for (var key in row) {
+        if (key != "Date") {
+          row[key] = +row[key];
+        }
+      }
+      
+      row["Confirmed"] = row["UIUC_Confirmed"];
+      row["Tests"] = row["UIUC_Tests"];
+      row["Country_Region"] = "Illinois";
       return row;
     },
     name: "",
@@ -999,13 +955,63 @@ var _f_load_allSuccess = function () {
   //populationData = _dataRequests[1].data;
 
   //_dateObj_today = convertDateToObject(data[data.length - 1].Date);
-  _dateObj_today = convertDateToObject("2020-09-21");
+  //_dateObj_today = convertDateToObject("2020-09-18");
+  _dateObj_today = new Date();
   _dateObj_today_time = _dateObj_today.getTime();
   
   // Add custom aggs
   _rawData = data;
-
   _popData = {country: {}, state: {}};
+
+  // Populate static data
+  let data_today = data[data.length - 1];
+  let data_1week = data[data.length - 8];
+
+  $(".data-total-tests").html( numericFormat(data_today.Tests) );
+  $(".data-total-cases").html( numericFormat(data_today.Confirmed) );
+  $(".data-total-positivity").html(numericFormat(100 * data_today.Confirmed / data_today.Tests) + "%");
+
+  $(".data-7day-tests").html(numericFormat(data_today.Tests - data_1week.Tests));
+  $(".data-7day-tests-avg").html(numericFormat((data_today.Tests - data_1week.Tests) / 7, 0));
+  $(".data-7day-cases").html(numericFormat(data_today.Confirmed - data_1week.Confirmed));
+  $(".data-7day-positivity").html(
+    numericFormat(100 * (data_today.Confirmed - data_1week.Confirmed) / (data_today.Tests - data_1week.Tests)) + "%"
+  );
+
+  let date_today = _dateObj_today;
+  let date_1week = convertDateToObject(data_1week.Date);
+  
+  
+  $(".data-7day-dateBegin-short").html( date_1week.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) );
+  $(".data-7day-dateEnd-short").html( date_today.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) );
+
+
+
+  $(".data-7day-pctTest-uiuc-of-B10").html(numericFormat(
+    100 * (data_today.UIUC_Tests - data_1week.UIUC_Tests) / (data_today.B10_Tests - data_1week.B10_Tests)
+  ) + "%");
+
+  $(".data-total-pctTest-uiuc-of-B10").html(numericFormat(
+    100 * data_today.UIUC_Tests / data_today.B10_Tests
+  ) + "%");
+
+  $(".data-7day-pctConfirmed-uiuc-of-B10").html(numericFormat(
+    100 * (data_today.UIUC_Confirmed - data_1week.UIUC_Confirmed) / (data_today.B10_Confirmed - data_1week.B10_Confirmed)
+  ) + "%");
+
+  $(".data-total-pctConfirmed-uiuc-of-B10").html(numericFormat(
+    100 * data_today.UIUC_Confirmed / data_today.B10_Confirmed
+  ) + "%");
+
+
+  $(".data-7day-pct-uiuc-of-IL").html(numericFormat(
+    100 * (data_today.UIUC_Tests - data_1week.UIUC_Tests) / (data_today.Illinois_Tests - data_1week.Illinois_Tests)
+  ) + "%");
+
+  $(".data-7day-pct-uiuc-of-US").html(numericFormat(
+    100 * (data_today.UIUC_Tests - data_1week.UIUC_Tests) / (data_today.US_Tests - data_1week.US_Tests)
+  ) + "%");
+
   /*
   for (var pop of populationData) {
     if (pop.Country) { _popData.country[pop.Country] = pop.Population; }
@@ -1122,14 +1128,14 @@ var saveGraph_fetchCSS = function() {
     if (_cssData) {
       resolve(_cssData);
     } else {
-      $.get("css.css")
+      $.get("../css.css")
       .done( (cssData) => { _cssData = cssData; resolve(_cssData); })
       .fail( (message) => { reject(message); });
     }
   });
 };
 
-var saveGraphImage = function(format, e) {
+var saveGraphImage = _91divoc.saveGraphImage = function(format, e) {
   e.preventDefault();
 
   if (typeof saveAs == "undefined") {
@@ -1142,6 +1148,7 @@ var saveGraphImage = function(format, e) {
 };
 
 var saveGraphImage2 = function(format, e) {
+
   const chart = getChart(e.target);
 
   if (format == "csv") {
@@ -1630,7 +1637,9 @@ var calculateDataOptions = function(value) {
     }
   }
 
-  if (valuePieces[0] == 'testPositivity' || valuePieces[0] == 'mortalityRate') {
+
+
+  if (['testPositivity', 'mortalityRate', 'testPctUIUCofIL', 'testPctUIUCofUS', 'testPctUIUCofB10', 'confirmedPctUIUCofB10'].indexOf(valuePieces[0]) != -1) {
     options.isRatio = true;
     options.forceLinear = true;
   }
@@ -1653,7 +1662,6 @@ var calculateDataOptions = function(value) {
 };
 
 var updateDataSelectionOptions = function(chart, value, apply_ui_changes = true) {
-  /*
   chart.dataRawSelection = value;
   chart.showDelta = false;
   delete chart.avgData;
@@ -1671,7 +1679,9 @@ var updateDataSelectionOptions = function(chart, value, apply_ui_changes = true)
   }
 
   chart.isRatio = false;
-  if (value == 'testPositivity' || value == 'mortalityRate') {
+
+  //C3
+  if (calculateDataOptions(value).isRatio) {
     chart.isRatio = true;
     //chart.forceLinear = true;
 
@@ -1687,7 +1697,6 @@ var updateDataSelectionOptions = function(chart, value, apply_ui_changes = true)
   chart.y0 = chart.dataSelection_y0[value];
 
   if (apply_ui_changes) { $("#" + chart.id.substring(6)).html("<h3>" + generateDataLabel(chart, true) + "</h3>"); }
-  */
 };
 
 var getChart = function (el) {
@@ -1701,7 +1710,6 @@ $(function() {
   for (let chartid of Object.keys(charts)) {
     var el = $("#" + chartid);
     if (el.length == 0) {
-      console.log("Removing: " + chartid);
       delete charts[chartid];
     }
   }
@@ -2062,7 +2070,7 @@ var generateDataLabel_v3 = function(chart, dType, title = false) {
     } 
     else if (dType.showDelta) { dataLabel = "New "; }
 
-    if (dType.baseDataType == 'cases') { dataLabel += "Positive COVID-19 Test Results"; }
+    if (dType.baseDataType == 'cases') { dataLabel += "Positive COVID-19 Cases"; }
     else if (dType.baseDataType == 'active') { dataLabel += "Active COVID-19 Cases"; }
     else if (dType.baseDataType == 'deaths') { dataLabel += "Deaths from COVID-19"; }
     else if (dType.baseDataType == 'recovered') { dataLabel += "Recoveries from COVID-19"; }
@@ -2084,7 +2092,7 @@ var generateDataLabel_v3 = function(chart, dType, title = false) {
     } 
     else if (dType.showDelta) { dataLabel = "new "; }
 
-    if (dType.baseDataType == 'cases') { dataLabel += "positive test results"; }
+    if (dType.baseDataType == 'cases') { dataLabel += "positive cases"; }
     else if (dType.baseDataType == 'active') { dataLabel += "active cases"; }
     else if (dType.baseDataType == 'deaths') { dataLabel += "deaths from COVID-19"; }
     else if (dType.baseDataType == 'recovered') { dataLabel += "recoveries"; }
@@ -2092,6 +2100,10 @@ var generateDataLabel_v3 = function(chart, dType, title = false) {
     else if (dType.baseDataType == 'tests') { dataLabel += "COVID-19 tests performed"; }  
     else if (dType.baseDataType == 'testPositivity') { dataLabel += "test positivity"; }  
     else if (dType.baseDataType == 'mortalityRate') { dataLabel += "case fatality rate"; }  
+    else if (dType.baseDataType == 'testPctUIUCofUS') { dataLabel += "% of US Tests"; }  
+    else {
+      console.error(dType.baseDataType);
+    }
   }
 
   return dataLabel;
@@ -2167,8 +2179,8 @@ var tip_html = function(chart) {
     else if (dType.baseDataType == 'mortalityRate') { dataLabel_cutoff = "deaths from COVID-19"; }  
 
     let daysSince = `(`;
-    daysSince += `<b>${d.daysAgo}</b> day${(d.daysAgo != 1)?"s":""} ago and `;
-    daysSince += `<b>${d.dayCounter}</b> day${(d.dayCounter != 1)?"s":""} after reaching ${chart.y0} ${dataLabel_cutoff}${s2})`;
+    daysSince += `<b>${d.daysAgo}</b> day${(d.daysAgo != 1)?"s":""} ago`;
+    //daysSince += `and <b>${d.dayCounter}</b> day${(d.dayCounter != 1)?"s":""} after reaching ${chart.y0} ${dataLabel_cutoff}${s2})`;
     if (dType.baseDataType == 'hospitalized' || dType.baseDataType == 'tests') {
       daysSince = "";
     }
@@ -2179,18 +2191,24 @@ var tip_html = function(chart) {
     
     if (date instanceof Date) {
       dateStr = `${ date.toLocaleDateString('en-US', { weekday: 'long'}) }, `;
+      dateStr_title = date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
     }
     
 
 
 
-    var s;
-    
+    var s = "";
+    if (dateStr_title) {
+      s = `<div class="tip-country">${dateStr_title}</div>`;
+    }
+
+    /*
     if (alignRight) {
       s = `<div class="tip-country">${d.country} &ndash; ${d.daysAgo} day${(d.daysAgo != 1)?"s":""} ago</div>`;
     } else {
       s = `<div class="tip-country">${d.country} &ndash; Day ${d.dayCounter}</div>`;
     }
+    */
 
     let numberStr;
     if (dType.isRatio) {
@@ -2200,7 +2218,7 @@ var tip_html = function(chart) {
     }
 
     if (d.rawcases) { s += "<i>"; }
-    s += `<div class="tip-details" style="border-bottom: solid 1px black; padding-bottom: 2px;"><b>${numberStr}</b> ${dataLabel}${s2} on ${dateStr}${d.date} ${daysSince}</div>`;
+    s += `<div class="tip-details" style="padding-bottom: 2px;"><b>${numberStr}</b> ${dataLabel}${s2} on ${dateStr_title} ${daysSince}</div>`;
     if (d.rawcases) { s += "</i>"; }
 
     if (dType.isRatio) {
@@ -2208,6 +2226,16 @@ var tip_html = function(chart) {
 
       let n_label, d_label;
       switch (dType.baseDataType) {
+        case "testPctUIUCofUS":
+          n_label = "tests at UIUC";
+          d_label = "tests in the United States";
+          break;
+
+        case "testPositivity":
+          n_label = "cases";
+          d_label = "tests";
+          break;
+
         case "testPositivity":
           n_label = "cases";
           d_label = "tests";
@@ -2236,9 +2264,11 @@ var tip_html = function(chart) {
           d_d = d_cur.sum_d;
         }
 
-        s += `<div class="tip-details" style="padding-bottom: 2px;"><i>` +
-          `${avgString}<b>${ numericFormat(d_n) }</b> new ${n_label} / <b>${ numericFormat(d_d) }</b> new ${d_label}` +
-          `</i></div>`;
+        if (d_n && d_d) {
+          s += `<div class="tip-details" style="border-top: solid 1px black; padding-bottom: 2px;"><i>` +
+            `${avgString}<b>${ numericFormat(d_n) }</b> new ${n_label} / <b>${ numericFormat(d_d) }</b> new ${d_label}` +
+            `</i></div>`;
+        }
       }
 
       geoGrowth = [];
@@ -2254,24 +2284,28 @@ var tip_html = function(chart) {
       }
   
       var trailingDays = Math.min(d.dayCounter + 1, chart.avgData);
-      s += `<div class="tip-details">`;
-      s += "<b>" + numberStr + " average</b> " + dataLabel + s2 + " /day over the <b>past " + trailingDays + " data points</b>";
+      s += `<div class="tip-details" style="border-top: solid 1px black;">`;
+      s += "<b>" + numberStr + " average</b> " + dataLabel + s2 + " /day over the <b>past " + trailingDays + " days</b>";
       s += `</div>`;
     }
     
     else if (geoGrowth.length > 0) {
+      /*
       s += `<div class="tip-details"><i><u>Avg. geometric growth</u>:<br>`;
       for (var str of geoGrowth) {
         s += str + "<br>";
       }
       s += `</i></div>`;
+      */
     }
 
+    /*
     if (!isSmall && !isHighlighted) {
       s += `<div class="tip-details" style="font-size: 10px; border-top: solid 1px black; padding-top: 1px; margin-top: 2px;">`;
       s += `<i style="color: purple;">Shift-click to add as an additional highlight and to show all data circles.</i>`
       s += `</div>`;
     }
+    */
 
     gtag("event", "mouseover", {event_category: chart.self, event_label: d.country, value: d.dayCounter});
     return s;
@@ -2560,7 +2594,7 @@ var getAttribution = function(chart) {
   let srcString;
   srcString = _data_sources[realDataSource].name;
 
-  return `Data Retrieved: 09/21/2020`;
+  return `Updated: ${_dateUpdated}`;
   //return `Data: ${srcString}; Updated: ${_dateUpdated}`;
 }
 
@@ -2584,9 +2618,8 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
       break;    
   }
 
+  let dType = calculateDataOptions(chart.dataRawSelection);
   if (chart.data.length == 0) {
-     let dType = calculateDataOptions(chart.dataRawSelection);
-
      let dataSourceNeeded = chart.dataSourceNeeded + "-" + dType.dataSourceNeeded;
 
      let message = "";
@@ -2660,13 +2693,13 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     cur_width = 1108;
   }
 
-  var height = 500;
+  var height = 300;
   var isSmall = false;
-  //if (cur_width < 500) {
-    height = 250;
+  if (cur_width < 500) {
+    height = 200;
     isSmall = true;
     margin.left = 40;
-  //}
+  }
 
   if (alignRight) {
     margin.top += 10;
@@ -2693,21 +2726,16 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     if (isSmall && maxCountryLength > 12) { maxCountryLength = 12; }
 
     margin.right += Math.ceil(maxCountryLength * 9);
+    if (isSmall) { margin.right -= Math.ceil(maxCountryLength * 3.5); }
     if (!isSmall && margin.right < 80) { margin.right = 80; }
   }
 
   var width = cur_width - margin.right - margin.left;
 
 
-  // Find percentage graph
-  let isRatio = false;
-  switch (chart.dataSelection) {
-    case 'testPositivity':
-    case 'mortalityRate':
-      isRatio = true;
-      break;
-  }
-
+  // Find percentage graph  //C3
+  let isRatio = dType.isRatio;
+  
 
   // X-axis scale (days)  
   var daysScale = d3.scaleLinear();
@@ -2829,19 +2857,17 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     }
   }
 
-  if (chart.force_yMax) {
-    scale_yMax = chart.force_yMax;
-  }
-
   casesScale.domain([scale_y0, scale_yMax]).range([height, 0]);
   
   // Color Scale
   var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
-  if (chart.force_highlightColor) {
-    colorScale = function() { return chart.force_highlightColor; };
-  }
   for (let countryName of highlights) {
     colorScale(countryName);
+  }
+
+  colorScale = function() {
+    //return "#13294B";
+    return "#DD3403";
   }
 
   // SVG
@@ -2999,6 +3025,42 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     }
   }
 
+  let lockdownStart = convertDateToObject("2020-09-02");
+  let lockdownEnd = convertDateToObject("2020-09-16");
+  let daysAgo_start = (_dateObj_today_time - lockdownStart.getTime()) / (1000 * 3600 * 24);
+  let daysAgo_end = (_dateObj_today_time - lockdownEnd.getTime()) / (1000 * 3600 * 24);
+
+  svg.append("line")
+  .attr("x1", daysScale(-daysAgo_start))
+  .attr("x2", daysScale(-daysAgo_start))
+  .attr("y1", 0)
+  .attr("y2", height)
+  .attr("stroke", "#000")
+  .attr("stroke-width", 2);
+
+  svg.append("line")
+  .attr("x1", daysScale(-daysAgo_end))
+  .attr("x2", daysScale(-daysAgo_end))
+  .attr("y1", 0)
+  .attr("y2", height)
+  .attr("stroke", "#000")
+  .attr("stroke-width", 2);
+
+  svg.append("rect")
+  .attr("x", daysScale(-daysAgo_start))
+  .attr("y", 0)
+  .attr("width", daysScale(-daysAgo_end) - daysScale(-daysAgo_start))
+  .attr("height", height)
+  .attr("fill", "#D2EBF5");
+
+  svg.append("text")
+  .attr("x", daysScale(-daysAgo_start) + ((daysScale(-daysAgo_end) - daysScale(-daysAgo_start)) / 2) )
+  .attr("y", 20)
+  .attr("class", "axis-title")
+  .attr("text-anchor", "middle")
+  .style("font-size", "12px")
+  .style("fill", "black")  
+  .text("\"Lockdown\"");
 
   // Axes
   let xTickValues = [0];
@@ -3011,11 +3073,13 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
   }
 
   var x_axis = d3.axisBottom(daysScale);
-  x_axis.tickValues(xTickValues);
+  x_axis.tickValues(xTickValues).tickFormat(function(d) { return -d; });
+  /*
   svg.append('g')
      .attr("transform", "translate(0, " + height + ")")
      .attr("class", "axis")
      .call(x_axis); 
+  */
   
   var x_grid = d3.axisBottom(daysScale).tickSize(-height).tickFormat("").tickValues(xTickValues);
   svg.append('g')
@@ -3194,7 +3258,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
   let _draw_yAxisLabel = function(g, dType) {
     var yAxisLabel = "";
     if (dType.showDelta) { yAxisLabel += "New Daily "; }
-    if (dType.baseDataType == 'cases') { yAxisLabel += "Positive Test Results"; }
+    if (dType.baseDataType == 'cases') { yAxisLabel += "Positive Cases"; }
     else if (dType.baseDataType == 'active') { yAxisLabel += "Active Cases"; }
     else if (dType.baseDataType == 'deaths') { yAxisLabel += "COVID-19 Deaths"; }
     else if (dType.baseDataType == 'recovered') { yAxisLabel += "Recoveries" }
@@ -3202,6 +3266,8 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     else if (dType.baseDataType == 'hospitalized') { yAxisLabel += "Hospitalizations of COVID-19" }
     else if (dType.baseDataType == 'testPositivity') { yAxisLabel += "Test Positivity Rate" }
     else if (dType.baseDataType == 'mortalityRate') { yAxisLabel += "Case Fatality Rate" }
+    else if (dType.baseDataType == 'testPctUIUCofUS') { yAxisLabel = "% of US Tests at UIUC" }
+
     if (chart.normalizePopulation && !dType.isRatio) {
       yAxisLabel += "/1m people";
     }
@@ -3214,6 +3280,8 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
      .attr("text-anchor", "end")
      .text(yAxisLabel);
   
+
+     /*
     if (dType.avgData) {
       g.append("text")
        .attr("transform", "rotate(-90)")
@@ -3225,16 +3293,16 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
        .style("fill", "#888")
        .text(`(${dType.avgData}-data point Average)`);
     }
+    */
   };
 
   var yaxis_g = svg.append("g");
   _draw_yAxisLabel(yaxis_g, calculateDataOptions(chart.dataRawSelection));
 
-
   if (chart.startOfSemester) {
     let dateObj = convertDateToObject(chart.startOfSemester);
     let daysAgo = (_dateObj_today_time - dateObj.getTime()) / (1000 * 3600 * 24);
-    
+  
     svg.append("line")
     .attr("x1", daysScale(-daysAgo))
     .attr("x2", daysScale(-daysAgo))
@@ -3251,9 +3319,8 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     .attr("text-anchor", "end")
     .style("font-size", "12px")
     .style("fill", "#888")
-    .text(`First Day of Semester at ${chart.defaultHighlight}`);
+    .text(`First Day of Classes`);
   }
-
 
   /*
   svg.append("text")
@@ -3266,12 +3333,12 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
 
   svg.append("text")
     .attr("x", width)
-    .attr("y", height + 28)
+    .attr("y", height + 25)
     .attr("class", "axis-title")
     .attr("text-anchor", "end")
     .style("font-size", "8px")
     .style("fill", "#aaa")
-    .text(`Data: COVID-19 Among Big Ten Conference Schools (@profwade_) on Sept. 21, 2020`);
+    .text(`Updated: ${_dateUpdated} | https://waf.cs.illinois.edu/covid-analysis/`);
 
 
     chart.data.sort(function (d1, d2) {
@@ -3303,7 +3370,10 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     let fontSize;
     if (isHighlighted) {
       if (dasharray) { fontSize = 8; }
-      else           { fontSize = 15; }
+      else           {
+        if (isSmall) { fontSize = 8; }
+        else         { fontSize = 12; }
+      }
     } else {
       fontSize = 10;
     }
@@ -3328,7 +3398,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
         else { return 0.3; }
       })
       .style("font-size", `${fontSize}px`)
-      .text(textString);
+      .text( (chart.labelOverride) ? chart.labelOverride : textString);
 
     var textHeightAdjustment = 0;
     if (isSmall && isHighlighted && daysScale(countryData.maxDay) > (width * 3)/4 ) { textHeightAdjustment = -10; }
@@ -3349,7 +3419,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     if (labelOffGrid) {
       countryText
         .attr("x", function() {
-          return daysScale( -lastDataPoint.daysAgo ) + 5;
+          return daysScale( -lastDataPoint.daysAgo ) + 8;
         })
         .attr("y", function () {
           if (lastDataPoint.cases < scale_y0) { return height + 5; }
@@ -3426,6 +3496,66 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
   };
 
   var minHighlightHeight = 99999;
+
+  var renderBarChart = function(svg, i, data) {
+    var countryData = data[i];
+    if (!countryData.data[0]) { return; }
+
+    var maxBandWidth = (daysScale(1) - daysScale(0));
+
+    var bandWidth = (daysScale(1) - daysScale(0)) - 6;
+    if (bandWidth < 3) {
+      bandWidth = maxBandWidth;
+    }
+    
+
+    svg.selectAll("barchart")
+    .data(countryData.data)
+    .enter()
+    .filter(function (d) {
+      if (!d.cases || Number.isNaN(d.cases)) { return false; }
+      if (d.cases < scale_y0) { return false; }
+      return true;
+    })
+    .append("rect")
+    .attr("class", "barchart")
+    .attr("x", function (d) {
+      return daysScale( -d.daysAgo ) - (bandWidth / 2);
+    })
+    .attr("y", function (d) {
+      return casesScale(d.cases);
+    })
+    .attr("width", bandWidth)
+    .attr("height", function (d) {
+      return height - casesScale(d.cases) + 1;
+    })
+    .attr("stroke", function (d) {
+      return "hsla(216, 60%, 18%, 1)";;
+      return colorScale(d.country);
+    })
+    .attr("shape-rendering", "crispEdges")
+    .attr("stroke-width", 1)
+    //.attr("fill", function () { return "hsla(13, 97%, 99%, 1)"; })
+    .attr("fill", function () { return "#849BC1"; })
+    
+    .attr("width", bandWidth)
+    .on("mouseover", function (d, i) {
+      svg.selectAll(".barchart")
+        .filter(function (e) { return (e == d); })
+        .attr("fill", function () { return "#4D69A0"; })
+
+      tip.show(d, i);
+    })
+    .on("mouseout", function (d, i) {
+      svg.selectAll(".barchart")
+        .filter(function (e) { return (e == d); })
+        .attr("fill", function () { return "#849BC1"; })
+
+      tip.hide(d, i);
+    })
+    ;
+
+  };
 
   var renderLineChart = function(svg, i, data, dasharray) {
     var countryData = data[i];
@@ -3546,7 +3676,12 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     }
   };
 
-  __render_line_chart(svg, chart.data);
+  var __render_bar_chart = function(svg, data, dasharray = undefined) {
+    for (var i = 0; i < data.length; i++) {
+      renderBarChart(svg, i, data, dasharray);
+    }
+  }
+
   
   if (chart.extraData) {
     let dashPatterns = ["4", "1", "8", "2"];
@@ -3611,9 +3746,12 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
         }
       }
 
-      __render_line_chart(svg, displayData, dashPatterns[ i % dashPatterns.length ]);
+      //__render_line_chart(svg, displayData, dashPatterns[ i % dashPatterns.length ]);
+      __render_bar_chart(svg, displayData, dashPatterns[ i % dashPatterns.length ]);
     }
   }
+
+  __render_line_chart(svg, chart.data);
 
 
   if (target && !f && !highlightNone) {
@@ -3649,8 +3787,12 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
 
   }
 
+  svg.append('g')
+     .attr("transform", "translate(0, " + height + ")")
+     .attr("class", "axis")
+     .call(x_axis); 
+
   return baseSvg;
 };
-
 
 })();

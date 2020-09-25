@@ -17,10 +17,22 @@ description: This page presents data-forward collegiate analysis of Big-10 data 
 <h1 style="margin-bottom: 0px">Data-Forward Collegiate COVID-19 Analysis</h1>
 <p>
   <i>
+    <a href="https://waf.cs.illinois.edu/">Wade Fagen-Ulmschenider</a>, with contributions from <a href="https://sociology.illinois.edu/directory/profile/vitosky">Caitlin Clarke</a>
+  </i>
+</p>
+
+## Individual Campus Visualizations
+<p>
+  <i>
     <a href="https://sociology.illinois.edu/directory/profile/vitosky">Caitlin Clarke</a> and <a href="https://waf.cs.illinois.edu/">Wade Fagen-Ulmschenider</a>
   </i>
 </p>
 
+<a href="uiuc/" class="card">
+  University of Illinois Visualizations &gt;&gt;
+</a>
+
+<!--
 For several weeks, we have been tracking the COVID-19 data from every Big Ten Conference University and, for weeks, the story was the same: The University of Illinois’ saliva-based population testing resulted in impressively large number of tests -- including running **2.5% of all tests** in the United States on the first day of classes at Illinois (Monday. August 24):
 
 <div style="margin-left: 3%; margin-right: 5%; padding-left: 2%;  border-left: solid 2px hsl(173, 30%, 20%); ">
@@ -29,7 +41,7 @@ For several weeks, we have been tracking the COVID-19 data from every Big Ten Co
 </div>
 
 This page presents data-forward collegiate analysis of Big Ten data in a way that allows you to nerd out with the underlying data while providing context to the on-going pandemic that is impacting college campuses everywhere.
-
+-->
 
 {% assign sorted = site.covid-analysis | where: "render", "true" | sort: 'date' | reverse | slice: 0, 5 %}
 {% for analysis in sorted %}

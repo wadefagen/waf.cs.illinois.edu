@@ -3,6 +3,7 @@
 ,,Daily,Total,Daily,Total,Daily,Total,Daily,Total,Daily,Total,Daily,Total,Daily,Total,Daily,Total,Daily,Total,Daily,Total,,,,
 Location,Date,StudentStaff_DailyTests,StudentStaff_TotalTests,StudentStaff_DailyPositive,StudentStaff_TotalPositive,StudentStaff_DailyNegative,StudentStaff_TotalNegative,,,StudenOnly_DailyTests,StudenOnly_AllTests,StudenOnly_DailyPositivie,StudenOnly_AllPositivie,StudentOnly_DailyNegative,StudentOnly_TotalNegative,,,,,,,All_DailyTests,All_TotalTests,All_DailyPositive,All_TotalPositive
 https://go.illinois.edu/COVIDTestingData,,,,,,,,,,,,,,,,,,,,,,,,,
+Illinois,2020-09-23,9671,383994,,2294,,,28,2294,,,,,,,,,,,,,,,,
 Illinois,2020-09-22,11030,374323,,2266,,,62,2266,,,,,,,,,,,,,,,,
 Illinois,2020-09-21,10474,363293,,2204,,,42,2204,,,,,,,,,,,,,,,,
 Illinois,2020-09-20,4383,352819,,2162,,,11,2162,,,,,,,,,,,,,,,,
