@@ -957,6 +957,7 @@ var _f_load_allSuccess = function () {
   //_dateObj_today = convertDateToObject(data[data.length - 1].Date);
   //_dateObj_today = convertDateToObject("2020-09-18");
   _dateObj_today = new Date();
+  _dateObj_today = convertDateToObject( _dateObj_today.toISOString().substring(0, 10));
   _dateObj_today_time = _dateObj_today.getTime();
   
   // Add custom aggs
