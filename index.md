@@ -29,7 +29,7 @@ Finally, I maintain a <a href="https://forms.gle/oLXWdijmr9i2Yxau9">monthly e-ma
 
 Interactive, data-forward visualization of publicly-reported COVID-19 data from Big Ten schools.  Customizable views of confirmed cases, tests administered,  test positivity, and more.  Updated daily.
 
-<a href="/covid-19/" class="card">
+<a href="https://91-divoc.com/pages/covid-19-at-big-ten-conference-schools/" class="card">
   View the &quot;COVID-19 Among Big Ten Conference Schools&quot; visualization &gt;&gt;
 </a>
 
@@ -41,7 +41,7 @@ Interactive, data-forward visualization of publicly-reported COVID-19 data from 
 
 ### Latest Projects
  
-{% assign sorted = site.visualizations | sort: 'date' | reverse | slice: 0, 2 %}
+{% assign sorted = site.visualizations | sort: 'date' | reverse | slice: 0, 4 %}
 
 {% for visualization in sorted %}
 <div class="card card-full">
