@@ -21,12 +21,7 @@ description: This page presents data-forward collegiate analysis of Big-10 data 
   </i>
 </p>
 
-## Individual Campus Visualizations
-<p>
-  <i>
-    <a href="https://sociology.illinois.edu/directory/profile/vitosky">Caitlin Clarke</a> and <a href="https://waf.cs.illinois.edu/">Wade Fagen-Ulmschenider</a>
-  </i>
-</p>
+## Individual Campus Visualizations (Updated Daily)
 
 <a href="uiuc/" class="card">
   University of Illinois Visualizations &gt;&gt;

@@ -1179,7 +1179,7 @@ var saveGraph_fetchCSS = function() {
     if (_cssData) {
       resolve(_cssData);
     } else {
-      $.get("../css.css")
+      $.get("./css.css")
       .done( (cssData) => { _cssData = cssData; resolve(_cssData); })
       .fail( (message) => { reject(message); });
     }
@@ -2132,6 +2132,7 @@ var generateDataLabel_v3 = function(chart, dType, title = false) {
     else if (dType.baseDataType == 'tests') { dataLabel += "COVID-19 Tests Performed"; }  
     else if (dType.baseDataType == 'testPositivity') { dataLabel += "COVID-19 Test Positivity Rate"; }  
     else if (dType.baseDataType == 'mortalityRate') { dataLabel += "COVID-19 Case Fatality Rate"; }  
+    else if (dType.baseDataType == 'ugPositivity') { dataLabel = "On-Campus Undergraduates Infected with COVID-19 at the University of Illinois"; }  
 
 
     if (dType.showDelta && !dType.isRatio) { dataLabel += " per Day"; }
@@ -2774,6 +2775,11 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
     margin.left = 40;
   }
 
+  if (!target) {
+    margin.top += 200;
+    margin.bottom += 200;
+  }
+
   if (alignRight) {
     margin.top += 10;
     height -= 10;
@@ -3027,7 +3033,7 @@ var doRender = function(chart, isInAnimation = false, target = chart.id) {
   if (!target) {
     svg.append("text")
       .attr("x", -margin.left + 2)
-      .attr("y", -margin.top + 20)
+      .attr("y", -22)
       .attr("class", "chart-header")
       .text(generateDataLabel(chart, true));
   }
