@@ -4,7 +4,7 @@ author:
 - Wade Fagen-Ulmschneider
 
 date: 2020-09-21
-render: True
+render: False
 
 title: Mid-September Big Ten Update
 

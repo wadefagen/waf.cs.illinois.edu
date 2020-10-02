@@ -4,11 +4,11 @@ author:
 - Wade Fagen-Ulmschneider
 
 date: 2020-10-02
-render: False
+render: True
 
-title: Undergraduate Positivity Rate at Illinois
+title: Undergraduate Positivity Rate at Illinois Nears 10%
 
-description: This page presents data-forward collegiate analysis of Big-10 data in a way that allows you to nerd out with the underlying data while providing context to the on-going pandemic that is impacting college campuses everywhere.
+description: With the latest bits of data we've learned about the testing around COVID-19 at The University of Illinois, it appears that around 10% of the undergraduate population has likely been infected with COVID-19.
 
 social-img: https://waf.cs.illinois.edu/covid-analysis/social.png
 ---
@@ -38,7 +38,7 @@ Awais Vaid of the Champaign-Urbana Public Health District previously said over 9
 
 ### Calculations
 
-The University of Illinois does not release the number of <b>undergraduate</b> students living around campus, but we can make a reasonable assumption from the Fall 2019 numbers. Among the 51,196 students enrolled at The University of Illinois, 66.1% (33,850) are undergraduate students.  We can reasonable assume that 70% (± 10%) of the students having been tested are undergraduate students.
+The University of Illinois does not release the number of <b>undergraduate</b> students living around campus, but we can make a reasonable assumption from the Fall 2019 numbers. Among the 51,196 students enrolled at The University of Illinois, 66.1% (33,850) are undergraduate students.  We can reasonable assume that 70% (±10%) of the students having been tested are undergraduate students.
 
 ###### Calculation #1 &ndash; Undergraduate Students on Campus:
 <blockquote>
@@ -57,8 +57,8 @@ The University of Illinois does not release the number of <b>undergraduate</b> s
 
 This is a seriously alarming number -- around **10%** of all undergraduates at The University of Illinois has a confirmed case of COVID-19.  When we compare geographical regions, we look at case rates normalized by the population as cases per 100,000 or 1,000,000 people.  At 9,730 cases per 100,000 people (9.73%), this rate is:
 
-- Larger than any country in the world (Bahrain, the country with the most confirmed cases per person, has 4,600 cases /100k).
-- Larger than any state in the United States (Louisiana, the state the most confirmed cases per person, has 3,580 cases /100k).
+- Larger than [any country in the world](https://91-divoc.com/pages/covid-visualization/?chart=countries-normalized&highlight=(None)&show=25&y=both&scale=linear&data=cases&data-source=jhu&xaxis=left#countries-normalized) (Bahrain, the country with the most confirmed cases per person, has 4,600 cases /100k).
+- Larger than [any state in the United States](https://91-divoc.com/pages/covid-visualization/?chart=states-normalized&highlight=(None)&show=us-states&y=both&scale=linear&data=cases&data-source=jhu&xaxis=right-all#states-normalized) (Louisiana, the state the most confirmed cases per person, has 3,580 cases /100k).
 - Approximately as large as the most impacted areas in the United States (ex: New York City).
 
 
