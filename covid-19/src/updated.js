@@ -1,4 +1,4 @@
-_dateUpdated = "10/15/2020";
-_reqStr = "2020-10-15";
+_dateUpdated = "10/16/2020";
+_reqStr = "2020-10-16";
 
-$("#jhu-updated").html("(Updated: 10/15 10:50am CT)");
+$("#jhu-updated").html("(Updated: 10/16 12:00pm CT)");
