@@ -5,13 +5,25 @@ permalink: /impact/
 ---
 
 ### In The News (2020)
-###### Updated: August 17, 2020
+###### Updated: October 18, 2020
 
-- August 11, 2020; **Kentucky Department of Public Health** (Dr. Steven Slack) uses 91-DIVOC as part of [Kentucky's COVID-19 press conference on August 11](https://youtu.be/TpE5Vgvj2Pg?t=1142).  Dr. Slack has also used 91-DIVOC as part of [Kentucky's COVID-19 press conference on August 3](https://youtu.be/eUkWK7E17G4?t=1279), as part of [KYDPH update video for July 7](https://youtu.be/fdipr_HR9Zg?t=9), and as part of [Kentucky's COVID-19 press conference on June 30](https://youtu.be/DIEbxBB7fyw?t=1160).
+- October 6, 2020; **Kentucky Department of Public Health Commissioner Dr. Steven Slack** uses 91-DIVOC as part of [Kentucky's COVID-19 press conference on August 11](https://youtu.be/Z3jBUTx5eQ4?t=2633).  Dr. Slack has also used 91-DIVOC as part of
+[KYDPH update video for July 7](https://youtu.be/fdipr_HR9Zg?t=9), and
+Kentucky's COVID-19 press conferences on 
+[June 30](https://youtu.be/DIEbxBB7fyw?t=1160),
+[August 3](https://youtu.be/eUkWK7E17G4?t=1279),
+[August 11](https://youtu.be/TpE5Vgvj2Pg?t=1142),
+[September 29](https://youtu.be/9nTXcWz605k?t=1497),
+[October 5](https://youtu.be/VpbHaQ6bTyk?t=2104),
+and others.
 
-- **Vox** (German Lopez), August 11, 2020; [*America’s uniquely bad Covid-19 epidemic, explained in 18 maps and charts*](https://www.vox.com/future-perfect/21353986/coronavirus-covid-pandemic-usa-america-maps-charts-data) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of a piece on COVID-19.
+- **CBS This Morning** (Manuel Bojorquez), June 16, 2020; [*Manuel Bojorquez's segment on the coronavirus*](https://twitter.com/uofigrainger/status/1272970719987740672) includes a video interview with Fagen-Ulmschneider regarding COVID-19 data.
 
 - August 10, 2020; **Kentucky Governor Andy Beshear** uses 91-DIVOC as part of [Kentucky's COVID-19 press conference on August 10](https://youtu.be/1UoHDfHPvV4?t=888). Governor Beshear also used 91-DIVOC as part of [Kentucky's COVID-19 press conference on July 29](https://youtu.be/Tbs2ZZDzemM?t=446) and [Kentucky's COVID-19 press conference on April 5](https://www.youtube.com/watch?v=gSzUuOTzGE8&feature=youtu.be&t=1595).
+
+- March 26, 2020; **Washington State Governor Jay Inslee** uses 91-DIVOC as part of Washington's COVID-19 press conferences on March 26.  Gov. Inslee and also [*"tweeted about it later"*](https://twitter.com/GovInslee/status/1243306792232177665).
+
+- **Vox** (German Lopez), August 20, 2020; [*Why Trump shouldn’t compare America’s Covid-19 outbreak to New Zealand's, in one chart*](https://www.vox.com/future-perfect/2020/8/20/21377225/trump-coronavirus-covid-new-zealand) uses Fagen-Ulmschneider's 91-DIVOC animation for a comparative analysis between COVID-19 cases in the United States and New Zealand.
 
 - **University of Illinois** (Prof. Sergei Maslov), August 6, 2020; [*COVID-19 Briefing Series: Data Modeling*](https://youtu.be/VmwK9tyNe8A?t=683) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of a video briefing on COVID-19 for the University of Illinois campus.
 
@@ -23,6 +35,8 @@ permalink: /impact/
 
 - **Forbes** (Marshall Shepherd), July 17, 2020; [*Scientists Have Been Right About The Coronavirus. Why Are People Still Not Listening?*](https://www.forbes.com/sites/marshallshepherd/2020/07/17/3-ways-scientists-have-been-right-about-covid-19-and-why-people-still-arent-listening/#64b517e16b68) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on COVID-19.
 
+- **Department of Computer Science at The University of Illinois** (Laura Schmitt), July 17, 2020; [*Undergraduates Present Research Results at ASEE 2020*](https://cs.illinois.edu/news/undergraduates-present-research-results-asee-2020) reports three of Fagen-Ulmschneider's undergraduate students' research that was presented at ASEE 2020.
+
 - **Idaho Falls' Post Register** (Douglas Whatmore); [*We need to do more to contain pandemic*](https://www.postregister.com/opinion/guest_column/we-need-to-do-more-to-contain-pandemic/article_b51d3c60-ead7-5fe3-b808-5f6afa8056d1.html) references Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on COVID-19.
 
 - **ABC15 Arizona** (Katie Raml and Garrett Archer), July 17, 2020; [*Inside Arizona's Coronavirus Numbers: July 17*](https://youtu.be/5jpCGMuntew?t=1354) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of video coverage on COVID-19.
@@ -31,7 +45,7 @@ permalink: /impact/
 
 - **SLATE** (Ben Mathis-Lilley) June 25, 2020; [*White House Official: Americans Will “Just Have to Live With” Massive Coronavirus Surge*](https://slate.com/news-and-politics/2020/06/larry-kudlow-americans-just-have-to-live-with-covid-19.html) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of a piece on COVID-19.
 
-- **CBS This Morning** (Manuel Bojorquez), June 16, 2020; [*Manuel Bojorquez's (CBS) segment on the coronavirus*](https://twitter.com/uofigrainger/status/1272970719987740672) includes a video interview with Fagen-Ulmschneider regarding COVID-19 data.
+- **Vox** (German Lopez), August 11, 2020; [*America’s uniquely bad Covid-19 epidemic, explained in 18 maps and charts*](https://www.vox.com/future-perfect/21353986/coronavirus-covid-pandemic-usa-america-maps-charts-data) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of a piece on COVID-19.
 
 - **SLATE** (Ben Mathis-Lilley), June 15, 2020; ["Texas and Florida, Please Put Masks On or We’ll Never Get Out of This"](https://slate.com/news-and-politics/2020/06/florida-and-texas-please-put-on-your-masks.html) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of a piece on COVID-19.
 
@@ -49,11 +63,15 @@ permalink: /impact/
 
 - **University of Texas at Dallas**, May 19, 2020; [*"UTD CS Alumni Creates a Viral COVID-19 Visualization that Promotes Honest, Accessible, Transparent Access to Case Data"*](https://cs.utdallas.edu/utd-cs-alumni-creates-a-viral-covid-19-visualization-91-divoc/) quotes Fagen-Ulmschneider; covers 91-DIVOC.
 
+- **Knowable Magazine** (Eva Emerson, Tien Nguyen), May 19, 2020; [*"Data viz experts explain COVID-19 graphs"* (YouTube Video)](https://www.youtube.com/watch?v=1Y1em09adkg) uses Fagen-Ulmschneider's 91-DIVOC as part of a video explaining data visualization of COVID-19 data.
+
 - **Salon** (Jim Naureckas), May 16, 2020; [*"Are we really hitting a pandemic "peak" — or is this a media mirage?"*](https://www.salon.com/2020/04/16/are-we-really-hitting-a-pandemic-peak--or-is-this-a-media-mirage_partner/) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of a piece on COVID-19.
 
 - **Washington Post** (Paige Winfield Cunningham), May 13, 2020; [*"The Health 202: Most states lifting coronavirus lockdowns haven't met federal guidelines for reopening"*](https://www.washingtonpost.com/news/powerpost/paloma/the-health-202/2020/05/13/the-health-202-most-states-lifting-coronavirus-lockdowns-haven-t-met-federal-guidelines-for-reopening/5ebaaf55602ff11bb117afb5/) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of a piece on COVID-19.
 
 - **Geospatial World**, April 13, 2020; [*"91-DIVOC Interactive Visualization of COVID-19"*](https://www.geospatialworld.net/dashboards/91-divoc-interactive-visualization-of-covid-19/) writes about Fagen-Ulmschneider's 91-DIVOC visualization.
+
+- **Department of Computer Science at The University of Illinois** (Laura Schmitt), July 17, 2020; [*Eight CS Faculty and Students Receive Engineering, Campus Awards for Excellence*](https://cs.illinois.edu/news/eight-cs-faculty-and-students-receive-engineering-campus-awards-excellence) reports on Fagen-Ulmschneider's receiving the "Campus Award for Excellence in Undergraduate Teaching for his enthusiastic instruction and creative course innovations, particularly of courses that enroll large numbers of students".
 
 - **EMS1** (Catherine R. Counts), April 9, 2020; [*"8 types of data: Telling the story of COVID-19"*](https://www.ems1.com/coronavirus-covid-19/articles/8-types-of-data-telling-the-story-of-covid-19-qu80ycyvQKFA7kij/) writes about Fagen-Ulmschneider's 91-DIVOC visualization.
 
@@ -70,8 +88,6 @@ permalink: /impact/
 
 - **The Verge** (Adi Robertson), April 2, 2020; [*"The Best Graphs and Data for Tracking the Coronavirus Pandemic"*](https://www.theverge.com/2020/4/2/21201832/novel-coronavirus-covid-19-best-graphs-tracking-data) lists Fagen-Ulmschneider's 91-DIVOC as one of the five "most helpful public resources" for tracking COVID-19.
 
-- March 26, 2020; **Governor Jay Inslee** of Washington State used 91-DIVOC as part of Washington's COVID-19 press conferences on March 26.  Gov. Inslee and also [*"tweeted about it later"*](https://twitter.com/GovInslee/status/1243306792232177665).
-
 - **Gizmodo** (Beth Skwarecki), March 26, 2020; [*"Esta gráfica con los casos de covid-19 por países es buena para tu información, pero no para tu ansiedad"*](https://es.gizmodo.com/esta-grafica-con-los-casos-de-covid-19-por-paises-es-bu-1842503787) writes about Fagen-Ulmschneider's 91-DIVOC visualization for a Spanish-language audience.
 
 - **SER** (David Justo), March 26, 2020; [*"La gráfica que muestra la evolución del coronavirus en todo el planeta en tiempo real"*](https://cadenaser.com/ser/2020/03/26/internacional/1585213830_297154.html) writes about Fagen-Ulmschneider's 91-DIVOC visualization for a Spanish-language audience.
@@ -82,6 +98,10 @@ permalink: /impact/
 
 
 ### Citations or Adoptions of Fagen-Ulmschneider's Work
+
+- **Indy Star** (Grace Hauck and Jayme Fraser), October 15, 2020; [*COVID-19 cases in US grow at a speed not seen since July, the summer peak*](https://www.indystar.com/story/news/health/2020/10/15/coronavirus-cases-us-growing-speed-not-seen-since-july/3662942001/) uses Fagen-Ulmschneider's 91-DIVOC visualization as a reference for COVID-19 data trends.
+
+- **USA Today** (Mike Stucka), October 15, 2020; [*Coronavirus updates: Top Kamala Harris staffer tests positive; blood type may play role in contracting virus*](https://www.usatoday.com/story/news/health/2020/10/15/covid-news-white-house-herd-immunity-halloween-india-spain/3658419001/) uses Fagen-Ulmschneider's 91-DIVOC visualization as a reference for COVID-19 data trends.
 
 - **Seeking Alpha**, July 25, 2020; [*Weekly High Frequency Indicators: No Weekly Change As Emergency Unemployment Benefits End*](https://seekingalpha.com/article/4360774-weekly-high-frequency-indicators-no-weekly-change-emergency-unemployment-benefits-end) cites Fagen-Ulmschneider's 91-DIVOC project as a COVID-19 resource.
 

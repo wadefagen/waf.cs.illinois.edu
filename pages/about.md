@@ -11,7 +11,6 @@ ul {
 </style>
 
 
-<img alt="Wade Fagen-Ulmschneider" src="/static/images/fagen-ulmschneider.jpg" style="max-height: 200px; float: right; border: solid 1px black; margin-left: 20px; margin-bottom: 20px;">
 
 
 ### Short Bio
