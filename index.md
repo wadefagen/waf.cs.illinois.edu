@@ -1,5 +1,7 @@
 ---
 layout: home
+
+description: Faculty webpage of Wade Fagen-Ulmschneider, Teaching Associate Professor of Computer Science at The University of Illinois
 ---
 
 <style>

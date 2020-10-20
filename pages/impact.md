@@ -7,7 +7,7 @@ permalink: /impact/
 ### In The News (2020)
 ###### Updated: October 18, 2020
 
-- October 6, 2020; **Kentucky Department of Public Health Commissioner Dr. Steven Slack** uses 91-DIVOC as part of [Kentucky's COVID-19 press conference on August 11](https://youtu.be/Z3jBUTx5eQ4?t=2633).  Dr. Slack has also used 91-DIVOC as part of
+- October 6, 2020; **Kentucky Department of Public Health Commissioner Dr. Steven Slack** uses 91-DIVOC as part of [Kentucky's COVID-19 press conference on October 6](https://youtu.be/Z3jBUTx5eQ4?t=2633).  Dr. Slack has also used 91-DIVOC as part of
 [KYDPH update video for July 7](https://youtu.be/fdipr_HR9Zg?t=9), and
 Kentucky's COVID-19 press conferences on 
 [June 30](https://youtu.be/DIEbxBB7fyw?t=1160),
@@ -15,13 +15,15 @@ Kentucky's COVID-19 press conferences on
 [August 11](https://youtu.be/TpE5Vgvj2Pg?t=1142),
 [September 29](https://youtu.be/9nTXcWz605k?t=1497),
 [October 5](https://youtu.be/VpbHaQ6bTyk?t=2104),
-and others.
+and more.
 
 - **CBS This Morning** (Manuel Bojorquez), June 16, 2020; [*Manuel Bojorquez's segment on the coronavirus*](https://twitter.com/uofigrainger/status/1272970719987740672) includes a video interview with Fagen-Ulmschneider regarding COVID-19 data.
 
 - August 10, 2020; **Kentucky Governor Andy Beshear** uses 91-DIVOC as part of [Kentucky's COVID-19 press conference on August 10](https://youtu.be/1UoHDfHPvV4?t=888). Governor Beshear also used 91-DIVOC as part of [Kentucky's COVID-19 press conference on July 29](https://youtu.be/Tbs2ZZDzemM?t=446) and [Kentucky's COVID-19 press conference on April 5](https://www.youtube.com/watch?v=gSzUuOTzGE8&feature=youtu.be&t=1595).
 
 - March 26, 2020; **Washington State Governor Jay Inslee** uses 91-DIVOC as part of Washington's COVID-19 press conferences on March 26.  Gov. Inslee and also [*"tweeted about it later"*](https://twitter.com/GovInslee/status/1243306792232177665).
+
+---
 
 - **Vox** (German Lopez), August 20, 2020; [*Why Trump shouldn’t compare America’s Covid-19 outbreak to New Zealand's, in one chart*](https://www.vox.com/future-perfect/2020/8/20/21377225/trump-coronavirus-covid-new-zealand) uses Fagen-Ulmschneider's 91-DIVOC animation for a comparative analysis between COVID-19 cases in the United States and New Zealand.
 
