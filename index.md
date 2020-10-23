@@ -29,7 +29,7 @@ I post updates about my work across various social media and you can follow me o
 <a href="https://www.linkedin.com/in/profwade" target="_blank"><i class="ion ion-social-linkedin"></i>profwade</a>,
 <a href="https://instagram.com/profwade" target="_blank"><i class="ion ion-social-instagram"></i>profwade</a>, and
 <a href="https://github.com/wadefagen" target="_blank"><i class="ion ion-social-github"></i>wadefagen</a>.
-Additionally, I maintain a <a href="https://forms.gle/oLXWdijmr9i2Yxau9">monthly e-mail list</a> where I share updated on all of my work (both Illinois and beyond) that you can subscribe to for a once-monthly update.  Finally, you can also reach me at **waf@**illinois.edu.
+Additionally, I maintain a <a href="https://forms.gle/oLXWdijmr9i2Yxau9">monthly e-mail list</a> where I share updates on all of my work (both Illinois and beyond) that you can subscribe to for a once-monthly update.  Finally, you can also reach me at **waf@**illinois.edu.
 
 
 <hr style="clear: both">
