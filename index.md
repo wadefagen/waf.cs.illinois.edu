@@ -47,7 +47,8 @@ Additionally, I maintain a <a href="https://forms.gle/oLXWdijmr9i2Yxau9">monthly
       </p>
       <h4>Currently Teaching:</h4>
       <ul>
-        <li><a href="https://courses.grainger.illinois.edu/CS240/fa2020/">CS 240: Intro to Computer Systems</a></li>
+        <li><a href="https://courses.grainger.illinois.edu/cs423/sp2021/">CS 423: Operating System Design</a></li>
+        <li><a href="https://courses.grainger.illinois.edu/cs240/sp2021/">CS 240: Intro to Computer Systems</a></li>
       </ul>
       <p>
         <a href="/teaching/" class="card">More on Teaching &gt;</a>

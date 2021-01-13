@@ -10,7 +10,11 @@ permalink: /teaching/
 
 <ul>
   <li>
-    CS 240: Introduction to Computer Systems [<a href="https://courses.engr.illinois.edu/cs240/fa2020/"><b>Fall 2020</b></a>]
+    CS 423: Operating System Design [<a href="https://courses.engr.illinois.edu/cs423/sp2021/"><b>Spring 2021</b></a>]
+  </li>
+  <li>
+    CS 240: Introduction to Computer Systems [<a href="https://courses.engr.illinois.edu/cs240/sp2021/"><b>Spring 2021</b></a>, 
+      <a href="https://courses.engr.illinois.edu/cs240/fa2020/">Fall 2020</a>]
   </li>
   <li>
     STAT 107 / CS 107 / IS 107: Data Science Discovery [<a href="http://courses.las.illinois.edu/spring2020/stat107/">Spring 2020</a>,
