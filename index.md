@@ -14,11 +14,120 @@ description: Faculty webpage of Wade Fagen-Ulmschneider, Teaching Associate Prof
   background-color: hsl(173, 3%, 97%);
 }
 
+p + ul {
+  margin-top: -16px;
+}
 </style>
+
+
 
 <img alt="Wade Fagen-Ulmschneider" src="/static/images/fagen-ulmschneider.jpg" style="max-height: 200px; float: right; border: solid 1px black; margin-left: 20px; margin-bottom: 20px;">
 
+### Hi, nice to have you here!
+
+My name is Wade Fagen-Ulmschnieder -- I am faculty in the [Department of Computer Science](https://cs.illinois.edu/) in the Grainger College of Engineering at The University of Illinois (UIUC).  My passion is at the intersection of systems, data, and creating tools to nerd out with them both through interactive data visualizations.  In my work, I work to inspire, encourage, and educate.
+
+<hr>
+
+<!--
+### Quick Links
+
+<style>
+.waf-quick-links {
+  background-color: white !important;
+  
+}
+
+.waf-quick-links .topic {
+  float: left;
+  font-weight: bold;
+  clear: both;
+}
+
+.waf-quick-links ul {
+  list-style: none;
+}
+
+.waf-quick-links li {
+  float: left;
+  padding-left: 10px;
+  margin-left: 2px;
+}
+
+.waf-quick-links li:before {
+  content: '\00BB';
+  margin-right: 2px;
+}
+
+</style>
+
+<div class="waf-quick-links">
+  <div class="topic">Teaching:</div>
+  <ul>
+    <li>CS 240</li>
+    <li>CS/STAT/IS 107</li>
+    <li>CS 225</li>
+    <li>Previous Courses</li>
+    <li>Teaching Philosophy</li>
+  </ul>
+
+  <div class="topic">Visualizations:</div>
+  <ul>
+    <li>91-DIVOC (COVID-19)</li>
+    <li>GPA Visualizations</li>
+    <li>All Visualizations</li>
+  </ul>
+
+  <div class="topic">Projects:</div>
+  <ul>
+    <li>Illinois LinkedIn Banner</li>
+    <li>Computer Generated Music</li>
+    <li>All Projects</li>
+  </ul>
+  <div style="clear: both"></div>
+</div>
+<hr>
+-->
+
+<style>
+li {
+  font-size: 18px;
+  line-height: 24px;
+}
+</style>
+
+
+**Teaching**: I believe that education should be available and accessible.  To the further extent possible, my teaching at Illinois has been archived online and open for anyone to nerd out.  You can find links to my courses dating back to 2013:
+
+- [Fall 2021: Introduction to Computer Systems (CS 240)](https://courses.grainger.illinois.edu/cs240/fa2021/)
+- [Fall 2021: Data Science Discovery (CS 107 / STAT 107 / IS 107)](http://courses.las.illinois.edu/fall2021/stat107/)
+- [Coursera MOOC: Accelerated Computer Science Fundamentals Specialization](https://www.coursera.org/specializations/cs-fundamentals)
+- [Previous Courses, Teaching Philosophy, and More](/teaching/)
+
+<hr>
+
+**Visualizations**: Most of my scholarly work is exploring engagement through data visualizations and similar art, and much of this work is done in collaboration with undergraduate students and faculty from other domains.  If I have done a good job, you'll be able to spend hours nerding out with data in these visualizations:
+
+**Outreach**: I have been able to share data and knowledge with many through the use of my tools, talks and workshops at conferences, and more.
+
+- [Invited Talks, Panels, and Workshops](/talks/)
+- [Mentions and Impact](/impact/)
+
+
+
+
+
+This site is divided up into four different sections:
+
+- [Teaching](/teaching/), including my Illinois courses, online MOOCs, and courses for international scholars
+- Projects, including data visualizations, 
+- Data, organized, clean, and ready for use,
+- [Talks](/talks/), and other related media
+
+
 ### Overview
+
+
 
 **Prof. Wade Fagen-Ulmschneider** is a Teaching Associate Professor of Computer Science at the University of Illinois at Urbana-Champaign (UIUC). With a passion for data, he often teaches thousands of students each year in his courses on Data Structures, Data Visualization, and Data Science. He was selected as one of the National Academy of Engineering’s Frontiers of Engineering Education scholars, awarded the Collins Award for Innovation Teaching, and has been consistently ranked as an excellent instructor by his students for the past ten years. His work on data visualizations has been used by governors of multiple states, featured by websites including Popular Mechanics and The Verge, and has been viewed by millions of readers. [[Full Curriculum Vitae, PDF]](/static/fagen-ulmschneider-cv.pdf)
 
