@@ -54,6 +54,8 @@ collections:
     output: true
   visualizations:
     output: true
+  tools:
+    output: true
     # permalink: /:collection/:name/
 
 collections_dir: collections
