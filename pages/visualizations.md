@@ -4,7 +4,7 @@ title: Visualizations
 permalink: /visualizations/
 ---
 
-## Visualizations
+# Visualizations
 
 Interactive visualizations created to inspire, inform, and promote curiosity, often made in collaboration with students
 from The University of Illinois.
@@ -13,7 +13,7 @@ from The University of Illinois.
 {% assign sorted = site.visualizations | sort: 'date' | reverse %}
 {% for visualization in sorted %}
   <div class="col-md-4 col-12">
-    <div class="card vcard">
+    <div class="card vcard" style="border-color: #13294B;">
       <div>
         {% if visualization.external-url %}<a href="{{ visualization.external-url }}">{% else %}<a href="{{ visualization.url }}">{% endif %}
         {% if visualization.external-img %}
@@ -23,7 +23,7 @@ from The University of Illinois.
         {% endif %}
         </a>
       </div>
-      <div style="background-color: hsl(173, 30%, 95%);">
+      <div style="background-color: white;">
         {% if visualization.external-url %}<a href="{{ visualization.external-url }}">{% else %}<a href="{{ visualization.url }}">{% endif %}
           <div class="title">{{ visualization.title }}</div>
         </a>

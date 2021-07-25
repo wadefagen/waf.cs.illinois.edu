@@ -69,6 +69,14 @@ a {
   padding: 4px 0px;
 }
 
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "\00BB";
+  color: white;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
 
 .content {
   margin-top: 15px;
@@ -79,7 +87,7 @@ div.content-covid-analysis {
 }
 
 div.content-covid-analysis a {
-  color: hsl(174, 94%, 26%);
+  color: #13294B; /* hsl(174, 94%, 26%); */
   text-decoration: underline;
 }
 
@@ -118,7 +126,6 @@ hr {
 .content h1 {
   font-family: 'Playfair Display', serif;
   color: #13294B;
-  margin-bottom: 20px;
 }
 
 .content h2 {
@@ -140,7 +147,7 @@ h3 {
 h4 {
   /* font-family: 'Playfair Display', serif; */
   font-size: 1.1rem;
-  color: hsl(173, 30%, 20%);
+  color: #13294B; /* hsl(173, 30%, 20%); */
 }
 
 .jumbotron.viz-header {
@@ -165,7 +172,7 @@ h4 {
 
 .d7-title-2 {
   font-family: 'Playfair Display', serif;
-  background-color: hsl(173, 30%, 20%);
+  background-color: #13294B; /* hsl(173, 30%, 20%); */
   color: white;
   display: inline-block;
   padding: 4px 20px;
@@ -282,10 +289,15 @@ blockquote {
   }
 }
 
+.authors {
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .card-full .title, .vcard .title {
   font-size: 1.3rem;
   font-weight: bold;
-  color: hsl(173, 30%, 50%);
+  color: #13294B;
 }
 
 .vcard a {

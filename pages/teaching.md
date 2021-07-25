@@ -4,40 +4,39 @@ title: Teaching
 permalink: /teaching/
 ---
 
-### Teaching
+# Teaching Overview
 
-I believe that world-class education is education that is worth creating and worth sharing.  Education should be creative, exploratory, and fun &mdash; all of my courses contain projects with significant &quot;creative components&quot; where you create something original and unique that you can share with others.
+I believe that world-class education is education that is worth creating and worth sharing.  Education should be creative, exploratory, and fun &mdash; all of my courses contain projects with significant "creative components" where you create something original and unique that you can share with others.
 
 Additionally, I believe in free, open-access to educational materials.  You will find all of my course websites to be public and open to all, and a collection of course notes and videos below when they're available for each course.  If you find any of it useful, feel free to use it *(and, optionally, let me know so I can know it's useful to keep doing it)*.
 
-
-### Courses Taught
-
 <hr>
 
-#### Data Science Discovery (STAT 107 / CS 107 / IS 107)
+# Courses Taught
+
+## Data Science Discovery (STAT 107 / CS 107 / IS 107)
 
 > Data Science Discovery is the intersection of statistics, computation, and real-world relevance. As a project-driven course, students perform hands-on-analysis of real-world datasets to analyze and discover the impact of the data. Throughout each experience, students reflect on the social issues surrounding data analysis such as privacy and design.  Credit: 4 hours.
 
 Data Science Discovery is the first course in the Data Science program at The University of Illinois, teaching students introductory data science skills including foundational statistics, Python programming (with a heavy emphasis on pandas), and the social impact of data.  I developed this course with Statistics professor [Karle Flanagan](https://kflan.stat.illinois.edu/) specifically for students with no existing background in data science.  The course has no course prerequisites, and serves as a quantitative reasoning gened at Illinois.  We piloted the course in Spring 2019 to 20 students from 20 different majors and now this course reaches nearly 500 Illini each year.
 
-- Extensive Topic List (PDF)
+<!-- - Extensive Topic List (PDF) -->
 - Course Webpage: **Fall 2021**, [Spring 2020](http://courses.las.illinois.edu/spring2020/stat107/), [Fall 2019](http://courses.las.illinois.edu/fall2019/stat107/), and [Spring 2019](http://courses.las.illinois.edu/spring2019/stat107/).
 
 <hr>
 
-#### Introduction to Computer Systems (CS 240)
+## Introduction to Computer Systems (CS 240)
 
 > Basics of computer systems. Number representations, assembly/machine language, abstract models of processors (fetch/execute, memory hierarchy), processes/process control, simple memory management, file I/O and directories, network programming, usage of cloud services.  Credit: 3 hours.
 
 Introduction to Computer Systems is a modern approach to computer systems and one of the newest courses in the CS core curriculum, teaching students the foundational of computer architecture, systems progrmaming, and cloud computing.  CS students can either take a dedicated architecture course (CS 233) and a dedicated systems course (CS 241) or take CS 240 to fulfill both requirements.
 
-- Upcoming: Detailed Comparison between CS 240 and CS 233/241
+<!-- - Detailed Comparison between CS 240 and CS 233/241 -->
 - Semesters Taught: **Fall 2021**, [Spring 2021](https://courses.engr.illinois.edu/cs240/sp2021/), and [Fall 2020](https://courses.engr.illinois.edu/cs240/fa2020/).
 
 <hr>
 
-#### Accelerated Computer Science Fundamentals Specialization (Online MOOCs with Coursera)
+## Accelerated Computer Science Fundamentals Specialization (Online MOOCs with Coursera)
 
 > Data Structures and Algorithms in C++. Learn fundamentals of computer science while implementing efficient data structures in C++.  Credit: Illinois-Coursera Certificate.
 
@@ -51,17 +50,18 @@ Accelerated Computer Science Fundamentals is a Coursera Specialization comprised
 
 <hr>
 
-#### Courses for International Scholars Studying at Illinois
+## Courses for International Scholars Studying at Illinois
 
-By invitation from Illinois International, I have had the privilege of teaching students from around the world as they come to study at The University of Illinois.  To date, I have been invited to share the best of Illinois education with three different cohorts of international scholars:
+By invitation from [Illinois International](https://international.illinois.edu/), I have had the privilege of teaching students from around the world as they come to study at The University of Illinois.  To date, I have been invited to share the best of Illinois education with three different cohorts of international scholars:
 
+- Data Science SPRINT (Summer 2021), for King Abdullah University of Science and Technology (KAUST) scholars
 - Introduction to Programming (Spring 2021 and Spring 2020), for King Abdullah University of Science and Technology (KAUST) scholars
-- Data Science Creativity (Summer 2019), for Shanghai Jiao Tong University (SJTU) scholars
-- Data Science Sprint (Summer 2019), for Ulsan National Institute of Science and Technology (UNIST) scholars
+- Data Science CREATIVITY (Summer 2019), for Shanghai Jiao Tong University (SJTU) scholars
+- Data Science SPRINT (Summer 2019), for Ulsan National Institute of Science and Technology (UNIST) scholars
 
 <hr>
 
-#### Operating System Design (CS 423)
+## Operating System Design (CS 423)
 
 > Organization and structure of modern operating systems and concurrent programming concepts. Deadlock, virtual memory, processor scheduling, and disk systems. Performance, security, and protection. Credit: 3 OR 4 hours.
 
@@ -69,7 +69,7 @@ By invitation from Illinois International, I have had the privilege of teaching 
 
 <hr>
 
-#### Data Structures (CS 225)
+## Data Structures (CS 225)
 
 > Data abstractions: elementary data structures (lists, stacks, queues, and trees) and their implementation using an object-oriented programming language. Solutions to a variety of computational problems such as search on graphs and trees. Elementary analysis of algorithms. Credit: 4 hours.
 
@@ -77,7 +77,7 @@ By invitation from Illinois International, I have had the privilege of teaching 
 
 <hr>
 
-#### Data Driven Discovery (CS 205/CS 305)
+## Data Driven Discovery (CS 205/CS 305)
 
 > Introduction to techniques for data analytics and visualization through the use of weekly data sources from a wide selection of domains. Project-based course with multiple projects; each project requires the creation of a data visualization. Specific emphasis is placed on increasing programming fluency, understanding of computational foundations, and framing problems for a data-centric workflow. Credit: 4 hours.
 
@@ -85,7 +85,7 @@ By invitation from Illinois International, I have had the privilege of teaching 
 
 <hr>
 
-#### Intro Computing: Non-Tech (CS 105)
+## Intro Computing: Non-Tech (CS 105)
 
 > Computing as an essential tool of academic and professional activities. Functions and interrelationships of computer system components: hardware, systems and applications software, and networks. Widely used application packages such as spreadsheets and databases. Concepts and practice of programming for the solution of simple problems in different application areas. Intended for non-science and non-engineering majors. Credit: 3 hours.
 
@@ -93,7 +93,7 @@ By invitation from Illinois International, I have had the privilege of teaching 
 
 <hr>
 
-#### CS 241: System Programming
+## CS 241: System Programming
 
 > Basics of system programming, including POSIX processes, process control, inter-process communication, synchronization, signals, simple memory management, file I/O and directories, shell programming, socket network programming, RPC programming in distributed systems, basic security mechanisms, and standard tools for systems programming such as debugging tools.
 
@@ -101,7 +101,7 @@ By invitation from Illinois International, I have had the privilege of teaching 
 
 <hr>
 
-### Accolades
+# Accolades
 
 <ul class="pub-list mt-1">
   <li>
@@ -142,7 +142,7 @@ By invitation from Illinois International, I have had the privilege of teaching 
     </div>
   </li>
   <li>
-    Teachers Ranked as Excellent by Their Students; 2008, 2010, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020
+    <a href="https://citl.illinois.edu/citl-101/measurement-evaluation/teaching-evaluation/teaching-evaluations-(ices)/teachers-ranked-as-excellent">Teachers Ranked as Excellent by Their Students</a>; 2008, 2010, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020
     <div class="pub-etc">
       Center for Innovation in Teaching &amp; Learning at The University of Illinois
     </div>

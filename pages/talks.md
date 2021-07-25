@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Talks
+title: Invited Talks, Panels and Workshops
 permalink: /talks/
 ---
 
@@ -14,9 +14,7 @@ body {
 }
 </style>
 
-### Invited Talks, Panels, and Workshops
-
-I love sharing my passion of Computer Science and inspiring others to build amazing things.  A few recent talks I have had the privilege to give:
+### Recent Invited Talks, Panels and Workshops
 
 <ul>
   <li>
@@ -73,7 +71,6 @@ I love sharing my passion of Computer Science and inspiring others to build amaz
       &bullet; Segment #2: <i>The Emotion of Competition &amp; Winning</i> with Karle Flanagan
     </div>
   </li>
-
   <li>
     Professional development with <a href="http://apo-aa.org/">Alpha Phi Omega (APO)</a>, October 2019
     <div class="pub-etc">
