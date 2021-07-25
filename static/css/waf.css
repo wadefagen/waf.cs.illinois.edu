@@ -1,32 +1,41 @@
+body {
+  font-size: 20px;
+  background-color: #F8FAFC;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #DD3403;
+}
+
+/* == header == */
+
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .header-content {
-  background-color: hsl(173, 30%, 95%);
-  border-bottom: solid 1px hsl(173, 30%, 50%);
-}
-
-.footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: solid 1px hsl(173, 30%, 50%);
-  margin-top: 40px;
+  /*background-color: hsl(173, 30%, 95%);*/
+  background-color: #13294B;
+  color: white;
+  border-bottom: solid 1px #1E3877;
 }
 
 .header-content a {
-  color: hsl(173, 30%, 40%);
+  color: #AFC7DB;
 }
 
 .header-content h1 {
   font-size: 1.75rem;
   margin: 0px;
+  font-weight: bold;
 }
 
 .header-content h1 a {
-  color: black;
+  color: #AFC7DB;
 }
+
 
 .header-content h1 a:hover {
   text-decoration: none;
@@ -45,12 +54,29 @@
   font-size: 1.2rem;
 }
 
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: solid 1px hsl(173, 30%, 50%);
+  margin-top: 40px;
+}
+
+
 .breadcrumb {
   margin-bottom: 0px;
   background-color: transparent;
   padding: 4px 0px;
 }
 
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "\00BB";
+  color: white;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
 
 .content {
   margin-top: 15px;
@@ -61,7 +87,7 @@ div.content-covid-analysis {
 }
 
 div.content-covid-analysis a {
-  color: hsl(174, 94%, 26%);
+  color: #13294B; /* hsl(174, 94%, 26%); */
   text-decoration: underline;
 }
 
@@ -92,20 +118,18 @@ div.content-covid-analysis a {
 
 
 hr {
-  border-color: hsl(173, 30%, 20%);
+  border-color: #13294B;
   border-style: dashed;
   margin: 16px 0px;
 }
 
 .content h1 {
   font-family: 'Playfair Display', serif;
-  background-color: white;
-  color: hsl(173, 30%, 20%);
-  margin-bottom: 20px;
+  color: #13294B;
 }
 
 .content h2 {
-  background-color: hsl(173, 30%, 20%);
+  background-color: #13294B;
   color: white;
   font-family: 'Playfair Display', serif;
   display: inline-block;
@@ -117,13 +141,13 @@ hr {
 h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
-  color: hsl(173, 30%, 20%);
+  color: #13294B;
 }
 
 h4 {
   /* font-family: 'Playfair Display', serif; */
   font-size: 1.1rem;
-  color: hsl(173, 30%, 20%);
+  color: #13294B; /* hsl(173, 30%, 20%); */
 }
 
 .jumbotron.viz-header {
@@ -148,7 +172,7 @@ h4 {
 
 .d7-title-2 {
   font-family: 'Playfair Display', serif;
-  background-color: hsl(173, 30%, 20%);
+  background-color: #13294B; /* hsl(173, 30%, 20%); */
   color: white;
   display: inline-block;
   padding: 4px 20px;
@@ -265,10 +289,15 @@ blockquote {
   }
 }
 
+.authors {
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .card-full .title, .vcard .title {
   font-size: 1.3rem;
   font-weight: bold;
-  color: hsl(173, 30%, 50%);
+  color: #13294B;
 }
 
 .vcard a {
@@ -302,4 +331,4 @@ a.card {
 
 ul.pub-list { margin-top: -12px; }
 ul.pub-list > li { line-height: 1.1; margin-bottom: 3px; }
-.pub-etc { font-size: 0.8rem; }
+.pub-etc { font-size: 90%; }

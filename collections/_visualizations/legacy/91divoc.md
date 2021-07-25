@@ -1,5 +1,5 @@
 ---
-title: 91-DIVOC
+title: 91-DIVOC Project
 
 external-url: https://91-divoc.com/pages/covid-visualization/
 external-img: /static/images/91-divoc.png

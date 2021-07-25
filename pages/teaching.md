@@ -4,132 +4,147 @@ title: Teaching
 permalink: /teaching/
 ---
 
-### Teaching
+# Teaching Overview
 
-#### Current & Recently Courses Taught
+I believe that world-class education is education that is worth creating and worth sharing.  Education should be creative, exploratory, and fun &mdash; all of my courses contain projects with significant "creative components" where you create something original and unique that you can share with others.
+
+Additionally, I believe in free, open-access to educational materials.  You will find all of my course websites to be public and open to all, and a collection of course notes and videos below when they're available for each course.  If you find any of it useful, feel free to use it *(and, optionally, let me know so I can know it's useful to keep doing it)*.
+
+<hr>
+
+# Courses Taught
+
+## Data Science Discovery (STAT 107 / CS 107 / IS 107)
+
+> Data Science Discovery is the intersection of statistics, computation, and real-world relevance. As a project-driven course, students perform hands-on-analysis of real-world datasets to analyze and discover the impact of the data. Throughout each experience, students reflect on the social issues surrounding data analysis such as privacy and design.  Credit: 4 hours.
+
+Data Science Discovery is the first course in the Data Science program at The University of Illinois, teaching students introductory data science skills including foundational statistics, Python programming (with a heavy emphasis on pandas), and the social impact of data.  I developed this course with Statistics professor [Karle Flanagan](https://kflan.stat.illinois.edu/) specifically for students with no existing background in data science.  The course has no course prerequisites, and serves as a quantitative reasoning gened at Illinois.  We piloted the course in Spring 2019 to 20 students from 20 different majors and now this course reaches nearly 500 Illini each year.
+
+<!-- - Extensive Topic List (PDF) -->
+- Course Webpage: **Fall 2021**, [Spring 2020](http://courses.las.illinois.edu/spring2020/stat107/), [Fall 2019](http://courses.las.illinois.edu/fall2019/stat107/), and [Spring 2019](http://courses.las.illinois.edu/spring2019/stat107/).
+
+<hr>
+
+## Introduction to Computer Systems (CS 240)
+
+> Basics of computer systems. Number representations, assembly/machine language, abstract models of processors (fetch/execute, memory hierarchy), processes/process control, simple memory management, file I/O and directories, network programming, usage of cloud services.  Credit: 3 hours.
+
+Introduction to Computer Systems is a modern approach to computer systems and one of the newest courses in the CS core curriculum, teaching students the foundational of computer architecture, systems progrmaming, and cloud computing.  CS students can either take a dedicated architecture course (CS 233) and a dedicated systems course (CS 241) or take CS 240 to fulfill both requirements.
+
+<!-- - Detailed Comparison between CS 240 and CS 233/241 -->
+- Semesters Taught: **Fall 2021**, [Spring 2021](https://courses.engr.illinois.edu/cs240/sp2021/), and [Fall 2020](https://courses.engr.illinois.edu/cs240/fa2020/).
+
+<hr>
+
+## Accelerated Computer Science Fundamentals Specialization (Online MOOCs with Coursera)
+
+> Data Structures and Algorithms in C++. Learn fundamentals of computer science while implementing efficient data structures in C++.  Credit: Illinois-Coursera Certificate.
+
+Accelerated Computer Science Fundamentals is a Coursera Specialization comprised of three individual MOOCs that provide learners foundational skills in data structures, algorithms, and algorithmic analysis.  Initially developed as a "leveling" course for incoming students in Illinois' Online Masters of Computer Science program, this course was later refactored into three MOOCs and offered to the world to learn computer science fundamentals.  Nearly 100,000 learners have enrolled in it to date, and all three MOOCs are ranked as the top MOOCs offered by Computer Science at Illinois.
 
 <ul>
-  <li>
-    CS 423: Operating System Design [<a href="https://courses.engr.illinois.edu/cs423/sp2021/"><b>Spring 2021</b></a>]
-  </li>
-  <li>
-    CS 240: Introduction to Computer Systems [<a href="https://courses.engr.illinois.edu/cs240/sp2021/"><b>Spring 2021</b></a>, 
-      <a href="https://courses.engr.illinois.edu/cs240/fa2020/">Fall 2020</a>]
-  </li>
-  <li>
-    STAT 107 / CS 107 / IS 107: Data Science Discovery [<a href="http://courses.las.illinois.edu/spring2020/stat107/">Spring 2020</a>,
-    <a href="http://courses.las.illinois.edu/fall2019/stat107/">Fall 2019</a>,
-    <a href="http://courses.las.illinois.edu/spring2019/stat107/">Spring 2019</a>]
-  </li>  
-  <li>
-    Three-course <a href="https://www.coursera.org/specializations/cs-fundamentals">Accelerated Computer Science Fundamentals Specialization</a> (Online MOOCs with Coursera):
-    <ul>
-      <li>Course #1: <a href="https://www.coursera.org/learn/cs-fundamentals-1">Object-Oriented Data Structures in C++</a>; <i>a month-long course (4.8/5.0 from 250+ reviews)</i></li>
-      <li>Course #2: <a href="https://www.coursera.org/learn/cs-fundamentals-2">Ordered Data Structures</a>; <i>a month-long course (4.8/5.0 from 100+ reviews)</i></li>
-      <li>Course #3: <a href="https://www.coursera.org/learn/cs-fundamentals-3">Unordered Data Structures</a>; <i>a month-long course (4.9/5.0 from 70+ reviews)</i></li>
-    </ul>
-  </li>
-  <li>
-    Courses taught for study-abroad students studying at Illinois (by invitation from Illinois International):
-    <ul>
-      <li>
-        Introduction to Programming [Spring 2020], for King Abdullah University of Science and Technology (KAUST) scholars
-      </li>
-      <li>
-        Data Science Creativity [Summer 2019], for Shanghai Jiao Tong University scholars
-      </li>
-      <li>
-        Data Science Sprint [Summer 2019], for Ulsan National Institute of Science and Technology (UNIST) scholars
-      </li>
-    </ul>
-  </li>
-  <li>
-    CS 225: Data Structures [<a href="https://courses.engr.illinois.edu/cs225/sp2019/">Spring 2019</a>,
-    <a href="https://courses.engr.illinois.edu/cs225/fa2018/">Fall 2018</a>,
-    <a href="https://courses.engr.illinois.edu/cs225/sp2018/">Spring 2018</a>,
-    <a href="https://courses.engr.illinois.edu/cs225/fa2017/">Fall 2017</a>,
-    <a href="https://courses.engr.illinois.edu/cs225/sp2017/">Spring 2017</a>]
-  </li>
-  <li>
-    CS 305: Data Driven Discovery
-    [<a href="https://courses.engr.illinois.edu/cs199205/sp2017/">Spring 2017</a>,
-    <a href="https://courses.engr.illinois.edu/cs199205/fa2016/">Fall 2016</a>,
-    <a href="https://courses.engr.illinois.edu/cs199205/sp2016/">Spring 2016</a>,
-    <a href="https://courses.engr.illinois.edu/cs199205/fa2015/">Fall 2015</a>]
-  </li>
-  <li>
-    CS 105: Intro to Computer Science (Non-Majors)
-    [<a href="https://courses.engr.illinois.edu/cs105/fa2015/">Fall 2015</a>,
-    <a href="https://courses.engr.illinois.edu/cs105/sp2015/">Spring 2015</a>,
-    <a href="https://courses.engr.illinois.edu/cs105/fa2014/">Fall 2014</a>,
-    <a href="https://courses.engr.illinois.edu/cs105/sp2014/">Spring 2014</a>]
-  </li>
-  <li>
-    CS 241: System Programming
-    [<a href="https://courses.engr.illinois.edu/cs241/fa2013/">Fall 2013</a>]
-  </li>
+  <li>Course #1: <a href="https://www.coursera.org/learn/cs-fundamentals-1">Object-Oriented Data Structures in C++</a>; <i>a month-long course (4.7/5.0 from over 2,000 verified ratings and over 500 verified reviews)</i></li>
+  <li>Course #2: <a href="https://www.coursera.org/learn/cs-fundamentals-2">Ordered Data Structures</a>; <i>a month-long course (4.8/5.0 from over 600 verified ratings)</i></li>
+  <li>Course #3: <a href="https://www.coursera.org/learn/cs-fundamentals-3">Unordered Data Structures</a>; <i>a month-long course (4.8/5.0 from over 400 verified ratings)</i></li>
 </ul>
 
+<hr>
 
-#### Teaching Philosophy
+## Courses for International Scholars Studying at Illinois
 
-I believe that world-class education is education that is worth sharing. If you are going through your life sharing the meals you eat, the sunset in the evening, and other ordinary things, your educational experience should be *at least* among those experiences (and, hopefully, exceptionally better).
+By invitation from [Illinois International](https://international.illinois.edu/), I have had the privilege of teaching students from around the world as they come to study at The University of Illinois.  To date, I have been invited to share the best of Illinois education with three different cohorts of international scholars:
 
-Toward that end, classes I teach contain major components that are a sharable experience. More on this soon. :)
+- Data Science SPRINT (Summer 2021), for King Abdullah University of Science and Technology (KAUST) scholars
+- Introduction to Programming (Spring 2021 and Spring 2020), for King Abdullah University of Science and Technology (KAUST) scholars
+- Data Science CREATIVITY (Summer 2019), for Shanghai Jiao Tong University (SJTU) scholars
+- Data Science SPRINT (Summer 2019), for Ulsan National Institute of Science and Technology (UNIST) scholars
 
+<hr>
 
-#### Independent Study / Senior Thesis / Senior Project
+## Operating System Design (CS 423)
 
-I have had the privilege of working with over 100 students in advising an independent study, senior project, or senior thesis.   When I advise an independent study of any form, I am making a commitment to you to work with you as we explore something new and interesting.  Similarly, I expect you to be fully committed to the project.
+> Organization and structure of modern operating systems and concurrent programming concepts. Deadlock, virtual memory, processor scheduling, and disk systems. Performance, security, and protection. Credit: 3 OR 4 hours.
 
-If you have been a student in one or more of my courses, have completed CS 225, and are willing to dedicate significant time to work on new and hard problems, let's chat about it!
+- Course Webpage: [Spring 2021](https://courses.engr.illinois.edu/cs423/sp2021/).
 
+<hr>
 
-<h4>Accolades</h4>
-<p>
-  <ul class="pub-list">
-    <li>
-      Campus Award for Excellence in Undergraduate Teaching; 2020
-      <div class="pub-etc">
-        The top teaching honor given at The University of Illinois, given by the Office of the Provost
-      </div>
-    </li>
-    <li>
-      Scott H. Fisher Computer Science Teaching Award; 2019
-      <div class="pub-etc">
-        The top teaching honor given by the Department of Computer Science at The University of Illinois, in recognition of Scott H. Fisher
-      </div>
-    </li>
-    <li>
-      Chi Omega’s Outstanding Faculty Award; 2018
-      <div class="pub-etc">
-        <i>&quot;A University-level award for excellence in teaching and mentoring.&quot;</i> &ndash; Chi Omega National Chapter
-      </div>
-    </li>
-    <li>
-      Engineering Council's Award for Excellence in Advising; 2018
-      <div class="pub-etc">
-        College of Engineering at The University of Illinois at Urbana-Champaign
-      </div>
-    </li>
-    <li>
-      Collins Award for Innovative Teaching; 2017
-      <div class="pub-etc">
-        <i>&quot;This award recognizes outstanding development or use of new and innovative teaching methods.&quot;</i> &ndash; The University of Illinois' Grainger College of Engineering
-      </div>
-    </li>
-    <li>
-      Invited Guest:
-      <a href="https://www.naefoee.org/symposia/currentsymposium/17139/18685.aspx">National Academy of Engineering's Frontiers of Engineering Education (FOEE)</a>; 2016
-      <div class="pub-etc">
-        <i>&quot;The Frontiers of Engineering Education (FOEE) Symposium brings together some of the nation’s most engaged and innovative engineering educators in order to recognize, reward, and promote effective, substantive, and inspirational engineering education.&quot;</i> &ndash; National Academy of Engineering
-      </div>
-    </li>
-    <li>
-      Teachers Ranked as Excellent by Their Students; 2020, 2019, 2018, 2017, 2016, 2013, 2012, 2011, 2010, 2008
-      <div class="pub-etc">
-        Center for Innovation in Teaching &amp; Learning at The University of Illinois
-      </div>
-    </li>
-  </ul>
-</p>
+## Data Structures (CS 225)
+
+> Data abstractions: elementary data structures (lists, stacks, queues, and trees) and their implementation using an object-oriented programming language. Solutions to a variety of computational problems such as search on graphs and trees. Elementary analysis of algorithms. Credit: 4 hours.
+
+- Course Webpage: <a href="https://courses.engr.illinois.edu/cs225/sp2019/">Spring 2019</a>, <a href="https://courses.engr.illinois.edu/cs225/fa2018/">Fall 2018</a>, <a href="https://courses.engr.illinois.edu/cs225/sp2018/">Spring 2018</a>, <a href="https://courses.engr.illinois.edu/cs225/fa2017/">Fall 2017</a>, and <a href="https://courses.engr.illinois.edu/cs225/sp2017/">Spring 2017</a>.
+
+<hr>
+
+## Data Driven Discovery (CS 205/CS 305)
+
+> Introduction to techniques for data analytics and visualization through the use of weekly data sources from a wide selection of domains. Project-based course with multiple projects; each project requires the creation of a data visualization. Specific emphasis is placed on increasing programming fluency, understanding of computational foundations, and framing problems for a data-centric workflow. Credit: 4 hours.
+
+- Course Webpage: <a href="https://courses.engr.illinois.edu/cs199205/sp2017/">Spring 2017</a>, <a href="https://courses.engr.illinois.edu/cs199205/fa2016/">Fall 2016</a>, <a href="https://courses.engr.illinois.edu/cs199205/sp2016/">Spring 2016</a>, and <a href="https://courses.engr.illinois.edu/cs199205/fa2015/">Fall 2015</a>.
+
+<hr>
+
+## Intro Computing: Non-Tech (CS 105)
+
+> Computing as an essential tool of academic and professional activities. Functions and interrelationships of computer system components: hardware, systems and applications software, and networks. Widely used application packages such as spreadsheets and databases. Concepts and practice of programming for the solution of simple problems in different application areas. Intended for non-science and non-engineering majors. Credit: 3 hours.
+
+- Course Webpage: <a href="https://courses.engr.illinois.edu/cs105/fa2015/">Fall 2015</a>, <a href="https://courses.engr.illinois.edu/cs105/sp2015/">Spring 2015</a>, <a href="https://courses.engr.illinois.edu/cs105/fa2014/">Fall 2014</a>, and <a href="https://courses.engr.illinois.edu/cs105/sp2014/">Spring 2014</a>.
+
+<hr>
+
+## CS 241: System Programming
+
+> Basics of system programming, including POSIX processes, process control, inter-process communication, synchronization, signals, simple memory management, file I/O and directories, shell programming, socket network programming, RPC programming in distributed systems, basic security mechanisms, and standard tools for systems programming such as debugging tools.
+
+- Course Webpage: [Fall 2013](https://courses.engr.illinois.edu/cs241/fa2013/).
+
+<hr>
+
+# Accolades
+
+<ul class="pub-list mt-1">
+  <li>
+    <a href="https://provost.illinois.edu/awards/campus-awards-honors/campus-awards-for-excellence-in-instruction/excellence-in-undergraduate-teaching/">Campus Award for Excellence in Undergraduate Teaching</a>; 2020
+    <div class="pub-etc">
+      The top teaching honor given at The University of Illinois, awarded by the Office of the Provost
+    </div>
+  </li>
+  <li>
+    Scott H. Fisher Computer Science Teaching Award; 2019
+    <div class="pub-etc">
+      The top teaching honor given by the Department of Computer Science at The University of Illinois, in recognition of Scott H. Fisher
+    </div>
+  </li>
+  <li>
+    Chi Omega’s Outstanding Faculty Award; 2018
+    <div class="pub-etc">
+      <i>&quot;A University-level award for excellence in teaching and mentoring.&quot;</i> &ndash; Chi Omega National Chapter
+    </div>
+  </li>
+  <li>
+    Engineering Council's Award for Excellence in Advising; 2018
+    <div class="pub-etc">
+      College of Engineering at The University of Illinois at Urbana-Champaign
+    </div>
+  </li>
+  <li>
+    Collins Award for Innovative Teaching; 2017
+    <div class="pub-etc">
+      <i>&quot;This award recognizes outstanding development or use of new and innovative teaching methods.&quot;</i> &ndash; The University of Illinois' Grainger College of Engineering
+    </div>
+  </li>
+  <li>
+    Invited Guest:
+    <a href="https://www.naefoee.org/symposia/currentsymposium/17139/18685.aspx">National Academy of Engineering's Frontiers of Engineering Education (FOEE)</a>; 2016
+    <div class="pub-etc">
+      <i>&quot;The Frontiers of Engineering Education (FOEE) Symposium brings together some of the nation’s most engaged and innovative engineering educators in order to recognize, reward, and promote effective, substantive, and inspirational engineering education.&quot;</i> &ndash; National Academy of Engineering
+    </div>
+  </li>
+  <li>
+    <a href="https://citl.illinois.edu/citl-101/measurement-evaluation/teaching-evaluation/teaching-evaluations-(ices)/teachers-ranked-as-excellent">Teachers Ranked as Excellent by Their Students</a>; 2008, 2010, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020
+    <div class="pub-etc">
+      Center for Innovation in Teaching &amp; Learning at The University of Illinois
+    </div>
+  </li>
+</ul>
