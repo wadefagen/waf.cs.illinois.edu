@@ -30,7 +30,7 @@ li {
 
 # Hi, nice to have you here!
 
-My name is Wade Fagen-Ulmschnieder -- I am faculty in the [Department of Computer Science](https://cs.illinois.edu/) in the [Grainger College of Engineering](https://grainger.illinois.edu/) at [The University of Illinois (UIUC)](https://illinois.edu/).  My passion is at the intersection of systems, data, and creating tools to nerd out with both systems and data through interactive data visualizations.  In my work, I work to educate, encourage, and insprire you to change the world.
+My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Computer Science](https://cs.illinois.edu/) in the [Grainger College of Engineering](https://grainger.illinois.edu/) at [The University of Illinois (UIUC)](https://illinois.edu/).  My passion is at the intersection of systems, data, and creating tools to nerd out with both systems and data through interactive data visualizations.  In my work, I work to educate, encourage, and insprire you to change the world.
 
 <hr>
 
