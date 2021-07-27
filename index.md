@@ -27,12 +27,13 @@ li {
 
 
 
+<img alt="Wade Fagen-Ulmschneider" src="/static/images/fagen-ulmschneider.jpg" style="max-height: 200px; float: right; border: solid 1px black; margin-left: 20px; margin-bottom: 20px;">
 
 # Hi, nice to have you here!
 
 My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Computer Science](https://cs.illinois.edu/) in the [Grainger College of Engineering](https://grainger.illinois.edu/) at [The University of Illinois (UIUC)](https://illinois.edu/).  My passion is at the intersection of systems, data, and creating tools to nerd out with both systems and data through interactive data visualizations.  In my work, I work to educate, encourage, and insprire you to change the world.
 
-<hr>
+<hr style="clear: both">
 
 <!--
 ### Quick Links
@@ -99,7 +100,9 @@ My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Compute
 </style>
 
 
-**Teaching**: I believe that education should be available and accessible.  To the further extent possible, my teaching at Illinois has been archived online and open for anyone to nerd out.  You can find links to my courses dating back to 2013:
+## Teaching
+
+I believe that education should be available and accessible.  To the further extent possible, my teaching at Illinois has been archived online and open for anyone to nerd out.  You can find links to my courses dating back to 2013:
 
 <!--
 - [Fall 2021: Introduction to Computer Systems (CS 240)](https://courses.grainger.illinois.edu/cs240/fa2021/)
@@ -112,7 +115,9 @@ My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Compute
 
 <hr>
 
-**Visualizations**: Most of my scholarly work is exploring engagement through data visualizations and similar art, and much of this work is done in collaboration with undergraduate students and faculty from other domains.  If I have done a good job, you'll be able to spend hours nerding out with data in these visualizations:
+## Visualizations
+
+Most of my scholarly work is exploring engagement through data visualizations and similar art, and much of this work is done in collaboration with undergraduate students and faculty from other domains.  If I have done a good job, you'll be able to spend hours nerding out with data in these visualizations:
 
 - [91-DIVOC Project (Data-forward, interactive COVID-19 Visualizations)](https://91-divoc.com/)
 - ["GPA Visualizations" of UIUC GPA Data](/discovery/gpa/)
@@ -120,7 +125,9 @@ My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Compute
 
 <hr>
 
-**Projects and Software**: Beyond data visualizations, I work on open source tools and software to make life a bit nicer, easier, or more enjoyable.  A few recent tools:
+## Projects and Software
+
+Beyond data visualizations, I work on open source tools and software to make life a bit nicer, easier, or more enjoyable.  A few recent tools:
 
 - [Illinois LinkedIn Banner Generator](https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/)
 - [Illinois Open Source Queue](https://queue.illinois.edu/)
@@ -131,7 +138,9 @@ My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Compute
 
 <hr>
 
-**Impact**: I have been able to share data and knowledge with many through the use of my tools, talks and workshops at conferences, and more.
+## Impact
+
+I have been able to share data and knowledge with many through the use of my tools, talks and workshops at conferences, and more.
 
 - [Invited Talks, Panels, and Workshops](/talks/)
 - [Adoptions, Mentions, and Impact](/impact/)
