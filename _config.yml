@@ -48,6 +48,8 @@ defaults:
       layout: "default"
 
 collections:
+  slides:
+    output: true
   news:
     output: true
   covid-analysis:
