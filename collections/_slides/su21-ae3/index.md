@@ -26,7 +26,7 @@ date: 2021-08-10
 
 ## References
 
-- \[1\]: "Vision Span" on Wikipedia, [https://en.wikipedia.org/wiki/Vision_span](https://en.wikipedia.org/wiki/Vision_span); Accessed Aug. 9, 2021.
-- \[2\]: "SPARK G45", Washington State University, [https://li.wsu.edu/buildings-and-spaces/general-university-classrooms/classroom-specs/spark-g45/](https://li.wsu.edu/buildings-and-spaces/general-university-classrooms/classroom-specs/spark-g45/); Accessed Aug. 9, 2021.
-- \[3\]: "Learning Innovation Center", Oregon State, [https://is.oregonstate.edu/rooms/learning-innovation-center](https://is.oregonstate.edu/rooms/learning-innovation-center); Accessed Aug. 9, 2021.
-- \[4\]: "LINC Pictures", Oregon State, [https://is.oregonstate.edu/learning-innovation-center/linc-pictures](https://is.oregonstate.edu/learning-innovation-center/linc-pictures); Accessed Aug. 9, 2021.
+- \[1\]: "Vision Span" on Wikipedia, [https://en.wikipedia.org/wiki/Vision_span](https://en.wikipedia.org/wiki/Vision_span); Accessed Aug. 5, 2021.
+- \[2\]: "SPARK G45", Washington State University, [https://li.wsu.edu/buildings-and-spaces/general-university-classrooms/classroom-specs/spark-g45/](https://li.wsu.edu/buildings-and-spaces/general-university-classrooms/classroom-specs/spark-g45/); Accessed Aug. 6, 2021.
+- \[3\]: "Learning Innovation Center", Oregon State, [https://is.oregonstate.edu/rooms/learning-innovation-center](https://is.oregonstate.edu/rooms/learning-innovation-center); Accessed Aug. 7, 2021.
+- \[4\]: "LINC Pictures", Oregon State, [https://is.oregonstate.edu/learning-innovation-center/linc-pictures](https://is.oregonstate.edu/learning-innovation-center/linc-pictures); Accessed Aug. 7, 2021.
