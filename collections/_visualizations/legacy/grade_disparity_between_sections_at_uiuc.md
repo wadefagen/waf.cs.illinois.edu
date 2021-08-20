@@ -1,10 +1,10 @@
 ---
 title: Grade disparity between sections at UIUC
 
-external-url: http://waf.cs.illinois.edu/discovery/grade_disparity_between_sections_at_uiuc/
-external-img: http://waf.cs.illinois.edu/discovery/grade_disparity_between_sections_at_uiuc/web/ss_social.png
+external-url: /discovery/grade_disparity_between_sections_at_uiuc/
+external-img: /discovery/grade_disparity_between_sections_at_uiuc/img.png
 
-date: 2019-03-26
+date: 2021-08-20
 
 author:
 - Devin Oliver

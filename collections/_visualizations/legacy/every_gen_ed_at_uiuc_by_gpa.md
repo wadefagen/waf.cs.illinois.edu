@@ -1,10 +1,10 @@
 ---
 title: Every Gen Ed at UIUC, by GPA
 
-external-url: http://waf.cs.illinois.edu/discovery/every_gen_ed_at_uiuc_by_gpa/
-external-img: http://waf.cs.illinois.edu/discovery/img/gened.png
+external-url: /discovery/every_gen_ed_at_uiuc_by_gpa/
+external-img: /discovery/every_gen_ed_at_uiuc_by_gpa/img.png
 
-date: 2019-03-26
+date: 2021-08-20
 
 author:
 - Kexin (Fiona) Fei

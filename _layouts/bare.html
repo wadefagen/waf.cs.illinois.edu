@@ -1,72 +1,23 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}Wade Fagen-Ulmschneider</title>
+---
+layout: min
+---
 
-    <meta property="og:title" content="{{ page.title }}">
-    <meta name="twitter:title" content="{{ page.title }}" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary" />
-
-    {% for author in page.author %}
-    <meta name="author" content="Wade Fagen-Ulmschneider">
-    {% endfor %}
-
-    <meta name="description" content="{{ page.description | escape }}">
-    <meta property="og:description" content="{{ page.description | escape }}">
-    <meta name="twitter:description" content="{{ page.description | escape }}">
-
-    <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <link rel=”canonical” href="{{ page.url | absolute_url }}">
-
-    <meta property="og:image" content="{{ page.social-img }}">
-    <meta name="twitter:image" content="{{ page.social-img }}">
-    
-    <link rel="icon" type="image/png" href="/static/waf.png">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" crossorigin="anonymous">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
-    <link href="/static/css/waf.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <div class="container-fluid header header-content">
-      <div class="container">
-        <img style="height: 90px; float: right; position: relative; top: -5px;" src="/static/kno2.png">
-        <h1>
-          <a href="https://waf.cs.illinois.edu/">Wade Fagen-Ulmschneider</a>
-        </h1>
-        <h2>Teaching Associate Professor, Computer Science</h2>
-        <div style="font-size: 16px;">
-          Follow: 
-          <a href="https://twitter.com/profwade_" target="_blank"><i class="ion-social-twitter mr-1"></i>@profwade_</a>
-          &middot;
-          <a href="https://www.linkedin.com/in/profwade" target="_blank"><i class="ion-social-linkedin mr-1"></i>profwade</a>
-          &middot;
-          <a href="https://github.com/wadefagen" target="_blank"><i class="ion-social-github mr-1"></i>wadefagen</a>
-        </div>
-      </div>
+<div class="container-fluid header header-content">
+  <div class="container">
+    <img style="height: 90px; float: right; position: relative; top: -5px;" src="/static/kno2.png">
+    <h1>
+      <a href="https://waf.cs.illinois.edu/">Wade Fagen-Ulmschneider</a>
+    </h1>
+    <h2>Teaching Associate Professor, Computer Science</h2>
+    <div style="font-size: 16px;">
+      Follow: 
+      <a href="https://twitter.com/profwade_" target="_blank"><i class="ion-social-twitter mr-1"></i>@profwade_</a>
+      &middot;
+      <a href="https://www.linkedin.com/in/profwade" target="_blank"><i class="ion-social-linkedin mr-1"></i>profwade</a>
+      &middot;
+      <a href="https://github.com/wadefagen" target="_blank"><i class="ion-social-github mr-1"></i>wadefagen</a>
     </div>
+  </div>
+</div>
 
-
-    {{content}}
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67232409-1"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-67232409-1');</script>
-  </body>
-</html>
+{{content}}
