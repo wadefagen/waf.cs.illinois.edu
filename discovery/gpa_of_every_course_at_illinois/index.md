@@ -4,7 +4,7 @@ slug: gpa3
 layout: viz
 
 description: A visualization of GPAs for every course at The University of Illinois!
-date: 2021-08-20
+date: 2021-08-22
 
 social-img: img.png
 author:
