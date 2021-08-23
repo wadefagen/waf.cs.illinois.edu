@@ -108,8 +108,8 @@ I believe that education should be available and accessible.  To the further ext
 - [Fall 2021: Introduction to Computer Systems (CS 240)](https://courses.grainger.illinois.edu/cs240/fa2021/)
 - [Fall 2021: Data Science Discovery (CS 107 / STAT 107 / IS 107)](http://courses.las.illinois.edu/fall2021/stat107/)
 -->
-- **Fall 2021**: Introduction to Computer Systems (CS 240) -- Website Available Aug. 23
-- **Fall 2021**: Data Science Discovery (CS 107 / STAT 107 / IS 107) -- Website Available Aug. 23
+- [**Fall 2021**: Introduction to Computer Systems (CS 240)](https://courses.grainger.illinois.edu/cs240/fa2021/)
+- [**Fall 2021**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/stat107-fa21/)
 - [Coursera MOOC: Accelerated Computer Science Fundamentals Specialization](https://www.coursera.org/specializations/cs-fundamentals)
 - [Previous Courses, Teaching Philosophy, and More on Teaching...](/teaching/)
 
