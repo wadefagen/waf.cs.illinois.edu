@@ -6,7 +6,7 @@ permalink: /impact/
 
 # Adoptions, Mentions, and Impact
 
-<h6 style="margin-top: -10px"><i>Updated: October 2020</i></h6>
+<h6 style="margin-top: -10px"><i>Updated: August 2021</i></h6>
 
 
 ---
