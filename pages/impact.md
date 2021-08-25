@@ -49,7 +49,7 @@ and more.
 
 - **WVEC Arizona** (Cameron La Fontaine), January 5, 2021; [*Arizona has highest COVID-19 case rate in the country, data shows*](https://www.13newsnow.com/article/news/health/coronavirus/data-shows-arizona-has-highest-covid-19-case-rate-in-the-country/75-617bb574-f416-4982-9f87-762c27d1d46a) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of both an article and a video segment on COVID-19.
 
-- **Ty Newell** references several 91-DIVOC visualization in their pre-print publication [*Linking Outdoor Air Temperature and SARS-CoV-2 Transmission in the US Using a Two Parameter Transmission Model*](https://www.medrxiv.org/content/10.1101/2020.07.20.20158238v1.full).
+- **Ty Newell** references several 91-DIVOC visualization in their pre-print publication [*Linking Outdoor Air Temperature and SARS-CoV-2 Transmission in the US Using a Two Parameter Transmission Model*](https://www.medrxiv.org/content/10.1101/2020.07.20.20158238v1.full), doi.org/10.1101/2020.07.20.20158238.
 
 - **MIT's Civic Design Data Lab** (Griffin Kantz), May 21, 2020; [*Creating Best Practices for Visualizing Covid Data*](https://blog.civicdatadesignlab.mit.edu/creating-best-practices-for-visualizing-covid-data) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on visualization techniques of COVID-19 data.
 
