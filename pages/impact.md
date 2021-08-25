@@ -33,10 +33,46 @@ and more.
 
 - **CBS This Morning** (Manuel Bojorquez), June 16, 2020; [*Manuel Bojorquez's segment on the coronavirus*](https://twitter.com/uofigrainger/status/1272970719987740672) includes a video interview with Fagen-Ulmschneider regarding COVID-19 data.
 
-
-
-
 - **Vox** (German Lopez), August 20, 2020; [*Why Trump shouldn’t compare America’s Covid-19 outbreak to New Zealand's, in one chart*](https://www.vox.com/future-perfect/2020/8/20/21377225/trump-coronavirus-covid-new-zealand) uses Fagen-Ulmschneider's 91-DIVOC animation for a comparative analysis between COVID-19 cases in the United States and New Zealand.
+
+- **ABC15 Arizona** (Garrett Archer), January 16, 2021; [*Arizona has highest rate of COVID-19 in the world, data shows*](https://www.abc15.com/news/state/arizona-has-highest-rate-of-covid-19-in-world-data-shows) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on COVID-19.
+
+- **Rio Salado College (KJZZ), Fronteras Podcast** (Mark Brodie), January 6, 2021; [*Arizona Mayo Clinic CEO Seeing Record Number Of COVID-19 Patients In Hospital, ICU*](https://fronterasdesk.org/content/1648432/arizona-mayo-clinic-ceo-seeing-record-number-covid-19-patients-hospital-icu) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on COVID-19.
+
+- **Arizona State University** (Prof. Steven Desch), March 25, 2021; [*SESE Community Conversation*](https://sese.asu.edu/sites/default/files/2021-03/CommunityConvo_25Mar2021%20_ALL.pdf) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an presentation on COVID-19.
+
+- **NEJM Journal Watch** (Paul E. Sax, MD), February 21, 2021; [*Why Are COVID-19 Case Numbers Dropping?*](https://blogs.jwatch.org/hiv-id-observations/index.php/why-are-covid-19-case-numbers-dropping/2021/02/21/) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on COVID-19.
+
+- **Vox Media's SBNation** (Kevin Broom), January 14, 2021; [*Short-term exposure and long-term risks mean the NBA needs to take a more responsible approach to COVID-19*](https://www.bulletsforever.com/2021/1/14/22231235/nba-wizards-responsible-approach-covid-19) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on COVID-19.
+
+- **Eric Topol, MD** [used multiple 91-DIVOC visualizations](https://mobile.twitter.com/EricTopol/status/1328063956116676609) in his explanation of the spread of COVID-19 across the United States.
+
+- **WVEC Arizona** (Cameron La Fontaine), January 5, 2021; [*Arizona has highest COVID-19 case rate in the country, data shows*](https://www.13newsnow.com/article/news/health/coronavirus/data-shows-arizona-has-highest-covid-19-case-rate-in-the-country/75-617bb574-f416-4982-9f87-762c27d1d46a) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of both an article and a video segment on COVID-19.
+
+- **Ty Newell** references several 91-DIVOC visualization in their pre-print publication [*Linking Outdoor Air Temperature and SARS-CoV-2 Transmission in the US Using a Two Parameter Transmission Model*](https://www.medrxiv.org/content/10.1101/2020.07.20.20158238v1.full).
+
+- **MIT's Civic Design Data Lab** (Griffin Kantz), May 21, 2020; [*Creating Best Practices for Visualizing Covid Data*](https://blog.civicdatadesignlab.mit.edu/creating-best-practices-for-visualizing-covid-data) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on visualization techniques of COVID-19 data.
+
+- **Institute for New Economic Thinking** (Phillip Alvelda, Thomas Ferguson, and John C. Mallery), November 18, 2020; [*To Save the Economy, Save People First*](https://www.ineteconomics.org/perspectives/blog/to-save-the-economy-save-people-first) uses many of Fagen-Ulmschneider's 91-DIVOC visualizations as part of an article on COVID-19.
+
+- **Emory University's School of Medicine** (Carlos Del Rio), November 9, 2020; [*Education and Training at the time of COVID-19*](https://council.org/wp-content/uploads/2020/11/Dr.-del-Rio-Presentation-November-9-2020.pdf) uses Fagen-Ulmschneider's 91-DIVOC visualizations as part of an article on COVID-19.
+
+- **Oregon Health & Science University (OHSU)** (Peter Graven, PhD), January 19, 2021; [*OHSU COVID Forecast*](http://p6cdn4static.sharpschool.com/UserFiles/Servers/Server_173011/File/District%20Office/Coronavirus/2021%20SY/Oregon%20Trends_20210119.pdf) uses Fagen-Ulmschneider's 91-DIVOC visualizations as part of their state-wide briefing on COVID-19.
+
+- **University of Maryland** (Jonathan S. Bromberg, MD, PhD), June 23, 2020; [*COVID Crisis Monumental Changes for Health Care*](https://bioe.umd.edu/sites/bioe.umd.edu/files/Bromberg-Slides.pdf) uses Fagen-Ulmschneider's 91-DIVOC visualizations as part of a UMD Medical Center's event ["A Panel Discussion on Research, Development, Regulation, and Commercialization Efforts to Address COVID-19"](https://bioe.umd.edu/covid-webinar).
+
+- **Kentucky's Department of Education**'s [Special Superintendents’ Webcast](https://education.ky.gov/CommOfEd/web/Documents/Superintendents%20Webcast%208-18-20.pdf) (August 18, 2020) uses Fagen-Ulmschneider's 91-DIVOC visualizations as a tool in sharing COVID-19 data with their superintendents in the state of Kentucky.
+
+- **Honolulu City Council's Committee on Economic Assistance and Revitalization** had the presentation [*Emerging from the SARS-CoV-2 pandemic*](https://honolulu.granicus.com/MetaViewer.php?view_id=3&clip_id=1313&meta_id=138817) presented by Paul H. Brewbaker, Ph.D., CBE (May 27, 2020) that uses Fagen-Ulmschneider's 91-DIVOC visualizations as a tool in sharing COVID-19 data.
+
+- **Kentucky Health News (University of Kentucky's Institute for Rural Journalism and Community Issues)** (Melissa Patrick and Al Cross) August 4, 2020; [*https://ci.uky.edu/kentuckyhealthnews/2020/08/04/13448/*](https://ci.uky.edu/kentuckyhealthnews/2020/08/04/13448/) uses Fagen-Ulmschneider's 91-DIVOC visualizations as part of an article on COVID-19.
+
+- **University of California San Diego (UCSD)**'s [Return to Learn: Faculty Town Hall](https://youtu.be/-TxkPSVQYhk?t=746) (Elizabeth Simmons, Executive Vice Chancellor) panelist Prof. Natasha Martin uses Fagen-Ulmschneider's 91-DIVOC visualizations as part of her presentation on COVID-19 data.
+
+- **Vox** (Aaron Rupar) August 13, 2020; [*Trump’s new favorite talking point about US coronavirus cases is highly misleading*](https://www.vox.com/2020/8/13/21365015/trump-us-coronavirus-cases-compared-to-germany-south-korea-japan-australia) uses Fagen-Ulmschneider's 91-DIVOC visualizations as part of an article  on COVID-19.
+
+- **ABC15 Arizona** (Garrett Archer), January 4, 2021; [*Arizona has highest rate of COVID-19 in the world, latest data shows
+*](https://www.abc15.com/news/coronavirus/arizona-has-highest-rate-of-covid-19-in-the-world-latest-data-shows) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on COVID-19.
 
 - **University of Illinois** (Prof. Sergei Maslov), August 6, 2020; [*COVID-19 Briefing Series: Data Modeling*](https://youtu.be/VmwK9tyNe8A?t=683) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of a video briefing on COVID-19 for the University of Illinois campus.
 
@@ -112,6 +148,8 @@ and more.
 ---
 
 ### Citations or Adoptions of Fagen-Ulmschneider's Work
+
+- **Fox 19 Cincinnati** (Brian Planalp), August 20, 2020; [*38 COVID deaths reported in Kentucky over last 72 hours*] uses Fagen-Ulmschneider's 91-DIVOC visualization as a reference for COVID-19 data trends. 
 
 - **Indy Star** (Grace Hauck and Jayme Fraser), October 15, 2020; [*COVID-19 cases in US grow at a speed not seen since July, the summer peak*](https://www.indystar.com/story/news/health/2020/10/15/coronavirus-cases-us-growing-speed-not-seen-since-july/3662942001/) uses Fagen-Ulmschneider's 91-DIVOC visualization as a reference for COVID-19 data trends.
 
