@@ -290,7 +290,7 @@ onload_external = function() {
     } else if (headers.length < 2) {
       document.getElementById("externalResult").innerHTML = `❌ No identification field found and very few columns found -- is this a CSV file?`;
     } else {
-      document.getElementById("externalResult").innerHTML = `❌ No identification field found. See <a href="faq/#my-external-csv-does-not-work">FAQ: My external CSV does not work.</a> for information on how get me the format so I can add a new CSV format added to this tool.`;
+      document.getElementById("externalResult").innerHTML = `❌ No identification field found. See <a href="faq.html#my-external-csv-does-not-work">FAQ: My external CSV does not work.</a> for information on how get me the format so I can add a new CSV format added to this tool.`;
     }
 
 
@@ -390,7 +390,7 @@ externalCSV_change = function() {
 
 The transition to Canvas has made it much harder to import grades from external tools (like PrairieLearn, Lon Capa, etc).  Specifically, to import grades into Canvas, a series of six columns must be present for each row.  This client-side tool creates a CSV file ready to be imported into Canvas by matching a single identifier from an external tool to your Canvas gradebook.
 
-As a client-side tool, no data in this tool is ever sent over the Internet.  [Read the FAQ here.](faq/)
+As a client-side tool, no data in this tool is ever sent over the Internet.  [Read the FAQ here.](faq.html)
 
 
 
