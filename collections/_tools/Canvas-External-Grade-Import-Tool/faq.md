@@ -4,7 +4,7 @@ title: "FAQ: Canvas External Grade Import Tool"
 shortTitle: "FAQ"
 
 toolName: "Canvas External Grade Import Tool"
-toolURL: ../
+toolURL: /tools/Canvas-External-Grade-Import-Tool/
 
 date: 2021-09-04
 ---
@@ -17,7 +17,7 @@ h2 {
 
 # Frequently Asked Questions
 
-Frequently Asked Questions regarding the [Canvas External Grade Import Tool](../).
+Frequently Asked Questions regarding the [Canvas External Grade Import Tool](/tools/Canvas-External-Grade-Import-Tool/).
 
 
 ## What's New?
