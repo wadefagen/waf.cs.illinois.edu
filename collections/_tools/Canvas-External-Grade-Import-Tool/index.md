@@ -1,18 +1,16 @@
 ---
 layout: tool
-title: Canvas Grade Merge
-permalink: /canvas-merge/
+title: Canvas External Grade Import Tool
 
 date: 2021-09-04
 ---
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.1/papaparse.min.js" integrity="sha512-EbdJQSugx0nVWrtyK3JdQQ/03mS3Q1UiAhRtErbwl1YL/+e2hZdlIcSURxxh7WXHTzn83sjlh2rysACoJGfb6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="papaparse-5.3.1.min.js"></script>
 
 <script>
 var fr_canvas;
 var fr_external;
-var csv_canvas;
-var csv_external; 
+var csv_canvas = null;
+var csv_external = null; 
 
 // https://stackoverflow.com/questions/19327749/javascript-blob-filename-without-link/19328891#19328891
 var saveData = (function () {
@@ -30,31 +28,14 @@ var saveData = (function () {
   };
 }());
 
+let dUIN = {};
+let dNetID = {};
+let dEMail = {};
+let result = [];
+let column_order = [];
 
 downloadCSV = function() {
-  let result = [];
-  let column_order = [];
-  let dUIN = {};
-  let dNetID = {};
-  let dEMail = {};
-  let warnings = [];
-  
-  for (let header of required_canvas_fields) {
-    column_order.push(header);
-  }
-
-  let canvas_headers = csv_canvas.meta.fields;
-  for (let row of csv_canvas.data) {
-    if (row.ID == "") { continue; }
-    let d = {};
-    for (let i = 0; i < 6; i++) {
-      d[ canvas_headers[i] ] = row[ canvas_headers[i] ];
-    }
-    result.push(d);
-    dUIN[ d["Integration ID"] ] = d;
-    dNetID[ d["SIS Login ID"] ] = d;
-    dEMail[ d["SIS Login ID"] + "@illinois.edu" ] = d;
-  }
+  onCSVReadComplete();
 
   // Find exported fields:
   for (let i = 0; i < csv_external.meta.fields.length; i++) {
@@ -102,7 +83,6 @@ downloadCSV = function() {
       // Add Data:
       id = row[id_col];
       if (!dUIN[id]) {
-        warnings.push(`Unable to find Canvas data for <b>${id}</b> so their score does not appear in the output.`);
         continue;
       }
 
@@ -123,17 +103,92 @@ downloadCSV = function() {
   // Download
   saveData(csvForCanvas, "upload-for-canvas.csv");
 
-  if (warnings.length > 0) {
 
-    document.getElementById("warnings").innerHTML = warnings.join("<br>");
-
-  }
 };
 
 onCSVReadComplete = function() {
+  dUIN = {};
+  dNetID = {};
+  dEMail = {};
+  result = [];
+  column_order = [];
+
   if (csv_canvas == null || csv_external == null) {
     document.getElementById("assessment-area").style.display = "none";
     return;
+  }
+
+
+  // Populate from Canvas:
+  for (let header of required_canvas_fields) {
+    column_order.push(header);
+  }
+
+  let canvas_headers = csv_canvas.meta.fields;
+  for (let row of csv_canvas.data) {
+    if (row.ID == "") { continue; }
+    let d = {};
+    for (let i = 0; i < required_canvas_fields.length; i++) {
+      d[ canvas_headers[i] ] = row[ canvas_headers[i] ];
+    }
+    result.push(d);
+    dUIN[ d["Integration ID"] ] = d;
+    dNetID[ d["SIS Login ID"] ] = d;
+    dEMail[ d["SIS Login ID"] + "@illinois.edu" ] = d;
+    d["__matched_canvas_record"] = false;
+  }
+
+  // Check external file:
+  let id_col = external_id_option.field;
+  let warnings = [];
+  for (let row of csv_external.data) {
+    let id = row[id_col];
+    if (!dUIN[id]) {
+      let extraStudentIDs = [];
+      for (let key in external_id_options) {
+        if (external_id_options[key] == external_id_option) { continue; }
+        extraStudentIDs.push( "<b>" + row[external_id_options[key].field] + "</b>" );
+      }
+
+      let extraStudentIDs_str = "";
+      if (extraStudentIDs.length > 0) {
+        extraStudentIDs_str = ` (${extraStudentIDs.join(", ")})`;
+      }
+
+      warnings.push(`Unable to find Canvas data for <b>${id}</b>${extraStudentIDs_str} so their scores will not appear in the output. <i>(Is this person enrolled in Canvas?)</i>`);
+    } else {
+      dUIN[id]["__matched_canvas_record"] = true;
+    }
+  }
+
+  if (warnings.length > 0) {
+    warnings.unshift(`<i class="waf-canvas-warning"><b>${warnings.length}</b> unique IDs appeared in the external assessment data but not in Canvas data</i>:`);
+    warnings.push("");
+  }
+  
+
+  // Check canvas:
+  let warnings2 = [];
+  for (let d of result) {
+    if (!d["__matched_canvas_record"]) {
+      warnings2.push(`Unable to find external assessment data for <b>${d["Student"]}</b> (<b>${d["SIS Login ID"]}</b>, <b>${d["Integration ID"]}</b>) so their scores will be blank in the output. <i>(Is this person enrolled in the external tool?)</i>`);
+    } else {
+      delete d["__matched_canvas_record"];
+    }
+  }
+
+  if (warnings2.length > 0) {
+    warnings2.unshift(`<i class="waf-canvas-warning"><b>${warnings2.length}</b> unique IDs appeared in the Canvas data but not in external assessment data</i>:`);
+  }
+
+  warnings = warnings.concat(warnings2);
+
+
+  if (warnings.length > 0) {
+    document.getElementById("warnings").innerHTML = warnings.join("<br>");
+    document.getElementById("warnings").style.display = "block";
+  } else {
+    document.getElementById("warnings").style.display = "none";
   }
 
   document.getElementById("assessment-area").style.display = "block";
@@ -150,6 +205,7 @@ onload_canvas = function() {
   if (canvas_headers.length < required_canvas_fields.length) {
     document.getElementById("canvasResult").innerHTML = `❌ Not a canvas gradebook export (detected columns: ${canvas_headers.length}).`;
     csv_canvas = null;
+    onCSVReadComplete();
     return;
   }
 
@@ -157,6 +213,7 @@ onload_canvas = function() {
     if (required_canvas_fields[i] != canvas_headers[i]) {
       document.getElementById("canvasResult").innerHTML = `❌ Not a canvas gradebook export (missing column \`${required_canvas_fields[i]}\`).`;
       csv_canvas = null;
+      onCSVReadComplete();
       return;
     }
   }
@@ -202,6 +259,8 @@ onload_external = function() {
       } else if (csv_external.data[0][header].indexOf("@") == -1) {
         external_id_options["NetID"] = { "field": header, "data": "NetID" }
       }
+    } else if (header == "Name") {
+      external_id_options["name"] = { "field": header, "data": "name" }
     } else if (header != "") {
       external_grade_columns[header] = { "field": header, "max": 0 }
     }
@@ -227,19 +286,23 @@ onload_external = function() {
     }
 
     if (isCanvasFile) {
-      document.getElementById("externalResult").innerHTML = `⚠️ This file is a Canvas gradebook export and not an external tool CSV export.`;
+      document.getElementById("externalResult").innerHTML = `⚠️ This file is a Canvas gradebook export and not an external tool CSV export.  Use this file in the <b>Export of Canvas Gradebook</b>.`;
+    } else if (headers.length < 2) {
+      document.getElementById("externalResult").innerHTML = `❌ No identification field found and very few columns found -- is this a CSV file?`;
     } else {
-      document.getElementById("externalResult").innerHTML = `❌ No identification field found.`;
+      document.getElementById("externalResult").innerHTML = `❌ No identification field found. See <a href="faq/#my-external-csv-does-not-work">FAQ: My external CSV does not work.</a> for information on how get me the format so I can add a new CSV format added to this tool.`;
     }
 
 
     csv_external = null;
+    onCSVReadComplete();
     return;
   }
 
   if (external_grade_columns.length == 0) {
     document.getElementById("externalResult").innerHTML = `❌ No assessments fields found.`;
     csv_external = null;
+    onCSVReadComplete();
     return;
   }
 
@@ -282,14 +345,14 @@ ensureCheck = function(i) {
 };
 
 canvas = function() {
-  csv_canvas = null;
-  csv_external = null;
 };
 
 canvasCSV_change = function() {
   let canvasCSV = document.getElementById("canvasCSV");
   if (!canvasCSV || !canvasCSV.files || !canvasCSV.files[0]) {
     document.getElementById("canvasResult").innerHTML = `❌ No file selected.`;
+    csv_canvas = null;
+    onCSVReadComplete();
     return;
   }
 
@@ -302,6 +365,8 @@ externalCSV_change = function() {
   let externalCSV = document.getElementById("externalCSV");
   if (!externalCSV || !externalCSV.files || !externalCSV.files[0]) {
     document.getElementById("canvasResult").innerHTML = `❌ No file selected.`;
+    csv_external = null;
+    onCSVReadComplete();
     return;
   }
 
@@ -321,11 +386,11 @@ externalCSV_change = function() {
 
 <hr>
 
-### Introduction
+### Overview
 
 The transition to Canvas has made it much harder to import grades from external tools (like PrairieLearn, Lon Capa, etc).  Specifically, to import grades into Canvas, a series of six columns must be present for each row.  This client-side tool creates a CSV file ready to be imported into Canvas by matching a single identifier from an external tool to your Canvas gradebook.
 
-As a client-side tool, no data in this tool is ever sent over the Internet.
+As a client-side tool, no data in this tool is ever sent over the Internet.  [Read the FAQ here.](faq/)
 
 
 
@@ -353,11 +418,15 @@ body {
   font-size: 18px;
 }
 
+.waf-canvas-warning {
+  background-color: lightyellow;
+}
+
 </style>
 
 <div class="row waf-csv-select">
   <div class="mb-3 col-6">
-    <h3><label for="externalCSV" class="form-label">CSV of External Assessment</label></h3>
+    <h3><label for="externalCSV" class="form-label">CSV Export of External Tool</label></h3>
     Export a CSV from your external tool and select it here:
     <input class="form-control" onchange="javascript:externalCSV_change()" type="file" id="externalCSV">
     <div class="small ml-1" id="externalResult">❌ No file selected.</div>
@@ -372,6 +441,7 @@ body {
 
 
 <div id="assessment-area" style="display: none;">
+<div id="warnings" class="small mt-1" style="padding: 3px; max-height: 200px; overflow: hidden; overflow: auto; border: dashed 1px black; background-color: white;"></div>
 
 <hr>
 
@@ -384,7 +454,7 @@ body {
 
 <button type="submit" class="btn btn-primary" onclick="javascript:downloadCSV()">Download Canvas-formatted CSV</button>
 
-<div id="warnings" class="small mt-1" style="border: solid 1px yellow; background-color: white;"></div>
+<div class="margin-bottom: 30px">&nbsp;</div>
 
 
 </div>

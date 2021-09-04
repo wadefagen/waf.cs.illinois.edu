@@ -115,9 +115,9 @@ I believe that education should be available and accessible.  To the further ext
 
 <hr>
 
-## Visualizations
+## Visualization Systems
 
-Most of my scholarly work is exploring engagement through data visualizations and similar art, and much of this work is done in collaboration with undergraduate students and faculty from other domains.  If I have done a good job, you'll be able to spend hours nerding out with data in these visualizations:
+Most of my scholarly work is exploring engagement through data visualization systems and similar art, and much of this work is done in collaboration with undergraduate students and faculty from other domains.  If I have done a good job, you'll be able to spend hours nerding out with data in these visualizations:
 
 - [91-DIVOC Project (Data-forward, interactive COVID-19 Visualizations)](https://91-divoc.com/)
 - ["GPA Visualizations" of UIUC GPA Data](/discovery/gpa/)
@@ -129,10 +129,10 @@ Most of my scholarly work is exploring engagement through data visualizations an
 
 Beyond data visualizations, I work on open source tools and software to make life a bit nicer, easier, or more enjoyable.  A few recent tools:
 
+- [Canvas External Grade Import Tool](/tools/Canvas-External-Grade-Import-Tool/) - New tool in Sept. 2021
 - [Illinois LinkedIn Banner Generator](https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/)
-- [Illinois Open Source Queue](https://queue.illinois.edu/)
-- [nauka: An Album of Computer Generated Music](https://d7.cs.illinois.edu/projects/nauka-an-album-of-computer-generated-music/)
-- More Projects: [d7: Data Science Research Collaborative](http://d7.cs.illinois.edu/visualizations/)
+- More Tools: [Software Tools I've Built...](/tools/)
+- More Projects: [d7: Data Science Research Collaborative...](http://d7.cs.illinois.edu/visualizations/)
 
 <!-- - [All Projects and Software...](https://queue.illinois.edu/projects/) -->
 
