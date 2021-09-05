@@ -67,6 +67,16 @@ downloadCSV = function() {
     id_col = external_id_option.field;
     id_match = external_id_option.data;
 
+    dID = null;
+    if (id_match == "UIN") {
+      dID = dUIN;
+    } else if (id_match == "NetID") {
+      dID = dNetID;
+    } else if (id_match == "email") {
+      dID = dEMail;
+    }
+
+
     for (let row of csv_external.data) {
       let val = row[header];
 
@@ -81,18 +91,9 @@ downloadCSV = function() {
       }
 
       // Add Data:
-      id = row[id_col];
-      if (!dUIN[id]) {
-        continue;
-      }
 
-      if (id_match == "UIN") {
-        dUIN[id][header] = val;
-      } else if (id_match == "NetID") {
-        dNetID[id][header] = val;
-      } else if (id_match == "email") {
-        dEMail[id][header] = val;
-      }
+      id = row[id_col];
+      if (dID[id]) { dID[id][header] = val; }
     }
 
     column_order.push(header);
@@ -139,11 +140,21 @@ onCSVReadComplete = function() {
   }
 
   // Check external file:
+  let dID = null;
+  let id_match = external_id_option.data;
+  if (id_match == "UIN") {
+    dID = dUIN;
+  } else if (id_match == "NetID") {
+    dID = dNetID;
+  } else if (id_match == "email") {
+    dID = dEMail;
+  }
+
   let id_col = external_id_option.field;
   let warnings = [];
   for (let row of csv_external.data) {
     let id = row[id_col];
-    if (!dUIN[id]) {
+    if (!dID[id]) {
       let extraStudentIDs = [];
       for (let key in external_id_options) {
         if (external_id_options[key] == external_id_option) { continue; }
@@ -157,7 +168,7 @@ onCSVReadComplete = function() {
 
       warnings.push(`Unable to find Canvas data for <b>${id}</b>${extraStudentIDs_str} so their scores will not appear in the output. <i>(Is this person enrolled in Canvas?)</i>`);
     } else {
-      dUIN[id]["__matched_canvas_record"] = true;
+      dID[id]["__matched_canvas_record"] = true;
     }
   }
 
