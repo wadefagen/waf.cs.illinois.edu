@@ -54,9 +54,8 @@ To be secure in sending data that contain student identifiers, use [UofI Box](ht
 
 The current formats supported are:
 
-- PrairieLearn Gradebook Export
-- PrairieLearn Assessment Download
-- Lon Capa Export (thanks to Karle Flanagan for the format)
+- PrairieLearn (Gradebook and Assessment Exports)
+- Lon Capa
 
 
 ## Is this tool secure?
