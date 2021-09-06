@@ -6,7 +6,7 @@ shortTitle: "FAQ"
 toolName: "Canvas External Grade Import Tool"
 toolURL: /tools/Canvas-External-Grade-Import-Tool/
 
-date: 2021-09-04
+date: 2021-09-06
 ---
 
 <style>

@@ -2,7 +2,7 @@
 layout: tool
 title: Canvas External Grade Import Tool
 
-date: 2021-09-04
+date: 2021-09-06
 ---
 <script src="papaparse-5.3.1.min.js"></script>
 
