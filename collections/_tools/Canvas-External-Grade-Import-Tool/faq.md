@@ -22,6 +22,7 @@ Frequently Asked Questions regarding the [Canvas External Grade Import Tool](/to
 
 ## What's New?
 
+- **Sept. 6**: Added support for Google@Illinois forms and "email" column header for NetID@illinois.edu addresses.
 - **Sept. 4**: Improved format of messages when data is missing between the two files.
 - **Sept. 3**: Added Lon Capa (Thanks to Karle Flanagan)
 - **Sept. 2**: Initial Tool Development
@@ -54,9 +55,11 @@ To be secure in sending data that contain student identifiers, use [UofI Box](ht
 
 The current formats supported are:
 
-- PrairieLearn (Gradebook and Assessment Exports)
-- Lon Capa
-
+- PrairieLearn (Gradebook and Assessment Exports),
+- Lon Capa,
+- Google@Illinois Forms Result Sheet (with @illinois.edu addresses are automatically recorded),
+- Any CSV format that uses "UIN" as a header for a UIN column,
+- Any CSV format that uses "username", "email", or "email address" (all case-insensitive) for at NetID or NetID@illinois.edu column
 
 ## Is this tool secure?
 

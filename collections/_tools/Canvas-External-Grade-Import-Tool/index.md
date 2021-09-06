@@ -264,7 +264,7 @@ onload_external = function() {
       if (csv_external.data[0][header].length == 9) {
         external_id_options["UIN"] = { "field": header, "data": "UIN" }
       }
-    } else if (header == "UID" || header == "username" || header == "Username") {
+    } else if (header == "UID" || header.toLowerCase() == "username" || header.toLowerCase() == "email") {
       if (csv_external.data[0][header].indexOf("@illinois.edu") != -1) {
         external_id_options["email"] = { "field": header, "data": "email" }
       } else if (csv_external.data[0][header].indexOf("@") == -1) {
