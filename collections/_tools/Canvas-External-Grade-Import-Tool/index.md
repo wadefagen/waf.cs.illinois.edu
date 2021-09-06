@@ -301,7 +301,7 @@ onload_external = function() {
     } else if (headers.length < 2) {
       document.getElementById("externalResult").innerHTML = `❌ No identification field found and very few columns found -- is this a CSV file?`;
     } else {
-      document.getElementById("externalResult").innerHTML = `❌ No identification field found. See <a href="faq.html#my-external-csv-does-not-work">FAQ: My external CSV does not work.</a> for information on how get me the format so I can add a new CSV format added to this tool.`;
+      document.getElementById("externalResult").innerHTML = `❌ No identification field found. See <a href="faq.html#my-external-csv-does-not-work">FAQ: &quot;My external CSV does not work&quot;</a> for information on how get me the format so I can add a new CSV format added to this tool.`;
     }
 
 
