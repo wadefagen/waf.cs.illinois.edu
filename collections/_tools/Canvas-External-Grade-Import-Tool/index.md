@@ -2,7 +2,7 @@
 layout: tool
 title: Canvas External Grade Import Tool
 
-date: 2021-09-06
+date: 2021-09-08
 ---
 <script src="papaparse-5.3.1.min.js"></script>
 
@@ -264,7 +264,7 @@ onload_external = function() {
       if (csv_external.data[0][header].length == 9) {
         external_id_options["UIN"] = { "field": header, "data": "UIN" }
       }
-    } else if (header == "UID" || header.toLowerCase() == "username" || header.toLowerCase() == "email") {
+    } else if (header == "UID" || header.toLowerCase() == "username" || header.toLowerCase() == "email" || header.toLowerCase() == "netid") {
       if (csv_external.data[0][header].indexOf("@illinois.edu") != -1) {
         external_id_options["email"] = { "field": header, "data": "email" }
       } else if (csv_external.data[0][header].indexOf("@") == -1) {
