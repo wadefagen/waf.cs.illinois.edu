@@ -22,9 +22,10 @@ Frequently Asked Questions regarding the [Canvas External Grade Import Tool](/to
 
 ## What's New?
 
-- **Sept. 6**: Added support for Google@Illinois forms and "email" column header for NetID@illinois.edu addresses.
-- **Sept. 4**: Improved format of messages when data is missing between the two files.
-- **Sept. 3**: Added Lon Capa (Thanks to Karle Flanagan)
+- **Sept. 8**: Added `netid` as a valid identification header
+- **Sept. 6**: Added support for Google@Illinois forms and added `email` as a valid identification header
+- **Sept. 4**: Improved format of messages when data is missing between the two files
+- **Sept. 3**: Added Lon Capa (via Karle Flanagan for the format)
 - **Sept. 2**: Initial Tool Development
 
 
