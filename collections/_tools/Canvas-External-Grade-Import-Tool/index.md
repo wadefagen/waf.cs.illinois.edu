@@ -189,7 +189,7 @@ onCSVReadComplete = function() {
   let warnings2 = [];
   for (let d of result) {
     if (!d["__matched_canvas_record"]) {
-      warnings2.push(`Unable to find external assessment data for <b>${d["Student"]}</b> (<b>${d["SIS Login ID"]}</b>, <b>${d["Integration ID"]}</b>) so their scores will be blank in the output. <i>(Is this person enrolled in the external tool?)</i>`);
+      warnings2.push(`Unable to find external assessment data for <b>${d["Student"]}</b> (<b>${d["SIS Login ID"]}</b>, <b>${d["Integration ID"]}</b>) so their scores will not appear in the output. <i>(Is this person enrolled in the external tool?)</i>`);
     } else {
       delete d["__matched_canvas_record"];
     }
