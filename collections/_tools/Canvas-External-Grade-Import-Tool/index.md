@@ -2,7 +2,7 @@
 layout: tool
 title: Canvas External Grade Import Tool
 
-date: 2021-09-08
+date: 2021-09-11
 ---
 <script src="papaparse-5.3.1.min.js"></script>
 
@@ -392,7 +392,7 @@ externalCSV_change = function() {
 
 # Canvas External Grade Import Tool (BETA)
 <div style="font-size: 14px; margin-top: -8px; line-height: 16px;">
-  by Wade Fagen-Ulmschneider; File formats from Karle Flanagan; Last Updated: {{ page.date | date: '%B %d, %Y'}}
+  by Wade Fagen-Ulmschneider and Karle Flanagan; Last Updated: {{ page.date | date: '%B %d, %Y'}}
 </div>
 
 <hr>
