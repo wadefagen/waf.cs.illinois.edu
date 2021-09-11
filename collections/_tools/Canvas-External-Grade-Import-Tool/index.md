@@ -397,7 +397,7 @@ externalCSV_change = function() {
 </script>
 
 
-# Canvas External Grade Import Tool (BETA)
+# Canvas External Grade Import Tool
 <div style="font-size: 14px; margin-top: -8px; line-height: 16px;">
   by Wade Fagen-Ulmschneider and Karle Flanagan; Last Updated: {{ page.date | date: '%B %d, %Y'}}
 </div>
