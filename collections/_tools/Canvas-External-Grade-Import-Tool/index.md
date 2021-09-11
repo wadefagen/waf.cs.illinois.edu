@@ -31,11 +31,13 @@ var saveData = (function () {
 let dUIN = {};
 let dNetID = {};
 let dEMail = {};
-let result = [];
 let column_order = [];
 
 downloadCSV = function() {
   onCSVReadComplete();
+
+  let result = [];
+  let result_map = {};
 
   // Find exported fields:
   for (let i = 0; i < csv_external.meta.fields.length; i++) {
@@ -91,9 +93,15 @@ downloadCSV = function() {
       }
 
       // Add Data:
-
       id = row[id_col];
-      if (dID[id]) { dID[id][header] = val; }
+      if (dID[id]) {
+        dID[id][header] = val;
+
+        if (!result_map[id]) {
+          result_map[id] = dID[id];
+          result.push(dID[id]);
+        }
+      }
     }
 
     column_order.push(header);
@@ -132,7 +140,6 @@ onCSVReadComplete = function() {
     for (let i = 0; i < required_canvas_fields.length; i++) {
       d[ canvas_headers[i] ] = row[ canvas_headers[i] ];
     }
-    result.push(d);
     dUIN[ d["Integration ID"] ] = d;
     dNetID[ d["SIS Login ID"] ] = d;
     dEMail[ d["SIS Login ID"] + "@illinois.edu" ] = d;

@@ -6,7 +6,7 @@ shortTitle: "FAQ"
 toolName: "Canvas External Grade Import Tool"
 toolURL: /tools/Canvas-External-Grade-Import-Tool/
 
-date: 2021-09-06
+date: 2021-09-09
 ---
 
 <style>
@@ -22,6 +22,7 @@ Frequently Asked Questions regarding the [Canvas External Grade Import Tool](/to
 
 ## What's New?
 
+- **Sept. 9**: Change export to include only identifiers in the external assessment, instead of all records in the Canvas file, to allow for partial-class updates
 - **Sept. 8**: Added `netid` as a valid identification header
 - **Sept. 6**: Added support for Google@Illinois forms and added `email` as a valid identification header
 - **Sept. 4**: Improved format of messages when data is missing between the two files
