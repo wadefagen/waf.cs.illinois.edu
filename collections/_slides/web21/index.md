@@ -28,3 +28,4 @@ Data visualization has nearly unlimited potential but is often only as valuable 
 - Link 5: [91-DIVOC: Deaths from COVID-19 by States/Territories, normalized by population](https://91-divoc.com/pages/covid-visualization/?chart=states-normalized&highlight=Illinois&show=us-states&y=both&scale=linear&data=deaths&data-source=jhu&xaxis=right#states-normalized)
 - Link 6: [91-DIVOC: Daily Change in New Confirmed COVID-19 Cases per Day](https://91-divoc.com/pages/covid-visualization/?chart=countries&highlight=United%20States&show=25&y=both&scale=linear&data=cases-daily-7-dx-7&data-source=jhu&)xaxis=right#countries
 - Link 7: [d3.js](https://d3js.org/)
+- Link 8: [Perception of People at a Party Visualization](vis/)
