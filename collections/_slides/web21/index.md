@@ -18,6 +18,8 @@ date: 2021-09-22
 Data visualization has nearly unlimited potential but is often only as valuable as the story you are able to tell and the audience you can capture to see you story. In this interactive workshop, you’ll learn the foundations of data visualization. we will discover the power the power of pre-attentive features together, and then will nerd out with visualizations that have gathered national attention (or virality) using what we discovered.  The workshop will finish by exploring creating a new visualization using a popular web-based visualization language (d3.js).
 
 - [PDF Slides of the Presentation](waf_web21-slides.pdf)
+- [CSV of Responses to the "Perception of People at a Party" Dataset](Perception-of-People-at-a-Party_Illinois-WebMasters.csv)
+- [Perception of People at a Party Visualization](vis/)
 
 ## Links
 
