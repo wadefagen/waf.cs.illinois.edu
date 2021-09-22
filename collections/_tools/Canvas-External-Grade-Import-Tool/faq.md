@@ -61,6 +61,7 @@ The current formats supported are:
 - PrairieLearn (Gradebook and Assessment Exports),
 - Lon Capa,
 - Google@Illinois Forms Result Sheet (with @illinois.edu addresses are automatically recorded),
+- Scantron result files from CITL scantron grading services,
 - Any CSV format that uses "UIN" as a header for a UIN column,
 - Any CSV format that uses "username", "email", or "email address" (all case-insensitive) for at NetID or NetID@illinois.edu column
 
