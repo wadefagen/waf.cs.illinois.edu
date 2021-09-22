@@ -52,26 +52,25 @@ If you provide a number in both scaling boxes, this tool will scale your grade f
 
 ## My external CSV does not work.
 
-Let me know -- waf@illinois.edu!  I will need the **exact** format of the CSV export, which is best provided by sending a copy of the export to me in order to identify the exact format that the external tool exports your data.  You can remove all but a few rows to preserve privacy (but do not remove columns)!
+Let Wade know -- waf@illinois.edu!  I will need the **exact** format of the CSV export, which is best provided by sending a copy of the export to me in order to identify the exact format that the external tool exports your data.  You can remove all but a few rows to preserve privacy (but do not remove columns)!
 
 To be secure in sending data that contain student identifiers, use [UofI Box](https://box.illinois.edu/), [PEAR](https://www.aits.uillinois.edu/services/application_services/PEAR), or another secure system.
 
 The current formats supported are:
 
-- PrairieLearn (Gradebook and Assessment Exports),
-- Lon Capa,
+- [PrairieLearn](https://prairielearn.engr.illinois.edu/) (Gradebook and Assessment Exports),
+- [Lon Capa](https://atlas.illinois.edu/services/lon-capa-students),
 - Google@Illinois Forms Result Sheet (with @illinois.edu addresses are automatically recorded),
-- Scantron result files from CITL scantron grading services,
+- Scantron result files from [CITL exam grading services](https://citl.illinois.edu/our-services/exam-scoring),
 - Any CSV format that uses "UIN" as a header for a UIN column,
 - Any CSV format that uses "username", "email", or "email address" (all case-insensitive) for at NetID or NetID@illinois.edu column
 
 ## Is this tool secure?
 
-I built this tool for myself and made it publicly available to help others.  I am using this tool and I trust this tool.
+The most useful statement is that we built this tool for ourselves and made it publicly available to help others.  *We (Wade Fagen-Ulmschneider and Karle Flanagan) are using this tool and we trust this tool.*  If you don't trust us, you should not trust this tool.
 
-Most web-based applications use a server that processes your data.  I build this application entirely in client-side JavaScript so it runs entirely **on your device without sending any data to my server**.  I don't want to know what grades your students have. :)
+You know that most web-based applications use a server that processes your data.  Even though this runs in your web browser, this page is entirely in client-side JavaScript.  It runs entirely **on your device without sending any data to my server**.  We don't want to know what grades your students have. :)
 
-Since **no data is stored on any server though using the tool**, your data is as secure as your computer is secure.  For example, if someone gets physical access to your computer, they can read the CSV files you download from your hard drive.
+Since **no data is sent to or stored on any server though using the tool**, your data is as secure as your computer is secure.  (If someone gets physical access to your computer, they can read the CSV files you download from your hard drive.  We cannot be more secure than that.)
 
-If you don't trust me, you (or someone you trust who does Computer Science stuffs) can also inspect the source code or inspect network traffic as you're viewing the tool.  If this tool is useful to many, I will see if campus can give it "stamp of approval" or something.
-
+If you don't trust us, you (or someone you trust who does Computer Science stuffs) can also inspect the source code or inspect network traffic as you're viewing the tool.  If this tool is useful to many, we will see if campus can give it "stamp of approval" or something.
