@@ -16,7 +16,21 @@ body {
 
 ### Recent Invited Talks, Panels and Workshops
 
+
+
+
 <ul>
+  <li>
+    Capturing Audiences with Data Visualization Systems and Pre-attentive Features, September 2021 [<a href="https://mediaspace.illinois.edu/media/t/1_gbh8mmxo/25369341">MediaSpace Recording</a>]
+    <div class="pub-etc">
+      <blockquote class="ml-0 mb-0">
+      Data visualization has nearly unlimited potential but is often only as valuable as the story you are able to tell and the audience you can capture to see you story. In this interactive workshop, you’ll learn the foundations of data visualization. we will discover the power the power of pre-attentive features together, and then will nerd out with visualizations that have gathered national attention (or virality) using what we discovered.  The workshop will finish by exploring creating a new visualization using a popular web-based visualization language (d3.js).
+      </blockquote>
+      at [Illinois Webmasters](https://webmasters.illinois.edu/) Sept. 2021 Workshop
+    </div>
+  </li>
+
+
   <li>
     Engagement Across Modalities in Large Lecture Courses, Panelist, June 2021
     <div class="pub-etc">
