@@ -9,7 +9,7 @@ date: 2021-10-15
 ---
 
 # {{page.title}}
-{{page.org}}'s *"{{page.venue}}"* on {{page.date | date: "%B %d, %Y"}}.
+{{page.org}}'s *"{{page.venue}}"* on {{page.date | date: "%B %d, %Y"}} with Karle Flanagan and Wade Fagen-Ulmschneiders
 
 <hr>
 
