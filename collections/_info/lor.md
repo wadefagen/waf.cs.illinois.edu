@@ -1,6 +1,7 @@
 ---
 title: Writing a Letter of Recommendation
 layout: info
+visible: true
 ---
 
 # Writing you a Letter of Recommendation
