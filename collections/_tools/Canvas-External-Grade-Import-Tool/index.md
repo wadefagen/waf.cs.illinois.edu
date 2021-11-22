@@ -79,6 +79,19 @@ downloadCSV = function() {
     }
 
 
+    // Auto-fill zeros:
+    let autofill_option = document.getElementById('autofill-zero');
+    if (autofill_option && autofill_option.checked) {
+      for (let id in dID) {
+        dID[id][header] = 0;
+        if (!result_map[id]) {
+          result_map[id] = dID[id];
+          result.push(dID[id]);
+        }
+      }
+    }
+
+
     for (let row of csv_external.data) {
       let val = row[header];
 
@@ -468,9 +481,18 @@ body {
 <div id="assignments"></div>
 
 
-<h3>Download CSV for Canvas</h3>
+<h3 class="mb-3">Download CSV for Canvas</h3>
 
-<button type="submit" class="btn btn-primary" onclick="javascript:downloadCSV()">Download Canvas-formatted CSV</button>
+<div>
+  <button type="submit" class="btn btn-primary" onclick="javascript:downloadCSV()">Download Canvas-formatted CSV</button>
+</div>
+
+
+<h3>Advanced Options</h3>
+
+<div>
+  <input type="checkbox" id="autofill-zero"> <label for="autofill-zero">Auto-fill zeros for all students in the Canvas gradebook who are missing or have no grade on the assessment.</label>
+</div>
 
 <div class="margin-bottom: 30px">&nbsp;</div>
 

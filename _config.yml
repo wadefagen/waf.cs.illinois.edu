@@ -41,6 +41,10 @@ profile: true
 exclude: [.idea/, .sass-cache/, sync/]
 
 defaults:
+  - scope:
+      path: "info"
+    values:
+      layout: "info"
   -
     scope:
       path: "" # an empty string here means all files in the project
@@ -55,6 +59,8 @@ collections:
   covid-analysis:
     output: true
   visualizations:
+    output: true
+  info:
     output: true
   tools:
     output: true
