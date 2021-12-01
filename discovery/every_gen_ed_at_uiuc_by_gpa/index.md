@@ -18,7 +18,7 @@ author:
 <h1>{{page.title}}</h1>
 <div style="font-size: 14px; margin-top: -8px; line-height: 16px;">
   Originally published on March 2, 2016 by Kexin (Fiona) Fei, Caroline Breckenfelder, and Wade Fagen-Ulmschneider<br>
-  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Fall 2021 on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
+  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Spring 2022 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
 </div>
 
 
