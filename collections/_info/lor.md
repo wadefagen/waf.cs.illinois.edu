@@ -10,19 +10,23 @@ Letters of recommendations are often the most important part of your graduate ap
 
 It is an honor to write a letter of recommendation and I will be thrilled to write one for you if we have worked together.  If you have completed a thesis, independent study, worked for a significant period of time any group I lead, or worked with me as part of course staff, continue reading about "Full Letters" below.
 
-If our only way I know you is through your enrollment in one of my large-lecture courses I, unfortunately, have no good basis for knowing enough about you to write a strong letter.  Additionally, I receive sometimes hundreds of these requests a year.  The only thing I would be able to say is something to the effect that "you were in my course in \[TERM\] and earned an A+" and, usually, this sort of a letter is seen as a negative since it fails to address your work ethic, responsibilities, or other elements usually found in a strong letter.  For these "Coursework Letters", I will only write them if you are applying only a coursework-based masters programs.
+If the only way I know you is through your enrollment in one of my large-lecture courses I, unfortunately, have no good basis for knowing enough about you to write a strong letter.  Additionally, I receive sometimes hundreds of these requests a year.  The only thing I would be able to say is something to the effect that "you were in my course in \[TERM\] and earned an A+" and, usually, this sort of a letter is seen as a negative since it fails to address your work ethic, responsibilities, or other elements usually found in a strong letter.  For these "Coursework Letters", I will only write them if you are applying to **ONLY** coursework-based masters programs.
 
 
 ## Coursework Letters
 
 I will write you a coursework letter if:
 
-1. You have earned an "A-" or better in any course I taught with you as a student,
-2. You have **NOT** worked on a thesis, independent study, worked for a significant period of time any group I lead, or worked with me as part of course staff,
-3. You are applying to **ONLY** coursework-based masters programs,
-4. There is **at least** two full weeks before the deadline of the letter,
+1. You have earned an **A** or **A+** in any course I taught with you as a student,
+2. You have **NOT**:
+    - worked on a thesis under my supervision,
+    - taken an independent study under my supervision,
+    - worked as part of any group I lead, or
+    - worked with me as part of course staff,
+3. You are applying to **ONLY** coursework-based programs,
+4. There is **at least two full weeks** before the deadline of the letter,
 5. Your CV/resume is complete and ready to send to me immediately, AND
-6. You have reviewed the information above about this being a weak letter since I do am unable to write specifics about your work ethic, responsibilities, or other elements usually found in a strong letter.
+6. You have reviewed and understand the information above (in the introduction) about this being a weak letter
 
 If you would like me to write this letter, please do the following:
 
@@ -40,12 +44,3 @@ If we have worked together in a meaningful way as outlined above, be sure that:
 - You are willing to "waive the right to view the recommendation" so that I can speak candidly about your work
 
 If these are all true, please write to me about what programs you're looking to apply to and I'll follow up to make sure I can craft the better letter possible for you!
-
-
-
-
-
-
-
-
-
