@@ -21,7 +21,7 @@ Additionally, I believe in free, open-access to educational materials.  You will
 Data Science Discovery is the first course in the Data Science program at The University of Illinois, teaching students introductory data science skills including foundational statistics, Python programming (with a heavy emphasis on pandas), and the social impact of data.  I developed this course with Statistics professor [Karle Flanagan](https://kflan.stat.illinois.edu/) specifically for students with no existing background in data science.  The course has no course prerequisites, and serves as a quantitative reasoning gened at Illinois.  We piloted the course in Spring 2019 to 20 students from 20 different majors and now this course reaches nearly 500 Illini each year.
 
 <!-- - Extensive Topic List (PDF) -->
-- Course Webpage: **Fall 2021**, [Spring 2020](http://courses.las.illinois.edu/spring2020/stat107/), [Fall 2019](http://courses.las.illinois.edu/fall2019/stat107/), and [Spring 2019](http://courses.las.illinois.edu/spring2019/stat107/).
+- Course Webpage: [**Spring 2022**](https://discovery.cs.illinois.edu/stat107-sp22/), [Fall 2021](https://discovery.cs.illinois.edu/stat107-fa21/), [Spring 2020](http://courses.las.illinois.edu/spring2020/stat107/), [Fall 2019](http://courses.las.illinois.edu/fall2019/stat107/), and [Spring 2019](http://courses.las.illinois.edu/spring2019/stat107/).
 
 <hr>
 
@@ -32,7 +32,7 @@ Data Science Discovery is the first course in the Data Science program at The Un
 Introduction to Computer Systems is a modern approach to computer systems and one of the newest courses in the CS core curriculum, teaching students the foundational of computer architecture, systems progrmaming, and cloud computing.  CS students can either take a dedicated architecture course (CS 233) and a dedicated systems course (CS 241) or take CS 240 to fulfill both requirements.
 
 <!-- - Detailed Comparison between CS 240 and CS 233/241 -->
-- Semesters Taught: **Fall 2021**, [Spring 2021](https://courses.engr.illinois.edu/cs240/sp2021/), and [Fall 2020](https://courses.engr.illinois.edu/cs240/fa2020/).
+- Semesters Taught: [Spring 2022](https://courses.engr.illinois.edu/cs240/sp2022/), [Fall 2021](https://courses.engr.illinois.edu/cs240/fa2021/), [Spring 2021](https://courses.engr.illinois.edu/cs240/sp2021/), and [Fall 2020](https://courses.engr.illinois.edu/cs240/fa2020/).
 
 <hr>
 

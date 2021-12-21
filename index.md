@@ -104,12 +104,8 @@ My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Compute
 
 I believe that education should be available and accessible.  To the further extent possible, my teaching at Illinois has been archived online and open for anyone to nerd out.  You can find links to my courses dating back to 2013:
 
-<!--
-- [Fall 2021: Introduction to Computer Systems (CS 240)](https://courses.grainger.illinois.edu/cs240/fa2021/)
-- [Fall 2021: Data Science Discovery (CS 107 / STAT 107 / IS 107)](http://courses.las.illinois.edu/fall2021/stat107/)
--->
-- [**Fall 2021**: Introduction to Computer Systems (CS 240)](https://courses.grainger.illinois.edu/cs240/fa2021/)
-- [**Fall 2021**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/stat107-fa21/)
+- [**Spring 2022**: Introduction to Computer Systems (CS 240)](https://courses.grainger.illinois.edu/cs240/sp2022/)
+- [**Spring 2022**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/stat107-sp22/)
 - [Coursera MOOC: Accelerated Computer Science Fundamentals Specialization](https://www.coursera.org/specializations/cs-fundamentals)
 - [Previous Courses, Teaching Philosophy, and More on Teaching...](/teaching/)
 
