@@ -488,11 +488,13 @@ body {
 </div>
 
 
+<!--
 <h3>Advanced Options</h3>
 
 <div>
   <input type="checkbox" id="autofill-zero"> <label for="autofill-zero">Auto-fill zeros for all students in the Canvas gradebook who are missing or have no grade on the assessment.</label>
 </div>
+-->
 
 <div class="margin-bottom: 30px">&nbsp;</div>
 
