@@ -118,6 +118,7 @@ I believe that education should be available and accessible.  To the further ext
 
 Most of my scholarly work is exploring engagement through data visualization systems and similar art, and much of this work is done in collaboration with undergraduate students and faculty from other domains.  If I have done a good job, you'll be able to spend hours nerding out with data in these visualizations:
 
+- [Historic Snowfall and Snow Depth](https://vis.cs.illinois.edu/weather/historic-snowfall-and-snow-depth/)
 - [91-DIVOC Project (Data-forward, interactive COVID-19 Visualizations)](https://91-divoc.com/)
 - ["GPA Visualizations" of UIUC GPA Data](/discovery/gpa/)
 - [All Visualizations...](/visualizations/)
