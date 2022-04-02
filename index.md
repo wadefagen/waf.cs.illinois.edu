@@ -99,6 +99,9 @@ My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Compute
 
 </style>
 
+## Latest
+
+I just launched my newest visualization work -- [Historic Snowfall and Snow Depth: A data-forward exploration of historic snowfall and snow depth across 5,000 cities in the United States](https://vis.cs.illinois.edu/weather/historic-snowfall-and-snow-depth/)!  This work is the first data-forward exploration of the snowfall and snow depth record of every major US city and was a collaboration with Angie Cheng, Katy Miles, Karle Flanagan, and Emily Crawford!
 
 ## Teaching
 
