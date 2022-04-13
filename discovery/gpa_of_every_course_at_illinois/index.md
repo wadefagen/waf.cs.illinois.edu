@@ -4,7 +4,7 @@ slug: gpa3
 layout: viz
 
 description: A visualization of GPAs for every course at The University of Illinois!
-date: 2021-08-22
+date: 2022-04-13
 
 social-img: img.png
 author:
@@ -20,7 +20,7 @@ author:
 <h1>{{page.title}}</h1>
 <div style="font-size: 14px; margin-top: -8px; line-height: 16px;">
   Originally published on May 13, 2017 by Justin Lee, Nate Claussen, Wade Fagen-Ulmschneider, and Cinda Heeren<br>
-  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Spring 2022 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
+  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Fall 2022 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
 </div>
 
 
