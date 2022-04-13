@@ -35,7 +35,7 @@ author:
 
 One of the most frustrating situations to find yourself in is a coursewhere all of your friends are in the &quot;easier section&quot;.  For most of us, it feels like this happens <i>all of the time</i>.   This visualization is the second in a series of <a href="https://waf.cs.illinois.edu/discovery/gpa/">GPA visualizations</a> created to explore the grades given by courses at The University of Illinois.
 
-Using GPA data from the most recent seven full semesters (Fall 2017 through Spring 2021,
+Using GPA data from the most recent eight full semesters (Fall 2017 through Fall 2021,
 including summers/winters when available), we found the distribution of every section/instructor group
 within every course.  For example, Calculus I (MATH 221) has been taught by
 seven different primary instructors recently.  We found the following distributions:

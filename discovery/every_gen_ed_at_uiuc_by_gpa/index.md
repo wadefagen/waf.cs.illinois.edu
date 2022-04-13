@@ -28,7 +28,7 @@ author:
 <p>
   This visualization is the second in a series of <a href="https://waf.cs.illinois.edu/discovery/gpa/">GPA visualizations</a>
   created to explore the grades given by courses at The University of Illinois.  This visualization aims to allow for
-  an exploration of courses for general education credit, using data from Fall 2017 through Spring 2021.
+  an exploration of courses for general education credit, using data from Fall 2017 through Fall 2021.
 </p>
 
 <div class="row" style="text-align: center;">
