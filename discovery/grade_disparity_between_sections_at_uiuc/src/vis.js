@@ -75,21 +75,30 @@ $(function() {
        }
      }
 
+     let subjListMap = {};
+     for (let courseEntry of data) {
+       let course = courseEntry["course"];
+       let subject = course.split(" ")[0];
+       if (!subjListMap[subject]) { subjListMap[subject] = 1; }
+     }
+
+     let subjList = Object.keys(subjListMap);
+
+     $("#tags").autocomplete({
+       source: subjList,
+       autoFocus: true,
+       select: function(e, ui) {
+         var subject = ui.item.value;
+         updateBySubject(subject);
+       }
+     });
+
    })
   .fail(function(e) {
      alert("Failed to load CSV file!");
   });
 
-  var subjList = ["AAS","ABE","ACCY","ACE","ACES","ADV","AE","AFRO","AFST","AGCM","AGED","AHS","AIS","ALEC","ANSC","ANTH","ARAB","ARCH","ART","ARTD","ARTE","ARTF","ARTH","ARTS","ASRM","ASTR","ATMS","BADM","BCOG","BCS","BDI","BIOC","BIOE","BIOP","BTW","BUS","CEE","CHBE","CHEM","CHLH","CHP","CI","CLCV","CMN","CPSC","CS","CW","CWL","DANC","EALC","ECE","ECON","EDUC","EIL","ENG","ENGL","ENSU","ENVS","EOL","EPOL","EPS","EPSY","ESE","EURO","FAA","FIN","FR","FSHN","GCL","GE","GEOG","GEOL","GER","GLBL","GRKM","GS","GWS","HDFS","HIST","HORT","HRD","IB","IE","IHLT","INFO","IS","ITAL","JAPN","JOUR","JS","KIN","KOR","LA","LAS","LAST","LAW","LEAD","LER","LING","LLS","MACS","MATH","MBA","MCB","MDIA","ME","MILS","MSE","MUS","MUSC","MUSE","NPRE","NRES","NS","NUTR","PATH","PHIL","PHYS","PLPA","POL","PS","PSM","PSYC","REES","REHB","REL","RHET","RLST","RST","RUSS","SBC","SCAN","SE","SHS","SLAV","SLCL","SOC","SOCW","SPAN","SPED","STAT","TAM","TE","THEA","TRST","TSM","UP","VCM","VM","YDSH"]
 
-  $( "#tags" ).autocomplete({
-    source: subjList,
-    autoFocus: true,
-    select: function(e, ui) {
-      var subject = ui.item.value;
-      updateBySubject(subject);
-    }
-  });
 
 });
 
