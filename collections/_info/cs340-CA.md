@@ -1,5 +1,5 @@
 ---
-title: CS 240 Course Assistant
+title: CS 340 Course Assistant
 layout: info
 visible: true
 ---
