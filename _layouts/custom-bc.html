@@ -1,0 +1,48 @@
+---
+layout: min
+---
+<div class="container-fluid header-content">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">waf.cs</a></li>
+        {% if page.bc1 %}
+        <li class="breadcrumb-item"><a href="{{page.bc1_url}}">{{page.bc1}}</a></li>
+        {% endif %}
+        {% if page.bc2 %}
+        <li class="breadcrumb-item"><a href="{{page.bc2_url}}">{{page.bc2}}</a></li>
+        {% endif %}
+        {% if page.bc3 %}
+        <li class="breadcrumb-item"><a href="{{page.bc3_url}}">{{page.bc3}}</a></li>
+        {% endif %}
+        <li class="breadcrumb-item">{{page.title}}</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container content">
+  {{ content }}
+</div>
+
+{% unless page.disableFooter %}
+<div class="container-fluid footer header-content">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">waf.cs</a></li>
+        {% if page.bc1 %}
+        <li class="breadcrumb-item"><a href="{{page.bc1_url}}">{{page.bc1}}</a></li>
+        {% endif %}
+        {% if page.bc2 %}
+        <li class="breadcrumb-item"><a href="{{page.bc2_url}}">{{page.bc2}}</a></li>
+        {% endif %}
+        {% if page.bc3 %}
+        <li class="breadcrumb-item"><a href="{{page.bc3_url}}">{{page.bc3}}</a></li>
+        {% endif %}        
+      </ol>
+    </nav>
+  </div>
+</div>
+{% endunless %}
