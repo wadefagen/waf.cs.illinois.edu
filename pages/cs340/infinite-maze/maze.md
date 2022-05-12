@@ -5,10 +5,10 @@ bc1: Teaching
 bc1_url: "/teaching/"
 
 bc2: CS 340
-bc2_url: "/teaching/cs340/"
+bc2_url: "/pages/cs340/"
 
 bc3: Infinite Maze (Spring 2022)
-bc3_url: "/teaching/cs340/infinite-maze/"
+bc3_url: "/pages/cs340/infinite-maze/"
 
 title: Final Maze
 

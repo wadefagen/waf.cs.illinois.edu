@@ -17,8 +17,8 @@ class Maze {
     // Parameters:
     // Description: Creates a game object
     constructor(blockHeight) {
-        this.CANVAS_W    = 1020; //width of maze canvas
-        this.CANVAS_H    = 620;  //height of maze canvas
+        this.CANVAS_W    = 1010; //width of maze canvas
+        this.CANVAS_H    = 610;  //height of maze canvas
         this.SCALE_P     = 25; //scaling constant for player size
 
         this.blockHeight  = blockHeight;
@@ -50,8 +50,9 @@ class Maze {
         if (this.default === null) {
             this.default = paper.project.activeLayer;
             firstRender = true;
-            this.camx = window.x;
-            this.camy = window.y;
+            this.camx = Math.floor((window.x+BLOCK_C)/BLOCK_W);
+            this.camy = Math.floor((window.y+BLOCK_C)/BLOCK_W);
+
             this.lastx = window.x;
             this.lasty = window.y;
         }

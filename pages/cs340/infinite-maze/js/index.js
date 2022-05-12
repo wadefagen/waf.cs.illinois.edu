@@ -14,7 +14,7 @@ var _start_x = 0;
 var _start_y = 0;
 var _show_all = false;
 
-if (urlParams.get('x') && urlParams.get('y')) {
+if (urlParams.get('x') !== null && urlParams.get('y') !== null) {
   _start_x = +urlParams.get('x');
   _start_y = +urlParams.get('y');
 }
@@ -135,8 +135,8 @@ zoomMaze = () => {
 
 computeUnit = (requestX, requestY) => {
   return {
-    col: Math.floor( ((requestX + BLOCK_C) / BLOCK_W) + 0.5 ),
-    row: Math.floor( ((requestY + BLOCK_C) / BLOCK_W) + 0.5 ),
+    col: Math.floor( ((requestX + BLOCK_C) / BLOCK_W) ),
+    row: Math.floor( ((requestY + BLOCK_C) / BLOCK_W) ),
   };
 };
 
@@ -148,6 +148,8 @@ maze_cb = (gridX, gridY, initialLoad = false, cb) => {
 };
 
 maze_cb_key = (key, initialLoad, cb) => {
+  //if (!initialLoad) { console.log(key); }
+
   if (_mazeState[key]) {
     let d = _mazeState[key];
 
@@ -182,7 +184,7 @@ maze_cb_key = (key, initialLoad, cb) => {
 
   // Out of Bounds or Error
   r = {
-    geom: ["fff7fff", "fffffff", "fffffff", "efffffb", "fffffff", "fffffff", "fffcfff"],
+    geom: ["baa2aae", "dfffffd", "5fffff5", "4fffff1", "5fffff5", "7fffff7", "baa8aae"],
     color: "#000000"
   }
   cb( r );
@@ -248,7 +250,7 @@ requestGrid = (requestX, requestY, initialLoad = false) => {
       let gridUnit = computeUnit(requestX, requestY);
       let ry = (gridUnit.row * BLOCK_W) - 3;
       let rx = (gridUnit.col * BLOCK_W) - 3;
-      
+
       // verify we don't have a multiblock segment with no origin
       let geom = data["geom"];
       if (!(geom.length == BLOCK_W && geom[0].length == BLOCK_W)) {
@@ -329,6 +331,9 @@ requestGrid = (requestX, requestY, initialLoad = false) => {
 };
 
 expandGrid = (dX, dY) => {
+  requestGrid(x + dX, y + dY);
+
+  /*
   if (dX == 1) {
     requestGrid(x, y - 3);
   }
@@ -341,6 +346,7 @@ expandGrid = (dX, dY) => {
   if (dY == -1) {
     requestGrid(x - 3, y - 6);
   }
+  */
 };
 
 move = (dX, dY) => {
