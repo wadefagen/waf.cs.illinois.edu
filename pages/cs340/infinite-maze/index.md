@@ -75,7 +75,7 @@ The creativity of many of the maze segments is amazing:
     <div class="maze-caption">A happy face, found at <a href="maze.html?x=-77&y=-7&all=true">(-77, -7)</a></div>
   </div>
   <div class="col-3">
-    <a href="maze.html?x=14&2y=57&all=true"><img src="waves.png" class="img-fluid" /></a>
+    <a href="maze.html?x=142&y=57&all=true"><img src="waves.png" class="img-fluid" /></a>
     <div class="maze-caption">Ocean waves, found at <a href="maze.html?x=142&y=57&all=true">(142, 57)</a></div>
   </div>
 </div>
