@@ -22,7 +22,7 @@ td:nth-child(2), td:nth-child(3), td:nth-child(4) {
 
 # Color Distribution
 
-In the [Infinite Maze](/pages/cs340/infinite-maze/), a tile is generated using the color of the explorer who first discovered the tile.  This table is the distribution of the colors that tiles were generated.
+In the [Infinite Maze](/pages/cs340/infinite-maze/), a maze segment is generated every time a user explores an unexplored space.  That maze segment is then colored using the color of the explorer who first discovered the tile.  This table is the distribution of the colors of maze segments in the maze.
 
 *(We observed that the first 19 (22%) of colors represent 79.9% of all the colors in the maze, making this another distributing following the [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle).)*
 
