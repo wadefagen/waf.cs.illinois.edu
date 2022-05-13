@@ -96,22 +96,41 @@ My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Compute
 -->
 
 <style>
+.card p:last-of-type {
+  margin-bottom: 2px;
+}
 
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
 </style>
 
-## Latest
+## The Latest!
 
-**Apr. 13**: The three GPA data visualizations are updated for Fall 2022 registration, including UIUC GPAs from Summer 2021, Fall 2021, and Winter 2021/22!
+{% card April 20, 2022 &mdash; New Visualization: Temperature Radials %}
+
+[Temperature Radials: A data-forward radial visualization of the historical temperature record of every large city in America](https://vis.cs.illinois.edu/weather/temperature-radial/), created in collaboration with Katy Miles, Angie Cheng, and Karle Flanagan!
+
+{% endcard %}
+
+{% card April 13, 2022 &mdash; GPA Dataset and Visualization Updated %}
+
+The three GPA data visualizations are updated for Fall 2022 registration, including UIUC GPAs from Summer 2021, Fall 2021, and Winter 2021/22!
 
 - [Grade disparity between sections at UIUC](http://waf.cs.illinois.edu/discovery/grade_disparity_between_sections_at_uiuc/)
 - [Every Gen Ed at UIUC, by GPA](http://waf.cs.illinois.edu/discovery/every_gen_ed_at_uiuc_by_gpa/)
 - [GPAs of Every Course at The University of Illinois](http://waf.cs.illinois.edu/discovery/gpa_of_every_course_at_illinois/)
 
-In addition, I've updated the raw data for everyone to use, explore, and nerd out with as part of by [datasets repo on GitHub](https://github.com/wadefagen/datasets). 🎉
+In addition, the raw data is available for everyone to use, explore, and nerd out with as part of my [datasets repo on GitHub](https://github.com/wadefagen/datasets). 🎉
 
-<hr>
+{% endcard %}
 
-I just launched my newest visualization work -- [Historic Snowfall and Snow Depth: A data-forward exploration of historic snowfall and snow depth across 5,000 cities in the United States](https://vis.cs.illinois.edu/weather/historic-snowfall-and-snow-depth/)!  This work is the first data-forward exploration of the snowfall and snow depth record of every major US city and was a collaboration with Angie Cheng, Katy Miles, Karle Flanagan, and Emily Crawford!
+{% card March 20, 2022 &mdash; New Visualization: Historic Snowfall and Snow Depth %}
+
+New Visualization: [Historic Snowfall and Snow Depth: A data-forward exploration of historic snowfall and snow depth across 5,000 cities in the United States](https://vis.cs.illinois.edu/weather/historic-snowfall-and-snow-depth/)!  This work is the first data-forward exploration of the snowfall and snow depth record of every major US city and was a collaboration with Angie Cheng, Katy Miles, Karle Flanagan, and Emily Crawford!
+
+{% endcard %}
 
 <hr>
 
