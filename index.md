@@ -108,6 +108,12 @@ My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Compute
 
 ## The Latest!
 
+{% card May 13, 2022 &mdash; Infinite Maze %}
+
+In CS 240 this semester, we created an infinitely large maze with contributions from every student in the course.  You can [now explore the infinite maze yourself](/pages/cs340/infinite-maze/) and see what the amazing students in CS 240 created this semester!
+
+{% endcard %}
+
 {% card April 20, 2022 &mdash; New Visualization: Temperature Radials %}
 
 [**Temperature Radials**: A data-forward radial visualization of the historical temperature record of every large city in America](https://vis.cs.illinois.edu/weather/temperature-radial/), created in collaboration with Katy Miles, Angie Cheng, and Karle Flanagan!

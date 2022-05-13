@@ -4,7 +4,7 @@ layout: custom-bc
 bc1: Teaching
 bc1_url: "/teaching/"
 
-title: "CS 340: Introduction to Systems Programming"
+title: "CS 340: Introduction to Computer Systems"
 ---
 
 # Introduction to Computer Systems (CS 340)
