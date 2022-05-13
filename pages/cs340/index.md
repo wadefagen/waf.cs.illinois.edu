@@ -18,9 +18,11 @@ title: "CS 340: Introduction to Systems Programming"
 
 One of the highlights of CS 340 is the final project.  Each semester, you will be a part of an experience where you are developing a small but integral part of a complex software system.  As part of this project:
 
-1. You will contributes multiple different backend microservices to the final system,
-2. You, and the microservices of everyone else, will run simultaneously during the deployment of the system,
-3. The middleware, frontend, and other components are designed collaboratively by the class, with the ability for you to contribute to the shared infrastructure
+1. You will contribute multiple different backend microservices to the final system,
+2. You, and the microservices of everyone else, will run simultaneously during the deployment of the system at the end of the semester,
+3. The middleware, frontend, and other components are designed collaboratively by the class, with the ability for you to contribute to the shared infrastructure!
+
+### Recent Course-Wide Projects
 
 The final projects completed in recent semesters have been:
 
