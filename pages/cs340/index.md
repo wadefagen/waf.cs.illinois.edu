@@ -11,12 +11,12 @@ title: "CS 340: Introduction to Systems Programming"
 
 > Basics of computer systems. Number representations, assembly/machine language, abstract models of processors (fetch/execute, memory hierarchy), processes/process control, simple memory management, file I/O and directories, network programming, usage of cloud services.  Credit: 3 hours.
 
-**CS 340: Introduction to Computer Systems** is a modern approach to computer systems and one of the newest courses in the CS core curriculum, teaching students the foundational of computer architecture, systems progrmaming, and cloud computing.  All CS students except CS/ENG can either take a dedicated architecture course (CS 233) and a dedicated systems course (CS 341) or take CS 240 to fulfill both requirements.
+**CS 340: Introduction to Computer Systems** is a modern approach to computer systems and one of the newest courses in the CS core curriculum, teaching students the foundational of computer architecture, systems progrmaming, and cloud computing.  All CS students except CS/ENG can either take a dedicated architecture course (CS 233) and a dedicated systems course (CS 341) or take CS 340 to fulfill both requirements.
 
 
 ## Final Project
 
-One of the highlights of CS 340 is the final project.  Each semester, you will be a part of an experience where you are developing a small but integral part of a complex software system.  As part of this project:
+One of the highlights of CS 340 is the final project.  Each semester, you will be a part of an experience where you are developing a small but integral part of a complex software system.  The final system runs with everyone single person in the class contributing code to the project.  As part of this project:
 
 1. You will contribute multiple different backend microservices to the final system,
 2. You, and the microservices of everyone else, will run simultaneously during the deployment of the system at the end of the semester,
