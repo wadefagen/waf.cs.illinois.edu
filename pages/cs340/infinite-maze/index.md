@@ -5,7 +5,7 @@ bc1: Teaching
 bc1_url: "/teaching/"
 
 bc2: CS 340
-bc2_url: "/teaching/cs340/"
+bc2_url: "/pages/cs340/"
 
 title: Infinite Maze (Spring 2022)
 description: A maze without bounds, infinitely large, designed with a microservice architecture
