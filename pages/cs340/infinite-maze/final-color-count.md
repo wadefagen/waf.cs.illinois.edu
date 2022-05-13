@@ -10,7 +10,7 @@ bc2_url: "/pages/cs340/"
 bc3: Infinite Maze (Spring 2022)
 bc3_url: "/pages/cs340/infinite-maze/"
 
-title: Color Distribution
+title: Infinite Maze Color Distribution
 ---
 
 <style>

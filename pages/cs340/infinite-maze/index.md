@@ -8,7 +8,8 @@ bc2: CS 340
 bc2_url: "/teaching/cs340/"
 
 title: Infinite Maze (Spring 2022)
-
+description: A maze without bounds, infinitely large, designed with a microservice architecture
+social-img: https://waf.cs.illinois.edu/pages/cs340/infinite-maze/full-maze.png
 ---
 
 <style>

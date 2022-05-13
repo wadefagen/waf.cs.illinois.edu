@@ -10,7 +10,9 @@ bc2_url: "/pages/cs340/"
 bc3: Infinite Maze (Spring 2022)
 bc3_url: "/pages/cs340/infinite-maze/"
 
-title: Final Maze
+title: Final Maze Exploration
+description: Explore the final state of Illinois' Infinite Maze
+social-img: https://waf.cs.illinois.edu/pages/cs340/infinite-maze/full-maze.png
 
 disableFooter: 1
 ---
