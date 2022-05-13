@@ -18,7 +18,7 @@ disableFooter: 1
 # Illinois' Infinite Maze (Spring 2022)
 
 <div style="font-size: 14px; margin-top: -8px; line-height: 16px;">
-  A maze created via a cloud-based micro-service architecture using 218 servers exclusively by CS 240 students during Spring 2022.<br><a href="/teaching/cs340/infinite-maze/">Read more about this project in the full project overview</a>.
+  A maze created via a cloud-based micro-service architecture using 218 servers exclusively by CS 240 students during Spring 2022.<br><a href="/pages/cs340/infinite-maze/">Read more about this project in the full project overview</a>.
 </div>
 
 <div class="row mt-2" style="text-align:center; margin-bottom: 10px;">
