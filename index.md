@@ -110,7 +110,7 @@ My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Compute
 
 {% card April 20, 2022 &mdash; New Visualization: Temperature Radials %}
 
-[Temperature Radials: A data-forward radial visualization of the historical temperature record of every large city in America](https://vis.cs.illinois.edu/weather/temperature-radial/), created in collaboration with Katy Miles, Angie Cheng, and Karle Flanagan!
+[**Temperature Radials**: A data-forward radial visualization of the historical temperature record of every large city in America](https://vis.cs.illinois.edu/weather/temperature-radial/), created in collaboration with Katy Miles, Angie Cheng, and Karle Flanagan!
 
 {% endcard %}
 
@@ -128,7 +128,7 @@ In addition, the raw data is available for everyone to use, explore, and nerd ou
 
 {% card March 20, 2022 &mdash; New Visualization: Historic Snowfall and Snow Depth %}
 
-New Visualization: [Historic Snowfall and Snow Depth: A data-forward exploration of historic snowfall and snow depth across 5,000 cities in the United States](https://vis.cs.illinois.edu/weather/historic-snowfall-and-snow-depth/)!  This work is the first data-forward exploration of the snowfall and snow depth record of every major US city and was a collaboration with Angie Cheng, Katy Miles, Karle Flanagan, and Emily Crawford!
+New Visualization: [**Historic Snowfall and Snow Depth**: A data-forward exploration of historic snowfall and snow depth across 5,000 cities in the United States](https://vis.cs.illinois.edu/weather/historic-snowfall-and-snow-depth/)!  This work is the first data-forward exploration of the snowfall and snow depth record of every major US city and was a collaboration with Angie Cheng, Katy Miles, Karle Flanagan, and Emily Crawford!
 
 {% endcard %}
 
