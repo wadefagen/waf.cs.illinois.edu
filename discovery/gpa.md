@@ -6,6 +6,8 @@ layout: viz
 bc1: visualizations
 bc1_url: /visualizations/
 
+permalink: /discovery/gpa/
+
 disableFooter: True
 ---
 
