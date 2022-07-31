@@ -33,6 +33,12 @@ li {
 
 My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Computer Science](https://cs.illinois.edu/) in the [Grainger College of Engineering](https://grainger.illinois.edu/) at [The University of Illinois (UIUC)](https://illinois.edu/).  My passion is at the intersection of systems, data, and creating tools to nerd out with both systems and data through interactive data visualizations.  In my work, I work to educate, encourage, and inspire you to change the world.
 
+Since August 2021, I have worked to build the best data science resource online: [Data Science DISCOVERY](https://discovery.cs.illinois.edu/).  This free-to-consumer website is used daily as part of teaching of CS/STAT/IS 107, but also provides lectures, guides, and projects for anyone who wants to learn data science to use.
+
+My greatest passion is visualizing data in a way that readers can nerd out with for hours.  If this interests you, you may be interested in my [visualizations of GPAs at The University of Illinois](https://waf.cs.illinois.edu/discovery/gpa/), my [data-forward, interactive visualizations of COVID-19 as part of my 91-DIVOC project](https://91-divoc.com/pages/covid-visualization/), or any of [my other visualizations](/visualizations/).
+
+Finally, I've worked on several other projects that aim to highlight Illini or make our Illinois courses world-class courses.  These projects include the [Illini LinkedIn Banner Generator](https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/),  [Queue@Illinois](https://queue.illinois.edu/), and [others](/tools/).
+
 <hr style="clear: both">
 
 <!--
