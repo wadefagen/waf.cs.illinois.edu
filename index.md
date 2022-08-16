@@ -119,8 +119,7 @@ We've created our final weather-related visualization this summer, [**Temperatur
 
 This visualization will always show you context around today's temperature for 5,000 locations around the United States!  For example, today on August 15, all of the data will be historical high temperatures for every August 14th-16th for the selected location.
 
-With some extra time, we extended this work to low temperatures as well in [**Daily Weather Waves of Daily Low Temperatures
-](https://d7.cs.illinois.edu/projects/Daily-Weather-Waves-of-Daily-Low-Temperatures/).
+We loved this so much we extended this work to low temperatures as well in [**Daily Weather Waves of Daily Low Temperatures**](https://d7.cs.illinois.edu/projects/Daily-Weather-Waves-of-Daily-Low-Temperatures/)!
 {% endcard %}
 
 
