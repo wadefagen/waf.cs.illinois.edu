@@ -114,20 +114,25 @@ Finally, I've worked on several other projects that aim to highlight Illini or m
 
 ## The Latest!
 
+{% card August 15, 2022 &mdash; New Visualization: Temperature Waves %}
+We've created our final weather-related visualization this summer, [**Temperature Waves**: A historical snapshot of the current day's high temperatures](https://d7.cs.illinois.edu/projects/Daily-Weather-Waves-of-Daily-High-Temperatures/).  This was created in in collaboration with Katy Miles, Angie Cheng, and Karle Flanagan!
+
+This visualization will always show you context around today's temperature for 5,000 locations around the United States!  For example, today on August 15, all of the data will be historical high temperatures for every August 14th-16th for the selected location.
+
+With some extra time, we extended this work to low temperatures as well in [**Daily Weather Waves of Daily Low Temperatures
+](https://d7.cs.illinois.edu/projects/Daily-Weather-Waves-of-Daily-Low-Temperatures/).
+{% endcard %}
+
+
 {% card May 13, 2022 &mdash; Infinite Maze %}
-
 In CS 240 this semester, we created an infinitely large maze with contributions from every student in the course.  You can [now explore the infinite maze yourself](/pages/cs340/infinite-maze/) and see what the amazing students in CS 240 created this semester!
-
 {% endcard %}
 
 {% card April 20, 2022 &mdash; New Visualization: Temperature Radials %}
-
 [**Temperature Radials**: A data-forward radial visualization of the historical temperature record of every large city in America](https://vis.cs.illinois.edu/weather/temperature-radial/), created in collaboration with Katy Miles, Angie Cheng, and Karle Flanagan!
-
 {% endcard %}
 
 {% card April 13, 2022 &mdash; GPA Dataset and Visualization Updated %}
-
 The three GPA data visualizations are updated for Fall 2022 registration, including UIUC GPAs from Summer 2021, Fall 2021, and Winter 2021/22!
 
 - [Grade disparity between sections at UIUC](http://waf.cs.illinois.edu/discovery/grade_disparity_between_sections_at_uiuc/)
@@ -135,7 +140,6 @@ The three GPA data visualizations are updated for Fall 2022 registration, includ
 - [GPAs of Every Course at The University of Illinois](http://waf.cs.illinois.edu/discovery/gpa_of_every_course_at_illinois/)
 
 In addition, the raw data is available for everyone to use, explore, and nerd out with as part of my [datasets repo on GitHub](https://github.com/wadefagen/datasets). 🎉
-
 {% endcard %}
 
 {% card March 20, 2022 &mdash; New Visualization: Historic Snowfall and Snow Depth %}
