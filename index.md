@@ -153,8 +153,8 @@ New Visualization: [**Historic Snowfall and Snow Depth**: A data-forward explora
 
 I believe that education should be available and accessible.  To the further extent possible, my teaching at Illinois has been archived online and open for anyone to nerd out.  You can find links to my courses dating back to 2013:
 
-- [**Spring 2022**: Introduction to Computer Systems (CS 240)](https://courses.grainger.illinois.edu/cs240/sp2022/)
-- [**Spring 2022**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/stat107-sp22/)
+- [**Fall 2022**: Introduction to Computer Systems (CS 340)](https://courses.grainger.illinois.edu/cs340/fa2022/)
+- [**Fall 2022**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/)
 - [Coursera MOOC: Accelerated Computer Science Fundamentals Specialization](https://www.coursera.org/specializations/cs-fundamentals)
 - [Previous Courses, Teaching Philosophy, and More on Teaching...](/teaching/)
 

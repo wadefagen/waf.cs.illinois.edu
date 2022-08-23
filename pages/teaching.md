@@ -14,6 +14,18 @@ Additionally, I believe in free, open-access to educational materials.  You will
 
 # Courses Taught
 
+
+## Introduction to Computer Systems (CS 340)
+
+> Basics of computer systems. Number representations, assembly/machine language, abstract models of processors (fetch/execute, memory hierarchy), processes/process control, simple memory management, file I/O and directories, network programming, usage of cloud services.  Credit: 3 hours.
+
+Introduction to Computer Systems is a modern approach to computer systems and one of the newest courses in the CS core curriculum, teaching students the foundational of computer architecture, systems progrmaming, and cloud computing.  CS students can either take a dedicated architecture course (CS 233) and a dedicated systems course (CS 340) or take CS 340 to fulfill both requirements.  *(CS 340 is a replacement of CS 240, moving the course to an upper-level core course.)*
+
+<!-- - Detailed Comparison between CS 240 and CS 233/241 -->
+- Semesters Taught: [Fall 2022](https://courses.engr.illinois.edu/cs240/fa2022/)
+
+<hr>
+
 ## Data Science Discovery (STAT 107 / CS 107 / IS 107)
 
 > Data Science Discovery is the intersection of statistics, computation, and real-world relevance. As a project-driven course, students perform hands-on-analysis of real-world datasets to analyze and discover the impact of the data. Throughout each experience, students reflect on the social issues surrounding data analysis such as privacy and design.  Credit: 4 hours.
@@ -21,7 +33,7 @@ Additionally, I believe in free, open-access to educational materials.  You will
 Data Science Discovery is the first course in the Data Science program at The University of Illinois, teaching students introductory data science skills including foundational statistics, Python programming (with a heavy emphasis on pandas), and the social impact of data.  I developed this course with Statistics professor [Karle Flanagan](https://kflan.stat.illinois.edu/) specifically for students with no existing background in data science.  The course has no course prerequisites, and serves as a quantitative reasoning gened at Illinois.  We piloted the course in Spring 2019 to 20 students from 20 different majors and now this course reaches nearly 500 Illini each year.
 
 <!-- - Extensive Topic List (PDF) -->
-- Course Webpage: [**Spring 2022**](https://discovery.cs.illinois.edu/stat107-sp22/), [Fall 2021](https://discovery.cs.illinois.edu/stat107-fa21/), [Spring 2020](http://courses.las.illinois.edu/spring2020/stat107/), [Fall 2019](http://courses.las.illinois.edu/fall2019/stat107/), and [Spring 2019](http://courses.las.illinois.edu/spring2019/stat107/).
+- Course Webpage: [**Fall 2022**](https://discovery.cs.illinois.edu/), [**Spring 2022**](https://discovery.cs.illinois.edu/stat107-sp22/), [Fall 2021](https://discovery.cs.illinois.edu/stat107-fa21/), [Spring 2020](http://courses.las.illinois.edu/spring2020/stat107/), [Fall 2019](http://courses.las.illinois.edu/fall2019/stat107/), and [Spring 2019](http://courses.las.illinois.edu/spring2019/stat107/).
 
 <hr>
 
