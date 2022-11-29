@@ -4,7 +4,7 @@ layout: info
 visible: true
 ---
 
-# Joining CS 340 as a CA!
+# Joining CS 340 as a CA - Spring 2023
 
 Thanks for your interest in joining the CS 340 team!  
 
@@ -29,7 +29,7 @@ In recent semesters, the hiring process has been very competitive. We will have 
 
 This is a PAID position based on the [CS salary scale found here](https://course-assistants.cs.illinois.edu/rates).  You must submit two forms to complete an application:
 
-- The [CS 340 CA Application](https://forms.gle/vB21Ls77259Hsnsa7)
+- The [CS 340 CA Application](https://forms.gle/kCvmSDt6Sv7jZTD3A)
 - The [Department of Computer Science Application](https://opportunities.cs.illinois.edu/)
 
 If you have any questions, feel free to contact me (waf@illinois.edu).
