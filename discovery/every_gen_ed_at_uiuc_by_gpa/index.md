@@ -4,7 +4,7 @@ slug: gpa1
 layout: viz
 
 description: A visualization of every general education course at The University of Illinois, organized by category and GPA
-date: 2022-04-13
+date: 2023-01-03
 
 social-img: img.png
 author:
@@ -17,8 +17,8 @@ author:
 
 <h1>{{page.title}}</h1>
 <div style="font-size: 14px; margin-top: -8px; line-height: 16px;">
-  Originally published on March 2, 2016 by Kexin (Fiona) Fei, Caroline Breckenfelder, and Wade Fagen-Ulmschneider<br>
-  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Fall 2022 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
+  Originally published by Kexin (Fiona) Fei, Caroline Breckenfelder, and Wade Fagen-Ulmschneider<br>
+  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Spring 2023 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
 </div>
 
 
@@ -28,7 +28,7 @@ author:
 <p>
   This visualization is the second in a series of <a href="https://waf.cs.illinois.edu/discovery/gpa/">GPA visualizations</a>
   created to explore the grades given by courses at The University of Illinois.  This visualization aims to allow for
-  an exploration of courses for general education credit, using data from Fall 2017 through Fall 2021.
+  an exploration of courses for general education credit, using data from Fall 2018 through Spring 2022.
 </p>
 
 <div class="row" style="text-align: center;">
