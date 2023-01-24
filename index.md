@@ -116,7 +116,7 @@ Finally, I've worked on several other projects that aim to highlight Illini or m
 
 {% card January 23, 2023 &mdash; Interview with Illinois Alumni Magazine %}
 
-Late last year, I sat down with Mary Timmins with the Illinois Alumni magazine!  Check out her profile of my work [**Data Driven** in the In Class section of the Winter 2022 Illinois Alumni Magazine](https://d7.cs.illinois.edu/projects/Daily-Weather-Waves-of-Daily-Low-Temperatures/)
+Late last year, I sat down with Mary Timmins with the Illinois Alumni magazine!  Check out her profile of my work in the article [**"Data Driven"** that appears as part of the In Class section of the Winter 2022 Illinois Alumni Magazine](https://d7.cs.illinois.edu/projects/Daily-Weather-Waves-of-Daily-Low-Temperatures/)
 
 {% endcard %}
 
