@@ -129,8 +129,8 @@ Late last year, I sat down with Mary Timmins with the Illinois Alumni magazine! 
 
 I believe that education should be available and accessible.  To the further extent possible, my teaching at Illinois has been archived online and open for anyone to nerd out.  You can find links to my courses dating back to 2013:
 
-- [**Fall 2022**: Introduction to Computer Systems (CS 340)](https://courses.grainger.illinois.edu/cs340/fa2022/)
-- [**Fall 2022**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/)
+- [**Spring 2023**: Introduction to Computer Systems (CS 340)](https://courses.grainger.illinois.edu/cs340/sp2023/)
+- [**Spring 2023**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/)
 - [Coursera MOOC: Accelerated Computer Science Fundamentals Specialization](https://www.coursera.org/specializations/cs-fundamentals)
 - [Previous Courses, Teaching Philosophy, and More on Teaching...](/teaching/)
 
