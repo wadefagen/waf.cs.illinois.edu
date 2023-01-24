@@ -118,7 +118,7 @@ Finally, I've worked on several other projects that aim to highlight Illini or m
 
 *"Ten years from now, things we can’t even imagine will be commonplace because of data science."*
 
-Late last year, I sat down with Mary Timmins with the Illinois Alumni magazine!  Check out her profile of my work in the article [**"Data Driven"** that appears as part of the In Class section of the Winter 2022 Illinois Alumni Magazine](https://www.illinoisalumnimagazine.org/illinoisalumni/winter_2022/MobilePagedArticle.action?articleId=1850373&lm=1673635147000#articleId1850373)
+Late last year, I sat down with Mary Timmins with the Illinois Alumni magazine!  Check out her profile of my work in the article [**"Data Driven"** that appears as part of the In Class section of the Winter 2022 Illinois Alumni Magazine](https://www.illinoisalumnimagazine.org/illinoisalumni/winter_2022/MobilePagedArticle.action?articleId=1850373&lm=1673635147000#articleId1850373)!
 
 {% endcard %}
 
