@@ -26,6 +26,8 @@ One of the highlights of CS 340 is the final project.  Each semester, you will b
 
 The final projects completed in recent semesters have been:
 
+- **[1989 Mosaics](1989-mosaics/)**, in Spring 2023
+- **Shared Pixel Board**, in Fall 2022
 - **[The Infinite Maze](infinite-maze/)**, in Spring 2022
 - **MIX: Microservice Information eXchange**, in Fall 2021
 
