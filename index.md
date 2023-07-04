@@ -112,7 +112,7 @@ Finally, I love being an ILL-INI 🧡💙 and I am always working on a project t
 
 {% card July 3, 2023 &mdash; National Leadership in Data Science Education Supporting a Significant Visible Social Impact %}
 
-> *"Projects chosen for the program’s fifth round [...] demonstrate the spirit of collaboration, innovation and immense promise to impact our campus community and beyond."*
+> *"Projects chosen for the program [...] demonstrate the spirit of collaboration, innovation and immense promise to impact our campus community and beyond."*
 
 The vision and initial work on [Data Science DISCOVERY](https://discovery.cs.illinois.edu/) was selected as one of the campus-wide 2024 Investment for Growth projects, and I'm honored to have the support of campus as we continue to grow Data Science at Illinois!
 
