@@ -31,13 +31,13 @@ li {
 
 # Hi, nice to have you here!
 
-My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Computer Science](https://cs.illinois.edu/) in the [Grainger College of Engineering](https://grainger.illinois.edu/) at [The University of Illinois (UIUC)](https://illinois.edu/).  My passion is at the intersection of systems, data, and creating tools to nerd out with both systems and data through interactive data visualizations.  In my work, I work to educate, encourage, and inspire you to change the world.
+My name is Wade Fagen-Ulmschneider -- I am faculty in the [Department of Computer Science](https://cs.illinois.edu/) in the [Grainger College of Engineering](https://grainger.illinois.edu/) at [The University of Illinois (UIUC)](https://illinois.edu/).  My passion is at the intersection of systems, data, and creating tools to nerd out with both systems and data -- particularly through interactive tools and data visualizations.  In my work, I work to educate, encourage, and inspire you to change the world.
 
-Since August 2021, I have worked to build the best data science resource online: [Data Science DISCOVERY](https://discovery.cs.illinois.edu/).  This free-to-consumer website is used daily as part of teaching of CS/STAT/IS 107, but also provides lectures, guides, and projects for anyone who wants to learn data science to use.
+In the past decade, I have had the honor to teach over 200,000 students between my open-access [courses at Illinois](/teaching/) and my [MOOCs](https://www.coursera.org/learn/cs-fundamentals-1)/[specalization](https://www.coursera.org/specializations/cs-fundamentals) on Coursera. In 2023, my [DISCOVERY platform](https://discovery.cs.illinois.edu/) work with [Prof. Karle Flanagan](https://kflan.stat.illinois.edu/) was [selected as one of the campus investments for growth](https://provost.illinois.edu/about/initiatives/investment-for-growth-program/fy24-funded-programs/) to establish Illinois as a national leader in data science education.
 
-My greatest passion is visualizing data in a way that readers can nerd out with for hours.  If this interests you, you may be interested in my [visualizations of GPAs at The University of Illinois](https://waf.cs.illinois.edu/discovery/gpa/), my [data-forward, interactive visualizations of COVID-19 as part of my 91-DIVOC project](https://91-divoc.com/pages/covid-visualization/), or any of [my other visualizations](/visualizations/).
+When I'm not teaching, my passion is visualizing data in a way that readers can nerd out with for hours.  You can find my work in [visualizations of GPAs at The University of Illinois](https://waf.cs.illinois.edu/discovery/gpa/), my [data-forward, interactive visualizations of COVID-19 as part of my 91-DIVOC project](https://91-divoc.com/pages/covid-visualization/), or any of [my other visualizations](/visualizations/).
 
-Finally, I've worked on several other projects that aim to highlight Illini or make our Illinois courses world-class courses.  These projects include the [Illini LinkedIn Banner Generator](https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/),  [Queue@Illinois](https://queue.illinois.edu/), and [others](/tools/).
+Finally, I love being an ILL-INI 🧡💙 and I am always working on a project to highlight Illini and make our Illinois courses more visible.  Recent projects have included the [Illini LinkedIn Banner Generator](https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/), [Queue@Illinois](https://queue.illinois.edu/), and [others](/tools/).
 
 <hr style="clear: both">
 
@@ -102,10 +102,6 @@ Finally, I've worked on several other projects that aim to highlight Illini or m
 -->
 
 <style>
-.card p:last-of-type {
-  margin-bottom: 2px;
-}
-
 .card-title {
   font-size: 18px;
   font-weight: bold;
@@ -114,9 +110,21 @@ Finally, I've worked on several other projects that aim to highlight Illini or m
 
 ## The Latest!
 
+{% card July 3, 2023 &mdash; National Leadership in Data Science Education Supporting a Significant Visible Social Impact %}
+
+> *"Projects chosen for the program’s fifth round [...] demonstrate the spirit of collaboration, innovation and immense promise to impact our campus community and beyond."*
+
+The vision and initial work on [Data Science DISCOVERY](https://discovery.cs.illinois.edu/) was selected as one of the campus-wide 2024 Investment for Growth projects, and I'm honored to have the support of campus as we continue to grow Data Science at Illinois!
+
+- News Article: ["DISCOVERY platform funded as part of FY24 Investment for Growth project"](https://stat.illinois.edu/news/2023-05-25/discovery-platform-funded-part-fy24-investment-growth-project)
+- Chancellor Robert Jones: [FY24 Investment for Growth projects announced](https://massmail.illinois.edu/massmail/1521402670.html)
+
+{% endcard %}
+
+
 {% card January 23, 2023 &mdash; Interview with Illinois Alumni Magazine %}
 
-*"Ten years from now, things we can’t even imagine will be commonplace because of data science."*
+> *"Ten years from now, things we can’t even imagine will be commonplace because of data science."*
 
 Late last year, I sat down with Mary Timmins with the Illinois Alumni magazine!  Check out her profile of my work in the article [**"Data Driven"** that appears as part of the In Class section of the Winter 2022 Illinois Alumni Magazine](https://www.illinoisalumnimagazine.org/illinoisalumni/winter_2022/MobilePagedArticle.action?articleId=1850373&lm=1673635147000#articleId1850373)!
 
@@ -129,9 +137,9 @@ Late last year, I sat down with Mary Timmins with the Illinois Alumni magazine! 
 
 I believe that education should be available and accessible.  To the further extent possible, my teaching at Illinois has been archived online and open for anyone to nerd out.  You can find links to my courses dating back to 2013:
 
-- [**Spring 2023**: Introduction to Computer Systems (CS 340)](https://courses.grainger.illinois.edu/cs340/sp2023/)
-- [**Spring 2023**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/)
-- [Coursera MOOC: Accelerated Computer Science Fundamentals Specialization](https://www.coursera.org/specializations/cs-fundamentals)
+- [**Fall 2023**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/)
+- Previously at Illinois: [CS 340: Intro Systems](https://courses.grainger.illinois.edu/cs340/sp2023/) (fa20-sp23), [CS 423: Operating Systems](https://courses.grainger.illinois.edu/cs423/sp2021/syllabus/) (sp21), [CS 225: Data Structures](https://courses.grainger.illinois.edu/cs225/sp2019/info/syllabus/) (fa17-sp19), [CS 105: Intro CS](https://courses.grainger.illinois.edu/cs105/sp2015/syllabus.php) (sp14-fa16), and [CS 241: Systems Programming](https://courses.grainger.illinois.edu/cs241/fa2013/syllabus.html) (fa08-fa13)
+- On Coursera: [Object-Oriented Data Structures in C++](https://www.coursera.org/learn/cs-fundamentals-1), [Ordered Data Structures](https://www.coursera.org/learn/cs-fundamentals-2), [Unordered Data Structures](https://www.coursera.org/learn/cs-fundamentals-3), and [Accelerated Computer Science Fundamentals Specialization](https://www.coursera.org/specializations/cs-fundamentals), 
 - [Previous Courses, Teaching Philosophy, and More on Teaching...](/teaching/)
 
 <hr>
