@@ -4,7 +4,7 @@ slug: gpa2
 layout: viz
 
 description: A visualization of grade disparity between sections and instructors at UIUC
-date: 2023-01-03
+date: 2023-07-05
 
 social-img: img.png
 author:
@@ -24,7 +24,7 @@ author:
 <h1>{{page.title}}</h1>
 <div style="font-size: 14px; margin-top: -8px; line-height: 16px;">
   Originally published by Devin Oliver, Johnny Guo, Joe Tan, Jerry Li, Tina Abraham, Andy (Tianyue) Mao, Kara Landolt, Nathan Cho, and Wade Fagen-Ulmschneider<br>
-  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Fall 2022 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
+  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Fall 2023 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
 </div>
 
 
