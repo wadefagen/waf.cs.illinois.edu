@@ -38,6 +38,8 @@ and more.
 
 ### Media
 
+- **Fortune** (Preston Fore), November 28, 2023; [*What is a data scientist?*](https://fortune.com/education/articles/what-is-a-data-scientist/)
+
 - **CBS This Morning** (Manuel Bojorquez), June 16, 2020; [*Manuel Bojorquez's segment on the coronavirus*](https://twitter.com/uofigrainger/status/1272970719987740672) includes a video interview with Fagen-Ulmschneider regarding COVID-19 data.
 
 - **MIT's Civic Design Data Lab** (Griffin Kantz), May 21, 2020; [*Creating Best Practices for Visualizing Covid Data*](https://blog.civicdatadesignlab.mit.edu/creating-best-practices-for-visualizing-covid-data) uses Fagen-Ulmschneider's 91-DIVOC visualization as part of an article on visualization techniques of COVID-19 data.
