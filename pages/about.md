@@ -17,7 +17,7 @@ ul {
 
 ### Short Bio
 
-Wade Fagen-Ulmschneider is a Teaching Associate Professor of Computer Science at the University of Illinois at Urbana-Champaign (UIUC). With a passion for data, he often teaches thousands of students each year in his courses on Data Structures, Data Visualization, and Data Science. He was selected as one of the National Academy of Engineering’s Frontiers of Engineering Education scholars, awarded the Collins Award for Innovation Teaching, and has been consistently ranked as an excellent instructor by his students for the past ten years. His work on data visualizations has been used by governors of multiple states, featured by websites including Popular Mechanics and The Verge, and has been viewed by millions of readers.
+Wade Fagen-Ulmschneider is a Teaching Professor of Computer Science at the University of Illinois at Urbana-Champaign (UIUC). With a passion for data, he often teaches thousands of students each year in his courses on Data Structures, Data Visualization, and Data Science. He was selected as one of the National Academy of Engineering’s Frontiers of Engineering Education scholars, awarded the Collins Award for Innovation Teaching, and has been consistently ranked as an excellent instructor by his students for the past ten years. His work on data visualizations has been used by governors of multiple states, featured by websites including Popular Mechanics and The Verge, and has been viewed by millions of readers.
 
 Relevant Links:
 - [Wade Fagen-Ulmschneider's Curriculum Vitae](/static/fagen-ulmschneider-cv.pdf)
