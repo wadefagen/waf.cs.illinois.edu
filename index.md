@@ -137,7 +137,7 @@ Late last year, I sat down with Mary Timmins with the Illinois Alumni magazine! 
 
 I believe that education should be available and accessible.  To the further extent possible, my teaching at Illinois has been archived online and open for anyone to nerd out.  You can find links to my courses dating back to 2013:
 
-- [**Fall 2023**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/)
+- [**Spring 2024**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/)
 - Previously at Illinois: [CS 340: Intro Systems](https://courses.grainger.illinois.edu/cs340/sp2023/) (fa20-sp23), [CS 423: Operating Systems](https://courses.grainger.illinois.edu/cs423/sp2021/syllabus/) (sp21), [CS 225: Data Structures](https://courses.grainger.illinois.edu/cs225/sp2019/info/syllabus/) (fa17-sp19), [CS 105: Intro CS](https://courses.grainger.illinois.edu/cs105/sp2015/syllabus.php) (sp14-fa16), and [CS 241: Systems Programming](https://courses.grainger.illinois.edu/cs241/fa2013/syllabus.html) (fa08-fa13)
 - On Coursera: [Object-Oriented Data Structures in C++](https://www.coursera.org/learn/cs-fundamentals-1), [Ordered Data Structures](https://www.coursera.org/learn/cs-fundamentals-2), [Unordered Data Structures](https://www.coursera.org/learn/cs-fundamentals-3), and [Accelerated Computer Science Fundamentals Specialization](https://www.coursera.org/specializations/cs-fundamentals), 
 - [Previous Courses, Teaching Philosophy, and More on Teaching...](/teaching/)
