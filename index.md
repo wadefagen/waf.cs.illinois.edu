@@ -110,6 +110,19 @@ Finally, I love being an ILL-INI 🧡💙 and I am always working on a project t
 
 ## The Latest!
 
+
+{% card April 5, 2024 &mdash; GPA Visualizations + Dataset Updates %}
+
+The GPA Visualizations have all been updated for Fall 2024 registration: 🎉
+
+- [Grade disparity between sections at UIUC](https://waf.cs.illinois.edu/discovery/grade_disparity_between_sections_at_uiuc/)
+- [GPAs of Every Course at The University of Illinois](https://waf.cs.illinois.edu/discovery/gpa_of_every_course_at_illinois/)
+- [Every Gen Ed at UIUC, by GPA](https://waf.cs.illinois.edu/discovery/every_gen_ed_at_uiuc_by_gpa/)
+- Additionally, the underlying CSV file of the raw data is updated at [@wadefagen/datasets](https://github.com/wadefagen/datasets)
+
+{% endcard %}
+
+
 {% card July 3, 2023 &mdash; National Leadership in Data Science Education Supporting a Significant Visible Social Impact %}
 
 > *"Projects chosen [...] demonstrate the spirit of collaboration, innovation and immense promise to impact our campus community and beyond."*
