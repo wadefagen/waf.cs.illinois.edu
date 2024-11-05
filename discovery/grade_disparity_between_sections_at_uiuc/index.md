@@ -33,7 +33,7 @@ author:
 
 ### Introduction
 
-One of the most frustrating situations to find yourself in is a coursewhere all of your friends are in the &quot;easier section&quot;.  For most of us, it feels like this happens <i>all of the time</i>.   This visualization is the second in a series of <a href="https://waf.cs.illinois.edu/discovery/gpa/">GPA visualizations</a> created to explore the grades given by courses at The University of Illinois.
+One of the most frustrating situations to find yourself in is a course where all of your friends are in the &quot;easier section&quot;.  For most of us, it feels like this happens <i>all of the time</i>.   This visualization is the second in a series of <a href="https://waf.cs.illinois.edu/discovery/gpa/">GPA visualizations</a> created to explore the grades given by courses at The University of Illinois.
 
 Using GPA data from the most recent ten full semesters (Fall 2019 through Spring 2024,
 including summers/winters), we found the distribution of every section/instructor group
