@@ -111,9 +111,10 @@ Finally, I love being an ILL-INI 🧡💙 and I am always working on a project t
 ## The Latest!
 
 
-{% card April 5, 2024 &mdash; GPA Visualizations + Dataset Updates %}
 
-The GPA Visualizations have all been updated for Fall 2024 registration: 🎉
+{% card November 4, 2024 &mdash; GPA Visualizations + Dataset Updates %}
+
+The GPA Visualizations have all been updated for Spring 2025 registration: 🎉
 
 - [Grade disparity between sections at UIUC](https://waf.cs.illinois.edu/discovery/grade_disparity_between_sections_at_uiuc/)
 - [GPAs of Every Course at The University of Illinois](https://waf.cs.illinois.edu/discovery/gpa_of_every_course_at_illinois/)
