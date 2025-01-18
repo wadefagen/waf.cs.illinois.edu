@@ -10,6 +10,9 @@ title: Data-Forward Visualizations of COVID-19 Data at The University of Illinoi
 description: This page presents an annotated view COVID-19 data at The University of Illinois. This data is sourced from “COVID-19 Among Big Ten Conference Schools” visualization and is updated daily from the official university COVID-19 dashboard.
 
 social-img: https://waf.cs.illinois.edu/covid-analysis/social.png
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 <link rel="stylesheet" href="../css.css">
@@ -28,9 +31,9 @@ This page presents an annotated view COVID-19 data at The University of Illinois
 
 
 <div id="sizer"></div>
-{% include_relative _charts/cases-UIUC.html %}
+{% include "./_charts/cases-UIUC.html" %}
 
-{% include_relative _charts/testPositivity-UIUC.html %}
+{% include "./_charts/testPositivity-UIUC.html" %}
 
 
 

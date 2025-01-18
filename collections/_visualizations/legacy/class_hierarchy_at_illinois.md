@@ -8,4 +8,6 @@ date: 2016-05-01
 
 author:
 - Alec Mori (Senior Thesis)
+
+tags: visualization
 ---

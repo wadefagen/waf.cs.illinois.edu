@@ -6,6 +6,9 @@ org: Illinois Solar Car Team
 layout: slides
 
 date: 2022-02-25
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 # {{page.title}}

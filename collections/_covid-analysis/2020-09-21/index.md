@@ -11,6 +11,9 @@ title: Mid-September Big Ten Update
 description: This page presents data-forward collegiate analysis of Big-10 data in a way that allows you to nerd out with the underlying data while providing context to the on-going pandemic that is impacting college campuses everywhere.
 
 social-img: https://waf.cs.illinois.edu/covid-analysis/social.png
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 <link rel="stylesheet" href="../css.css">
@@ -89,7 +92,7 @@ social-img: https://waf.cs.illinois.edu/covid-analysis/social.png
 
 <div style="margin-left: 3%; margin-right: 5%; padding-left: 2%;  border-left: solid 2px hsl(173, 30%, 20%); ">
 <div id="sizer"></div>
-{% include_relative _charts/cases-daily7-UIUC.html %}
+{% include "./_charts/cases-daily7-UIUC.html" %}
 </div>
 
 

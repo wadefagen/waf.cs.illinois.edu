@@ -10,4 +10,6 @@ author:
 - Ashley Simon
 - Nicole Ng
 - Wade Fagen-Ulmschneider
+
+tags: visualization
 ---

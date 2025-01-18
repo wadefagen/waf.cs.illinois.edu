@@ -13,4 +13,6 @@ author:
 - Tina Abraham
 - Kelly Mack
 - The CS 225 Course Staff
+
+tags: visualization
 ---

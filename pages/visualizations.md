@@ -2,33 +2,35 @@
 layout: default
 title: Visualizations
 permalink: /visualizations/
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 # Visualizations
 
-Interactive visualizations created to inspire, inform, and promote curiosity, often made in collaboration with students
-from The University of Illinois.
+Interactive visualizations created to inspire, inform, and promote curiosity, often made in collaboration with students from The University of Illinois.
 
 <div class="row">
-{% assign sorted = site.visualizations | sort: 'date' | reverse %}
+{% assign sorted = collections.visualization | sort: 'date' | reverse %}
 {% for visualization in sorted %}
   <div class="col-md-4 col-12">
     <div class="card vcard" style="border-color: #13294B;">
       <div>
-        {% if visualization.external-url %}<a href="{{ visualization.external-url }}">{% else %}<a href="{{ visualization.url }}">{% endif %}
-        {% if visualization.external-img %}
-          <img src="{{ visualization.external-img }}" class="img-fluid">
+        {% if visualization.data.external-url %}<a href="{{ visualization.data.external-url }}">{% else %}<a href="{{ visualization.url }}">{% endif %}
+        {% if visualization.data.external-img %}
+          <img src="{{ visualization.data.external-img }}" class="img-fluid">
         {% else %}
-          <img src="{{ visualization.url | absolute_url }}{{ visualization.social-img }}" class="img-fluid">
+          <img src="{{ visualization.url }}{{ visualization.data.social-img }}" class="img-fluid">
         {% endif %}
         </a>
       </div>
       <div style="background-color: white;">
-        {% if visualization.external-url %}<a href="{{ visualization.external-url }}">{% else %}<a href="{{ visualization.url }}">{% endif %}
+        {% if visualization.external-url %}<a href="{{ visualization.data.external-url }}">{% else %}<a href="{{ visualization.url }}">{% endif %}
           <div class="title">{{ visualization.title }}</div>
         </a>
         <div class="authors">
-          <b>By</b>: {{ visualization.author | array_to_sentence_string }}<br>
+          <b>By</b>: {{ visualization.data.author | array_to_sentence_string }}<br>
           <b>Published</b>: {{ visualization.date | date: "%B %Y" }}
         </div>
       </div>

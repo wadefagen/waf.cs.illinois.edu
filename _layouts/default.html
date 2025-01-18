@@ -7,13 +7,14 @@ layout: bare
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/">waf.cs</a></li>
 
+
         {% if page.collection %}
         {% if page.base == false %}
         <li class="breadcrumb-item"><a href="/{{ page.collection }}/">{{ page.collection | capitalize }}</a></li>
         {% endif %}
         {% endif %}
 
-        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+        <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
       </ol>
     </nav>
   </div>
@@ -34,7 +35,7 @@ layout: bare
         <li class="breadcrumb-item"><a href="/{{ page.collection }}/">{{ page.collection | capitalize }}</a></li>
         {% endif %}
 
-        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+        <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
       </ol>
     </nav>
   </div>

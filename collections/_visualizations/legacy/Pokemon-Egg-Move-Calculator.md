@@ -11,4 +11,6 @@ author:
 - Emily Chen
 - Aravind Sundararajan
 - Wade Fagen-Ulmschneider
+
+tags: visualization
 ---

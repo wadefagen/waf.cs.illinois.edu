@@ -12,6 +12,9 @@ title: Illinois' "Lockdown" Shows Strong Reversal in COVID-19 Spread
 description: This page presents data-forward collegiate analysis of Big-10 data in a way that allows you to nerd out with the underlying data while providing context to the on-going pandemic that is impacting college campuses everywhere.
 
 social-img: https://waf.cs.illinois.edu/covid-analysis/social.png
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 <link rel="stylesheet" href="../css.css">
@@ -33,14 +36,14 @@ Today, Illinois released the latest testing data from the last day of the "lockd
 
 <div style="margin-left: 3%; margin-right: 5%; padding-left: 2%;  border-left: solid 2px hsl(173, 30%, 20%); ">
 <div id="sizer"></div>
-{% include_relative _charts/cases-UIUC.html %}
+{% include "./_charts/cases-UIUC.html" %}
 </div>
 
 The data indicates that University of Illinois undergraduate students have respected the imposed "lockdown" measures over the two weeks.  We see the same trend in the reported test positivity:
 
 <div style="margin-left: 3%; margin-right: 5%; padding-left: 2%;  border-left: solid 2px hsl(173, 30%, 20%); ">
 <div id="sizer"></div>
-{% include_relative _charts/testPositivity-UIUC.html %}
+{% include "./_charts/testPositivity-UIUC.html" %}
 </div>
 
 

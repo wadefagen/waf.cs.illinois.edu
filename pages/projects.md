@@ -2,6 +2,9 @@
 layout: default
 title: Projects
 permalink: /projects/
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 ### Data Visualizations
@@ -16,7 +19,7 @@ permalink: /projects/
         {% if visualization.external-img %}
           <img src="{{ visualization.external-img }}" class="img-fluid">
         {% else %}
-          <img src="{{ visualization.url | absolute_url }}{{ visualization.social-img }}" class="img-fluid">
+          <img src="{{ visualization.url }}{{ visualization.social-img }}" class="img-fluid">
         {% endif %}
       </a>
     </div>
@@ -36,7 +39,7 @@ permalink: /projects/
 </div>
 {% endfor %}
 
-<a href="{{ absolute_url }}/visualizations/" class="card">
+<a href="/visualizations/" class="card">
     All Data Visualizations &gt;&gt;
 </a>
 

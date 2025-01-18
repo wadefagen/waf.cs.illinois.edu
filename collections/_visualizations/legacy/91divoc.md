@@ -9,4 +9,6 @@ updateNote: Updated daily with the latest COVID-19 data.  Used by multiple gover
 
 author:
 - Wade Fagen-Ulmschneider
+
+tags: visualization
 ---

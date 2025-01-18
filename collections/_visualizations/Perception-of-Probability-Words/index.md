@@ -9,7 +9,11 @@ social-img: img/1200-630.png
 author:
 - Wade Fagen-Ulmschneider
 
-permalink: /:collection/:title/
+permalink: /visualizations/Perception-of-Probability-Words/
+
+layout: default
+
+tags: visualization
 ---
 
 <h1>Perception of Probability Words</h1>

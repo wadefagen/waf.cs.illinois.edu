@@ -6,6 +6,10 @@ org: Playful by Design 2021 Fall Symposium
 layout: slides
 
 date: 2021-10-15
+
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 # {{page.title}}

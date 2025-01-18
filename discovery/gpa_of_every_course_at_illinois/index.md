@@ -12,11 +12,15 @@ author:
 - Nate Claussen
 - Wade Fagen-Ulmschneider
 - Cinda Heeren
+
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 <link href="css.css" rel="stylesheet">
 
-<h1>{{page.title}}</h1>
+<h1>{{title}}</h1>
 <div style="font-size: 14px; margin-top: -8px; line-height: 16px;">
   Originally published by Justin Lee, Nate Claussen, Wade Fagen-Ulmschneider, and Cinda Heeren<br>
   <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Spring 2025 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider

@@ -16,4 +16,6 @@ author:
 - Kara Landolt
 - Nathan Cho
 - Wade Fagen-Ulmschneider
+
+tags: visualization
 ---

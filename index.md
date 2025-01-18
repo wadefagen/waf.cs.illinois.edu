@@ -31,7 +31,7 @@ li {
 
 # Hi, nice to have you here!
 
-My name is **Wade Fagen-Ulmschneider** -- I am faculty in the [Department of Computer Science](https://cs.illinois.edu/) in the [Grainger College of Engineering](https://grainger.illinois.edu/) at the [University of Illinois (UIUC)](https://illinois.edu/).  My passion is at the intersection of systems, data, and creating tools to nerd out with both systems and data -- particularly through interactive tools and data visualizations.  In my work, I work to educate, encourage, and inspire you to change the world.
+My name is **Wade Fagen-Ulmschneider** -- I am faculty in the [Siebel School of Computing and Data Science](https://siebelschool.illinois.edu/) in the [Grainger College of Engineering](https://grainger.illinois.edu/) at the [University of Illinois (UIUC)](https://illinois.edu/).  My passion is at the intersection of systems, data, and creating tools to nerd out with both systems and data -- particularly through interactive tools and data visualizations.  In my work, I work to educate, encourage, and inspire you to change the world.
 
 In the past decade, I have had the honor to teach over 200,000 students between my open-access [courses at Illinois](/teaching/) and my [MOOCs](https://www.coursera.org/learn/cs-fundamentals-1)/[specalization](https://www.coursera.org/specializations/cs-fundamentals) on Coursera. In 2023, my [DISCOVERY platform](https://discovery.cs.illinois.edu/) work with [Prof. Karle Flanagan](https://kflan.stat.illinois.edu/) was [selected as one of the campus investments for growth](https://provost.illinois.edu/about/initiatives/investment-for-growth-program/fy24-funded-programs/) to establish Illinois as a national leader in data science education.
 
@@ -110,9 +110,7 @@ Finally, I love being an ILL-INI 🧡💙 and I am always working on a project t
 
 ## The Latest!
 
-
-
-{% card November 4, 2024 &mdash; GPA Visualizations + Dataset Updates %}
+{% card "November 4, 2024 &mdash; GPA Visualizations + Dataset Updates" %}
 
 The GPA Visualizations have all been updated for Spring 2025 registration: 🎉
 
@@ -124,7 +122,7 @@ The GPA Visualizations have all been updated for Spring 2025 registration: 🎉
 {% endcard %}
 
 
-{% card July 3, 2023 &mdash; National Leadership in Data Science Education Supporting a Significant Visible Social Impact %}
+{% card "July 3, 2023 &mdash; National Leadership in Data Science Education Supporting a Significant Visible Social Impact" %}
 
 > *"Projects chosen [...] demonstrate the spirit of collaboration, innovation and immense promise to impact our campus community and beyond."*
 
@@ -136,7 +134,7 @@ The vision and initial work on [Data Science DISCOVERY](https://discovery.cs.ill
 {% endcard %}
 
 
-{% card January 23, 2023 &mdash; Interview with Illinois Alumni Magazine %}
+{% card "January 23, 2023 &mdash; Interview with Illinois Alumni Magazine" %}
 
 > *"Ten years from now, things we can’t even imagine will be commonplace because of data science."*
 
@@ -151,7 +149,7 @@ Late last year, I sat down with Mary Timmins with the Illinois Alumni magazine! 
 
 I believe that education should be available and accessible.  To the further extent possible, my teaching at Illinois has been archived online and open for anyone to nerd out.  You can find links to my courses dating back to 2013:
 
-- [**Fall 2024**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/)
+- [**Spring 2025**: Data Science Discovery (CS 107 / STAT 107 / IS 107)](https://discovery.cs.illinois.edu/)
 - Previously at Illinois: [CS 340: Intro Systems](https://courses.grainger.illinois.edu/cs340/sp2023/) (fa20-sp23), [CS 423: Operating Systems](https://courses.grainger.illinois.edu/cs423/sp2021/syllabus/) (sp21), [CS 225: Data Structures](https://courses.grainger.illinois.edu/cs225/sp2019/info/syllabus/) (fa17-sp19), [CS 105: Intro CS](https://courses.grainger.illinois.edu/cs105/sp2015/syllabus.php) (sp14-fa16), and [CS 241: Systems Programming](https://courses.grainger.illinois.edu/cs241/fa2013/syllabus.html) (fa08-fa13)
 - On Coursera: [Object-Oriented Data Structures in C++](https://www.coursera.org/learn/cs-fundamentals-1), [Ordered Data Structures](https://www.coursera.org/learn/cs-fundamentals-2), [Unordered Data Structures](https://www.coursera.org/learn/cs-fundamentals-3), and [Accelerated Computer Science Fundamentals Specialization](https://www.coursera.org/specializations/cs-fundamentals), 
 - [Previous Courses, Teaching Philosophy, and More on Teaching...](/teaching/)

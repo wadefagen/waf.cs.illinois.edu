@@ -10,4 +10,6 @@ author:
 - Kexin (Fiona) Fei
 - Caroline Breckenfelder
 - Wade Fagen-Ulmschneider
+
+tags: visualization
 ---

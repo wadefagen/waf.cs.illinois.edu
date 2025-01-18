@@ -2,14 +2,16 @@
   "name": "waf.cs.illinois.edu",
   "version": "0.0.0",
   "scripts": {
-    "start": "docker run -it --rm -v %INIT_CWD%:/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve --future --force_polling",
-    "build": "docker run -it --rm -v %INIT_CWD%:/srv/jekyll jekyll/builder:latest /bin/bash -c \"chmod -R 777 /srv/jekyll && jekyll build\"",
-    "sync": "wsl -e rsync -avzh --inplace _site/ waf@ssh.courses.grainger.illinois.edu:/courses/cs340/fa2022/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx  @11ty/eleventy --serve",
+    "build": "npx  @11ty/eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cs340-illinois/website.git"
+    "url": "git+https://github.com/wadefagen/waf.cs.illinois.edu"
   },
-  "author": "Wade Fagen-Ulmschneider"
+  "author": "Wade Fagen-Ulmschneider",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
 }

@@ -11,4 +11,6 @@ author:
 - Nate Claussen
 - Wade Fagen-Ulmschneider
 - Cinda Heeren
+
+tags: visualization
 ---

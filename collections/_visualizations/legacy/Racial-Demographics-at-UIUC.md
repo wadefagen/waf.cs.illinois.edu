@@ -11,4 +11,6 @@ author:
 - Wade Fagen-Ulmschneider
 - Tina Abraham
 - Kara Landolt
+
+tags: visualization
 ---

@@ -10,6 +10,10 @@ title: Data-Forward Collegiate COVID-19 Analysis
 render: False
 
 description: This page presents data-forward collegiate analysis of Big-10 data in a way that allows you to nerd out with the underlying data while providing context to the on-going pandemic that is impacting college campuses everywhere.
+
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 <link rel="stylesheet" href="css.css">
@@ -32,7 +36,7 @@ For several weeks, we have been tracking the COVID-19 data from every Big Ten Co
 
 <div style="margin-left: 3%; margin-right: 5%; padding-left: 2%;  border-left: solid 2px hsl(173, 30%, 20%); ">
 <div id="sizer"></div>
-{% include_relative _charts/tests-UIUC-pctUS.html %}
+{% include "./_charts/tests-UIUC-pctUS.html" %}
 </div>
 
 This page presents data-forward collegiate analysis of Big Ten data in a way that allows you to nerd out with the underlying data while providing context to the on-going pandemic that is impacting college campuses everywhere.

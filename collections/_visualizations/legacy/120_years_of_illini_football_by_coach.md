@@ -10,4 +10,6 @@ author:
 - Noah Ralston
 - Jason Pellettiere
 - Wade Fagen-Ulmschneider
+
+tags: visualization
 ---

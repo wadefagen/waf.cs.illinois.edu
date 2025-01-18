@@ -11,6 +11,9 @@ title: Undergraduate Positivity Rate at Illinois Nears 10%
 description: With the latest bits of data we've learned about the testing around COVID-19 at The University of Illinois, it appears that around 10% of the undergraduate population has likely been infected with COVID-19.
 
 social-img: https://waf.cs.illinois.edu/covid-analysis/social.png
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 <link rel="stylesheet" href="../css.css">
@@ -68,7 +71,7 @@ Below is a data-forward, interactive visualization showing the growth of this nu
 
 <div style="margin-left: 3%; margin-right: 5%; padding-left: 2%;  border-left: solid 2px hsl(173, 30%, 20%); ">
 <div id="sizer"></div>
-{% include_relative _charts/cases-daily7-UIUC.html %}
+{% include "./_charts/cases-daily7-UIUC.html" %}
 </div>
 
 

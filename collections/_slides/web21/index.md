@@ -6,6 +6,9 @@ org: Illinois Webmasters
 layout: slides
 
 date: 2021-09-22
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 # {{page.title}}

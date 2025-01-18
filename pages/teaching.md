@@ -20,8 +20,18 @@ Additionally, I believe in free, open-access to educational materials.  You will
 
 Data Science Discovery is the first course in the Data Science program at The University of Illinois, teaching students introductory data science skills including foundational statistics, Python programming (with a heavy emphasis on pandas), and the social impact of data.  I developed this course with Statistics professor [Karle Flanagan](https://kflan.stat.illinois.edu/) specifically for students with no existing background in data science.  The course has no course prerequisites, and serves as a quantitative reasoning gened at Illinois.  We piloted the course in Spring 2019 to 20 students from 20 different majors and now this course reaches nearly 500 Illini each year.
 
-<!-- - Extensive Topic List (PDF) -->
-- Course Webpage: [Fall 2022 - **Fall 2024** as DISCOVERY](https://discovery.cs.illinois.edu/), [Spring 2022](https://discovery.cs.illinois.edu/stat107-sp22/), [Fall 2021](https://discovery.cs.illinois.edu/stat107-fa21/), [Spring 2020](http://courses.las.illinois.edu/spring2020/stat107/), [Fall 2019](http://courses.las.illinois.edu/fall2019/stat107/), and [Spring 2019](http://courses.las.illinois.edu/spring2019/stat107/).
+- **Spring 2025**: [Data Science DISCOVERY (discovery.cs.illinois.edu)](https://discovery.cs.illinois.edu/)
+- Previous Semesters: 
+[Fall 2024](https://discovery.cs.illinois.edu/),
+[Spring 2024](https://discovery.cs.illinois.edu/),
+[Fall 2023](https://discovery.cs.illinois.edu/),
+[Spring 2023](https://discovery.cs.illinois.edu/),
+[Fall 2022](https://discovery.cs.illinois.edu/),
+[Spring 2022](https://discovery.cs.illinois.edu/stat107-sp22/),
+[Fall 2021](https://discovery.cs.illinois.edu/stat107-fa21/),
+[Spring 2020](http://courses.las.illinois.edu/spring2020/stat107/),
+[Fall 2019](http://courses.las.illinois.edu/fall2019/stat107/), and
+[Spring 2019](http://courses.las.illinois.edu/spring2019/stat107/).
 
 <hr>
 
@@ -32,10 +42,10 @@ Data Science Discovery is the first course in the Data Science program at The Un
 Accelerated Computer Science Fundamentals is a Coursera Specialization comprised of three individual MOOCs that provide learners foundational skills in data structures, algorithms, and algorithmic analysis.  Initially developed as a "leveling" course for incoming students in Illinois' Online Masters of Computer Science program, this course was later refactored into three MOOCs and offered to the world to learn computer science fundamentals.  Nearly 100,000 learners have enrolled in it to date, and all three MOOCs are ranked as the top MOOCs offered by Computer Science at Illinois.
 
 <ul>
-  <li>Course #1: <a href="https://www.coursera.org/learn/cs-fundamentals-1">Object-Oriented Data Structures in C++</a>; <i>a month-long course (108,634 students, 4.7/5.0 from 2,967 verified ratings)</i></li>
-  <li>Course #2: <a href="https://www.coursera.org/learn/cs-fundamentals-2">Ordered Data Structures</a>; <i>a month-long course (31,325 students, 4.8/5.0 from 900 verified ratings)</i></li>
-  <li>Course #3: <a href="https://www.coursera.org/learn/cs-fundamentals-3">Unordered Data Structures</a>; <i>a month-long course (18,719 students, 4.7/5.0 from 544 verified ratings)</i></li>
-  <li>Specialization: <a href="https://www.coursera.org/specializations/cs-fundamentals">Accelerated Computer Science Fundamentals Specialization</a>; <i>a semester-long collection of the three aforementioned courses (46,753 students, 4.7/5.0 from 2,507 verified ratings)</i></li>
+  <li>Course #1: <a href="https://www.coursera.org/learn/cs-fundamentals-1">Object-Oriented Data Structures in C++</a>; <i>month-long course (110,903 students, 4.7/5.0 from 2,999 verified ratings)</i></li>
+  <li>Course #2: <a href="https://www.coursera.org/learn/cs-fundamentals-2">Ordered Data Structures</a>; <i>month-long course (32,450 students, 4.8/5.0 from 915 verified ratings)</i></li>
+  <li>Course #3: <a href="https://www.coursera.org/learn/cs-fundamentals-3">Unordered Data Structures</a>; <i>month-long course (19,017 students, 4.7/5.0 from 549 verified ratings)</i></li>
+  <li>Specialization: <a href="https://www.coursera.org/specializations/cs-fundamentals">Accelerated Computer Science Fundamentals Specialization</a>; <i>semester-long collection of the three aforementioned courses (47,542 students, 4.7/5.0 from 2,530 verified ratings)</i></li>
 </ul>
 
 <hr>
@@ -47,7 +57,7 @@ Accelerated Computer Science Fundamentals is a Coursera Specialization comprised
 Introduction to Computer Systems is a modern approach to computer systems and one of the newest courses in the CS core curriculum, teaching students the foundational of computer architecture, systems progrmaming, and cloud computing.  CS students can either take a dedicated architecture course (CS 233) and a dedicated systems course (CS 340) or take CS 340 to fulfill both requirements.  *(CS 340 is a replacement of CS 240, moving the course to an upper-level core course.)*
 
 <!-- - Detailed Comparison between CS 240 and CS 233/241 -->
-- Semesters Taught as CS 340: [Spring 2023](https://courses.engr.illinois.edu/cs240/sp2023/), [Fall 2022](https://courses.engr.illinois.edu/cs240/fa2022/)
+- Semesters Taught as CS 340: [Spring 2023](https://courses.engr.illinois.edu/cs340/sp2023/), [Fall 2022](https://courses.engr.illinois.edu/cs340/fa2022/)
 - Semesters Taught as CS 240: [Spring 2022](https://courses.engr.illinois.edu/cs240/sp2022/), [Fall 2021](https://courses.engr.illinois.edu/cs240/fa2021/), [Spring 2021](https://courses.engr.illinois.edu/cs240/sp2021/), and [Fall 2020](https://courses.engr.illinois.edu/cs240/fa2020/).
 
 <hr>
@@ -108,7 +118,13 @@ By invitation from [Illinois International](https://international.illinois.edu/)
 
 <ul class="pub-list mt-1">
   <li>
-    <a href="https://provost.illinois.edu/awards/campus-awards-honors/campus-awards-for-excellence-in-instruction/excellence-in-undergraduate-teaching/">Campus Award for Excellence in Undergraduate Teaching</a>; 2020
+    <a href="https://siebelschool.illinois.edu/about/awards/faculty-awards/university-illinois-awards">Grainger College of Engineering's Rose Award for Teaching Excellence</a>; 2023
+    <div class="pub-etc">
+      Grainger College award, <i>"recognizes teachers who excel at motivating freshman and sophomore students to learn and appreciate engineering."</i>
+    </div>
+  </li>
+  <li>
+    <a href="https://provost.illinois.edu/awards/campus-awards-honors/campus-awards-for-excellence-in-instruction/excellence-in-undergraduate-teaching/">University of Illinois' Award for Excellence in Undergraduate Teaching</a>; 2020
     <div class="pub-etc">
       The top teaching honor given at The University of Illinois, awarded by the Office of the Provost
     </div>
@@ -145,7 +161,7 @@ By invitation from [Illinois International](https://international.illinois.edu/)
     </div>
   </li>
   <li>
-    <a href="https://citl.illinois.edu/citl-101/measurement-evaluation/teaching-evaluation/teaching-evaluations-(ices)/teachers-ranked-as-excellent">Teachers Ranked as Excellent by Their Students</a>; 2008, 2010, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020
+    <a href="https://citl.illinois.edu/citl-101/measurement-evaluation/teaching-evaluation/teaching-evaluations-(ices)/teachers-ranked-as-excellent">Teachers Ranked as Excellent by Their Students</a>; 2008, 2010, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020, 2022, 2023, 2024
     <div class="pub-etc">
       Center for Innovation in Teaching &amp; Learning at The University of Illinois
     </div>

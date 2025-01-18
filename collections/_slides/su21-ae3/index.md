@@ -6,6 +6,10 @@ org: Academy for Excellence in Engineering Education (AE3)
 layout: slides
 
 date: 2021-08-10
+
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 # {{page.title}}
