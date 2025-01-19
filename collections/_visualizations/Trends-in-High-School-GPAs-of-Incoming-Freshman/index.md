@@ -20,7 +20,7 @@ layout: default
 <h1>Trends in High School GPAs among Incoming Freshman Classes of Big Ten Schools</h1>
 <div style="font-size: 14px; margin-top: -4px; line-height: 16px;">
   <b>By</b>:  Wade Fagen-Ulmschneider and Louisa Zhang (Illinois '27)<br>
-  <b>Published</b>: January 20, 2025
+  <b>Published</b>: January 21, 2025
 </div>
 
 <hr>
@@ -152,7 +152,7 @@ The data presented in this work was gathered by Wade Fagen-Ulmschneider and Loui
 - University of Washington (Seattle), [https://www.washington.edu/opb/uw-data/external-reporting/common-data-set/](https://www.washington.edu/opb/uw-data/external-reporting/common-data-set/)
 - University of Wisconsin-Madison, [https://data.wisc.edu/common-data-set-and-rankings/](https://data.wisc.edu/common-data-set-and-rankings/)
 
-Rutgers, Ohio State, Northwestern, Minnesota, and Illinois reported no data for Question C11 in any available Common Data Sets.  Ohio State's links to Common Data Sets before 2022 were broken and reports were inaccessible.  The University of Maryland did not provided unweighted GPAs and was excluded for not having comparable data (in Fall 2023, Maryland reported 93.64% of students had at least a 4.00 GPA and their average freshman class GPA was a 4.45 GPA).  Finally, Penn State reported data for Question C11 in only Fall 2022 and Fall 2023 and was excluded for having too few data points.
+Rutgers, Ohio State, Northwestern, Minnesota, and Illinois reported no data for Questions C11 and C12 in any available Common Data Sets.  Ohio State's links to Common Data Sets before 2022 were broken and reports were inaccessible.  The University of Maryland did not provided unweighted GPAs and was excluded for not having comparable data (in Fall 2023, Maryland reported 93.64% of students had at least a 4.00 GPA and their average freshman class GPA was a 4.45 GPA).  Finally, Penn State reported data for Question C11 in only Fall 2022 and Fall 2023 and was excluded for having too few data points.
 
 </div>
 
