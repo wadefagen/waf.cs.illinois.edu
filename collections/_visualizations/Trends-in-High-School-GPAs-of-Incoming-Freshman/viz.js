@@ -68,6 +68,7 @@ var visualize = function() {
   visualize_bar("#chart-1", 2005, 2023);
   visualize_bar("#chart", 2005, 2005);
   visualize_chart();
+  visualize_chart_gpa();
 }
 
 var uni = "University of Wisconsin-Madison";
@@ -165,7 +166,7 @@ var visualize_bar = function(id, minYear_data, minYear_display) {
   var margin = { top: 45, right: 50, bottom: 50, left: 40 };
 
   var width = client_width - margin.left - margin.right,
-     height = 30 * data.length;
+     height = (30 * data.length);
 
   d3.select(id).html("");
   var svg = d3.select(id)
@@ -187,7 +188,7 @@ var visualize_bar = function(id, minYear_data, minYear_display) {
   */
  y = (year) => {
   let offset = 2023 - year;
-  return offset * 30;
+  return (offset * 30);
  }
 
 
@@ -391,7 +392,13 @@ svg.append('g').attr('class', 'axis-gridline').call(x_grid);
   .attr("fill", "#ccf")
   .attr("text-anchor", "middle")
   .attr("font-size", "12px")
-  .text((d) => (d.gpa_400) ? `4.0 GPA` : ``)
+  .text((d) => {
+    if (!d.gpa_400) { return ""; }
+    let eleWidth = x(d.v1_400)- x(d.v1_375);
+    if (eleWidth < 40) { return ""; }
+    else if (eleWidth < 60) { return "4.00"; }
+    else { return "4.00 GPA"; }
+  });
 
 
 
@@ -420,7 +427,20 @@ svg.append('g').attr('class', 'axis-gridline').call(x_grid);
     .attr("fill", "#ccf")
     .attr("text-anchor", "middle")
     .attr("font-size", "12px")
-    .text((d) => (d.gpa_400) ? `3.75 - 3.99 GPA` : ( (d.gpa_375) ? `3.75+ GPA` : "" ))
+    .text((d) => {
+      let eleWidth = x(d.v1_375) - x(0);
+      if (d.gpa_400) {
+        if (eleWidth < 64) { return ""; }
+        else if (eleWidth < 100) { return "3.75 - 3.99"; }
+        else { return "3.75 - 3.99 GPA"; }
+      } else if (d.gpa_375) {
+        if (eleWidth < 40) { return ""; }
+        else if (eleWidth < 60) { return "3.75+"; }
+        else { return "3.75+ GPA"; }
+      } else {
+        return "";
+      }
+    })
     .on('mouseover', function (d, i) { tip.show(d, i); })
   .on('mouseout', function (d, i) { tip.hide(d, i); })
 
@@ -524,7 +544,38 @@ svg.append('g').attr('class', 'axis-gridline').call(x_grid);
     .attr("stroke", "black")
     .attr("stroke-width", "3px")
 
+    if (uni != "UCLA") {
+      svg.append("line")
+      .attr("x1", x(0) + 2)
+      .attr("x2", x(max))
+      .attr("y1", y(2018) )
+      .attr("y2", y(2018) )
+      .attr("stroke", "#eef")
+      .attr("stroke-dasharray", "8")
+      .attr("stroke-width", "1px");
 
+
+      svg.append("text")
+      .attr("x", x(0) + 3)
+      .attr("y", y(2018) + 12)
+      .attr("fill", "#eef")
+      .attr("font-size", "10px")
+      .text((d) => `[1]`)
+    }
+
+    if (uni == "USC") {
+      svg.append("text")
+      .attr("x", x(0) + 5)
+      .attr("y", y(2018) - 10)
+      .attr("fill", "#111")
+      .attr("font-size", "12px")
+      .text((d) => {
+        if (width > 600) { return `USC did not report incoming freshman class GPAs for Fall 2019`; }
+        else if (width > 300) { return `No data reported for Fall 2019`; }
+        else if (width > 100) { return `No data`; }
+        return "";
+      })
+    }
 
 
     // years.append("rect")
@@ -545,6 +596,10 @@ var visualize_chart = () => {
   client_width_rendered_ = client_width;
 
   let margin = { top: 10, right: 80, bottom: 30, left: 50 };
+
+  if (client_width < 730) {
+    margin.bottom += 20;
+  }
 
   let width = client_width - margin.left - margin.right,
      height = 400;
@@ -571,11 +626,36 @@ var visualize_chart = () => {
     .domain([0, 1])
     .range([height, 0]);
 
-    svg.append("g")
+    let ticks_ct = 20;
+    if (width < 400) {
+      ticks_ct = 10;
+    }
+    let year_ticks = svg.append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x).ticks(ticks_ct))
+  
+    if (width < 600) {
+      year_ticks
+      .selectAll("text")
+      .style("text-anchor", "end")
+      .attr("dx", "-.8em")
+      .attr("dy", ".15em")
+      .attr("transform", "rotate(-45)");
+    }
+
     svg.append("g")
       .call(d3.axisLeft(y).tickFormat( d3.format(".0%")));        
+
+    // -- grid lines --
+    var x_grid = d3.axisBottom(x)
+    .ticks(ticks_ct)
+    .tickSize(-height)
+    .tickFormat("");
+
+    svg.append('g')
+    .attr("transform", "translate(0," + height + ")")
+    .attr('class', 'axis-gridline').call(x_grid);    
+
 
   let year_avg = {};
   let year_ct = {};
@@ -586,8 +666,17 @@ var visualize_chart = () => {
     let val = Math.round(d.gpa_gte_375 * 10) / 10;
     let s = `
     <div style="text-align: center; font-weight: bold; border-bottom: solid 1px black;">${val}%</div>
-    <div style="font-size: 14px; padding-top: 3px;">
-    <b>${val}%</b> of the first-semester freshman class at ${d.School} in Fall ${d.year} had a high school GPA of 3.75 or higher.  Full breakdown:
+    `;
+
+    if (!d.School) {
+      s += `<div style="font-size: 14px; padding-top: 3px;">
+      Unweighted average percentage of incoming Big Ten freshman classes that have a high school GPA of 3.75 or higher.
+      </div>`;
+      return s;
+    }
+
+    s += `<div style="font-size: 14px; padding-top: 3px;">
+    <b>${val}%</b> of the first-semester freshman class at <b>${d.School}</b> in <b>Fall ${d.year}</b> had a high school GPA of 3.75 or higher.  Full breakdown:
     </div>`;
 
     s += `<div style="font-size: 14px; margin-top: 2px;">`;
@@ -692,6 +781,17 @@ var visualize_chart = () => {
     .attr("stroke", "black")
     .text("B1G Average");   
 
+    svg.selectAll("circles")
+    .data(data)
+    .enter()
+    .append("circle")
+    .attr("cx", (d) => x(new Date(d.year, 0, 1)))
+    .attr("cy", (d) => y(d.gpa_gte_375 / 100))
+    .attr("r", 4.5)
+    .attr("fill", "black")
+    .on('mouseover', function (d, i) { tip.show(d, i); })
+    .on('mouseout', function (d, i) { tip.hide(d, i); })
+
     
     svg.append("text")
     .attr("x", 10)
@@ -699,27 +799,280 @@ var visualize_chart = () => {
     .attr("font-size", "14px")
     .attr("fill", "black")
     .style("font-weight", "bold")
-    .text("Percentage of first-semester incoming freshman");   
+    .text("Percentage of first-semester");   
 
     svg.append("text")
     .attr("x", 10)
-    .attr("y", 32)
+    .attr("y", 28)
     .attr("font-size", "14px")
     .attr("fill", "black")
     .style("font-weight", "bold")
-    .text("with high school GPA of 3.75 or higher");
-
+    .text(" incoming freshman with high");
 
     svg.append("text")
-    .attr("x", width)
+    .attr("x", 10)
+    .attr("y", 44)
+    .attr("font-size", "14px")
+    .attr("fill", "black")
+    .style("font-weight", "bold")
+    .text("school GPA of 3.75 or higher");
+
+    svg.append("text")
+    .attr("x", width - 5)
     .attr("y", height - 7)
     .attr("font-size", "14px")
     .attr("fill", "black")
     .attr("text-anchor", "end")
     .style("font-weight", "bold")
     .text("Freshman Class Entry Year (Fall)");
-
 };
 
 
+
+
+
+var visualize_chart_gpa = () => {
+  let id = "#chart-line-gpa";
+  let client_width = $(id).width();
+  client_width_rendered_ = client_width;
+
+  let margin = { top: 10, right: 80, bottom: 30, left: 50 };
+
+  if (client_width < 730) {
+    margin.bottom += 20;
+  }
+
+  let width = client_width - margin.left - margin.right,
+     height = 400;
+
+  d3.select(id).html("");
+  let svg = d3.select(id)
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .style("width", width + margin.left + margin.right)
+    .style("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");  
+
+  // let x = d3.scaleLinear()
+  //   .domain([2005, 2023])
+  //   .range([0, width]);
+
+    let x = d3.scaleTime()
+    .domain([new Date(2005, 0, 1), new Date(2023, 0, 1)])
+    .range([0, width]);
+
+  let y = d3.scaleLinear()
+    .domain([3.4, 4])
+    .range([height, 0]);
+
+  let ticks_ct = 20;
+  if (width < 400) {
+    ticks_ct = 10;
+  }
+  let year_ticks = svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).ticks(ticks_ct))
+
+  if (width < 600) {
+    year_ticks
+    .selectAll("text")
+    .style("text-anchor", "end")
+    .attr("dx", "-.8em")
+    .attr("dy", ".15em")
+    .attr("transform", "rotate(-45)");
+  }
+
+    svg.append("g")
+      .call(d3.axisLeft(y));
+
+    // -- grid lines --
+    var x_grid = d3.axisBottom(x)
+    .ticks(ticks_ct)
+    .tickSize(-height)
+    .tickFormat("");
+
+    svg.append('g')
+    .attr("transform", "translate(0," + height + ")")
+    .attr('class', 'axis-gridline').call(x_grid);    
+
+
+  let year_avg = {};
+  let year_ct = {};
+  let data = [];
+
+  // == d3-tip ==
+  var tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
+    let val = Math.round(d.gpa_avg * 100) / 100;
+
+
+    let s = `
+    <div style="text-align: center; font-weight: bold; border-bottom: solid 1px black;">Average GPA: ${val}</div>
+    <div style="font-size: 14px; padding-top: 3px; text-align: center;">
+    `;
+
+    if (d.School) {
+      s += `High school GPA of incoming first-semester freshman at ${d.School} in Fall ${d.year}.`;
+    } else {
+      s += `Unweighted average high school GPA of all incoming Fall ${d.year} freshman classes across all Big Ten Universities reporting data.`
+    }
+
+    s += `</div>`
+
+    return s;
+  });
+  svg.call(tip);
+
+  for (let u of Object.keys(uni_minYear_dict)) {
+    data = [];
+    for (let d of data_by_school[u]) {
+      if (d.gpa_avg && d.year <= 2023 && d.year >= uni_minYear_dict[u]) {
+        data.push(d);
+
+        if (!year_avg[d.year]) {
+          year_avg[d.year] = 0;
+          year_ct[d.year] = 0;
+        }
+        year_avg[d.year] += d.gpa_avg;
+        year_ct[d.year]++;
+      }
+    }
+
+    svg.append("path")
+      .datum(data)
+      .attr("fill", "none")
+      .attr("stroke", uni_color_dict[u])
+      .attr("stroke-width", 1.5)
+      .attr("opacity", 0.5)
+      .attr("d", d3.line()
+        .x(function(d) { return x(new Date(d.year, 0, 1)) })
+        .y(function(d) { return y(d.gpa_avg) })
+        )
+    
+        let uni_delta_dict = {
+          "UCLA": 0,
+          "University of Michigan": -6,
+          "University of Wisconsin-Madison": 6,
+          "USC": 0,
+          "University of Iowa": 4,
+          "University of Washington (Seattle)": -4,
+          "Michigan State": 5,
+
+          "Purdue": 15,
+          "Indiana (Bloomington)": 12,
+          "University of Oregon": 4,
+        };
+        
+    
+    svg.append("text")
+    .attr("x", width + 5)
+    .attr("y", y(data[0].gpa_avg) + 3 + uni_delta_dict[u])
+    .attr("font-size", "13px")
+    .attr("stroke", uni_color_dict[u])
+    .attr("opacity", 0.5)
+    .text(uni_short_dict[u]);
+
+    svg.selectAll("circles")
+    .data(data)
+    .enter()
+    .append("circle")
+    .attr("cx", (d) => x(new Date(d.year, 0, 1)))
+    .attr("cy", (d) => y(d.gpa_avg))
+    .attr("r", 3.5)
+    .attr("opacity", 0.5)
+    .attr("fill", uni_color_dict[u])
+    .on('mouseover', function (d, i) { tip.show(d, i); })
+    .on('mouseout', function (d, i) { tip.hide(d, i); })
+
+  }
+
+  data = [];
+  for (let d of Object.keys(year_avg)) {
+    data.push({
+      year: d,
+      gpa_avg: year_avg[d] / year_ct[d]
+    });
+  }
+
+  // data = [
+  //   { year: 2010, gpa_avg: 3.2239903731897863 },
+  //   { year: 2011, gpa_avg: 3.2374124486504785 },
+  //   { year: 2012, gpa_avg: 3.2423759757532644 },
+  //   { year: 2013, gpa_avg: 3.2462462420264404 },
+  //   { year: 2014, gpa_avg: 3.245397714001831 },
+  //   { year: 2015, gpa_avg: 3.2773066030276463 },
+  //   { year: 2016, gpa_avg: 3.276256630090085 },
+  //   { year: 2017, gpa_avg: 3.322061788797417 },
+  //   { year: 2018, gpa_avg: 3.3338506589555323 },
+  //   { year: 2019, gpa_avg: 3.4141122328379105 },
+  //   { year: 2020, gpa_avg: 3.445629671906594 },
+  //   { year: 2021, gpa_avg: 3.419153518702475 },
+  //   { year: 2022, gpa_avg: 3.4781513328366676 },
+  //   { year: 2023, gpa_avg: 3.513533224211286 },    
+  // ]
+
+  svg.append("path")
+  .datum(data)
+  .attr("fill", "none")
+  .attr("stroke", "black")
+  .attr("stroke-width", 3)
+  .attr("d", d3.line()
+    .x(function(d) { return x(new Date(d.year, 0, 1)) })
+    .y(function(d) { return y(d.gpa_avg) })
+    )
+
+    svg.selectAll("circles")
+    .data(data)
+    .enter()
+    .append("circle")
+    .attr("cx", (d) => x(new Date(d.year, 0, 1)))
+    .attr("cy", (d) => y(d.gpa_avg))
+    .attr("r", 4.5)
+    .attr("fill", "black")
+    .on('mouseover', function (d, i) { tip.show(d, i); })
+    .on('mouseout', function (d, i) { tip.hide(d, i); })
+
+
+    svg.append("text")
+    .attr("x", width + 5)
+    .attr("y", y(data[data.length - 1].gpa_avg))
+    .attr("font-size", "13px")
+    .attr("stroke", "black")
+    .text("B1G Average");   
+
+    
+    svg.append("text")
+    .attr("x", 10)
+    .attr("y", 12)
+    .attr("font-size", "14px")
+    .attr("fill", "black")
+    .style("font-weight", "bold")
+    .text("Average unweighted high school");   
+
+    svg.append("text")
+    .attr("x", 10)
+    .attr("y", 28)
+    .attr("font-size", "14px")
+    .attr("fill", "black")
+    .style("font-weight", "bold")
+    .text("GPA of incoming freshman class");
+
+    svg.append("text")
+    .attr("x", 10)
+    .attr("y", 44)
+    .attr("font-size", "14px")
+    .attr("fill", "black")
+    .style("font-weight", "bold")
+    .text("(GPAs unweighted, out of 4.00)");
+
+    svg.append("text")
+    .attr("x", width - 5)
+    .attr("y", height - 7)
+    .attr("font-size", "14px")
+    .attr("fill", "black")
+    .attr("text-anchor", "end")
+    .style("font-weight", "bold")
+    .text("Freshman Class Entry Year (Fall)");
+};
 

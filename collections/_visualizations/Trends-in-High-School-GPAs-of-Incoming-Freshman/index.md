@@ -34,7 +34,7 @@ students, nearly half (47.8%) of the incoming freshman class reported a perfect 
 Several research papers have studied the multi-decade trend of GPAs increasing over time, but we found
 no widely available data exploring the impact of the Big Ten.  This work explores the first-semester freshman demographics published by all sixteen Big Ten schools.
 
-Specifically, this work focused on the percentage of students in each <b>freshman class that have high school GPA of at least 3.75</b>.  For example, visually representing the Fall 2023 class of freshman at the University of Wisconsin-Madison:
+Specifically, this work primarily focused on the percentage of students in each <b>freshman class that have high school GPA of at least 3.75</b>.  For example, visually representing the high school GPAs of the incoming Fall 2023 class of freshman at the University of Wisconsin-Madison:
 
 <div id="chart-1" style="margin-bottom: 2px; margin-top: -10px;"></div>
 
@@ -98,7 +98,11 @@ University:
   <option value="UCLA">UCLA</option>
 </select>
 
-<div id="chart" style="margin-bottom: 30px"></div>
+<div id="chart" style="margin-bottom: 5px"></div>
+
+<div style="font-size: 12px; margin-bottom: 30px; text-align: right;">
+  [1]: Beginning in Fall 2019, universities began reporting 4.00 GPAs separately from the students with above 3.75 high school GPAs.
+</div>
 
 
 ## Freshman Class Incoming GPA Across the Big Ten
@@ -108,18 +112,25 @@ After nerding out with each University individually, the plot below graphs the <
 <div id="chart-line" style="margin-bottom: 30px"></div>
 
 
+### Average High School GPA
+
+In addition to reporting the percentage of students with GPAs above 3.75, a freshman class <b>average high school GPA</b> (among all incoming freshman at each University) is reported for reach University:
+
+<div id="chart-line-gpa" style="margin-bottom: 30px"></div>
+
+
 ## Analysis
 
 Despite the wide geographical area of the Big Ten system, with each school pulling a large portion of their students from in-state high schools with diverse state standards and state educational boards, the trend of the freshman class high school GPA has increased with very few exceptions.
 
-- The average high school GPA of Big Ten Schools has significantly increased in the past 20 years,
-- The proportion of students with a 3.75 GPA or higher increased from less than 40% of the incoming freshman class in 2005, on average, to over 60% in 2023.
-- The pandemic does not seem to have had a significant impact on the trend of high school GPAs.
+- The average high school GPA, and the proportion of incoming freshman with 3.75+ GPAs, among Big Ten Schools has significantly increased in the past 20 years,
+- The proportion of students with a 3.75 GPA or higher increased from less than 40% of the incoming freshman class in 2005, on average, to over 70% in 2023; the average incoming freshman high school GPA similarly increased from 3.58 to 3.84 from 2005 to 2023.
+- Surprising to me, there is nothing in the data to suggest that the pandemic has had a significant impact on the trend of high school GPAs in the recent incoming freshman classes of students.
 
 
 ### Data Set
 
-The data presented in this work was gathered by Wade Fagen-Ulmschneider and Louisa Zhang (Illinois '26) in January 2024 by analyzing 286 reports to source Question C11 in the Common Data Sets.  The reports accessed in this work are published publicly by each University:
+The data presented in this work was gathered by Wade Fagen-Ulmschneider and Louisa Zhang (Illinois '26) in January 2025 by analyzing 286 reports to source Questions C11 and C12 in the Common Data Sets.  The reports accessed in this work are published publicly by each University:
 
 <div style="font-size: 14px; margin-top: -10px;">
 
@@ -141,7 +152,7 @@ The data presented in this work was gathered by Wade Fagen-Ulmschneider and Loui
 - University of Washington (Seattle), [https://www.washington.edu/opb/uw-data/external-reporting/common-data-set/](https://www.washington.edu/opb/uw-data/external-reporting/common-data-set/)
 - University of Wisconsin-Madison, [https://data.wisc.edu/common-data-set-and-rankings/](https://data.wisc.edu/common-data-set-and-rankings/)
 
-Rutgers, Ohio State, Northwestern, Minnesota, and Illinois reported no data for Question C11 in any available Common Data Sets.  Ohio State's links to Common Data Sets before 2022 were broken and reports were inaccessible.  The University of Maryland did not provided unweighted GPAs (in Fall 2023, Maryland reported 93.64% of students had at least a 4.00 GPA) and was excluded for not having comparable data.  Finally, Penn State reported data for Question C11 in only Fall 2022 and Fall 2023 and was excluded for having too few data points.
+Rutgers, Ohio State, Northwestern, Minnesota, and Illinois reported no data for Question C11 in any available Common Data Sets.  Ohio State's links to Common Data Sets before 2022 were broken and reports were inaccessible.  The University of Maryland did not provided unweighted GPAs and was excluded for not having comparable data (in Fall 2023, Maryland reported 93.64% of students had at least a 4.00 GPA and their average freshman class GPA was a 4.45 GPA).  Finally, Penn State reported data for Question C11 in only Fall 2022 and Fall 2023 and was excluded for having too few data points.
 
 </div>
 
