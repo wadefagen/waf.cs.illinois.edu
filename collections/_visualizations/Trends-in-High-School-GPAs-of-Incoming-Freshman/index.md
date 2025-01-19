@@ -17,7 +17,7 @@ layout: default
 # tags: visualization
 ---
 
-<h1>Trends in High School GPAs among Incoming Freshman Classes Among Big Ten Schools</h1>
+<h1>Trends in High School GPAs among Incoming Freshman Classes of Big Ten Schools</h1>
 <div style="font-size: 14px; margin-top: -4px; line-height: 16px;">
   <b>By</b>:  Wade Fagen-Ulmschneider and Louisa Zhang (Illinois '26)<br>
   <b>Published</b>: January 20, 2025
