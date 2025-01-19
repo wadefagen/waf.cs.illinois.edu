@@ -2,7 +2,7 @@
 title: Trends in High School GPAs among Incoming Freshman Class
 slug: Trends in High School GPAs among Incoming Freshman Class
 
-description: How do we perceive the difference between "probable" and "likely"?
+description: Data-forward interactive visualizations on incoming freshman class high school GPAs over the past 20 years
 date: 2025-01-21
 
 social-img: 1200-630.png
