@@ -334,7 +334,7 @@ var visualize_bar = function(id, minYear_data, minYear_display) {
   .attr("text-anchor", "end")
   .attr("font-size", "14px")
   //.attr("font-weight", "bold")
-  .text(`Percentage of First-Semester Freshman with >= 3.75 High School GPA`)
+  .text((width > 400) ? `Percentage of First-Semester Freshman with >= 3.75 High School GPA` : `% Freshman with >= 3.75 High School GPA`)
 
 
   svg.append("text")
@@ -343,7 +343,7 @@ var visualize_bar = function(id, minYear_data, minYear_display) {
   .attr("fill", "hsl(311 33.3% 27.6%)")
   //.attr("text-anchor", "end")
   .attr("font-size", "14px")
-  .text(`Percentage of First-Semester Freshman with < 3.75 High School GPA`)
+  .text((width > 400) ? `Percentage of First-Semester Freshman with < 3.75 High School GPA` : `% Freshman with < 3.75 High School GPA`)
 
 
     /*
