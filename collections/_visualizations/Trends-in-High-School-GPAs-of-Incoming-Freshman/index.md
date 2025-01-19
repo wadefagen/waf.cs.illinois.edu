@@ -34,7 +34,7 @@ students, nearly half (47.8%) of the incoming freshman class reported a perfect 
 Several research papers have studied the multi-decade trend of GPAs increasing over time, but we found
 no widely available data exploring the impact of the Big Ten.  This work explores the first-semester freshman demographics published by all sixteen Big Ten schools.
 
-Specifically, this work primarily focused on the <b>percentage of students in each freshman class that have high school GPA of at least 3.75</b>.  For example, visually representing the high school GPAs of the incoming Fall 2023 class of freshman at the University of Wisconsin-Madison:
+Specifically, this work primarily focused on the <b>percentage of students in each freshman class that have a high school GPA of at least 3.75</b>.  For example, visually representing the high school GPAs of the incoming Fall 2023 class of freshman at the University of Wisconsin-Madison:
 
 <div id="chart-1" style="margin-bottom: 2px; margin-top: -10px;"></div>
 
@@ -125,7 +125,7 @@ Despite the wide geographical area of the Big Ten system, with each school pulli
 
 - The average high school GPA, and the proportion of incoming freshman with 3.75+ GPAs, among Big Ten Schools has significantly increased in the past 20 years,
 - The proportion of students with a 3.75 GPA or higher increased from less than 40% of the incoming freshman class in 2005, on average, to over 70% in 2023; the average incoming freshman high school GPA similarly increased from 3.58 to 3.84 from 2005 to 2023.
-- Surprising to me, there is nothing in the data to suggest that the pandemic has had a significant impact on the trend of high school GPAs in the recent incoming freshman classes of students.
+- Surprisingly, there is nothing in the data to suggest that the pandemic has had a significant impact on the trend of high school GPAs in the recent incoming freshman classes of students.
 
 
 ### Data Set
