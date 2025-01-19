@@ -134,21 +134,21 @@ The data presented in this work was gathered by Wade Fagen-Ulmschneider and Loui
 
 <div style="font-size: 14px; margin-top: -10px;">
 
-- UCLA, [https://apb.ucla.edu/campus-statistics/common-data-set-undergraduate-profile](https://apb.ucla.edu/campus-statistics/common-data-set-undergraduate-profile)
-- UIUC, [https://www.dmi.illinois.edu/stuenr/index.htm#CDS](https://www.dmi.illinois.edu/stuenr/index.htm#CDS)
+- University of Illinois (Urbana-Champaign), [https://www.dmi.illinois.edu/stuenr/index.htm#CDS](https://www.dmi.illinois.edu/stuenr/index.htm#CDS)
+- UCLA - University of California (Los Angeles), [https://apb.ucla.edu/campus-statistics/common-data-set-undergraduate-profile](https://apb.ucla.edu/campus-statistics/common-data-set-undergraduate-profile)
 - Indiana (Bloomington), [https://iuia.iu.edu/apps/cds/](https://iuia.iu.edu/apps/cds/)
 - University of Iowa, [https://provost.uiowa.edu/data-and-reports/common-data-set](https://provost.uiowa.edu/data-and-reports/common-data-set)
-- U-Maryland (College Park), [https://www.irpa.umd.edu/InstitutionalData/cds.html](https://www.irpa.umd.edu/InstitutionalData/cds.html)
+- University of Maryland (College Park), [https://www.irpa.umd.edu/InstitutionalData/cds.html](https://www.irpa.umd.edu/InstitutionalData/cds.html)
 - University of Michigan, [https://obp.umich.edu/campus-statistics/common-data-set/](https://obp.umich.edu/campus-statistics/common-data-set/)
 - Michigan State, [https://ir.msu.edu/cds](https://ir.msu.edu/cds)
-- University of Minnesota Twin Cities, [https://idr.umn.edu/institutional-metrics-compliance-reporting/twin-cities-campus-factbook](https://idr.umn.edu/institutional-metrics-compliance-reporting/twin-cities-campus-factbook)
+- University of Minnesota (Twin Cities), [https://idr.umn.edu/institutional-metrics-compliance-reporting/twin-cities-campus-factbook](https://idr.umn.edu/institutional-metrics-compliance-reporting/twin-cities-campus-factbook)
 - Northwestern, [https://www.enrollment.northwestern.edu/data/common-data-set.html](https://www.enrollment.northwestern.edu/data/common-data-set.html)
 - Ohio State University (Columbus), [https://irp.osu.edu/institutional-data-and-reports](https://irp.osu.edu/institutional-data-and-reports)
 - University of Oregon, [https://ir.uoregon.edu/uo-overview/common-data-set](https://ir.uoregon.edu/uo-overview/common-data-set)
 - Penn State (University Park), [https://opair.psu.edu/institutional-research/projects/cds/](https://opair.psu.edu/institutional-research/projects/cds/)
 - Purdue, [https://www.purdue.edu/idata/products-services/common-data-set.php](https://www.purdue.edu/idata/products-services/common-data-set.php)
 - Rutgers (New Brunswick), [https://oirap.rutgers.edu/ReportingCommonDataSet.html](https://oirap.rutgers.edu/ReportingCommonDataSet.html)
-- USC, [https://oir.usc.edu/statistics-data-visualization/common-data-set/](https://oir.usc.edu/statistics-data-visualization/common-data-set/)
+- University of Southern California (USC), [https://oir.usc.edu/statistics-data-visualization/common-data-set/](https://oir.usc.edu/statistics-data-visualization/common-data-set/)
 - University of Washington (Seattle), [https://www.washington.edu/opb/uw-data/external-reporting/common-data-set/](https://www.washington.edu/opb/uw-data/external-reporting/common-data-set/)
 - University of Wisconsin-Madison, [https://data.wisc.edu/common-data-set-and-rankings/](https://data.wisc.edu/common-data-set-and-rankings/)
 
