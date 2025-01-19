@@ -130,7 +130,7 @@ Despite the wide geographical area of the Big Ten system, with each school pulli
 
 ### Data Set
 
-The data presented in this work was gathered by Wade Fagen-Ulmschneider and Louisa Zhang (Illinois '26) in January 2025 by analyzing 286 reports to source Questions C11 and C12 in the Common Data Sets.  The reports accessed in this work are published publicly by each University:
+The data presented in this work was gathered by Wade Fagen-Ulmschneider and Louisa Zhang (Illinois '27) in January 2025 by analyzing 286 reports to source Questions C11 and C12 in the Common Data Sets.  The reports accessed in this work are published publicly by each University:
 
 <div style="font-size: 14px; margin-top: -10px;">
 
@@ -155,12 +155,6 @@ The data presented in this work was gathered by Wade Fagen-Ulmschneider and Loui
 Rutgers, Ohio State, Northwestern, Minnesota, and Illinois reported no data for Questions C11 and C12 in any available Common Data Sets.  Ohio State's links to Common Data Sets before 2022 were broken and reports were inaccessible.  The University of Maryland did not provided unweighted GPAs and was excluded for not having comparable data (in Fall 2023, Maryland reported 93.64% of students had at least a 4.00 GPA and their average freshman class GPA was a 4.45 GPA).  Finally, Penn State reported data for Question C11 in only Fall 2022 and Fall 2023 and was excluded for having too few data points.
 
 </div>
-
-
-
-
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
