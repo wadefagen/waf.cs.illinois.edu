@@ -1,5 +1,5 @@
 ---
-title: Trends in High School GPAs among Incoming Freshman Class
+title: Trends in High School GPAs among Incoming Freshman Classes of Big Ten Schools
 slug: Trends in High School GPAs among Incoming Freshman Class
 
 description: Data-forward interactive visualizations on incoming freshman class high school GPAs over the past 20 years
