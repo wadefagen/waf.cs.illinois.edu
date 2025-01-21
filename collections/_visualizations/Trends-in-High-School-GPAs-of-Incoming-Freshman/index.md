@@ -13,8 +13,7 @@ author:
 permalink: /visualizations/Trends-in-High-School-GPAs-of-Incoming-Freshman/
 
 layout: default
-
-# tags: visualization
+tags: visualization
 ---
 
 <h1>Trends in High School GPAs among Incoming Freshman Classes of Big Ten Schools</h1>

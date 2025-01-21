@@ -33,11 +33,20 @@ li {
 
 My name is **Wade Fagen-Ulmschneider** -- I am faculty in the [Siebel School of Computing and Data Science](https://siebelschool.illinois.edu/) in the [Grainger College of Engineering](https://grainger.illinois.edu/) at the [University of Illinois (UIUC)](https://illinois.edu/).  My passion is at the intersection of systems, data, and creating tools to nerd out with both systems and data -- particularly through interactive tools and data visualizations.  In my work, I work to educate, encourage, and inspire you to change the world.
 
+I hope you'll stay and nerd out!  Here's a few places to get started:
+
+- **Visualizations**: [Visualizations of GPAs at the University of Illinois](https://waf.cs.illinois.edu/discovery/gpa/) and [my other visualizations](/visualizations/).
+- **Being an Illini 🧡💙**: [Illini LinkedIn Banner Generator](https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/), [Queue@Illinois](https://queue.illinois.edu/), and [other tools](/tools/).
+- **Teaching**: [Data Science DISCOVERY + CS/STAT/IS 107](https://discovery.cs.illinois.edu/), my [Cousera MOOC: "Object-Oriented Data Structures in C++"](https://www.coursera.org/learn/cs-fundamentals-1), and the associated [Cousera specialization](https://www.coursera.org/specializations/cs-fundamentals).
+- **Me**: [CV / Bio](/about/), [Impact of my Work](/impact/), and [Invited Talks](/talks/).
+
+<!--
 In the past decade, I have had the honor to teach over 200,000 students between my open-access [courses at Illinois](/teaching/) and my [MOOCs](https://www.coursera.org/learn/cs-fundamentals-1)/[specalization](https://www.coursera.org/specializations/cs-fundamentals) on Coursera. In 2023, my [DISCOVERY platform](https://discovery.cs.illinois.edu/) work with [Prof. Karle Flanagan](https://kflan.stat.illinois.edu/) was [selected as one of the campus investments for growth](https://provost.illinois.edu/about/initiatives/investment-for-growth-program/fy24-funded-programs/) to establish Illinois as a national leader in data science education.
 
 When I'm not teaching, my passion is visualizing data in a way that readers can nerd out with for hours.  You can find my work in [visualizations of GPAs at the University of Illinois](https://waf.cs.illinois.edu/discovery/gpa/), my [data-forward, interactive visualizations of COVID-19 as part of my 91-DIVOC project](https://91-divoc.com/pages/covid-visualization/), or any of [my other visualizations](/visualizations/).
 
 Finally, I love being an ILL-INI 🧡💙 and I am always working on a project to highlight Illini and make our Illinois courses more visible.  Recent projects have included the [Illini LinkedIn Banner Generator](https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/), [Queue@Illinois](https://queue.illinois.edu/), and [others](/tools/).
+-->
 
 <hr style="clear: both">
 
@@ -110,6 +119,17 @@ Finally, I love being an ILL-INI 🧡💙 and I am always working on a project t
 
 ## The Latest!
 
+{% card "January 21, 2025 &mdash; New Visualizations: Trends in High School GPAs" %}
+
+As part of University of Illinois' "Love Data Week" celebrations, I put together a visualization to answer a question I have had for several years: *"What is the trend of high school GPAs among admitted freshman, and has COVID-19 changed that trend?"*
+
+Nerd out with me exploring the data about the high school GPAs of the incoming freshman classes across Big Ten Universities:
+
+- Interactive Visualization: [Trends in High School GPAs among Incoming Freshman Class](http://waf.cs.illinois.edu/visualizations/Trends-in-High-School-GPAs-of-Incoming-Freshman/)
+
+{% endcard %}
+
+
 {% card "November 4, 2024 &mdash; GPA Visualizations + Dataset Updates" %}
 
 The GPA Visualizations have all been updated for Spring 2025 registration: 🎉
@@ -171,7 +191,7 @@ Most of my scholarly work is exploring engagement through data visualization sys
 
 Beyond data visualizations, I work on open source tools and software to make life a bit nicer, easier, or more enjoyable.  A few recent tools:
 
-- [Canvas External Grade Import Tool](/tools/Canvas-External-Grade-Import-Tool/) - New tool in Sept. 2021
+- [Canvas External Grade Import Tool](/tools/Canvas-External-Grade-Import-Tool/)
 - [Illinois LinkedIn Banner Generator](https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/)
 - More Tools: [Software Tools I've Built...](/tools/)
 - More Projects: [d7: Data Science Research Collaborative...](http://d7.cs.illinois.edu/visualizations/)

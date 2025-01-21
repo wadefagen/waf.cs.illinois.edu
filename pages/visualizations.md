@@ -31,7 +31,7 @@ Interactive visualizations created to inspire, inform, and promote curiosity, of
         </a>
         <div class="authors">
           <b>By</b>: {{ visualization.data.author | array_to_sentence_string }}<br>
-          <b>Published</b>: {{ visualization.date | date: "%B %Y" }}
+          <b>First Published</b>: {{ visualization.date | date: "%B %Y" }}
         </div>
       </div>
     </div>

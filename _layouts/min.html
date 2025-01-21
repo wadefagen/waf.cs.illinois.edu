@@ -4,26 +4,27 @@
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}Wade Fagen-Ulmschneider</title>
 
-    <meta property="og:title" content="{{ page.title }}">
-    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ title }}">
+    <meta name="twitter:title" content="{{ title }}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary" />
 
-    {% for author in page.author %}
-    <meta name="author" content="{{author}}">{% endfor %}
+    {% for a in author %}
+    <meta name="author" content="{{a}}">
+    {% endfor %}
 
-    <meta name="description" content="{{ page.description | escape }}">
-    <meta property="og:description" content="{{ page.description | escape }}">
-    <meta name="twitter:description" content="{{ page.description | escape }}">
+    <meta name="description" content="{{ description | escape }}">
+    <meta property="og:description" content="{{ description | escape }}">
+    <meta name="twitter:description" content="{{ description | escape }}">
 
     <meta property="og:url" content="{{ page.url }}">
     <link rel=”canonical” href="{{ page.url }}">
 
-    {% if page.social-img %}
-    <meta property="og:image" content="{{ page.social-img }}">
-    <meta name="twitter:image" content="{{ page.social-img }}">
+    {% if social-img %}
+    <meta property="og:image" content="{{ social-img }}">
+    <meta name="twitter:image" content="{{ social-img }}">
     {% endif %}
     
     <link rel="icon" type="image/png" href="/static/waf.png">
