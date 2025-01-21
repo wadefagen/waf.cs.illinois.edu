@@ -5,6 +5,7 @@ external-url: /discovery/grade_disparity_between_sections_at_uiuc/
 external-img: /discovery/grade_disparity_between_sections_at_uiuc/img.png
 
 date: 2021-08-20
+updated: 2024-11-04
 
 author:
 - Devin Oliver
@@ -17,5 +18,7 @@ author:
 - Nathan Cho
 - Wade Fagen-Ulmschneider
 
-tags: visualization
+tags:
+- visualization
+- visualization_gpa
 ---

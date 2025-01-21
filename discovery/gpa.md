@@ -9,66 +9,43 @@ bc1_url: /visualizations/
 permalink: /discovery/gpa/
 
 disableFooter: True
+
+# Legacy
+templateEngineOverride: liquid, md
 ---
 
 <h1>GPA Visualizations</h1>
 
-These works are student-created interactive visualizations that are each the result of data-driven analysis of the ["GPA Dataset"](https://github.com/wadefagen/datasets/tree/master/gpa#data-source). If you find the work inspiring, feel free to share it on Facebook, Twitter, or anywhere!
-
+These works are student-created interactive visualizations that are each the result of data-driven analysis of the ["GPA Dataset"](https://github.com/wadefagen/datasets/tree/master/gpa#data-source). If you find the work inspiring, feel free to share them!
 
 <div class="row">
+{% assign sorted = collections.visualization_gpa | sort: 'date' | reverse %}
+{% for visualization in sorted %}
   <div class="col-md-4 col-12">
     <div class="card vcard" style="border-color: #13294B;">
       <div>
-        <a href="/discovery/grade_disparity_between_sections_at_uiuc/">
-          <img src="/discovery/grade_disparity_between_sections_at_uiuc/img.png" class="img-fluid" />
+        {% if visualization.data.external-url %}<a href="{{ visualization.data.external-url }}">{% else %}<a href="{{ visualization.url }}">{% endif %}
+        {% if visualization.data.external-img %}
+          <img src="{{ visualization.data.external-img }}" class="img-fluid">
+        {% else %}
+          <img src="{{ visualization.url }}{{ visualization.data.social-img }}" class="img-fluid">
+        {% endif %}
         </a>
       </div>
       <div style="background-color: white;">
-        <a href="/discovery/grade_disparity_between_sections_at_uiuc/">
-          <div class="title">Grade disparity between sections at UIUC</div>
+        {% if visualization.external-url %}<a href="{{ visualization.data.external-url }}">{% else %}<a href="{{ visualization.url }}">{% endif %}
+          <div class="title">{{ visualization.title }}</div>
         </a>
         <div class="authors">
-          <b>By</b>: Devin Oliver, Johnny Guo, Joe Tan, Jerry Li, Tina Abraham, Andy (Tianyue) Mao, Kara Landolt, Nathan Cho, and Wade Fagen-Ulmschneider<br />
-          <b>Published</b>: August 2021
+          <b>By</b>: {{ visualization.data.author | array_to_sentence_string }}<br>
+          {% if visualization.data.updated -%}
+          <b>Last Updated</b>: {{ visualization.data.updated | date: "%B %Y" }}
+          {%- else -%}
+          <b>Published</b>: {{ visualization.date | date: "%B %Y" }}
+          {%- endif %}
         </div>
       </div>
     </div>
   </div>
-  <div class="col-md-4 col-12">
-    <div class="card vcard" style="border-color: #13294B;">
-      <div>
-        <a href="/discovery/gpa_of_every_course_at_illinois/">
-          <img src="/discovery/gpa_of_every_course_at_illinois/img.png" class="img-fluid" />
-        </a>
-      </div>
-      <div style="background-color: white;">
-        <a href="/discovery/gpa_of_every_course_at_illinois/">
-          <div class="title">GPAs of Every Course at The University of Illinois</div>
-        </a>
-        <div class="authors">
-          <b>By</b>: Justin Lee, Nate Claussen, Wade Fagen-Ulmschneider, and Cinda Heeren<br />
-          <b>Published</b>: August 2021
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4 col-12">
-    <div class="card vcard" style="border-color: #13294B;">
-      <div>
-        <a href="/discovery/every_gen_ed_at_uiuc_by_gpa/">
-          <img src="/discovery/every_gen_ed_at_uiuc_by_gpa/img.png" class="img-fluid" />
-        </a>
-      </div>
-      <div style="background-color: white;">
-        <a href="/discovery/every_gen_ed_at_uiuc_by_gpa/">
-          <div class="title">Every Gen Ed at UIUC, by GPA</div>
-        </a>
-        <div class="authors">
-          <b>By</b>: Kexin (Fiona) Fei, Caroline Breckenfelder, and Wade Fagen-Ulmschneider<br />
-          <b>Published</b>: August 2021
-        </div>
-      </div>
-    </div>
-  </div>
+{% endfor %}
 </div>
