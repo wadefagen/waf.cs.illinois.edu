@@ -5,7 +5,7 @@ export const config = {
 export default async function(eleventyConfig) {
   eleventyConfig.setIncludesDirectory("_layouts");
 
-  let types = ["csv", "css", "js", "jpg", "png", "json"];
+  let types = ["csv", "css", "js", "jpg", "png", "json", "svg"];
   let pathPairs = [
     ["collections/_visualizations/Trends-in-High-School-GPAs-of-Incoming-Freshman",
       "visualizations/Trends-in-High-School-GPAs-of-Incoming-Freshman"],

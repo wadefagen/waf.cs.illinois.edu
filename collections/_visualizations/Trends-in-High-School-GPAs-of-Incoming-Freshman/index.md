@@ -126,6 +126,37 @@ Despite the wide geographical area of the Big Ten system, with each school pulli
 - The proportion of students with a 3.75 GPA or higher increased from less than 40% of the incoming freshman class in 2005, on average, to over 70% in 2023; the average incoming freshman high school GPA similarly increased from 3.58 to 3.84 from 2005 to 2023.
 - Surprisingly, there is nothing in the data to suggest that the pandemic has had a significant impact on the trend of high school GPAs in the recent incoming freshman classes of students.
 
+<hr>
+
+<img src="up-01-card.svg" style="width: 250px; max-width: 40%; float: right; margin-left: 10px; margin-bottom: 10px;" alt="MicroProject Card" />
+
+
+
+### Nerd Out with This Data Yourself 🎉
+
+We love this data and we build a small MicroProject for you to do a real data science project in under an hour!  Let's nerd out:
+
+<style>
+ul > li > ul {
+  margin-top: -18px;
+  margin-bottom: 20px;
+}
+</style>
+
+- If you already know Python and pandas, jump right in:
+    - Get started **right now** on Google Colab: [MicroProject #1: Trends in High School GPA (Google Colab)](https://colab.research.google.com/drive/1l--XzXltyOsBpat5mhfYs7o6ueHgvcBw?usp=sharing)
+    - Alternatively, earn the MicroProject collectable card by completing the MicroProject on your own computer and have it graded on GitHub: [MicroProject #1: Trends in High School GPAs (GitHib)](https://discovery.cs.illinois.edu/microproject/trends-in-high-school-gpas/)
+
+- If you don't know any Python or pandas, there's just two quick lessons that will get you enough Data Science to start nerding out with this data:
+    - #1: [Learn: Python for Data Science: Introduction to DataFrames](https://discovery.cs.illinois.edu/learn/Basics-of-Data-Science-with-Python/Python-for-Data-Science-Introduction-to-DataFrames/)
+    - #2: [Learn: Row Selection with DataFrames](https://discovery.cs.illinois.edu/learn/Basics-of-Data-Science-with-Python/Row-Selection-with-DataFrames/)    
+    - You're ready for the MicroProject!
+
+Hope to see you nerding out! :)
+
+
+<hr style="clear: both;">
+
 
 ### Data Set
 
