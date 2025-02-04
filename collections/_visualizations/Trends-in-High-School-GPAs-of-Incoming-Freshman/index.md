@@ -134,7 +134,7 @@ Despite the wide geographical area of the Big Ten system, with each school pulli
 
 ### Nerd Out with This Data Yourself 🎉
 
-We love this data and we build a small MicroProject for you to do a real data science project in under an hour!  Let's nerd out:
+We love this data and built a MicroProject for you to do a real data science project in under an hour!  Let's nerd out:
 
 <style>
 ul > li > ul {
