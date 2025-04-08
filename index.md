@@ -119,6 +119,18 @@ Finally, I love being an ILL-INI 🧡💙 and I am always working on a project t
 
 ## The Latest!
 
+{% card "April 7, 2025 &mdash; GPA Visualizations + Dataset Updates" %}
+
+The GPA Visualizations have all been updated for Fall 2025 registration: 🎉
+
+- [Grade disparity between sections at UIUC](https://waf.cs.illinois.edu/discovery/grade_disparity_between_sections_at_uiuc/)
+- [GPAs of Every Course at The University of Illinois](https://waf.cs.illinois.edu/discovery/gpa_of_every_course_at_illinois/)
+- [Every Gen Ed at UIUC, by GPA](https://waf.cs.illinois.edu/discovery/every_gen_ed_at_uiuc_by_gpa/)
+- Additionally, the underlying CSV file of the raw data is updated at [@wadefagen/datasets](https://github.com/wadefagen/datasets)
+
+{% endcard %}
+
+
 {% card "January 21, 2025 &mdash; New Visualizations: Trends in High School GPAs" %}
 
 As part of University of Illinois' "Love Data Week" celebrations, I put together a visualization to answer a question I have had for several years: *"What is the trend of high school GPAs among admitted freshman, and has COVID-19 changed that trend?"*
