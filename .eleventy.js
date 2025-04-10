@@ -25,7 +25,8 @@ export default async function(eleventyConfig) {
       eleventyConfig.addPassthroughCopy(d);
     }
   }
-  //eleventyConfig.setTemplateFormats(["csv", "css", "js", "jpg", "png", "json", "md", "html"]);
+  
+  eleventyConfig.setTemplateFormats(["csv", "css", "js", "jpg", "png", "json", "md", "html"]);
 
 
   eleventyConfig.addPairedShortcode("card", (body, cardTitle) => {
