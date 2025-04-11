@@ -63,7 +63,7 @@ function onUserSelectionChange() {
   }
 
   if (subjectFilter != "") {
-    console.log(`Filter: [subject == ${subjectFilter}]`)
+    //console.log(`Filter: [subject == ${subjectFilter}]`)
     filters.push( (d) => d.course.startsWith(subjectFilter.trim().toUpperCase()) );
   }
   
@@ -454,7 +454,7 @@ function createAvgGpaColumn(tr) {
 
 
 let d3_tip_html = (d, instructor) => {
-  console.log(d);
+  //console.log(d);
   let ct_4 = d["A+"] + d["A"],
       ct_ap = d["A+"],
       ct_a = d["A"],
@@ -620,7 +620,6 @@ function drawGPABox(grade, svg, height) {
   })
 }
 
-let awards_tip;
 
 function addAwardsColumn(data, tr) {
   // We will add the awards, left to right, in order of how prestigous
@@ -631,12 +630,14 @@ function addAwardsColumn(data, tr) {
     .attr("id", "awards")
     .attr("class", "data awards awards-td");
 
+  /*
   awards_tip = d3.tip()
     .attr('class', 'd3-tip')
     .html( (d, i) => {
       console.log(d);
       return "OK";
     } );
+     */
 
   table_awards.html((d) => {
     // Render Awards
@@ -773,8 +774,6 @@ function waf_inject(el) {
   let top = rect.top + window.scrollY + 16;
   let html = el.dataset.mouseover;
 
-  console.log(window.innerWidth);
-  console.log(window)
   if (left + 350 > window.innerWidth) {
     left = window.innerWidth - 350;
     if (left < 0) {

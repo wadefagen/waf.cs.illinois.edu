@@ -24,16 +24,17 @@ layout: viz
 <h1>Grade Disparities and Accolades by Instructor at UIUC</h1>
 <div style="font-size: 16px; margin-top: -4px; line-height: 16px;">
   <b>By</b>: Lauren Hyde, Rittika Adhikari, Michael Kokkines, Ophir Sneh, Caren Zeng, and Wade Fagen-Ulmschneider<br>
-  <b>Published</b>: TBD
+  <b>Published</b>: April 11, 2025
 </div>
 
 <hr>
 
-
+<!--
 <div style="color: red; background-color: #fdd; text-align: center; padding-top: 20px; padding-bottom: 20px; border: solid 2px red; margin-bottom: 20px;">
   <b>Private Preview Draft</b>: Do not share this link until we publish it.<br>
   The data and visualization is currently incomplete and may be incorrect.
 </div>
+-->
 
 ## Introduction
 
