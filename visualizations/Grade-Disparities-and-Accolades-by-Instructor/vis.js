@@ -762,6 +762,14 @@ function waf_inject(el) {
   let top = rect.top + window.scrollY + 16;
   let html = el.dataset.mouseover;
 
+  console.log(window.innerWidth);
+  console.log(window)
+  if (left + 350 > window.innerWidth) {
+    left = window.innerWidth - 350;
+    if (left < 0) {
+      left = 0;
+    }
+  }
 
   let tip = document.querySelector(".d3-tip");
   tip.style.opacity = 1;

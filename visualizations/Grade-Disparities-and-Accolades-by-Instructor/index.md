@@ -54,13 +54,14 @@ Other instructors, like [Dr. Smitha Pillai](https://chemistry.illinois.edu/direc
 
 In addition, a breakdown of GPAs is provided for each course and instructor:
 
-<div id="example_wrapper" style="margin-top: -20px; padding-left: 10px; border-left: solid 2px #333; margin-bottom: 30px;">
+<div id="example_wrapper" style="margin-top: -20px; padding-left: 10px; border-left: solid 2px #aaa; margin-bottom: 30px;">
   <div id="example"></div>
 </div>
 
 
 ## Explore Illinois Courses
 
+<div style="padding-left: 10px; margin-left: 1px; border-left: solid 4px #13294B">
 <div>
   Filter by Subject: <input id="select-subject" type="text" autocomplete="off" />
   <button class="btn btn-waf" style="padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; display: none;" onclick="clearSubject()" id="select-subject-clear">Clear Subject Filter</button>
@@ -91,6 +92,7 @@ Sort/Filter by Accolades:
     <option value="campus">Campus &amp; College Awards (or higher)</option>
     <option value="tre">Excellent Ranked by Students (or higher)</option>
   </select>
+</div>
 </div>
 
 <hr>
