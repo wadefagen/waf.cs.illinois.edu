@@ -689,7 +689,7 @@ function addAwardsColumn(data, tr) {
     }
 
     // == RMP ==
-    if (d.rmp_rating >= 4 && d.rmp_num_reviews > 10) {
+    if (d.rmp_rating >= 4.5 && d.rmp_num_reviews > 10) {
       html += `<img src="badges/rmp2.png" alt="Rate My Professor" class="award">`;
       mouseOverHTML += `<div><span class="awards awards-td"><img src="badges/rmp2.png" alt="Rate My Professor" class="award"></span>: ${d.instructor} is highly ranked on Rate My Professor.</div>`;
     }
@@ -699,10 +699,10 @@ function addAwardsColumn(data, tr) {
     html += `<span class="awards-length">`;
     if (d.num_semesters >= 5) {
       html += `<span class="purple2">5+</span>`;
-      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple2">5+</span></span>: ${d.instructor} has taught this course 5 or more times.</div>`;
+      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple2">5+</span></span>: Our dataset has GPA and campus data about ${d.instructor} teaching this course 5 or more times.</div>`;
     } else if (d.num_semesters >= 2) {
       html += `<span class="purple">2+</span>`;
-      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple">2+</span></span>: ${d.instructor} has taught this course 2 or more times.</div>`;
+      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple">2+</span></span>: Our dataset has GPA and campus about ${d.instructor} teaching this course 2 or more times.</div>`;
     } else if (html.length < 100) {
       html += `<span class="awards-txt">New Prep</span>`
       mouseOverHTML += `<div><span class="awards awards-length"><span class="awards-txt">New Prep</span></span>: ${d.instructor} has only started teaching this course recently and may not have many awards for excellent teaching yet.</div>`;
