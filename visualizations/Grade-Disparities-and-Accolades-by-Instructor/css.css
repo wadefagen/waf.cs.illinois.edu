@@ -46,7 +46,6 @@ margin-left: 0px;
   margin-right: 3px;
 }
 
-
 .awards-stars > span.gold {
   color: #FFD700;
   background-color: hsla(51, 100%, 90%, 1);
@@ -59,6 +58,37 @@ margin-left: 0px;
 
 .awards-stars > span:first-of-type {
 }
+
+
+
+.awards-length {
+  line-height: 18px;
+}
+.awards-length > span.purple,
+.awards-length > span.purple2
+{
+  display: inline-block;
+  border: solid 1px black;
+  border-radius: 9px;
+  height: 18px;
+  width: 18px;
+  font-size: 10px;
+  padding-left: 1px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+.awards-length > span.purple {
+  background-color: #f0e0ff;
+  color: #2b0057;
+}
+
+.awards-length > span.purple2 {
+  background-color: #e1c2ff;
+  color: #2b0057;
+}
+
 
 .d3-tip {
   background-color: hsla(0, 0%, 100%, 0.88);

@@ -1,241 +1,190 @@
-function displayExample() {
-  // Render the table
-  createVisualization("CHEM 332", "example");
+var _data, _subjectDict;
 
-  // Now, overlay the table with lines and boxes explaining the awards
-  displayAwardsLegend();
-}
+$( async function() {
+  _data = await loadData();  
 
-$( function() {
+
+  $("#select-subject").autocomplete({
+    source: Object.keys(_subjectDict),
+    autoFocus: true,
+    select: function(e, ui) {
+      var subject = ui.item.value;
+      updateBySubject(subject);
+    }
+  });
+
   displayExample();
 } );
 
-function displayAwardsLegend() {
-  return;
-  let wrapper = d3.select("#example_wrapper");
 
-  wrapper.append("div")
-    .attr("id", "first_down")
-    .style("position", "absolute")
-    .style("width", "10%")
-    .style("border-left", "1px solid black")
-  wrapper.append("div")
-    .attr("id", "first_across")
-    .style("position", "absolute")
-    .style("top", "108%")
-    .style("left", "11%")
-    .style("height", "10%")
-    .style("border-top", "1px solid black")
-  wrapper.append("div")
-    .style("position", "absolute")
-    .style("left", "11%")
-    .style("width", "10%")
-    .style("top", "108%")
-    .style("height", "12%")
-    .style("border-left", "1px solid black");
-  wrapper.append("p")
-    .attr("class", "legend")
-    .style("position", "absolute")
-    .style("left", "2%")
-    .style("top", "120%")
-    .style("padding-top", ".5%")
-    .style("padding-bottom", ".5%")
-    .style("padding-left", ".7%")
-    .style("padding-right", ".5%")
-    .style("width", "20%")
-    .style("border", "1px solid #000000")
-    .text("Instructor has won the Nobel, Wolf, Pulitzer, or similar Prize.");
 
-  wrapper.append("div")
-    .attr("id", "second_down")
-    .style("position", "absolute")    
-    .style("width", "10%")
-    .style("border-left", "1px solid black");
-  wrapper.append("div")
-    .attr("id", "second_across")
-    .style("position", "absolute")
-    .style("left", "33%")
-    .style("top", "112.5%")
-    .style("height", "10%")
-    .style("border-top", "1px solid black");
-  wrapper.append("div")
-    .style("position", "absolute")
-    .style("left", "33%")
-    .style("top", "112.5%")
-    .style("width", "10%")
-    .style("height", "7.5%")
-    .style("border-left", "1px solid black");
-  wrapper.append("p")
-    .attr("class", "legend")
-    .style("position", "absolute")
-    .style("left", "24%")
-    .style("top", "120%")
-    .style("padding-top", ".5%")
-    .style("padding-bottom", ".5%")
-    .style("padding-left", ".7%")
-    .style("padding-right", ".5%")
-    .style("width", "20%")
-    .style("border", "1px solid #000000")
-    .text("Instructor is a member of one of the National Academies.");
-
-  wrapper.append("div")
-    .attr("id", "third_down")
-    .style("position", "absolute")
-    .style("width", "10%")   
-    .style("border-left", "1px solid black");
-  wrapper.append("div")
-    .attr("id", "third_across")
-    .style("position", "absolute")
-    .style("left", "55%")
-    .style("top", "117%")
-    .style("height", "10%")
-    .style("border-top", "1px solid black");
-  wrapper.append("div")
-    .style("position", "absolute")
-    .style("left", "55%")
-    .style("width", "10%")
-    .style("top", "117%")
-    .style("height", "3%")
-    .style("border-left", "1px solid black");
-  wrapper.append("p")
-    .attr("class", "legend")
-    .style("position", "absolute")
-    .style("left", "46%")
-    .style("top", "120%")
-    .style("padding-top", ".5%")
-    .style("padding-bottom", ".5%")
-    .style("padding-left", ".7%")
-    .style("padding-right", ".5%")
-    .style("width", "23%")
-    .style("border", "1px solid #000000")
-    .text("Instructor rated outstanding (gold) or excellent (silver) by students.");
-
-  wrapper.append("div")
-    .attr("id", "fourth_down")
-    .style("position", "absolute")
-    .style("width", "10%")   
-    .style("border-left", "1px solid black");
-  wrapper.append("div")
-    .attr("id", "fourth_across")
-    .style("position", "absolute")
-    .style("top", "112.5%")
-    .style("height", "10%")
-    .style("border-top", "1px solid black");
-  wrapper.append("div")
-    .style("position", "absolute")
-    .style("left", "80%")
-    .style("width", "10%")
-    .style("top", "112.5%")
-    .style("height", "7.5%")
-    .style("border-left", "1px solid black");
-  wrapper.append("p")
-    .attr("class", "legend")
-    .style("position", "absolute")
-    .style("left", "71%")
-    .style("top", "120%")
-    .style("padding-top", ".5%")
-    .style("padding-bottom", ".5%")
-    .style("padding-left", ".7%")
-    .style("padding-right", ".5%")
-    .style("width", "20%")
-    .style("border", "1px solid #000000")
-    .text("Instructor has taught shown course two or more times.");
-
-  let not_included = d3.select("#not_included");
-  not_included.append("b")
-    .style("font-size", "14px")
-    .style("margin-left", "1%")
-    .text("Not shown");
-  not_included.append("br");
-  not_included.append("img")
-    .attr("src", "./badges/illini.png")
-    .style("margin-left", "1%")
-    .style("margin-top", "5px")
-    .attr("align", "left")
-    .attr("width", 16)
-    .attr("height", 20);
-  not_included.append("p")
-    .style("font-size", "14px")
-    .style("margin-left", "35px")
-    .style("margin-top", "5px")
-    .style("margin-bottom", ".5%")
-    .text("Instructor has won a campus-wide teaching award.");
-  not_included.append("img")
-    .attr("align", "left")
-    .attr("src", "./badges/rmp_badge.png")
-    .style("margin-left", "1%")
-    .attr("width", 20)
-    .attr("height", 20);
-  not_included.append("p")
-    .style("font-size", "14px")
-    .style("margin-left", "35px")
-    .style("margin-bottom", ".5%")
-    .text("Instructor has 10+ reviews with an average rating of 4.0 on Rate My Professor.");
-  not_included.append("img")
-    .attr("align", "left")
-    .attr("src", "./badges/five_plus_badge.png")
-    .style("margin-left", "1%")
-    .attr("width", 20)
-    .attr("height", 20);
-  not_included.append("p")
-    .style("font-size", "14px")
-    .style("margin-left", "35px")
-    .style("margin-bottom", 0)
-    .text("Instructor has taught the given course five or more times.");
+function displayExample() {
+  chem332 = _data.filter((d) => d.course.startsWith("CHEM 332"));
+  renderData(chem332, "example");
 }
 
-function searchKeyPress(input, e) {
-    // look for window.event in case event isn't passed in
-    e = e || window.event;
-    if (e.keyCode == 13) {
-        //d3.selectAll("h4").remove();
-        d3.selectAll("#bad_search").remove();
-        d3.selectAll(".tables").remove();
-        createVisualization(input.value, "tables");
+
+function onUserSelectionChange() {
+  // Check UI:
+  let accoladeFilter = document.getElementById("select-accolades").value;
+  let genedFilter = document.getElementById("select-gened").value;
+  let subjectFilter = document.getElementById("select-subject").value;
+
+  let filters = [];
+  let hasAdvancedFilter = false;
+  let filterMethod = "default";
+
+
+
+  if (accoladeFilter == "national") {
+    filters.push( (d) => d.national_award );
+    hasAdvancedFilter = true;
+    filterMethod = "national-awards";
+  } else if (accoladeFilter == "campus") {
+    filters.push( (d) => d.national_award || d.uiuc_award );
+    hasAdvancedFilter = true;
+    filterMethod = "campus-awards";
+  } else if (accoladeFilter == "tre") {
+    filters.push( (d) => d.national_award || d.uiuc_award || d.num_excellence_awards > 0 || d.num_outstanding_awards > 0 );
+    hasAdvancedFilter = true;
+    filterMethod = "tre-awards";
+  }
+
+  if (genedFilter != "none") {
+    filters.push( (d) => d.geneds.includes(genedFilter) );
+    hasAdvancedFilter = true;
+  }
+
+  if (subjectFilter != "") {
+    console.log(`Filter: [subject == ${subjectFilter}]`)
+    filters.push( (d) => d.course.startsWith(subjectFilter.trim().toUpperCase()) );
+  }
+  
+  if (filters.length > 0) {
+    let filteredData = _data.filter((d) => {
+      for (let filter of filters) {
+        if (!filter(d)) { return false; }
+      }
+      return true;
+    })
+
+    // Show all courses where any course matches the filter:
+    if (hasAdvancedFilter) {
+      let courseList = {};
+      for (let d of filteredData) {
+        if (!courseList[d.course]) { courseList[d.course] = []; }
+        courseList[d.course].push(d);
+      }
+
+      let courses = Object.keys(courseList);
+      filteredData = _data.filter((d) => {
+        return courses.includes(d.course);
+      });
     }
-    return true;
+
+    renderData(filteredData, "tables", filterMethod);
+  } else {
+    document.getElementById("tables").setHTMLUnsafe(`
+<div style="text-align: center; margin-top: 20px;">
+  <i>Select at least one filter criteria to view courses.</i>
+</div>`);
+  }
 }
 
-function createVisualization(search_term, tid) {
-    search_term = search_term.toUpperCase();
-    search_term = search_term.trim();
-    for (var i = 0; i < search_term.length - 1; i++) {
-      if (
-        (search_term.charAt(i) >= 'A' && search_term.charAt(i) <= 'Z') &&
-        (search_term.charAt(i + 1) >= '0' && search_term.charAt(i + 1) <= '9')
-      ) {
-        search_term = search_term.substr(0, i+1) + " " + search_term.substr(i+1);
-        break;
+var updateBySubject = function(subject) {
+  document.getElementById("select-subject").value = subject;
+  onUserSelectionChange();
+};
+
+async function loadData() {
+  let data = await d3.csv('./final.csv');
+  
+  _subjectDict = {};
+  for (let d of data) {
+    let subject = d.course.substring(0, d.course.indexOf(" "));
+    if (!_subjectDict[subject]) { _subjectDict[subject] = []; }
+    _subjectDict[subject].push(d);
+
+    if (d.national_award == "[]") {
+      d.national_award = undefined;
+    } else {
+      let awards = d.national_award.substring(1, d.national_award.length - 1).split(",");
+      let awardList = [];
+      for (let award of awards) {
+        award = award.trim();
+        awardList.push(award.substring(1, award.length - 1));
+      }
+      d.national_award = awardList;
+    }
+
+    if (d.uiuc_award == "[]") {
+      d.uiuc_award = undefined;
+    } else {
+      let awards = d.uiuc_award.substring(1, d.uiuc_award.length - 1).split(",");
+      let awardList = [];
+      for (let award of awards) {
+        award = award.trim();
+        awardList.push(award.substring(1, award.length - 1));
+      }
+      d.uiuc_award = awardList;
+    }
+
+    d.num_excellence_awards = +d.num_excellence_awards;
+    d.num_outstanding_awards = +d.num_outstanding_awards;
+    d.num_sections = +d.num_sections;
+    d.num_semesters = +d.num_semesters;
+    d.num_students = +d.num_students;
+    d.rmp_num_reviews = +d.rmp_num_reviews;
+    d.total_faculty_awards = +d.total_faculty_awards;
+    d.avg_gpa = +d.avg_gpa;
+    for (let grade of ALL_GRADES_ARRAY) {
+      d[grade] = +d[grade];
+    }
+    
+    d.geneds = [];
+    if (d.gened.length > 0) {
+      let geneds = d.gened.split(",");
+      for (let gened of geneds) {
+        switch (gened.trim()) {
+          case "Cultural Studies - US Minority": d.geneds.push("US"); break;
+          case "US Minority Culture(s)": d.geneds.push("US"); break;
+          case "Cultural Studies - Western": d.geneds.push("WCC"); break;
+          case "Western Compartv Cult": d.geneds.push("WCC"); break;
+          case "Cultural Studies - Non-West": d.geneds.push("NW"); break;
+          case "Non-Western Cultures": d.geneds.push("NW"); break;
+
+          case "Nat Sci & Tech - Life Sciences": d.geneds.push("NAT"); break;
+          case "Nat Sci & Tech - Phys Sciences": d.geneds.push("NAT"); break;
+          case "Physical Sciences": d.geneds.push("NAT"); break;
+
+          case "Social & Beh Sci - Soc Sci": d.geneds.push("SBS"); break;
+          case "Social & Beh Sci - Beh Sci": d.geneds.push("SBS"); break;
+          case "Social Sciences": d.geneds.push("SBS"); break;
+
+          case "Advanced Composition": d.geneds.push("ACP"); break;
+          
+          case "Composition I": d.geneds.push("COMP"); break;
+
+          case "Humanities - Lit & Arts": d.geneds.push("HUM"); break;
+          case "Humanities - Hist & Phil": d.geneds.push("HUM"); break;
+          case "Literature and the Arts": d.geneds.push("HUM"); break;
+          case "Hist&Philosoph Perspect": d.geneds.push("HUM"); break;
+
+          case "Quantitative Reasoning I": d.geneds.push("QR"); break;
+          case "Quantitative Reasoning II": d.geneds.push("QR"); break;
+          case "Quant Reasoning I": d.geneds.push("QR"); break;
+          case "Quant Reasoning II": d.geneds.push("QR"); break;
+
+          case "Camp Honors/Chanc Schol": d.geneds.push("HONORS"); break;
+          case "James Scholars": d.geneds.push("HONORS"); break;
+
+          //default: console.log(gened); break;
+        }
       }
     }
+  }
 
-    if (!/\d/.test(search_term)) {
-      search_term += " ";
-    }
-
-    if (search_term.length < 2) {
-      notifyUserOfInvalidSearch();
-    } else {
-        parseData(search_term).then((data) => {
-            if (Object.keys(data).length == 0) {
-                notifyUserOfInvalidSearch()
-            } else {
-                renderData(data, tid);
-            }
-        });
-    }
-}
-
-function notifyUserOfInvalidSearch() {
-    d3.select("#tables")
-        .append("p")
-        .text("The subject or course you specified does not exist.")
-        .attr("id", "bad_search")
-        .style("color", "red")
-}
-
-function loadData() {
-    return d3.csv('./final.csv');
+  return data;
 }
 
 function firstOccurrence(arr, low, high, x, n) { 
@@ -254,42 +203,16 @@ function firstOccurrence(arr, low, high, x, n) {
     return -1;
 }
 
-function parseData(search_term) {
-  return loadData().then((rawData) => {
-    let data = {};
-    let prev_course = '';
-    let n = rawData.length
-    let firstInd = firstOccurrence(rawData, 0, n-1, search_term, n)
-    if (firstInd == -1) {
-      return data;
-    }
-    for (var i = firstInd, len = rawData.length; i < len; i++) {
-      let row = rawData[i];
-      if (row["course"].startsWith(search_term)) {
-        if (row["course"] !== prev_course) {
-          data[row["course"]] = [];
-          data[row["course"]].push(row);
-          prev_course = row["course"];
-        } else {
-          data[row["course"]].push(row);
-        }
-      } else {
-        if (prev_course != '') {
-          break;
-        }
-      }
-    }
-    return data;
-  });  
-}
 
-function renderData(data, tid) {
-  // Sort the list of classes
-  let courses = Object.keys(data).sort();
+let _current_render_courses;
+let _current_data;
+let _render_ct;
+
+function _doRender(data, tid, startIndex, endIndex) {
 
   // Now, iterate through the classes and render the tables
-  for (var j = 0; j < courses.length; j++) {
-      let course = courses[j];
+  for (var j = 0; j < _render_ct; j++) {
+      let course = _current_render_courses[j];
 
       // Sort the professors for the course by average GPA
       data[course].sort((a, b) => ((a["A+"] + a["A"] + a["A-"]) < (b["A+"] + b["A"] + b["A-"]) ? 1 : -1))
@@ -383,6 +306,95 @@ function renderData(data, tid) {
     // Lastly, create the total row at the bottom of the table
     addTotalRow(data[course], table, width, height, margin, COLOR_MAP);
   }
+
+  if (_current_render_courses.length > _render_ct) {
+    d3.select("#" + tid).append("div").attr("class", "waf-show-more").html(`
+      <div class="mt-5 text-center">
+        <button class="btn" style="background-color: #13294B; color: white;" onclick="showMore()">Show More Courses (Currently showing ${_render_ct} / ${_current_render_courses.length})</button>
+      </div>
+    `)
+  }
+}
+
+
+function renderData(dataList, tid, filterMethod = "default") {
+  let data = {};
+  for (let d of dataList) {
+    if (!data[d.course]) { data[d.course] = []; }
+    data[d.course].push(d);
+    // console.log(d);
+  }
+
+  let totalCourses = Object.keys(data).length;
+
+
+  let resultHtml = `
+<div style="text-align: center">
+  There are <b>${totalCourses}</b> different courses that matches your filters.
+</div>`;
+  
+  if (totalCourses == 1) { resultHtml = resultHtml.replaceAll("different courses", "course").replaceAll("are", "is") };
+  if (tid == "example") { resultHtml = ""; }
+
+  if (totalCourses == 0) {
+    resultHtml = `
+<div style="text-align: center; padding: 10px; border: solid 1px red; color: red; background-color: #fee;">
+  There are <b>zero</b> courses that matches your filters. :(<br>
+  Select different filters to find a course.
+</div>`;
+  }
+  d3.select("#" + tid).html(`${resultHtml}`);
+
+
+  // Sort the list of classes
+  let courses;
+  if (filterMethod == "default") {
+    courses = Object.keys(data).sort();
+  } else {
+    let courseSort = {};
+    for (let courseName of Object.keys(data)) {
+      let sortValue = -1;
+      for (let d of data[courseName]) {
+        let value = -1;
+        switch (filterMethod) {
+          case "national-awards": value = (d.national_award || []).length; break;
+          case "campus-awards": value = (d.uiuc_award || []).length; break;
+          case "tre-awards": value = d.num_excellence_awards + d.num_outstanding_awards; break;
+        }
+        if (value > sortValue) { sortValue = value; }
+      }
+      courseSort[courseName] = sortValue;
+    }
+
+    courses = Object.keys(courseSort).sort((a, b) => {
+      return courseSort[b] - courseSort[a];
+    });
+  }
+
+  
+  _current_render_courses = courses;
+  _current_data = data;
+  _render_ct = courses.length;
+  if (_render_ct > 100) {
+    _render_ct = 100;
+  }
+
+  _doRender(_current_data, tid, 0, _render_ct);
+}
+
+function showMore() {
+  let start = _render_ct;
+  let end = start + 100;
+  if (end > _current_render_courses.length) {
+    end = _current_render_courses.length;
+  }
+
+  _render_ct = end;
+
+  document.querySelector(".waf-show-more").remove();
+
+  _doRender(_current_data, "tables", start, end);
+
 }
 
 function createInstructorColumn(tr) {
@@ -429,7 +441,6 @@ function createAvgGpaColumn(tr) {
     }
   })
   .text(function(d) { 
-    console.log(d);
     return (100 * (d["A"] + d["A+"])).toLocaleString("en-US", {maximumFractionDigits: 0}) + "%";
 
     let gpa_as_string = d.avg_gpa.toString();
@@ -519,7 +530,10 @@ let d3_tip_html = (d, instructor) => {
 
 
 
+
+
 function addGpaBarChart(tr,  width,  height,  margin) {
+
   let tip = d3.tip()
     .attr('class', 'd3-tip')
     .html( (d, i) => d3_tip_html(d, d.instructor) );
@@ -527,9 +541,11 @@ function addGpaBarChart(tr,  width,  height,  margin) {
   // Create the SVG for the GPA visualization
   var svg = tr.append("td").append("div")
     .append("svg")
-    .attr("width", width + margin.left + margin.right)
+    //.attr("width", width + margin.left + margin.right)
+    .attr("width", "100%")
     .attr("height", height)
-    .style("width", width + margin.left + margin.right)
+    //.attr("width", width + margin.left + margin.right)
+    //.attr("width", width)
     .style("height", height)
     .style("vertical-align", "middle")
     .attr("class", "gpa-breakdown-svg")
@@ -615,12 +631,8 @@ function addAwardsColumn(data, tr) {
   
   table_awards.html((d) => {
     // Render Awards
-    console.log(d)
+    let national_award = d.national_award || [], uiuc_award = d.uiuc_award || [];
 
-    let national_award = [], uiuc_award = [];
-    if (d.national_award) { national_award = JSON.parse(d.national_award.replaceAll("'", "\"") ); }
-    if (d.uiuc_award)     { uiuc_award = JSON.parse(d.uiuc_award.replaceAll("'", "\"")); }
-    
     let badges = [];
     let html = "";
 
@@ -666,17 +678,19 @@ function addAwardsColumn(data, tr) {
 
     // == RMP ==
     if (d.rmp_rating >= 4 && d.rmp_num_reviews > 10) {
-      html += `<img src="badges/rmp_badge.png" alt="Rate My Professor" class="award">`;
+      html += `<img src="badges/rmp2.png" alt="Rate My Professor" class="award">`;
     }
 
     // == Course Length ==
+    html += `<span class="awards-length">`;
     if (d.num_semesters >= 5) {
-      html += `<img src="badges/five_plus_badge.png" alt="5+ Semesters" class="award">`;
+      html += `<span class="purple2">5+</span>`;
     } else if (d.num_semesters >= 2) {
-      html += `<img src="badges/two_plus_badge.png" alt="2+ Semesters" class="award">`;
+      html += `<span class="purple">2+</span>`;
     } else if (html.length < 100) {
       html += `<span class="awards-txt">New Prep</span>`
     }
+    html += `</span>`;
 
     let tip = d3.tip()
     .attr('class', 'd3-tip')
@@ -704,308 +718,6 @@ function addAwardsColumn(data, tr) {
 
     return html;
   });
-
-  return;
-
-  // Nobel or Nobel-equivalent
-  var nobel = d3.select("body").append("div")
-    .attr("class", "tooltip-donut")
-    .style("opacity", 0);
-  table_awards
-    .filter(function (d) {return d.nobel != "" || d.wolf != ""})
-    .append("img")
-    .attr("class", "award")
-    .attr("src", function(d) {return "./badges/nobel.png"})
-    .on('mouseover', function(d, i) {
-      let data;
-      if (d.nobel != "") {
-        data = d.instructor + " has won the Nobel Prize.";
-      } else {
-        data = d.instructor + " has won the Wolf Prize.";
-      }
-      nobel.transition()
-        .duration('50')
-        .style("opacity", 1);
-      nobel.html(data)
-        .style("max-width", '150px')
-        .style("left", (d3.event.pageX - 65) + "px")
-        .style("top", (d3.event.pageY - 70) + "px");    
-    })
-    .on('mouseout', function(d, i) {
-      nobel.transition()
-      .duration('50')
-      .style("opacity", 0);
-    });
-
-  // Pulitzer
-  var pulitzer = d3.select("body").append("div")
-    .attr("class", "tooltip-donut")
-    .style("opacity", 0);
-  table_awards
-  .filter(function (d) {return d.pulitzer != ""})
-  .append("img")
-    .attr("class", "award")
-    .attr("src", function(d) {return "./badges/nobel.png"})
-    .on('mouseover', function(d, i) {
-      let data = d.instructor + " has won the Pulitzer Prize.";
-      pulitzer.transition()
-        .duration('50')
-        .style("opacity", 1);
-      pulitzer.html(data)
-        .style("max-width", '150px')
-        .style("left", (d3.event.pageX - 65) + "px")
-        .style("top", (d3.event.pageY - 110) + "px");    
-    })
-    .on('mouseout', function(d, i) {
-      pulitzer.transition()
-      .duration('50')
-      .style("opacity", 0);
-    });
-
-  // National Academy
-  var academy = d3.select("body").append("div")
-    .attr("class", "tooltip-donut")
-    .style("opacity", 0);
-  table_awards
-    .filter(function (d) {return d.national_academy != ""})
-    .append("img")
-    .attr("class", "award")
-    .attr("src", function(d) {return "./badges/academy.jpg"})
-    .on('mouseover', function(d, i) {
-      let  data = d.instructor + " is a member of one of the National Academies.";
-      academy.transition()
-        .duration('50')
-        .style("opacity", 1);
-      academy.html(data)
-        .style("max-width", '150px')
-        .style("left", (d3.event.pageX - 65) + "px")
-        .style("top", (d3.event.pageY - 90) + "px");    
-    })
-    .on('mouseout', function(d, i) {
-      academy.transition()
-      .duration('50')
-      .style("opacity", 0);
-    });
- 
-  // Faculty Awards
-  var faculty = d3.select("body").append("div")
-    .attr("class", "tooltip-donut")
-    .style("opacity", 0);
-  table_awards
-    .filter(function (d) { 
-      return (d.total_faculty_awards > 0);
-    })
-    .append("span")
-    .attr("class", "award awards-span")
-    .html(function(d, i) {
-      text = "";
-      for (i = 0; i < d.total_faculty_awards; i++) {
-        text += `<img src="./badges/illini.png">`;
-      }
-      return text;
-    })
-    .on('mouseover', function(d, i) {
-      let awards = [];
-      if (d.camp_grad != 0) {
-        awards.push("the Campus Award for graduate teaching");
-      } 
-      if (d.camp_online != 0) {
-        awards.push("the Campus Award for online teaching");
-      }
-      if (d.camp_und_fac != 0) {
-        awards.push("the Campus Award for undergraduate teaching")
-      }
-      if (d.camp_und_inst != 0) {
-        awards.push("the Campus Award for undergraduate instruction")
-      }
-      if (d.grainger_collins != 0) {
-        awards.push("the Collins Award")
-      }
-      if (d.grainger_everitt != 0) {
-        awards.push("the Everitt Award")
-      }
-      if (d.grainger_excellence != 0) {
-        awards.push("the Grainger Teaching Award")
-      }
-      if (d.grainger_rose != 0) {
-        awards.push("the Rose Award")
-      }
-      if (d.las_deans != 0) {
-        awards.push("the LAS award for undergraduate teaching")
-      } 
-      if (d.las_excellence != 0) {
-        awards.push("the LAS award for undergraduate instruction")
-      }
-
-      let data;
-      let top_offset = 80;
-      if (awards.length > 2) {
-        data = d.instructor + " has won " + awards.join(", ");
-        let final_comma = data.lastIndexOf(",");
-        top_offset = 130;
-        data = data.substring(0, final_comma + 2) + "and" + data.substring(final_comma + 1);
-      } else if (awards.length == 2) {
-        data = d.instructor + " has won " + awards.join(" and ");
-      } else {
-        data = d.instructor + " has won " + awards[0];
-      }
-      data += "."
-
-      academy.transition()
-        .duration('50')
-        .style("opacity", 1);
-      academy.html(data)
-        .style("max-width", '200px')
-        .style("left", (d3.event.pageX - 65) + "px")
-        .style("top", (d3.event.pageY - top_offset) + "px");    
-    })
-    .on('mouseout', function(d, i) {
-      academy.transition()
-      .duration('50')
-      .style("opacity", 0);
-    });
-    
-  //Teaching Excellency Awards
-  var excellence = d3.select("body").append("div")
-    .attr("class", "tooltip-donut")
-    .style("opacity", 0);
-  table_awards
-    .filter(function (d) { 
-      return (d.num_outstanding_awards > 0 || d.num_excellence_awards> 0) 
-    })
-    .append("text")
-    .attr("class", "award")  
-    .html(function(d, i) {
-      var i;
-      var text = '<span class="awards-stars">'
-      for (i = 0; i < d.num_outstanding_awards; i++) {
-        text += '<span class="gold">';
-        text += "&#9733;";
-        text += '</span>'
-      }
-      for (i = 0; i < d.num_excellence_awards; i++) {
-        text += '<span class="silver">';
-        text += "&#9733;";
-        text += '</span>'
-      }
-      text += '</span>'
-      return text;
-    })
-    .on('mouseover', function(d, i) {
-      var top_offset = 90;
-      var data = d.instructor + " has won ";
-      if (d.num_outstanding_awards != 0 && d.num_excellence_awards != 0) {
-        data += d.num_outstanding_awards.toString()
-        if (d.num_outstanding_awards == 1) {
-          data += " Outstanding award and "
-        } else {
-          data += " Outstanding awards and "
-        }
-
-        data+= d.num_excellence_awards.toString()
-        if (d.num_excellence_awards == 1) {
-          data += " Excellence award for teaching"
-        } else {
-          data += " Excellence awards for teaching"
-        }
-        top_offset = 110;
-      } else if (d.num_excellence_awards != 0) {
-        data += d.num_excellence_awards.toString()
-        if (d.num_excellence_awards == 1) {
-          data += " Excellence award for teaching";
-        } else {
-          data += " Excellence awards for teaching";
-        }
-      } else if (d.num_outstanding_awards != 0) {
-        data += d.num_outstanding_awards.toString()
-        if (d.num_outstanding_awards == 1) {
-          data += " Oustanding award for teaching";
-        } else {
-          data += " Outstanding awards for teaching";
-        }
-      }
-      
-      excellence.transition()
-        .duration('50')
-        .style("opacity", 1);
-      excellence.html(data)
-        .style("max-width", '150px')
-        .style("left", (d3.event.pageX - 65) + "px")
-        .style("top", (d3.event.pageY - top_offset) + "px"); 
-      //console.log(top_offset)
-    })
-    .on('mouseout', function(d, i) {
-      excellence.transition()
-      .duration('50')
-      .style("opacity", 0);
-    });
- 
-  // Rate my professor awards
-  var rmp = d3.select("body").append("div")
-    .attr("class", "tooltip-donut")
-    .style("opacity", 0);
-  table_awards
-    .filter(function (d) {
-      return d.rmp_rating > 4 && d.rmp_num_reviews > 15;
-    })
-    .append("img")  
-    .attr("class", "award")
-    .attr("src", function(d) {return "./badges/rmp_badge.png";})
-    .attr("width", badge_width)
-    .attr("height", badge_height)
-    .on('mouseover', function(d, i) {
-      data = d.instructor + " has a Rate my Professor rating of " + d.rmp_rating.toString() + " with " + d.rmp_num_reviews.toString() + " reviews.";
-      rmp.transition()
-        .duration('50')
-        .style("opacity", 1);
-      rmp.html(data)
-        .style("max-width", '150px')
-        .style("left", (d3.event.pageX - 65) + "px")
-        .style("top", (d3.event.pageY - 110) + "px");    
-    })
-    .on('mouseout', function(d, i) {
-      rmp.transition()
-      .duration('50')
-      .style("opacity", 0);
-    });
-  
-  // Teacher has taught the course multiple times
-  var taught_before = d3.select("body").append("div")
-    .attr("class", "tooltip-donut")
-    .style("opacity", 0);
-  table_awards
-    .filter(function (d) { return d.num_semesters >= 2})
-    .append("img")
-    .attr("class", "award")
-    .attr("src", function(d) {
-      if (d.num_semesters >= 5) {
-        return "./badges/five_plus_badge.png";
-      } 
-      else {
-        return "./badges/two_plus_badge.png";
-      }
-    })
-    .attr("width", badge_width)
-    .attr("height", badge_height)
-    .on('mouseover', function(d, i) {
-      let data = d.instructor + " has taught this course " + d.num_semesters.toString();
-      if (d.num_semesters == 1) {
-        data += " time";
-      } else {
-        data += " times";
-      }
-      taught_before.transition()
-        .duration('50')
-        .style("opacity", 1); 
-      taught_before.html(data)
-        .style("left", (d3.event.pageX - 100) + "px")
-        .style("top", (d3.event.pageY - 40) + "px");
-    })
-    .on('mouseout', function(d, i) {
-      taught_before.transition()
-      .duration('50')
-      .style("opacity", 0);
-    });
 }
 
 const ALL_GRADES_ARRAY = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"];
@@ -1073,9 +785,10 @@ function addTotalRow(data, table, width, height, margin) {
     totalRow.attr("class", "odd");
   }
   totalRow.append("td").text("Total").attr("class", "data sum");
-  totalRow.append("td").attr("align", "center").text(totalNumStudents).attr("class", "data sum hide");
-  totalRow.append("td").attr("align", "center").text(totalNumSections).attr("class", "data sum hide");
-  totalRow.append("td").attr("align", "center").text(avgGpa.toString().substr(0, 4)).attr("class", "data sum"); 
+  totalRow.append("td").attr("align", "center").text("").attr("class", "data sum hide");
+  totalRow.append("td").attr("align", "center").text("").attr("class", "data sum hide");
+  totalRow.append("td").attr("align", "center").text("").attr("class", "data sum");
+  //totalRow.append("td").attr("align", "center").text(avgGpa.toString().substr(0, 4)).attr("class", "data sum"); 
 
   tr = totalRow.selectAll(".totalRow")
     .data( [ totalGPABreakdown ] )
@@ -1085,5 +798,4 @@ function addTotalRow(data, table, width, height, margin) {
 
   // empty <td> for awards
   totalRow.append("td");
-
 }
