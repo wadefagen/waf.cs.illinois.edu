@@ -15,7 +15,7 @@ author:
 - Wade Fagen-Ulmschneider
 
 layout: viz
-tags: visualization
+# tags: visualization
 ---
 
 <link rel="stylesheet" href="css.css" type="text/css" />
