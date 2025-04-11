@@ -3,7 +3,7 @@ title: Grade Disparities and Accolades by Instructor at UIUC
 slug: Grade Disparities and Accolades
 
 description: A visualization of grade disparity and accolades of instructors at UIUC
-date: 2025-04-10
+date: 2025-04-11
 
 social-img: 1200-630.png
 author:
@@ -20,13 +20,20 @@ layout: viz
 
 <link rel="stylesheet" href="css.css" type="text/css" />
 
+
 <h1>Grade Disparities and Accolades by Instructor at UIUC</h1>
 <div style="font-size: 16px; margin-top: -4px; line-height: 16px;">
   <b>By</b>: Lauren Hyde, Rittika Adhikari, Michael Kokkines, Ophir Sneh, Caren Zeng, and Wade Fagen-Ulmschneider<br>
-  <b>Published</b>: April 11, 2025
+  <b>Published</b>: TBD
 </div>
 
 <hr>
+
+
+<div style="color: red; background-color: #fdd; text-align: center; padding-top: 20px; padding-bottom: 20px; border: solid 2px red; margin-bottom: 20px;">
+  <b>Private Preview Draft</b>: Do not share this link until we publish it.<br>
+  The data and visualization is currently incomplete and may be incorrect.
+</div>
 
 ## Introduction
 
@@ -47,24 +54,24 @@ As an example, CHEM 332: Elementary Organic Chem II has been taught by several f
 - <span class="awards awards-td awards-span ml-1"><img src="badges/illini.png" class="award" /></span> <b>Campus Award for Excellence in Undergraduate Education</b>, a top teaching award at The University of Illinois
 - <span class="awards awards-td awards-stars" style="line-height: 15px"><span class="gold">★</span><span class="gold">★</span><span class="silver">★</span></span> <b>Ranked as Outstanding/Excellent by his students</b> at the end-of-semester evaluations,
 
-Other instructors, like [Dr. Smitha Pillai](https://chemistry.illinois.edu/directory/profile/stpillai), who has taught CHEM 332 only once in our data and we indicate that there's minimal accolades we would be expect to collect:
+Other instructors, like [Dr. Smitha Pillai](https://chemistry.illinois.edu/directory/profile/stpillai), who has started teaching CHEM 332 only recently we indicate that there's minimal accolades we would be expect to collect:
 
 - <span class="awards awards-td awards-stars" style="line-height: 15px"><span class="silver">★</span></span> <b>Ranked as Excellent by her students</b> at the end-of-semester evaluations,
-- <span class="awards-txt">New Prep</span>, indicating that she has taught the course fewer than two times
+- <span class="awards-txt">New Prep</span>, indicating she recently started teaching the course and may have minimal accolades for excellent teaching.
 
-In addition, a breakdown of GPAs is provided for each course and instructor:
+In addition, a breakdown of GPAs is provided for each course and instructor.  <b>This visualization is interactive, tap or mouseover</b> any part of the visualization for more details:
 
-<div id="example_wrapper" style="margin-top: -20px; padding-left: 10px; border-left: solid 2px #aaa; margin-bottom: 30px;">
+<div id="example_wrapper" style="margin-top: -20px; padding-left: 10px; border-left: solid 2px #aaa; margin-bottom: 40px;">
   <div id="example"></div>
 </div>
 
 
-## Explore Illinois Courses
+## Explore All University of Illinois Courses
 
 <div style="padding-left: 10px; margin-left: 1px; border-left: solid 4px #13294B">
 <div>
   Filter by Subject: <input id="select-subject" type="text" autocomplete="off" />
-  <button class="btn btn-waf" style="padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; display: none;" onclick="clearSubject()" id="select-subject-clear">Clear Subject Filter</button>
+  <button class="btn btn-waf" style="width: 120px; padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; display: none;" onclick="clearSubject()" id="select-subject-clear">Clear Subject Filter</button>
 </div>
 
 <div class="mt-2">
@@ -72,14 +79,14 @@ In addition, a breakdown of GPAs is provided for each course and instructor:
   <select id="select-gened" onchange="onUserSelectionChange()">
     <option value="none" selected>No GenEd Filter -- Show All Courses</option>
     <option disabled>&mdash;</option>
-    <option value="ACP">ACP: Adv. Composition</option>
-    <option value="NW">NW: Non-Western Cultures (NW)</option>
-    <option value="US">US: US Minority Cultures (US)</option>
-    <option value="WCC">WCC: Western/Comparative Cultures</option>
-    <option value="HUM">HUM: Humanities & the Arts</option>
-    <option value="NAT">NAT: Natural Sciences & Technology</option>
-    <option value="QR">QR: Quantitative Reasoning</option>
-    <option value="SBS">SBS: Social & Behavioral Sciences</option>
+    <option value="ACP">Advanced Composition (ACP) courses</option>
+    <option value="NW">Non-Western Cultures (NW) courses</option>
+    <option value="US">US Minority Cultures (US) courses</option>
+    <option value="WCC">Western/Comparative Cultures (WCC) courses</option>
+    <option value="HUM">Humanities & the Arts (HUM) courses</option>
+    <option value="NAT">Natural Sciences & Technology (NAT) courses</option>
+    <option value="QR">Quantitative Reasoning (QR) courses</option>
+    <option value="SBS">Social & Behavioral Sciences (SBS) courses</option>
   </select>
 </div>
 
@@ -90,7 +97,7 @@ Sort/Filter by Accolades:
     <option disabled>&mdash;</option>
     <option value="national">National Awards</option>
     <option value="campus">Campus &amp; College Awards (or higher)</option>
-    <option value="tre">Excellent Ranked by Students (or higher)</option>
+    <option value="tre">Ranked by Students as Excellent (or higher)</option>
   </select>
 </div>
 </div>

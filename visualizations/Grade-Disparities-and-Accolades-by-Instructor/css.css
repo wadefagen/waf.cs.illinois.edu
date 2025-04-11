@@ -62,7 +62,7 @@ margin-left: 0px;
 
 
 .awards-length {
-  line-height: 18px;
+  line-height: 17px;
 }
 .awards-length > span.purple,
 .awards-length > span.purple2
@@ -76,7 +76,6 @@ margin-left: 0px;
   padding-left: 1px;
   font-weight: bold;
   text-align: center;
-  
 }
 
 .awards-length > span.purple {
@@ -253,7 +252,7 @@ td.chart {
     display: none;
   }
   .header_1 {
-    width: 15%;
+    width: 20%;
   }
   .header_2 {
     width: 0;
@@ -270,7 +269,7 @@ td.chart {
     width: 35%;
   }
   .header_6 {
-    width: 35%;
+    width: 30%;
   }
   #whitespace {
     margin-top: 26%;

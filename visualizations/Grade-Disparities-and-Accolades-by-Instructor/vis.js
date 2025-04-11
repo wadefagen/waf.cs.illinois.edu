@@ -708,11 +708,11 @@ function addAwardsColumn(data, tr) {
     html += `<span class="awards-length">`;
     if (d.num_semesters >= 5) {
       html += `<span class="purple2">5+</span>`;
-      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple2">5+</span></span>: Our dataset has GPA and campus data about ${d.instructor} teaching this course 5 or more times.</div>`;
+      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple2">5+</span></span>: Our dataset has GPA and campus data about ${d.instructor} teaching this course 5 or more semesters.</div>`;
     } else if (d.num_semesters >= 2) {
       html += `<span class="purple">2+</span>`;
-      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple">2+</span></span>: Our dataset has GPA and campus about ${d.instructor} teaching this course 2 or more times.</div>`;
-    } else if (html.length < 100) {
+      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple">2+</span></span>: Our dataset has GPA and campus data about ${d.instructor} teaching this course 2 or more semesters.</div>`;
+    } else if (html.length < 150) {
       html += `<span class="awards-txt">New Prep</span>`
       mouseOverHTML += `<div><span class="awards awards-length"><span class="awards-txt">New Prep</span></span>: ${d.instructor} has only started teaching this course recently and may not have many awards for excellent teaching yet.</div>`;
     }
