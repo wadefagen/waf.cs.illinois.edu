@@ -411,10 +411,16 @@ function showMore() {
 function createInstructorColumn(tr) {
   tr.append("td").attr("class", "data instructor")
     .html(function(d) {
-      if (d.teaching_next_semester) {
-        return `<abbr title="${d.instructor} is currently scheduled to teach this course in Fall 2025">»</abbr> ${d.instructor}`
+      let fullName = d.instructor;
+
+      if (d.instructor_first_name && d.instructor_first_name.length > 0) {
+        fullName = d.instructor + ", " + d.instructor_first_name;
       }
-      return d.instructor;
+
+      if (d.teaching_next_semester) {
+        return `<abbr title="${d.instructor} is currently scheduled to teach this course in Fall 2025">»</abbr> ${fullName}`
+      }
+      return fullName;
     });
 }
 
