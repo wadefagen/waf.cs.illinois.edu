@@ -77,27 +77,27 @@ In addition, a breakdown of GPAs is provided for each course and instructor.  <b
 <div class="mt-2">
   Filter by GenEd:
   <select id="select-gened" onchange="onUserSelectionChange()">
-    <option value="none" selected>No GenEd Filter -- Show All Courses</option>
+    <option value="none" selected>No GenEd Filter -- Show All</option>
     <option disabled>&mdash;</option>
-    <option value="ACP">Advanced Composition (ACP) courses</option>
-    <option value="NW">Non-Western Cultures (NW) courses</option>
-    <option value="US">US Minority Cultures (US) courses</option>
-    <option value="WCC">Western/Comparative Cultures (WCC) courses</option>
-    <option value="HUM">Humanities & the Arts (HUM) courses</option>
-    <option value="NAT">Natural Sciences & Technology (NAT) courses</option>
-    <option value="QR">Quantitative Reasoning (QR) courses</option>
-    <option value="SBS">Social & Behavioral Sciences (SBS) courses</option>
+    <option value="ACP">Adv. Composition (ACP)</option>
+    <option value="NW">Non-Western Cultures (NW)</option>
+    <option value="US">US Minority Cultures (US)</option>
+    <option value="WCC">Western/Comp. Cultures (WCC)</option>
+    <option value="HUM">Humanities & the Arts (HUM)</option>
+    <option value="NAT">Natural Sciences & Tech (NAT)</option>
+    <option value="QR">Quantitative Reasoning (QR)</option>
+    <option value="SBS">Social & Behavioral (SBS)</option>
   </select>
 </div>
 
 <div class="mt-2">
 Sort/Filter by Accolades:
   <select id="select-accolades" onchange="onUserSelectionChange()">
-    <option value="none" selected>No Accolades Filter -- Show all Courses</option>
+    <option value="none" selected>No Accolades Filter -- Show All</option>
     <option disabled>&mdash;</option>
     <option value="national">National Awards</option>
-    <option value="campus">Campus &amp; College Awards (or higher)</option>
-    <option value="tre">Ranked by Students as Excellent (or higher)</option>
+    <option value="campus">Campus &amp; College Awards</option>
+    <option value="tre">Ranked by Students as Excellent</option>
   </select>
 </div>
 </div>
