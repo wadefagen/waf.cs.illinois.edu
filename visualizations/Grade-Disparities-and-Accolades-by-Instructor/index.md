@@ -68,6 +68,8 @@ In addition, a breakdown of GPAs is provided for each course and instructor.  <b
 
 ## Explore All University of Illinois Courses
 
+Select one or more filter and view data about courses at Illinois:
+
 <div style="padding-left: 10px; margin-left: 1px; border-left: solid 4px #13294B">
 <div>
   Filter by Subject: <input style="width: 80px;" id="select-subject" type="text" autocomplete="off" />
