@@ -119,6 +119,15 @@ Finally, I love being an ILL-INI 🧡💙 and I am always working on a project t
 
 ## The Latest!
 
+{% card "April 11, 2025 &mdash; New GPA Visualizations" %}
+
+After over six years in development, a new GPA visualization that celebrates high-caliber professors while still providing important GPA distribution information is finally published! 🎉
+
+- [Grade Disparities and Accolades by Instructor at UIUC](https://waf.cs.illinois.edu/visualizations/Grade-Disparities-and-Accolades-by-Instructor/)
+
+{% endcard %}
+
+
 {% card "April 7, 2025 &mdash; GPA Visualizations + Dataset Updates" %}
 
 The GPA Visualizations have all been updated for Fall 2025 registration: 🎉
