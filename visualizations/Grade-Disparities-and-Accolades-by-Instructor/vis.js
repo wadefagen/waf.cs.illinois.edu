@@ -23,6 +23,13 @@ function displayExample() {
   renderData(chem332, "example");
 }
 
+function clearSubject() {
+  document.getElementById("select-subject").value = "";
+  document.getElementById("select-subject-clear").style.display = "none";
+  
+  onUserSelectionChange();
+  
+}
 
 function onUserSelectionChange() {
   // Check UI:
@@ -93,6 +100,8 @@ function onUserSelectionChange() {
 
 var updateBySubject = function(subject) {
   document.getElementById("select-subject").value = subject;
+  document.getElementById("select-subject-clear").style.display = "inline-block";
+
   onUserSelectionChange();
 };
 

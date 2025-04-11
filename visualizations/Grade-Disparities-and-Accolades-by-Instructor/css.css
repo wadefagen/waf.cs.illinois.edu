@@ -656,3 +656,11 @@ div.tooltip-donut {
 .d3-waf > div:last-of-type {
   margin-bottom: 0px;
 }
+
+.btn-waf {
+  background-color: #13294B; color: white;
+}
+
+.btn-waf:hover {
+  color: #eef;
+}

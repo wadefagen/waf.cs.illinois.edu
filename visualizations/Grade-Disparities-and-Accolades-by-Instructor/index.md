@@ -63,6 +63,7 @@ In addition, a breakdown of GPAs is provided for each course and instructor:
 
 <div>
   Filter by Subject: <input id="select-subject" type="text" autocomplete="off" />
+  <button class="btn btn-waf" style="padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; display: none;" onclick="clearSubject()" id="select-subject-clear">Clear Subject Filter</button>
 </div>
 
 <div class="mt-2">
@@ -70,14 +71,14 @@ In addition, a breakdown of GPAs is provided for each course and instructor:
   <select id="select-gened" onchange="onUserSelectionChange()">
     <option value="none" selected>No GenEd Filter -- Show All Courses</option>
     <option disabled>&mdash;</option>
-    <option value="ACP">Advanced Composition (ACP) courses</option>
-    <option value="NW">Cultural Studies: Non-Western Cultures (NW) courses</option>
-    <option value="US">Cultural Studies: US Minority Cultures (US) courses</option>
-    <option value="WCC">Cultural Studies: Western/Comparative Cultures (WCC) courses</option>
-    <option value="HUM">Humanities & the Arts (HUM) courses</option>
-    <option value="NAT">Natural Sciences & Technology (NAT) courses</option>
-    <option value="QR">Quantitative Reasoning (QR) courses</option>
-    <option value="SBS">Social & Behavioral Sciences (SBS) courses</option>
+    <option value="ACP">ACP: Adv. Composition</option>
+    <option value="NW">NW: Non-Western Cultures (NW)</option>
+    <option value="US">US: US Minority Cultures (US)</option>
+    <option value="WCC">WCC: Western/Comparative Cultures</option>
+    <option value="HUM">HUM: Humanities & the Arts</option>
+    <option value="NAT">NAT: Natural Sciences & Technology</option>
+    <option value="QR">QR: Quantitative Reasoning</option>
+    <option value="SBS">SBS: Social & Behavioral Sciences</option>
   </select>
 </div>
 
@@ -87,8 +88,8 @@ Sort/Filter by Accolades:
     <option value="none" selected>No Accolades Filter -- Show all Courses</option>
     <option disabled>&mdash;</option>
     <option value="national">National Awards</option>
-    <option value="campus">Campus/College Awards (or higher)</option>
-    <option value="tre">Courses ranked by Students as Excellent (or higher)</option>
+    <option value="campus">Campus &amp; College Awards (or higher)</option>
+    <option value="tre">Excellent Ranked by Students (or higher)</option>
   </select>
 </div>
 
