@@ -70,8 +70,8 @@ In addition, a breakdown of GPAs is provided for each course and instructor.  <b
 
 <div style="padding-left: 10px; margin-left: 1px; border-left: solid 4px #13294B">
 <div>
-  Filter by Subject: <input style="width: 120px;" id="select-subject" type="text" autocomplete="off" />
-  <button class="btn btn-waf" style="padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; display: none;" onclick="clearSubject()" id="select-subject-clear">Clear Subject Filter</button>
+  Filter by Subject: <input style="width: 80px;" id="select-subject" type="text" autocomplete="off" />
+  <button class="btn btn-waf" style="padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; display: none;" onclick="clearSubject()" id="select-subject-clear">Clear</button>
 </div>
 
 <div class="mt-2">
