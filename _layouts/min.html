@@ -13,18 +13,18 @@
 
     {% for a in author %}
     <meta name="author" content="{{a}}">
-    {% endfor %}
+    {%- endfor %}
 
     <meta name="description" content="{{ description | escape }}">
     <meta property="og:description" content="{{ description | escape }}">
     <meta name="twitter:description" content="{{ description | escape }}">
 
-    <meta property="og:url" content="{{ page.url }}">
-    <link rel=”canonical” href="{{ page.url }}">
+    <meta property="og:url" content="https://waf.cs.illinois.edu{{ page.url }}">
+    <link rel=”canonical” href="https://waf.cs.illinois.edu{{ page.url }}">
 
     {% if social-img %}
-    <meta property="og:image" content="https://waf.cs.illinois.edu/{{page.url}}{{ social-img }}">
-    <meta name="twitter:image" content="https://waf.cs.illinois.edu/{{page.url}}{{ social-img }}">
+    <meta property="og:image" content="https://waf.cs.illinois.edu{{page.url}}{{ social-img }}">
+    <meta name="twitter:image" content="https://waf.cs.illinois.edu{{page.url}}{{ social-img }}">
     {% endif %}
     
     <link rel="icon" type="image/png" href="/static/waf.png">

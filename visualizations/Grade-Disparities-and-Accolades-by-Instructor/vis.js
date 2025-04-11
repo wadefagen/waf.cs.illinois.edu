@@ -372,6 +372,11 @@ function renderData(dataList, tid, filterMethod = "default") {
           case "campus-awards": value = (d.uiuc_award || []).length; break;
           case "tre-awards": value = d.num_excellence_awards + d.num_outstanding_awards; break;
         }
+
+        if (value > 0) {
+          if (d.teaching_next_semester) { value += 0.1; }
+        }
+
         if (value > sortValue) { sortValue = value; }
       }
       courseSort[courseName] = sortValue;
