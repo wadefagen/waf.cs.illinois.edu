@@ -87,7 +87,7 @@ Sort/Filter by Accolades:
     <option value="none" selected>No Accolades Filter -- Show all Courses</option>
     <option disabled>&mdash;</option>
     <option value="national">National Awards</option>
-    <option value="campus">Campus Awards (or higher)</option>
+    <option value="campus">Campus/College Awards (or higher)</option>
     <option value="tre">Courses ranked by Students as Excellent (or higher)</option>
   </select>
 </div>

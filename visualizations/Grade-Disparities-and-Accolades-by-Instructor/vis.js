@@ -129,6 +129,8 @@ async function loadData() {
       d.uiuc_award = awardList;
     }
 
+    d.teaching_next_semester = (d.teaching_next_semester == "True");
+
     d.num_excellence_awards = +d.num_excellence_awards;
     d.num_outstanding_awards = +d.num_outstanding_awards;
     d.num_sections = +d.num_sections;
@@ -265,7 +267,7 @@ function _doRender(data, tid, startIndex, endIndex) {
         data[course][t]["num_excellence_awards"] = parseInt(data[course][t]["num_excellence_awards"]);
         data[course][t]["rmp_num_reviews"] = parseInt(data[course][t]["rmp_num_reviews"]);
         data[course][t]["rmp_rating"] = parseFloat(data[course][t]["rmp_rating"]);
-        data[course][t]["teaching_next_semester"] = data[course][t]["teaching_next_semester"] === "True";
+        //data[course][t]["teaching_next_semester"] = data[course][t]["teaching_next_semester"] === "True";
 
         data[course][t]["totalGrades"] = 0;
         for (var grade of ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"]) {
@@ -399,23 +401,18 @@ function showMore() {
 
 function createInstructorColumn(tr) {
   tr.append("td").attr("class", "data instructor")
-    .style("font-style", function(d) {
-      if (d.teaching_next_semester == true) {
-        return "italic";
+    .html(function(d) {
+      if (d.teaching_next_semester) {
+        return `<abbr title="${d.instructor} is currently scheduled to teach this course in Fall 2025">»</abbr> ${d.instructor}`
       }
-    })
-    .text(function(d) { return d.instructor;});
+      return d.instructor;
+    });
 }
 
 function createNumStudentsColumn(tr) {
   tr.append("td")
   .attr("align", "center")
   .attr("class", "data hide")
-  .style("font-style", function(d) {
-    if (d.teaching_next_semester) {
-      return "italic";
-    }
-  })
   .text(function(d) { return d.num_students })
 }
 
@@ -423,11 +420,6 @@ function createNumSectionsColumn(tr) {
   tr.append("td")
   .attr("align", "center")
   .attr("class", "data hide")
-  .style("font-style", function(d) {
-    if (d.teaching_next_semester) {
-      return "italic";
-    }
-  })
   .text(function(d) { return d.num_sections })
 }
 
@@ -435,25 +427,14 @@ function createAvgGpaColumn(tr) {
   tr.append("td")
   .attr("align", "center")
   .attr("class", "data avg_gpa")
-  .style("font-style", function(d) {
-    if (d.teaching_next_semester) {
-      return "italic";
-    }
-  })
   .text(function(d) { 
     return (100 * (d["A"] + d["A+"])).toLocaleString("en-US", {maximumFractionDigits: 0}) + "%";
-
-    let gpa_as_string = d.avg_gpa.toString();
-    if (gpa_as_string.length > 2) {
-        return gpa_as_string.substring(0, 4);
-    } else {
-        return gpa_as_string;
-    }
   })
 }
 
 
 let d3_tip_html = (d, instructor) => {
+  console.log(d);
   let ct_4 = d["A+"] + d["A"],
       ct_ap = d["A+"],
       ct_a = d["A"],
@@ -619,6 +600,8 @@ function drawGPABox(grade, svg, height) {
   })
 }
 
+let awards_tip;
+
 function addAwardsColumn(data, tr) {
   // We will add the awards, left to right, in order of how prestigous
   // they are: nobel/nobel-equivalents, then pulitzer, then national academies, then teaching excellency awards, and lastly rate my professor awards.
@@ -628,13 +611,20 @@ function addAwardsColumn(data, tr) {
     .attr("id", "awards")
     .attr("class", "data awards awards-td");
 
-  
+  awards_tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .html( (d, i) => {
+      console.log(d);
+      return "OK";
+    } );
+
   table_awards.html((d) => {
     // Render Awards
     let national_award = d.national_award || [], uiuc_award = d.uiuc_award || [];
 
     let badges = [];
     let html = "";
+    let mouseOverHTML = "";
 
     // == NATIONAL == 
     for (let award of national_award) {
@@ -647,8 +637,10 @@ function addAwardsColumn(data, tr) {
       }      
     }
 
+
     for (let badge of badges) {
       html += `<img src="badges/${badge.img}" alt="${badge.award}" class="award">`;
+      mouseOverHTML += `<div><span class="awards awards-td"><img src="badges/${badge.img}" alt="${badge.award}" class="award"></span>: ${d.instructor} is a member of the ${badge.award}</div>`;
     }
 
 
@@ -659,11 +651,19 @@ function addAwardsColumn(data, tr) {
     }
 
     if (badges.length > 0) {
-      html += `<span class="awards-span">`;
+
+      let badgeHtml = "";
+      badgeHtml += `<span class="awards-span">`;
       for (let badge of badges) {
-        html += `<img src="badges/${badge.img}" alt="${badge.award}" class="award">`;
+        let imgTag = `<img src="badges/${badge.img}" alt="${badge.award}" class="award">`
+
+        badgeHtml += imgTag;
+        mouseOverHTML += `<div><span class="awards awards-span">${imgTag}</span>: ${d.instructor} was awarded the ${badge.award}</div>`;
       }
-      html += `</span>`;
+      badgeHtml += `</span>`;
+
+      html += badgeHtml;
+
     }
 
     // == TRE ==
@@ -676,29 +676,50 @@ function addAwardsColumn(data, tr) {
     }
     html += `</span>`;
 
+    if (d.num_outstanding_awards == 1) {
+      mouseOverHTML += `<div><span class="awards awards-stars"><span class="gold">&#9733;</span></span>: ${d.instructor} was ranked as outstanding by students in their course.</div>`;
+    } else if (d.num_outstanding_awards > 1) {
+      mouseOverHTML += `<div><span class="awards awards-stars"><span class="gold">&#9733;</span></span><b>&times;${d.num_outstanding_awards}</b>: ${d.instructor} was ranked as outstanding by students in their course ${d.num_outstanding_awards} times.</div>`;
+    }
+
+    if (d.num_excellence_awards == 1) {
+      mouseOverHTML += `<div><span class="awards awards-stars"><span class="silver">&#9733;</span></span>: ${d.instructor} was ranked as excellent by students in their course.</div>`;
+    } else if (d.num_excellence_awards > 1) {
+      mouseOverHTML += `<div><span class="awards awards-stars"><span class="silver">&#9733;</span></span><b>&times;${d.num_excellence_awards}</b>: ${d.instructor} was ranked as excellent by students in their course ${d.num_excellence_awards} times.</div>`;
+    }
+
     // == RMP ==
     if (d.rmp_rating >= 4 && d.rmp_num_reviews > 10) {
       html += `<img src="badges/rmp2.png" alt="Rate My Professor" class="award">`;
+      mouseOverHTML += `<div><span class="awards awards-td"><img src="badges/rmp2.png" alt="Rate My Professor" class="award"></span>: ${d.instructor} is highly ranked on Rate My Professor.</div>`;
     }
+
 
     // == Course Length ==
     html += `<span class="awards-length">`;
     if (d.num_semesters >= 5) {
       html += `<span class="purple2">5+</span>`;
+      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple2">5+</span></span>: ${d.instructor} has taught this course 5 or more times.</div>`;
     } else if (d.num_semesters >= 2) {
       html += `<span class="purple">2+</span>`;
+      mouseOverHTML += `<div><span class="awards awards-length"><span class="purple">2+</span></span>: ${d.instructor} has taught this course 2 or more times.</div>`;
     } else if (html.length < 100) {
       html += `<span class="awards-txt">New Prep</span>`
+      mouseOverHTML += `<div><span class="awards awards-length"><span class="awards-txt">New Prep</span></span>: ${d.instructor} has only started teaching this course recently and may not have many awards for excellent teaching yet.</div>`;
     }
     html += `</span>`;
 
-    let tip = d3.tip()
-    .attr('class', 'd3-tip')
-    .html( (d, i) => d3_tip_html(d, d.instructor) );
 
-    //console.log(tip());
+    mouseOverHTML = `<div style="text-align: left;" class="d3-waf">${mouseOverHTML}</div>`;
+    /*
+    //console.log(tip(tr));
 
-    html = `<span class="awards awards-td" style="white-space: nowrap;">${html}</span>`
+    //html = `<span class="awards awards-td" style="white-space: nowrap;">${html}</span>`
+    */
+    html = `
+<span class="awards awards-td" style="white-space: nowrap;" data-mouseover="${escape_str(mouseOverHTML)}" onmouseover="waf_inject(this)" onmouseout="waf_uninject()">${html}</span>
+`.trim();
+
 
     /*
 
@@ -718,6 +739,31 @@ function addAwardsColumn(data, tr) {
 
     return html;
   });
+}
+
+function escape_str(s) {
+  return s.replaceAll("<", "&lt;")
+   .replaceAll(">", "&gt;")
+   .replaceAll("\"", "&quot;");
+}
+
+function waf_inject(el) {
+  const rect = el.getBoundingClientRect();
+  let left = rect.left + window.scrollX;
+  let top = rect.top + window.scrollY + 16;
+  let html = el.dataset.mouseover;
+
+
+  let tip = document.querySelector(".d3-tip");
+  tip.style.opacity = 1;
+  tip.style.top = `${top}px`;
+  tip.style.left = `${left}px`;
+  tip.setHTMLUnsafe(html);
+}
+
+function waf_uninject() {
+  let tip = document.querySelector(".d3-tip");
+  tip.style.opacity = 0;
 }
 
 const ALL_GRADES_ARRAY = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"];

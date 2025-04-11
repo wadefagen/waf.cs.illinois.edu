@@ -645,3 +645,14 @@ div.tooltip-donut {
   text-shadow: 0px 0px 1px hsl(160 61% 14%);
 
 }
+
+
+
+
+.d3-waf > div {
+  margin-bottom: 4px;
+}
+
+.d3-waf > div:last-of-type {
+  margin-bottom: 0px;
+}
