@@ -29,12 +29,6 @@ layout: viz
 
 <hr>
 
-<!--
-<div style="color: red; background-color: #fdd; text-align: center; padding-top: 20px; padding-bottom: 20px; border: solid 2px red; margin-bottom: 20px;">
-  <b>Private Preview Draft</b>: Do not share this link until we publish it.<br>
-  The data and visualization is currently incomplete and may be incorrect.
-</div>
--->
 
 ## Introduction
 
@@ -94,13 +88,16 @@ Select one or more filter and view data about courses at Illinois:
 </div>
 
 <div class="mt-2">
-Sort/Filter by Accolades:
+Sort/Filter:
   <select id="select-accolades" onchange="onUserSelectionChange()">
-    <option value="none" selected>No Accolades Filter -- Show All</option>
-    <option disabled>&mdash;</option>
+    <option value="none" selected>Default (Alphabetically)</option>
+    <option disabled>&mdash; Filter By Accolades: &mdash;</option>
     <option value="national">National Awards</option>
     <option value="campus">Campus &amp; College Awards</option>
     <option value="tre">Ranked by Students as Excellent</option>
+    <option disabled>&mdash; Sort By: &mdash;</option>
+    <option value="pct4">Percentage of 4.0s</option>
+    <option value="large">Larger Section First</option>
   </select>
 </div>
 </div>

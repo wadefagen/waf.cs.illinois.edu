@@ -55,6 +55,8 @@ function onUserSelectionChange() {
     filters.push( (d) => d.national_award || d.uiuc_award || d.num_excellence_awards > 0 || d.num_outstanding_awards > 0 );
     hasAdvancedFilter = true;
     filterMethod = "tre-awards";
+  } else if (accoladeFilter == "pct4" || accoladeFilter == "large" || accoladeFilter == "small") {
+    filterMethod = accoladeFilter;
   }
 
   if (genedFilter != "none") {
@@ -239,12 +241,12 @@ function _doRender(data, tid, startIndex, endIndex) {
 
       // Create the table and the column headers
       var table = d3.select("#" + tid).append("table").attr("margin", 20).style("table-layout", "fixed").attr("width", "100%").attr("class", tid);
-      table.append('col').attr("width", "10%").attr("class", tid.concat(" header_1"));
+      table.append('col').attr("width", "12%").attr("class", tid.concat(" header_1"));
       table.append('col').attr("width", "7%").attr("class", tid.concat(" header_2"));
       table.append('col').attr("width", "7%").attr("class", tid.concat(" header_3"));
       table.append('col').attr("width", "6%").attr("class", tid.concat(" header_4"));
-      table.append('col').attr("width", "30%").attr("class", tid.concat(" header_5"));
-      table.append('col').attr("width", "36%").attr("class", tid.concat(" header_6"));
+      table.append('col').attr("width", "32%").attr("class", tid.concat(" header_5"));
+      table.append('col').attr("width", "32%").attr("class", tid.concat(" header_6"));
       var columns = ["Instructor", "Students", "Sections", "%4.0s", "GPA Breakdown", "Instructor Awards"]
       table.append('thead').append('tr')
         .selectAll('th')
@@ -287,7 +289,7 @@ function _doRender(data, tid, startIndex, endIndex) {
         data[course][t]["pctA"] = (data[course][t]["A+"] + data[course][t]["A"] + data[course][t]["A-"]) / data[course][t]["totalGrades"];
       }
 
-      data[course].sort((a, b) => ((a["A+"] + a["A"] + a["A-"]) < (b["A+"] + b["A"] + b["A-"]) ? 1 : -1))
+      data[course].sort((a, b) => ((a["A+"] + a["A"]) < (b["A+"] + b["A"]) ? 1 : -1))
 
       var tr = table.selectAll("tr.data")
         .data(data[course])
@@ -333,7 +335,6 @@ function renderData(dataList, tid, filterMethod = "default") {
   for (let d of dataList) {
     if (!data[d.course]) { data[d.course] = []; }
     data[d.course].push(d);
-    // console.log(d);
   }
 
   let totalCourses = Object.keys(data).length;
@@ -371,6 +372,9 @@ function renderData(dataList, tid, filterMethod = "default") {
           case "national-awards": value = (d.national_award || []).length; break;
           case "campus-awards": value = (d.uiuc_award || []).length; break;
           case "tre-awards": value = d.num_excellence_awards + d.num_outstanding_awards; break;
+          case "pct4": value = d["A"] + d["A+"]; break;
+          case "large": value = d["num_students"] / d["num_sections"]; break;
+          case "small": value = -d["num_students"] / d["num_sections"]; break;
         }
 
         if (value > 0) {
@@ -423,6 +427,7 @@ function createInstructorColumn(tr) {
       }
 
       if (d.teaching_next_semester) {
+        return `<span style="font-size: 8px; position: relative; top: -2px; cursor: help;" title="${d.instructor} is currently scheduled to teach this course in Fall 2025">📅</span> ${fullName}`;
         return `<abbr title="${d.instructor} is currently scheduled to teach this course in Fall 2025">»</abbr> ${fullName}`
       }
       return fullName;
