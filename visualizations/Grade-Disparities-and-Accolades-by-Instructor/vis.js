@@ -224,7 +224,7 @@ let _render_ct;
 function _doRender(data, tid, startIndex, endIndex) {
 
   // Now, iterate through the classes and render the tables
-  for (var j = 0; j < _render_ct; j++) {
+  for (var j = startIndex; j < _render_ct; j++) {
       let course = _current_render_courses[j];
 
       // Sort the professors for the course by average GPA
