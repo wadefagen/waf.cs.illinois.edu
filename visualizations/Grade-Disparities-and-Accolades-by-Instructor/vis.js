@@ -101,6 +101,10 @@ function onUserSelectionChange() {
 }
 
 var updateBySubject = function(subject) {
+  if (!subject) {
+    subject = document.getElementById("select-subject").value;  
+  }
+
   document.getElementById("select-subject").value = subject;
   document.getElementById("select-subject-clear").style.display = "inline-block";
 

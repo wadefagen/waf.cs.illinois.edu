@@ -69,7 +69,7 @@ Select one or more filter and view data about courses at Illinois:
 
 <div style="padding-left: 10px; margin-left: 1px; border-left: solid 4px #13294B">
 <div>
-  Filter by Subject: <input style="width: 80px;" id="select-subject" type="text" autocomplete="off" />
+  Filter by Subject: <input style="width: 80px;" id="select-subject" type="text" onchange="updateBySubject()" autocomplete="one-time-code" />
   <button class="btn btn-waf" style="padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; display: none;" onclick="clearSubject()" id="select-subject-clear">Clear</button>
 </div>
 
