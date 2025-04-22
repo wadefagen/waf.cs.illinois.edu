@@ -91,3 +91,17 @@ This data was manually collected.  E-mail waf@illinois.edu if we missed an Illin
 On April 3, 2025, we collected the list of faculty listed on Rate My Professor at The University of Illinois with a 4.5 rating and at least 10 reviews.  We find this data is generally highly correlated with other awards, and is used as an accolade as a reference to another popular data source.
 
 Special thanks to [Lukas Unguraitis (@lumirth)](https://github.com/lumirth/) for his ["RateMyProfessors Python Module" (@lumirth/rmpy)](https://github.com/lumirth/rmpy) project that greatly assisted us in this data collection.
+
+
+## Visualization Updates
+
+This log is a collection of updates we've made to the visualization since launch:
+
+### April 22, 2025
+
+- Improved UI for users on devices with slow connections (where readers was interacting with data selection before the full dataset was loaded).
+- Improved data processing, specifically with regards to instructors with mixed case names (ex: Prof. Lee DeVille in MATH 357 had perviously been mapped as two people since his name appears as De<b>V</b>ille in some datasets and De<b>v</b>ille in other datasets, this is fixed for Prof. DeVille and other similar professors).
+
+### April 12, 2025
+
+- Fixed a bug where "Show More" was rendering the first 100 courses a second time before showing the additional courses.

@@ -1,17 +1,26 @@
 var _data, _subjectDict;
+var ALL_SUBJECTS = ["AAS","ABE","ACCY","ACE","ACES","ADV","AE","AFRO","AFST","AGCM","AGED","AHS","AIS","ALEC","ANSC","ANTH","ARAB","ARCH","ART","ARTD","ARTE","ARTF","ARTH","ARTJ","ARTS","ASRM","ASTR","ATMS","BADM","BCOG","BCS","BDI","BIOC","BIOE","BIOP","BTW","BUS","CEE","CHBE","CHEM","CHIN","CHLH","CHP","CI","CLCV","CMN","CPSC","CS","CW","CWL","DANC","DTX","EALC","ECE","ECON","EDUC","EIL","ENG","ENGL","ENSU","ENVS","EOL","EPOL","EPS","EPSY","ERAM","ESE","ETMA","EURO","FAA","FIN","FR","FSHN","GEOG","GEOL","GER","GGIS","GLBL","GS","GSD","GWS","HDFS","HIST","HK","HORT","HRD","IB","IE","IHLT","INFO","IS","ITAL","JAPN","JOUR","KIN","KOR","LA","LAS","LAST","LAW","LEAD","LER","LING","LLS","MACS","MATH","MBA","MCB","MDIA","ME","MILS","MSE","MUS","MUSC","MUSE","NE","NPRE","NRES","NUTR","PATH","PHIL","PHYS","PLPA","POL","PORT","PS","PSM","PSYC","REHB","REL","RHET","RSOC","RST","RUSS","SBC","SCAN","SE","SHS","SLAV","SLCL","SOC","SOCW","SPAN","SPED","STAT","TAM","TE","THEA","TRST","TSM","UKR","UP","VCM","VM"]
+var _dataReadyPromise, _dataReadyPromise_resolver;
+
 
 $( async function() {
-  _data = await loadData();  
-
+  _dataReadyPromise = new Promise((resolve, reject) => {
+    _dataReadyPromise_resolver = resolve;
+  });
 
   $("#select-subject").autocomplete({
-    source: Object.keys(_subjectDict),
+    source: ALL_SUBJECTS,
     autoFocus: true,
     select: function(e, ui) {
       var subject = ui.item.value;
       updateBySubject(subject);
     }
   });
+
+  _data = await loadData();
+
+  _dataReadyPromise = undefined;
+  _dataReadyPromise_resolver();  
 
   displayExample();
 } );
@@ -32,6 +41,19 @@ function clearSubject() {
 }
 
 function onUserSelectionChange() {
+  if (_dataReadyPromise) {
+    document.getElementById("tables").setHTMLUnsafe(`
+      <div style="text-align: center; margin-top: 20px;">
+        <i>...loading data...</i>
+      </div>`);
+    
+    _dataReadyPromise.then(() => {
+      console.log("Promise Resolved");
+      onUserSelectionChange();
+    });
+    return;
+  }
+
   // Check UI:
   let accoladeFilter = document.getElementById("select-accolades").value;
   let genedFilter = document.getElementById("select-gened").value;
