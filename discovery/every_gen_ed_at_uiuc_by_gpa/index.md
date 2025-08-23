@@ -26,15 +26,6 @@ templateEngineOverride: liquid, md
 </div>
 
 
-<hr>
-<div style="background-color: #ffe; border-left: solid 4px #cc8; padding: 6px; padding-left: 12px;">
-  <b>New GPA Visualization 🎉</b><br> On Friday, April 11, we published a new GPA visualization <b><a href="https://waf.cs.illinois.edu/visualizations/Grade-Disparities-and-Accolades-by-Instructor/">"Grade Disparities and Accolades by Instructor at UIUC"</a></b> that provides a highlights faculty who are luminaries in their field and renowned teachers, in addition to important GPA distribution information.  We think it's the best work yet.
-  <ul style="margin-bottom: 0px">
-    <li>View the new visualization: <a href="https://waf.cs.illinois.edu/visualizations/Grade-Disparities-and-Accolades-by-Instructor/"><b>"Grade Disparities and Accolades by Instructor at UIUC"</b></a></li>
-    <li>You can continue to use this visualization, it's not going anywhere and will continue to be updated! :)</li>
-  </ul>
-</div>
-
 
 <hr>
 
