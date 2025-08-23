@@ -20,8 +20,9 @@ Additionally, I believe in free, open-access to educational materials.  You will
 
 Data Science Discovery is the first course in the Data Science program at The University of Illinois, teaching students introductory data science skills including foundational statistics, Python programming (with a heavy emphasis on pandas), and the social impact of data.  I developed this course with Statistics professor [Karle Flanagan](https://kflan.stat.illinois.edu/) specifically for students with no existing background in data science.  The course has no course prerequisites, and serves as a quantitative reasoning gened at Illinois.  We piloted the course in Spring 2019 to 20 students from 20 different majors and now this course reaches nearly 500 Illini each year.
 
-- **Spring 2025**: [Data Science DISCOVERY (discovery.cs.illinois.edu)](https://discovery.cs.illinois.edu/)
+- **Fall 2025**: [Data Science DISCOVERY (discovery.cs.illinois.edu)](https://discovery.cs.illinois.edu/)
 - Previous Semesters: 
+[Spring 2025](https://discovery.cs.illinois.edu/),
 [Fall 2024](https://discovery.cs.illinois.edu/),
 [Spring 2024](https://discovery.cs.illinois.edu/),
 [Fall 2023](https://discovery.cs.illinois.edu/),
@@ -42,10 +43,10 @@ Data Science Discovery is the first course in the Data Science program at The Un
 Accelerated Computer Science Fundamentals is a Coursera Specialization comprised of three individual MOOCs that provide learners foundational skills in data structures, algorithms, and algorithmic analysis.  Initially developed as a "leveling" course for incoming students in Illinois' Online Masters of Computer Science program, this course was later refactored into three MOOCs and offered to the world to learn computer science fundamentals.  Nearly 100,000 learners have enrolled in it to date, and all three MOOCs are ranked as the top MOOCs offered by Computer Science at Illinois.
 
 <ul>
-  <li>Course #1: <a href="https://www.coursera.org/learn/cs-fundamentals-1">Object-Oriented Data Structures in C++</a>; <i>month-long course (110,903 students, 4.7/5.0 from 2,999 verified ratings)</i></li>
-  <li>Course #2: <a href="https://www.coursera.org/learn/cs-fundamentals-2">Ordered Data Structures</a>; <i>month-long course (32,450 students, 4.8/5.0 from 915 verified ratings)</i></li>
-  <li>Course #3: <a href="https://www.coursera.org/learn/cs-fundamentals-3">Unordered Data Structures</a>; <i>month-long course (19,017 students, 4.7/5.0 from 549 verified ratings)</i></li>
-  <li>Specialization: <a href="https://www.coursera.org/specializations/cs-fundamentals">Accelerated Computer Science Fundamentals Specialization</a>; <i>semester-long collection of the three aforementioned courses (47,542 students, 4.7/5.0 from 2,530 verified ratings)</i></li>
+  <li>Course #1: <a href="https://www.coursera.org/learn/cs-fundamentals-1">Object-Oriented Data Structures in C++</a>; <i>month-long course (115,200 students, 4.7/5.0 from 3,026 verified ratings)</i></li>
+  <li>Course #2: <a href="https://www.coursera.org/learn/cs-fundamentals-2">Ordered Data Structures</a>; <i>month-long course (33,811 students, 4.8/5.0 from 920 verified ratings)</i></li>
+  <li>Course #3: <a href="https://www.coursera.org/learn/cs-fundamentals-3">Unordered Data Structures</a>; <i>month-long course (19,697 students, 4.7/5.0 from 555 verified ratings)</i></li>
+  <li>Specialization: <a href="https://www.coursera.org/specializations/cs-fundamentals">Accelerated Computer Science Fundamentals Specialization</a>; <i>semester-long collection of the three aforementioned courses (49,309 students, 4.7/5.0 from 2,559 verified ratings)</i></li>
 </ul>
 
 <hr>
@@ -57,8 +58,8 @@ Accelerated Computer Science Fundamentals is a Coursera Specialization comprised
 Introduction to Computer Systems is a modern approach to computer systems and one of the newest courses in the CS core curriculum, teaching students the foundational of computer architecture, systems progrmaming, and cloud computing.  CS students can either take a dedicated architecture course (CS 233) and a dedicated systems course (CS 340) or take CS 340 to fulfill both requirements.  *(CS 340 is a replacement of CS 240, moving the course to an upper-level core course.)*
 
 <!-- - Detailed Comparison between CS 240 and CS 233/241 -->
-- Semesters Taught as CS 340: [Spring 2023](https://courses.engr.illinois.edu/cs340/sp2023/), [Fall 2022](https://courses.engr.illinois.edu/cs340/fa2022/)
-- Semesters Taught as CS 240: [Spring 2022](https://courses.engr.illinois.edu/cs240/sp2022/), [Fall 2021](https://courses.engr.illinois.edu/cs240/fa2021/), [Spring 2021](https://courses.engr.illinois.edu/cs240/sp2021/), and [Fall 2020](https://courses.engr.illinois.edu/cs240/fa2020/).
+- Taught as CS 340: [Spring 2023](https://courses.engr.illinois.edu/cs340/sp2023/), [Fall 2022](https://courses.engr.illinois.edu/cs340/fa2022/)
+- Taught as CS 240: [Spring 2022](https://courses.engr.illinois.edu/cs240/sp2022/), [Fall 2021](https://courses.engr.illinois.edu/cs240/fa2021/), [Spring 2021](https://courses.engr.illinois.edu/cs240/sp2021/), and [Fall 2020](https://courses.engr.illinois.edu/cs240/fa2020/).
 
 <hr>
 
@@ -78,7 +79,7 @@ By invitation from [Illinois International](https://international.illinois.edu/)
 
 > Organization and structure of modern operating systems and concurrent programming concepts. Deadlock, virtual memory, processor scheduling, and disk systems. Performance, security, and protection. Credit: 3 OR 4 hours.
 
-- Course Webpage: [Spring 2021](https://courses.engr.illinois.edu/cs423/sp2021/).
+- Semesters Taught: [Spring 2021](https://courses.engr.illinois.edu/cs423/sp2021/).
 
 <hr>
 
@@ -86,7 +87,7 @@ By invitation from [Illinois International](https://international.illinois.edu/)
 
 > Data abstractions: elementary data structures (lists, stacks, queues, and trees) and their implementation using an object-oriented programming language. Solutions to a variety of computational problems such as search on graphs and trees. Elementary analysis of algorithms. Credit: 4 hours.
 
-- Course Webpage: <a href="https://courses.engr.illinois.edu/cs225/sp2019/">Spring 2019</a>, <a href="https://courses.engr.illinois.edu/cs225/fa2018/">Fall 2018</a>, <a href="https://courses.engr.illinois.edu/cs225/sp2018/">Spring 2018</a>, <a href="https://courses.engr.illinois.edu/cs225/fa2017/">Fall 2017</a>, and <a href="https://courses.engr.illinois.edu/cs225/sp2017/">Spring 2017</a>.
+- Semesters Taught: <a href="https://courses.engr.illinois.edu/cs225/sp2019/">Spring 2019</a>, <a href="https://courses.engr.illinois.edu/cs225/fa2018/">Fall 2018</a>, <a href="https://courses.engr.illinois.edu/cs225/sp2018/">Spring 2018</a>, <a href="https://courses.engr.illinois.edu/cs225/fa2017/">Fall 2017</a>, and <a href="https://courses.engr.illinois.edu/cs225/sp2017/">Spring 2017</a>.
 
 <hr>
 
@@ -94,7 +95,7 @@ By invitation from [Illinois International](https://international.illinois.edu/)
 
 > Introduction to techniques for data analytics and visualization through the use of weekly data sources from a wide selection of domains. Project-based course with multiple projects; each project requires the creation of a data visualization. Specific emphasis is placed on increasing programming fluency, understanding of computational foundations, and framing problems for a data-centric workflow. Credit: 4 hours.
 
-- Course Webpage: <a href="https://courses.engr.illinois.edu/cs199205/sp2017/">Spring 2017</a>, <a href="https://courses.engr.illinois.edu/cs199205/fa2016/">Fall 2016</a>, <a href="https://courses.engr.illinois.edu/cs199205/sp2016/">Spring 2016</a>, and <a href="https://courses.engr.illinois.edu/cs199205/fa2015/">Fall 2015</a>.
+- Semesters Taught: <a href="https://courses.engr.illinois.edu/cs199205/sp2017/">Spring 2017</a>, <a href="https://courses.engr.illinois.edu/cs199205/fa2016/">Fall 2016</a>, <a href="https://courses.engr.illinois.edu/cs199205/sp2016/">Spring 2016</a>, and <a href="https://courses.engr.illinois.edu/cs199205/fa2015/">Fall 2015</a>.
 
 <hr>
 
@@ -102,7 +103,7 @@ By invitation from [Illinois International](https://international.illinois.edu/)
 
 > Computing as an essential tool of academic and professional activities. Functions and interrelationships of computer system components: hardware, systems and applications software, and networks. Widely used application packages such as spreadsheets and databases. Concepts and practice of programming for the solution of simple problems in different application areas. Intended for non-science and non-engineering majors. Credit: 3 hours.
 
-- Course Webpage: <a href="https://courses.engr.illinois.edu/cs105/fa2015/">Fall 2015</a>, <a href="https://courses.engr.illinois.edu/cs105/sp2015/">Spring 2015</a>, <a href="https://courses.engr.illinois.edu/cs105/fa2014/">Fall 2014</a>, and <a href="https://courses.engr.illinois.edu/cs105/sp2014/">Spring 2014</a>.
+- Semesters Taught: <a href="https://courses.engr.illinois.edu/cs105/fa2015/">Fall 2015</a>, <a href="https://courses.engr.illinois.edu/cs105/sp2015/">Spring 2015</a>, <a href="https://courses.engr.illinois.edu/cs105/fa2014/">Fall 2014</a>, and <a href="https://courses.engr.illinois.edu/cs105/sp2014/">Spring 2014</a>.
 
 <hr>
 
@@ -110,7 +111,7 @@ By invitation from [Illinois International](https://international.illinois.edu/)
 
 > Basics of system programming, including POSIX processes, process control, inter-process communication, synchronization, signals, simple memory management, file I/O and directories, shell programming, socket network programming, RPC programming in distributed systems, basic security mechanisms, and standard tools for systems programming such as debugging tools.
 
-- Course Webpage: [Fall 2013](https://courses.engr.illinois.edu/cs241/fa2013/).
+- Semesters Taught: [Fall 2013](https://courses.engr.illinois.edu/cs241/fa2013/).
 
 <hr>
 
@@ -161,7 +162,7 @@ By invitation from [Illinois International](https://international.illinois.edu/)
     </div>
   </li>
   <li>
-    <a href="https://citl.illinois.edu/citl-101/measurement-evaluation/teaching-evaluation/teaching-evaluations-(ices)/teachers-ranked-as-excellent">Teachers Ranked as Excellent by Their Students</a>; 2008, 2010, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020, 2022, 2023, 2024
+    <a href="https://citl.illinois.edu/citl-101/measurement-evaluation/teaching-evaluation/teaching-evaluations-(ices)/teachers-ranked-as-excellent">Teachers Ranked as Excellent by Their Students</a>; 2008, 2010, 2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020, 2022, 2023, 2024, 2025
     <div class="pub-etc">
       Center for Innovation in Teaching &amp; Learning at The University of Illinois
     </div>
