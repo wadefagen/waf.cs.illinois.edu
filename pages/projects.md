@@ -7,6 +7,17 @@ permalink: /projects/
 templateEngineOverride: liquid, md
 ---
 
+<style>
+h3 + .pub-list {
+  padding-top: 10px;
+}
+
+.pub-list li ul { 
+  font-size: 80%;
+
+}
+</style>
+
 ### Data Visualizations
 
 {% assign sorted = site.visualizations | sort: 'date' | reverse | slice: 0, 4 %}
@@ -45,18 +56,48 @@ templateEngineOverride: liquid, md
 
 <hr>
 
-### Open-Source Tools
+### Open-Access Service for Illinois
 
-<p>A few of the projects I have created or helped create:</p>
 <ul class="pub-list">
   <li>
-    <a href="https://queue.illinois.edu/">Illinois Open Source Queue</a>: Used to hold office hours, advising meetings for over 8,000 students /semester at The University of Illinois, The University of British Columba (UBC), and in trail at other universities.
+    <a href="https://clicker.cs.illinois.edu/">DISCOVERY Clicker</a>: A tool to provide a modern and scalable classroom response system for large lectures.
+  </li>
+  <li>
+    <a href="https://mastery.cs.illinois.edu/">Mastery Platform</a>: Mastery Platform is an innovative tool developed as a cross-college collaboration at the University of Illinois that places mastery-based learning into practice. When learners work through a mastery-based assessment, they are guided towards mastery through instructor-designed questions that focus on learning instead of grading.
   </li>
   <li>
     <a href="https://d7.cs.illinois.edu/projects/linkedin-banner-image/generate/">Illinois' LinkedIn Banner Image Generator</a>: Used to create Illinois-specific professional banners for LinkedIn profiles.
+    <ul>
+      <li>As of May 2021, the Illinois LinkedIn Banner Generator has generated 63,583 professional banners (based on an Google Analytics event tracking data). You’ll find students, faculty, and alumni using these banners all over LinkedIn.</li>
+    </ul>
   </li>
   <li>
     <a href="https://github.com/illinois/github-repo-creator/">GitHub Educational Repository Creator</a>: Used to create student repositories for coursework on the University of Illinois' GitHub server.  Used by over 5,000 students /year across over a dozen courses.
+    <ul>
+      <li>
+        Created 20,000+ repositories across dozens of courses at The University of Illinois, including CS 210, 225, 233, 240, 241, 296, 420, 421, 423, 427, 461, 463, 491, and 527; ECE 120, 220, 411, 438; STAT 107, 207, 385, 430, 432, 440, 448, and 528; University High School; and Illinois International.
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="https://queue.illinois.edu/">Illinois Open Source Queue</a>: Used to hold office hours, advising meetings for over 8,000 students /semester at The University of Illinois, The University of British Columba (UBC), and at other universities.
+    <ul>
+      <li>
+        As of September 2021, this Illinois Open Source Queue has facilitated 171,676 student questions from 154 unique courses, advising offices, or student groups at The University of Illinois. This has saved thousands of hours of waiting for assistance and streamlined office hours across Illinois.
+      </li>
+    </ul>
+  </li>  
+</ul>
+
+
+<hr>
+
+### Open-Source Tools
+
+
+<ul class="pub-list">
+  <li>
+    <a href="https://waf.cs.illinois.edu/tools/Canvas-External-Grade-Import-Tool/">Canvas External Grade Import Tool</a>: A tool to streamline importing grades from external assessments into Canvas.
   </li>
 </ul>
 
