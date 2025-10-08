@@ -3,7 +3,8 @@ title: Grade Disparities and Accolades by Instructor at UIUC
 slug: Grade Disparities and Accolades
 
 description: A visualization of grade disparity and accolades of instructors at UIUC
-date: 2025-10-08
+date: 2025-04-11
+updated: 2025-10-08
 
 social-img: 1200-630.png
 author:
@@ -50,7 +51,7 @@ As an example, IB 435: Critical Evaluation of Herbal Remedies has been taught by
 
 - <span class="awards awards-td ml-1"><img src="badges/academy.jpg" class="award" /></span> <b>Membership in the National Academies</b>, which is among the most prestigious honor any professor can receive, 
 - <span class="awards awards-td awards-span ml-1"><img src="badges/illini.png" class="award" /></span> <b>LAS' Dean's Award for Excellence in Undergraduate Education</b>, a top teaching award at The University of Illinois
-- <span class="awards awards-td awards-stars" style="line-height: 15px"><span class="gold">★</span><span class="silver">★</span><span class="silver">★</span></span> <b>Ranked as Outstanding/Excellent by his students</b> at the end-of-semester evaluations,
+- <span class="awards awards-td awards-stars" style="line-height: 15px"><span class="gold">★</span><span class="silver">★</span><span class="silver">★</span></span> <b>Ranked as Outstanding/Excellent by their students</b> at the end-of-semester evaluations,
 
 Other instructors, like [Dr. Daniel Bush](https://sib.illinois.edu/directory/profile/dsbush2), who has started teaching IB 435 only recently we indicate that there's minimal accolades we would be expect to collect:
 

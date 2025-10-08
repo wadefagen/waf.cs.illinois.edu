@@ -140,8 +140,8 @@ function onUserSelectionChange() {
       case "gpa-high": filterDescription += ", sorted by instructors giving the highest GPAs"; break;
       case "gpa-low": filterDescription += ", sorted by instructors giving the lowest GPAs"; break;
 
-      case "large": filterDescription += ", sorted instructors that have taught the most students"; break;
-      case "large-avg": filterDescription += ", sorted instructors that have taught the largest average section size"; break;
+      case "large": filterDescription += ", sorted by instructors that have taught the most students"; break;
+      case "large-avg": filterDescription += ", sorted by instructors that have taught the largest average section size"; break;
 
       case "none": filterDescription += ", sorted alphabetically"; break;
     }
