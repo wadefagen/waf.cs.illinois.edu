@@ -5,7 +5,7 @@ external-url: /discovery/gpa_of_every_course_at_illinois/
 external-img: /discovery/gpa_of_every_course_at_illinois/img.png
 
 date: 2021-08-20
-updated: 2024-11-04
+updated: 2025-10-08
 
 author:
 - Justin Lee
