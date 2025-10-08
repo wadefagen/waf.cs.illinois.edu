@@ -82,13 +82,15 @@ We also highlight the top teaching/instruction-based awards that are awarded at 
 - Grainger College of Engineering - Everitt Award for Teaching Excellence
 - LAS - Dean's Awards for Excellence in Undergraduate Teaching
 - LAS - Awards for Excellence in Undergraduate Teaching by Instructional Staff
+- [Added Oct. 2025]: LAS - Awards for Excellence in Undergraduate Teaching for Graduate Teaching Assistants
+- [Added Oct. 2025]: ISC - Student Government Teaching Excellence Award
 
 This data was manually collected.  E-mail waf@illinois.edu if we missed an Illinois faculty member so we can share their prestigious award, or if there a publicly available list of top faculty awards for other college-level units we were unable to find.
 
 
 ### Rate My Professor
 
-On April 3, 2025, we collected the list of faculty listed on Rate My Professor at The University of Illinois with a 4.5 rating and at least 10 reviews.  We find this data is generally highly correlated with other awards, and is used as an accolade as a reference to another popular data source.
+In April 2025, we collected the list of faculty listed on Rate My Professor at The University of Illinois with a 4.5 rating and at least 10 reviews.  We find this data is generally highly correlated with other awards, and is used as an accolade as a reference to another popular data source.
 
 Special thanks to [Lukas Unguraitis (@lumirth)](https://github.com/lumirth/) for his ["RateMyProfessors Python Module" (@lumirth/rmpy)](https://github.com/lumirth/rmpy) project that greatly assisted us in this data collection.
 
@@ -96,6 +98,18 @@ Special thanks to [Lukas Unguraitis (@lumirth)](https://github.com/lumirth/) for
 ## Visualization Updates
 
 This log is a collection of updates we've made to the visualization since launch:
+
+### October 8, 2025 (Start of Spring 2026 Registration Cycle)
+
+- Updated datasets:
+  - Adds "Teachers Ranked as Excellent" data through Spring 2025
+  - Adds "GPA Dataset" data through Spring 2025
+  - Adds "Course Catalog" data for Spring 2026
+- Added ISC award for "Student Government Teaching Excellence Award"
+- Added LAS award for "Excellence in Undergraduate Teaching for Graduate Teaching Assistants"
+- Improved UI to default to showing "Campus & College Awards" instead of "Select Filter"
+- UI now displays a text summary of your selected filter/search options
+- Added filters for "Highest GPA", "Lowest GPA", "Lowest Percentage of 4.0s", and "Most Students Taught"
 
 ### April 22, 2025
 
@@ -105,3 +119,7 @@ This log is a collection of updates we've made to the visualization since launch
 ### April 12, 2025
 
 - Fixed a bug where "Show More" was rendering the first 100 courses a second time before showing the additional courses.
+
+### April 11, 2025
+
+- Initial Launch 🎉

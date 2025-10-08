@@ -26,7 +26,7 @@ tags:
 <h1>Grade Disparities and Accolades by Instructor at UIUC</h1>
 <div style="font-size: 16px; margin-top: -4px; line-height: 16px;">
   <b>By</b>: Lauren Hyde, Rittika Adhikari, Michael Kokkines, Ophir Sneh, Caren Zeng, and Wade Fagen-Ulmschneider<br>
-  <b>Published</b>: April 11, 2025
+  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Spring 2026 Registration on October 8, 2025</b> by Lauren Hyde and Wade Fagen-Ulmschneider
 </div>
 
 <hr>
@@ -45,16 +45,19 @@ This work attempts to celebrate high-caliber professors while still providing im
 
 ### Overview of Highlighted Accolades
 
-As an example, CHEM 332: Elementary Organic Chem II has been taught by several faculty in recent years who have a collection of prestigious awards.  Specifically, [Professor Jeffrey Moore](https://chemistry.illinois.edu/jsmoore) has been honored with:
+
+As an example, IB 435: Critical Evaluation of Herbal Remedies has been taught by several faculty in recent years who have a collection of prestigious awards.  Specifically, [Prof. Berenbaum](https://sib.illinois.edu/directory/profile/maybe) has been honored with:
 
 - <span class="awards awards-td ml-1"><img src="badges/academy.jpg" class="award" /></span> <b>Membership in the National Academies</b>, which is among the most prestigious honor any professor can receive, 
-- <span class="awards awards-td awards-span ml-1"><img src="badges/illini.png" class="award" /></span> <b>Campus Award for Excellence in Undergraduate Education</b>, a top teaching award at The University of Illinois
-- <span class="awards awards-td awards-stars" style="line-height: 15px"><span class="gold">★</span><span class="gold">★</span><span class="silver">★</span></span> <b>Ranked as Outstanding/Excellent by his students</b> at the end-of-semester evaluations,
+- <span class="awards awards-td awards-span ml-1"><img src="badges/illini.png" class="award" /></span> <b>LAS' Dean's Award for Excellence in Undergraduate Education</b>, a top teaching award at The University of Illinois
+- <span class="awards awards-td awards-stars" style="line-height: 15px"><span class="gold">★</span><span class="silver">★</span><span class="silver">★</span></span> <b>Ranked as Outstanding/Excellent by his students</b> at the end-of-semester evaluations,
 
-Other instructors, like [Dr. Smitha Pillai](https://chemistry.illinois.edu/directory/profile/stpillai), who has started teaching CHEM 332 only recently we indicate that there's minimal accolades we would be expect to collect:
+Other instructors, like [Dr. Daniel Bush](https://sib.illinois.edu/directory/profile/dsbush2), who has started teaching IB 435 only recently we indicate that there's minimal accolades we would be expect to collect:
 
+<!--
 - <span class="awards awards-td awards-stars" style="line-height: 15px"><span class="silver">★</span></span> <b>Ranked as Excellent by her students</b> at the end-of-semester evaluations,
-- <span class="awards-txt">New Prep</span>, indicating she recently started teaching the course and may have minimal accolades for excellent teaching.
+-->
+- <span class="awards-txt">New Prep</span>, indicating they recently started teaching the course and may have minimal accolades for excellent teaching.
 
 In addition, a breakdown of GPAs is provided for each course and instructor.  <b>This visualization is interactive, tap or mouseover</b> any part of the visualization for more details:
 
@@ -69,14 +72,14 @@ Select one or more filter and view data about courses at Illinois:
 
 <div style="padding-left: 10px; margin-left: 1px; border-left: solid 4px #13294B">
 <div>
-  Filter by Subject: <input style="width: 80px;" id="select-subject" type="text" onchange="updateBySubject()" autocomplete="one-time-code" />
+  Filter by Subject? <input style="width: 80px;" id="select-subject" type="text" onchange="updateBySubject()" autocomplete="one-time-code" />
   <button class="btn btn-waf" style="padding-top: 4px; padding-bottom: 4px; margin-bottom: 4px; display: none;" onclick="clearSubject()" id="select-subject-clear">Clear</button>
 </div>
 
 <div class="mt-2">
-  Filter by GenEd:
+  Filter by GenEd?
   <select id="select-gened" onchange="onUserSelectionChange()">
-    <option value="none" selected>No GenEd Filter -- Show All</option>
+    <option value="none" selected>Show All / No GenEd Filter</option>
     <option disabled>&mdash;</option>
     <option value="ACP">Adv. Composition (ACP)</option>
     <option value="NW">Non-Western Cultures (NW)</option>
@@ -90,16 +93,21 @@ Select one or more filter and view data about courses at Illinois:
 </div>
 
 <div class="mt-2">
-Sort/Filter:
+  Sorting and Filters: 
   <select id="select-accolades" onchange="onUserSelectionChange()">
-    <option value="none" selected>Default (Alphabetically)</option>
-    <option disabled>&mdash; Filter By Accolades: &mdash;</option>
+    <option value="none">Alphabetically</option>
+    <option disabled>&mdash; Filter + Sort By Accolades: &mdash;</option>
     <option value="national">National Awards</option>
-    <option value="campus">Campus &amp; College Awards</option>
+    <option value="campus" selected>Campus &amp; College Awards</option>
     <option value="tre">Ranked by Students as Excellent</option>
-    <option disabled>&mdash; Sort By: &mdash;</option>
-    <option value="pct4">Percentage of 4.0s</option>
-    <option value="large">Larger Section First</option>
+    <option disabled>&mdash; Sort By Instructor Grades: &mdash;</option>
+    <option value="pct4">Highest Percentage of 4.0s</option>
+    <option value="pct0">Lowest Percentage of 4.0s</option>
+    <option value="gpa-high">Highest GPAs</option>
+    <option value="gpa-low">Lowest GPAs</option>
+    <option disabled>&mdash; Sort By Course Size: &mdash;</option>
+    <option value="large">Most Students Taught</option>
+    <option value="large-avg">Largest Average Section Size</option>
   </select>
 </div>
 </div>
@@ -109,7 +117,7 @@ Sort/Filter:
 
 <div id="tables">
   <div style="text-align: center; margin-top: 20px;">
-    <i>Select at least one filter criteria to view courses.</i>
+    <i>...loading data...</i>
   </div>  
 </div>
 

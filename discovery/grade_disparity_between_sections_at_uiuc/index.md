@@ -4,7 +4,7 @@ slug: gpa2
 layout: viz
 
 description: A visualization of grade disparity between sections and instructors at UIUC
-date: 2025-04-07
+date: 2025-10-08
 
 social-img: img.png
 author:
@@ -28,7 +28,7 @@ templateEngineOverride: liquid, md
 <h1>{{title}}</h1>
 <div style="font-size: 14px; margin-top: -8px; line-height: 16px;">
   Originally published by Devin Oliver, Johnny Guo, Joe Tan, Jerry Li, Tina Abraham, Andy (Tianyue) Mao, Kara Landolt, Nathan Cho, and Wade Fagen-Ulmschneider<br>
-  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Fall 2025 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
+  <b style="background-color: hsla(63, 100%, 90%, 1);">Updated for Spring 2026 Registration on {{ page.date | date: '%B %d, %Y'}}</b> by Wade Fagen-Ulmschneider
 </div>
 
 
@@ -39,7 +39,7 @@ templateEngineOverride: liquid, md
 
 One of the most frustrating situations to find yourself in is a course where all of your friends are in the &quot;easier section&quot;.  For most of us, it feels like this happens <i>all of the time</i>.   This visualization is the second in a series of <a href="https://waf.cs.illinois.edu/discovery/gpa/">GPA visualizations</a> created to explore the grades given by courses at The University of Illinois.
 
-Using GPA data from the most recent eight full semesters (Spring 2021 through Winter 2024/25,
+Using GPA data from the most recent eight full semesters (Spring 2022 through Spring 2025,
 including summers/winters), we found the distribution of every section/instructor group
 within every course.  For example, Calculus I (MATH 221) has been taught by
 seven different primary instructors recently.  We found the following distributions:

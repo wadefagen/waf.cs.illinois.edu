@@ -20,15 +20,16 @@ $( async function() {
   _data = await loadData();
 
   _dataReadyPromise = undefined;
-  _dataReadyPromise_resolver();  
+  _dataReadyPromise_resolver();
 
   displayExample();
+  onUserSelectionChange();
 } );
 
 
 
 function displayExample() {
-  chem332 = _data.filter((d) => d.course.startsWith("CHEM 332"));
+  chem332 = _data.filter((d) => d.course.startsWith("IB 435"));
   renderData(chem332, "example");
 }
 
@@ -37,7 +38,6 @@ function clearSubject() {
   document.getElementById("select-subject-clear").style.display = "none";
   
   onUserSelectionChange();
-  
 }
 
 function onUserSelectionChange() {
@@ -77,7 +77,7 @@ function onUserSelectionChange() {
     filters.push( (d) => d.national_award || d.uiuc_award || d.num_excellence_awards > 0 || d.num_outstanding_awards > 0 );
     hasAdvancedFilter = true;
     filterMethod = "tre-awards";
-  } else if (accoladeFilter == "pct4" || accoladeFilter == "large" || accoladeFilter == "small") {
+  } else if (accoladeFilter == "pct4" || accoladeFilter == "pct0" || accoladeFilter == "gpa-high" || accoladeFilter == "gpa-low" || accoladeFilter == "large" || accoladeFilter == "large-avg" || accoladeFilter == "small") {
     filterMethod = accoladeFilter;
   }
 
@@ -91,7 +91,7 @@ function onUserSelectionChange() {
     filters.push( (d) => d.course.startsWith(subjectFilter.trim().toUpperCase()) );
   }
   
-  if (filters.length > 0) {
+  if (filters.length > -1) {
     let filteredData = _data.filter((d) => {
       for (let filter of filters) {
         if (!filter(d)) { return false; }
@@ -113,7 +113,39 @@ function onUserSelectionChange() {
       });
     }
 
-    renderData(filteredData, "tables", filterMethod);
+    let filterDescription = "Showing ";
+    if (subjectFilter == "") {
+      filterDescription += "all"
+    } else {
+      filterDescription += subjectFilter;
+    }
+    filterDescription += " ";
+
+    if (genedFilter == "none") {
+      filterDescription += "courses";
+    } else {
+      let e = document.getElementById("select-gened");
+      filterDescription += e.options[e.selectedIndex].text + " courses";
+    }
+
+    switch (accoladeFilter) {
+      case "national": filterDescription += " with instructors having national awards"; break;
+      case "campus": filterDescription += " with instructors having campus awards"; break;
+      case "tre": filterDescription += " with instructors ranked by students as excellent"; break;
+
+      case "pct4": filterDescription += ", sorted by instructors giving the highest percentage of 4.0s"; break;
+      case "pct0": filterDescription += ", sorted by instructors giving the lowest percentage of 4.0s"; break;
+      case "gpa-high": filterDescription += ", sorted by instructors giving the highest GPAs"; break;
+      case "gpa-low": filterDescription += ", sorted by instructors giving the lowest GPAs"; break;
+
+      case "large": filterDescription += ", sorted instructors that have taught the most students"; break;
+      case "large-avg": filterDescription += ", sorted instructors that have taught the largest average section size"; break;
+
+      case "none": filterDescription += ", sorted alphabetically"; break;
+    }
+    filterDescription += ".";
+
+    renderData(filteredData, "tables", filterMethod, filterDescription);
   } else {
     document.getElementById("tables").setHTMLUnsafe(`
 <div style="text-align: center; margin-top: 20px;">
@@ -356,7 +388,7 @@ function _doRender(data, tid, startIndex, endIndex) {
 }
 
 
-function renderData(dataList, tid, filterMethod = "default") {
+function renderData(dataList, tid, filterMethod = "default", filterDescription = undefined) {
   let data = {};
   for (let d of dataList) {
     if (!data[d.course]) { data[d.course] = []; }
@@ -369,6 +401,9 @@ function renderData(dataList, tid, filterMethod = "default") {
   let resultHtml = `
 <div style="text-align: center">
   There are <b>${totalCourses}</b> different courses that matches your filters.
+  <div style="font-size: 16px;">
+    <i>(${filterDescription})</i>
+  </div>
 </div>`;
   
   if (totalCourses == 1) { resultHtml = resultHtml.replaceAll("different courses", "course").replaceAll("are", "is") };
@@ -399,9 +434,15 @@ function renderData(dataList, tid, filterMethod = "default") {
           case "campus-awards": value = (d.uiuc_award || []).length; break;
           case "tre-awards": value = d.num_excellence_awards + d.num_outstanding_awards; break;
           case "pct4": value = d["A"] + d["A+"]; break;
-          case "large": value = d["num_students"] / d["num_sections"]; break;
-          case "small": value = -d["num_students"] / d["num_sections"]; break;
+          case "pct0": value = -(d["A"] + d["A+"]); break;
+          case "large": value = d["num_students"]; break;
+          case "large-avg": value = d["num_students"] / d["num_sections"]; break;
+          case "gpa-high": value = d["avg_gpa"]; break;
+          case "gpa-low": value = 4 - d["avg_gpa"]; break;
         }
+
+        //console.log(filterMethod);
+        //console.log(value);
 
         if (value > 0) {
           if (d.teaching_next_semester) { value += 0.1; }
