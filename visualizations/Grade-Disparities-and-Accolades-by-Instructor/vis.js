@@ -77,7 +77,7 @@ function onUserSelectionChange() {
     filters.push( (d) => d.national_award || d.uiuc_award || d.num_excellence_awards > 0 || d.num_outstanding_awards > 0 );
     hasAdvancedFilter = true;
     filterMethod = "tre-awards";
-  } else if (accoladeFilter == "pct4" || accoladeFilter == "pct0" || accoladeFilter == "gpa-high" || accoladeFilter == "gpa-low" || accoladeFilter == "large" || accoladeFilter == "large-avg" || accoladeFilter == "small") {
+  } else if (accoladeFilter == "awards" || accoladeFilter == "pct4" || accoladeFilter == "pct0" || accoladeFilter == "gpa-high" || accoladeFilter == "gpa-low" || accoladeFilter == "large" || accoladeFilter == "large-avg" || accoladeFilter == "small") {
     filterMethod = accoladeFilter;
   }
 
@@ -132,6 +132,8 @@ function onUserSelectionChange() {
       case "national": filterDescription += " with instructors having national awards"; break;
       case "campus": filterDescription += " with instructors having campus awards"; break;
       case "tre": filterDescription += " with instructors ranked by students as excellent"; break;
+
+      case "awards": filterDescription += ", sorted by instructors with prestigious awards"; break;
 
       case "pct4": filterDescription += ", sorted by instructors giving the highest percentage of 4.0s"; break;
       case "pct0": filterDescription += ", sorted by instructors giving the lowest percentage of 4.0s"; break;
@@ -441,6 +443,12 @@ function renderData(dataList, tid, filterMethod = "default", filterDescription =
           case "national-awards": value = (d.national_award || []).length; break;
           case "campus-awards": value = (d.uiuc_award || []).length; break;
           case "tre-awards": value = d.num_excellence_awards + d.num_outstanding_awards; break;
+          case "awards":
+            value =
+              ((d.national_award || []).length) * 100 +
+              ((d.uiuc_award || []).length) * 20 +
+              (d.num_excellence_awards + d.num_outstanding_awards);
+            break;
           case "pct4": value = d["A"] + d["A+"]; break;
           case "pct0": value = -(d["A"] + d["A+"]); _reverseInstructorOrder = true; break;
           case "large": value = d["num_students"]; break;

@@ -96,10 +96,12 @@ Select one or more filter and view data about courses at Illinois:
   Sorting and Filters: 
   <select id="select-accolades" onchange="onUserSelectionChange()">
     <option value="none">Alphabetically</option>
-    <option disabled>&mdash; Filter + Sort By Accolades: &mdash;</option>
+    <option disabled>&mdash; Filter By Accolades: &mdash;</option>
     <option value="national">National Awards</option>
-    <option value="campus" selected>Campus &amp; College Awards</option>
+    <option value="campus">Campus &amp; College Awards</option>
     <option value="tre">Ranked by Students as Excellent</option>
+    <option disabled>&mdash; Sort By Accolades: &mdash;</option>
+    <option value="awards" selected>Sort by All Awards</option>
     <option disabled>&mdash; Sort By Instructor Grades: &mdash;</option>
     <option value="pct4">Highest Percentage of 4.0s</option>
     <option value="pct0">Lowest Percentage of 4.0s</option>
@@ -129,4 +131,4 @@ Select one or more filter and view data about courses at Illinois:
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-<script type='text/javascript' src="vis.js?v=2"></script>
+<script type='text/javascript' src="vis.js?v=3"></script>
