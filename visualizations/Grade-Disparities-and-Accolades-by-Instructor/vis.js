@@ -286,7 +286,13 @@ function _doRender(data, tid, startIndex, endIndex) {
       let course = _current_render_courses[j];
 
       // Sort the professors for the course by average GPA
-      data[course].sort((a, b) => ((a["A+"] + a["A"] + a["A-"]) < (b["A+"] + b["A"] + b["A-"]) ? 1 : -1))
+      //data[course].sort((a, b) => ((a["A+"] + a["A"] + a["A-"]) < (b["A+"] + b["A"] + b["A-"]) ? 1 : -1))
+      data[course].sort((a, b) => ((a["A+"] + a["A"]) < (b["A+"] + b["A"]) ? 1 : -1))
+
+      if (_reverseInstructorOrder) {
+        data[course].reverse();
+      }
+
       // Create the label above the chart (i.e. the course name)
       var label = d3.select("#" + tid).append("h4").text(course)
         .attr("margin", 10)
@@ -347,7 +353,7 @@ function _doRender(data, tid, startIndex, endIndex) {
         data[course][t]["pctA"] = (data[course][t]["A+"] + data[course][t]["A"] + data[course][t]["A-"]) / data[course][t]["totalGrades"];
       }
 
-      data[course].sort((a, b) => ((a["A+"] + a["A"]) < (b["A+"] + b["A"]) ? 1 : -1))
+      //data[course].sort((a, b) => ((a["A+"] + a["A"]) < (b["A+"] + b["A"]) ? 1 : -1))
 
       var tr = table.selectAll("tr.data")
         .data(data[course])
@@ -387,7 +393,7 @@ function _doRender(data, tid, startIndex, endIndex) {
   }
 }
 
-
+let _reverseInstructorOrder = false;
 function renderData(dataList, tid, filterMethod = "default", filterDescription = undefined) {
   let data = {};
   for (let d of dataList) {
@@ -429,16 +435,18 @@ function renderData(dataList, tid, filterMethod = "default", filterDescription =
       let sortValue = -1;
       for (let d of data[courseName]) {
         let value = -1;
+
+        _reverseInstructorOrder = false;
         switch (filterMethod) {
           case "national-awards": value = (d.national_award || []).length; break;
           case "campus-awards": value = (d.uiuc_award || []).length; break;
           case "tre-awards": value = d.num_excellence_awards + d.num_outstanding_awards; break;
           case "pct4": value = d["A"] + d["A+"]; break;
-          case "pct0": value = -(d["A"] + d["A+"]); break;
+          case "pct0": value = -(d["A"] + d["A+"]); _reverseInstructorOrder = true; break;
           case "large": value = d["num_students"]; break;
           case "large-avg": value = d["num_students"] / d["num_sections"]; break;
           case "gpa-high": value = d["avg_gpa"]; break;
-          case "gpa-low": value = 4 - d["avg_gpa"]; break;
+          case "gpa-low": value = 4 - d["avg_gpa"]; _reverseInstructorOrder = true; break;
         }
 
         //console.log(filterMethod);
