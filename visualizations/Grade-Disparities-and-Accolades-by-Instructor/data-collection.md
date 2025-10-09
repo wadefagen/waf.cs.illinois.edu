@@ -99,6 +99,10 @@ Special thanks to [Lukas Unguraitis (@lumirth)](https://github.com/lumirth/) for
 
 This log is a collection of updates we've made to the visualization since launch:
 
+### October 8, 2025
+
+- Added search capabilities with the "GenEd" selector, allowing search by course name or instructor name (h/t: u/DiligentRiskWhat for the feature suggestion 🎉).
+
 ### October 8, 2025 (Start of Spring 2026 Registration Cycle)
 
 - Updated datasets:
@@ -107,9 +111,9 @@ This log is a collection of updates we've made to the visualization since launch
   - Adds "Course Catalog" data for Spring 2026
 - Added ISC award for "Student Government Teaching Excellence Award"
 - Added LAS award for "Excellence in Undergraduate Teaching for Graduate Teaching Assistants"
-- Improved UI to default to showing "Campus & College Awards" instead of "Select Filter"
+- Improved UI to default to showing "Sort by All Awards" instead of "Select Filter"
 - UI now displays a text summary of your selected filter/search options
-- Added filters for "Highest GPA", "Lowest GPA", "Lowest Percentage of 4.0s", and "Most Students Taught"
+- Added filters for "All Awards", "Highest GPA", "Lowest GPA", "Lowest Percentage of 4.0s", and "Most Students Taught"
 
 ### April 22, 2025
 

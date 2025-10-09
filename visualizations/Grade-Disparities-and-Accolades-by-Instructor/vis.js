@@ -59,11 +59,21 @@ function onUserSelectionChange() {
   let genedFilter = document.getElementById("select-gened").value;
   let subjectFilter = document.getElementById("select-subject").value;
 
+  // UI updates
+  if (genedFilter == "course") {
+    document.getElementById("adv-search").style.display = "block";
+    document.getElementById("adv-search-name").innerHTML = "Course Name";
+  } else if (genedFilter == "instructor") {
+    document.getElementById("adv-search").style.display = "block";
+    document.getElementById("adv-search-name").innerHTML = "Instructor's Name";
+  } else {
+    document.getElementById("adv-search").style.display = "none";
+  }
+
+
   let filters = [];
   let hasAdvancedFilter = false;
   let filterMethod = "default";
-
-
 
   if (accoladeFilter == "national") {
     filters.push( (d) => d.national_award );
@@ -81,7 +91,17 @@ function onUserSelectionChange() {
     filterMethod = accoladeFilter;
   }
 
-  if (genedFilter != "none") {
+  let genedSearchString = document.getElementById("gened-instructor-search").value;
+  if (genedFilter == "course") {
+    let courseName = genedSearchString.toUpperCase();
+    filters.push( (d) => d.course.toUpperCase().includes(courseName) );
+  } else if (genedFilter == "instructor") {
+    let instructorName = genedSearchString.toUpperCase();
+    filters.push( (d) => (
+      d.instructor_first_name.toUpperCase().includes(instructorName) || 
+      d.instructor.toUpperCase().includes(instructorName)
+    ));
+  } else if (genedFilter != "none") {
     filters.push( (d) => d.geneds.includes(genedFilter) );
     hasAdvancedFilter = true;
   }
@@ -121,7 +141,11 @@ function onUserSelectionChange() {
     }
     filterDescription += " ";
 
-    if (genedFilter == "none") {
+    if (genedFilter == "course") {
+      filterDescription += `courses with course name including "${genedSearchString}"`;
+    } else if (genedFilter == "instructor") {
+      filterDescription += `courses with instructor's name includes "${genedSearchString}"`;
+    } else if (genedFilter == "none") {
       filterDescription += "courses";
     } else {
       let e = document.getElementById("select-gened");
@@ -510,8 +534,8 @@ function createInstructorColumn(tr) {
       }
 
       if (d.teaching_next_semester) {
-        return `<span style="font-size: 8px; position: relative; top: -2px; cursor: help;" title="${d.instructor} is currently scheduled to teach this course in Fall 2025">📅</span> ${fullName}`;
-        return `<abbr title="${d.instructor} is currently scheduled to teach this course in Fall 2025">»</abbr> ${fullName}`
+        return `<span style="font-size: 8px; position: relative; top: -2px; cursor: help;" title="${d.instructor} is currently scheduled to teach this course in Spring 2026">📅</span> ${fullName}`;
+        return `<abbr title="${d.instructor} is currently scheduled to teach this course in Spring 2026">»</abbr> ${fullName}`
       }
       return fullName;
     });

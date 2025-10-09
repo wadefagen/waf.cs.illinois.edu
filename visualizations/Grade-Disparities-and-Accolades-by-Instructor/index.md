@@ -78,10 +78,10 @@ Select one or more filter and view data about courses at Illinois:
 </div>
 
 <div class="mt-2">
-  Filter by GenEd?
+  GenEds / Search?
   <select id="select-gened" onchange="onUserSelectionChange()">
-    <option value="none" selected>Show All / No GenEd Filter</option>
-    <option disabled>&mdash;</option>
+    <option value="none" selected>Show All</option>
+    <option disabled>&mdash; Filter by GenEds &mdash;</option>
     <option value="ACP">Adv. Composition (ACP)</option>
     <option value="NW">Non-Western Cultures (NW)</option>
     <option value="US">US Minority Cultures (US)</option>
@@ -90,7 +90,14 @@ Select one or more filter and view data about courses at Illinois:
     <option value="NAT">Natural Sciences & Tech (NAT)</option>
     <option value="QR">Quantitative Reasoning (QR)</option>
     <option value="SBS">Social & Behavioral (SBS)</option>
+    <option disabled>&mdash; Custom Search &mdash;</option>
+    <option value="course">Search by Course Name</option>
+    <option value="instructor">Search by Instructor Name</option>
   </select>
+  <div style="margin-left: 10px; display: none;" id="adv-search">
+    ⇒ <span id="adv-search-name">Instructor's Name</span>:
+    <input style="width: 180px; font-size: 16px;" id="gened-instructor-search" type="text" oninput="onUserSelectionChange()">
+  </div>
 </div>
 
 <div class="mt-2">
@@ -132,4 +139,4 @@ Select one or more filter and view data about courses at Illinois:
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-<script type='text/javascript' src="vis.js?v=3"></script>
+<script type='text/javascript' src="vis.js?v=4"></script>
