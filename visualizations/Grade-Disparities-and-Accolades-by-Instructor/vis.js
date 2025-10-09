@@ -818,21 +818,21 @@ function addAwardsColumn(data, tr) {
     html += `</span>`;
 
     if (d.num_outstanding_awards == 1) {
-      mouseOverHTML += `<div><span class="awards awards-stars"><span class="gold">&#9733;</span></span>: ${d.instructor} was ranked as outstanding by students in their course.</div>`;
+      mouseOverHTML += `<div><span class="awards awards-stars"><span class="gold">&#9733;</span></span>: ${d.instructor} was ranked as outstanding by students in their course in the past ten years.</div>`;
     } else if (d.num_outstanding_awards > 1) {
-      mouseOverHTML += `<div><span class="awards awards-stars"><span class="gold">&#9733;</span></span><b>&times;${d.num_outstanding_awards}</b>: ${d.instructor} was ranked as outstanding by students in their course ${d.num_outstanding_awards} times.</div>`;
+      mouseOverHTML += `<div><span class="awards awards-stars"><span class="gold">&#9733;</span></span><b>&times;${d.num_outstanding_awards}</b>: ${d.instructor} was ranked as outstanding by students in their course ${d.num_outstanding_awards} times in the past ten years.</div>`;
     }
 
     if (d.num_excellence_awards == 1) {
-      mouseOverHTML += `<div><span class="awards awards-stars"><span class="silver">&#9733;</span></span>: ${d.instructor} was ranked as excellent by students in their course.</div>`;
+      mouseOverHTML += `<div><span class="awards awards-stars"><span class="silver">&#9733;</span></span>: ${d.instructor} was ranked as excellent by students in their course in the past ten years.</div>`;
     } else if (d.num_excellence_awards > 1) {
-      mouseOverHTML += `<div><span class="awards awards-stars"><span class="silver">&#9733;</span></span><b>&times;${d.num_excellence_awards}</b>: ${d.instructor} was ranked as excellent by students in their course ${d.num_excellence_awards} times.</div>`;
+      mouseOverHTML += `<div><span class="awards awards-stars"><span class="silver">&#9733;</span></span><b>&times;${d.num_excellence_awards}</b>: ${d.instructor} was ranked as excellent by students in their course ${d.num_excellence_awards} times in the past ten years.</div>`;
     }
 
     // == RMP ==
     if (d.rmp_rating >= 4.5 && d.rmp_num_reviews > 10) {
       html += `<img src="badges/rmp2.png" alt="Rate My Professor" class="award">`;
-      mouseOverHTML += `<div><span class="awards awards-td"><img src="badges/rmp2.png" alt="Rate My Professor" class="award"></span>: ${d.instructor} is highly ranked on Rate My Professor.</div>`;
+      mouseOverHTML += `<div><span class="awards awards-td"><img src="badges/rmp2.png" alt="Rate My Professor" class="award"></span>: ${d.instructor} has recently been highly ranked on Rate My Professor.</div>`;
     }
 
 

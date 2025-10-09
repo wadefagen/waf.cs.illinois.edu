@@ -90,9 +90,17 @@ This data was manually collected.  E-mail waf@illinois.edu if we missed an Illin
 
 ### Rate My Professor
 
-In April 2025, we collected the list of faculty listed on Rate My Professor at The University of Illinois with a 4.5 rating and at least 10 reviews.  We find this data is generally highly correlated with other awards, and is used as an accolade as a reference to another popular data source.
+We collected the list of faculty listed on Rate My Professor at The University of Illinois with a 4.5 rating and at least 10 reviews.  We find this data is generally highly correlated with other awards, and is used as an accolade as a reference to another popular data source.
 
 Special thanks to [Lukas Unguraitis (@lumirth)](https://github.com/lumirth/) for his ["RateMyProfessors Python Module" (@lumirth/rmpy)](https://github.com/lumirth/rmpy) project that greatly assisted us in this data collection.
+
+
+## Data Collection Dates and Ranges
+
+- GPA Data: The data displayed includes all GPAs in the dataset from Spring 2021 forward
+- National, Campus, and College Awards: All awards are displayed (no date cutoff)
+- Teachers Ranked as Excellent: The data displayed includes all matched data in the dataset from Fall 2016 forward
+- Rate My Professor: Data collected in April 2025
 
 
 ## Visualization Updates
