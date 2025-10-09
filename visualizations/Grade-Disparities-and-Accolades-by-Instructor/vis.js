@@ -141,10 +141,18 @@ function onUserSelectionChange() {
     }
     filterDescription += " ";
 
-    if (genedFilter == "course") {
-      filterDescription += `courses with course name including "${genedSearchString}"`;
+    if (genedFilter == "course" && genedSearchString != "") {
+      if (genedSearchString != "") {
+        filterDescription += `courses with course name including "${genedSearchString}"`;
+      } else {
+        filterDescription += "courses";
+      }
     } else if (genedFilter == "instructor") {
-      filterDescription += `courses with instructor's name includes "${genedSearchString}"`;
+      if (genedSearchString != "") {
+        filterDescription += `courses with instructor's name including "${genedSearchString}"`;
+      } else {
+        filterDescription += "courses";  
+      }
     } else if (genedFilter == "none") {
       filterDescription += "courses";
     } else {
