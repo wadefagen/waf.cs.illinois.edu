@@ -143,13 +143,13 @@ function onUserSelectionChange() {
 
     if (genedFilter == "course" && genedSearchString != "") {
       if (genedSearchString != "") {
-        filterDescription += `courses with course name including "${genedSearchString}"`;
+        filterDescription += `courses where the course name includes "${genedSearchString}"`;
       } else {
         filterDescription += "courses";
       }
     } else if (genedFilter == "instructor") {
       if (genedSearchString != "") {
-        filterDescription += `courses with instructor's name including "${genedSearchString}"`;
+        filterDescription += `courses where the instructor's name includes "${genedSearchString}"`;
       } else {
         filterDescription += "courses";  
       }
